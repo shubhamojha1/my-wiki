@@ -41,3 +41,9 @@ Saved answer explaining ICL mechanism, few-shot relation, and scaling behavior.
 Ingested source: Tim Dettmers' GPU guide (2023).
 Created 1 source summary, 4 entity pages, 8 concept pages.
 Key concepts: Tensor Cores, memory bandwidth, precision formats (BF16/TF32/FP8), sparse training, L2 cache.
+
+## [2026-04-16] ingest | CS 179: GPU Memory Systems - Lecture 4
+
+Ingested source: CS 179 Lecture 4 (2026) covering GPU memory systems.
+Created 1 source summary, 6 concept pages.
+Key concepts: Memory hierarchy, coalescing, bank conflicts, register spilling, computational intensity, latency vs throughput.

@@ -17,6 +17,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[CS 179: Intro to SIMD and GPU Internals - Lecture 2]] — GPU internals: SIMD vs SIMT, thread hierarchy, warp divergence, streaming multiprocessors
 - [[CS179 Recitation 1 - GPU Overview and Prefix Sum]] — Recitation covering RTX 5090, prefix sum algorithm, VS Code remote setup
 - [[Best GPUs for Deep Learning in 2023]] — Tim Dettmers' comprehensive guide on GPU specs, Tensor Cores, precision formats, and recommendations
+- [[CS 179: GPU Memory Systems - Lecture 4]] — GPU memory hierarchy, coalescing, bank conflicts, register spilling, computational intensity
 
 ## Entities
 
@@ -55,3 +56,9 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[TF32]] — TensorFloat32, NVIDIA's fast 19-bit format
 - [[FP8]] — 8-bit float, emerging format for maximum speed
 - [[Sparse Network Training]] — 2x speedup via structured sparsity on Ampere+
+- [[Memory Hierarchy (GPU)]] — Complete GPU memory types from registers to global memory
+- [[Memory Coalescing]] — Optimizing global memory access patterns
+- [[Bank Conflicts]] — Avoiding shared memory serialization
+- [[Register Spilling]] — When registers overflow to slow local memory
+- [[Computational Intensity]] — Ratio of compute to memory I/O
+- [[Latency vs Throughput]] — CPU latency-optimized vs GPU throughput-optimized design
