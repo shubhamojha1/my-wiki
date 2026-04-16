@@ -65,3 +65,9 @@ Key concepts: FlashAttention, IO-awareness, tiling, recomputation, block-sparse 
 Ingested source: FlashAttention-2 paper by Tri Dao (2023).
 Created 1 source summary, 2 concept pages.
 Key concepts: FlashAttention-2, Split-Q warp partitioning, sequence-length parallelization.
+
+## [2026-04-17] ingest | FlashAttention-3: Fast and Accurate Attention with Asynchrony
+
+Ingested source: FlashAttention-3 paper by Shah et al. (2024).
+Created 1 source summary, 4 concept pages.
+Key concepts: FlashAttention-3, warp specialization, GEMM-softmax overlap, FP8 attention with block quantization.

@@ -21,6 +21,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[CS 179: Synchronization and ILP - Lecture 5]] — CUDA synchronization, atomic operations, ILP, warp scheduler, occupancy, floating point precision
 - [[FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness]] — Stanford paper: IO-aware exact attention with tiling and recomputation, 3-7x speedup
 - [[FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning]] — Tri Dao 2023: 2x faster than FlashAttention, 73% theoretical max, Split-Q warp partitioning
+- [[FlashAttention-3: Fast and Accurate Attention with Asynchrony and Low-precision]] — Tri Dao 2024: 740 TFLOPs/s (75% util), FP8 ~1.2 PFLOPs/s, warp specialization, GEMM-softmax overlap
 
 ## Entities
 
@@ -79,3 +80,6 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Block-Sparse Attention]] — Approximate attention via structured sparsity
 - [[FlashAttention-2]] — Improved algorithm: Split-Q, sequence parallelization, reduced non-matmul FLOPs
 - [[Split-Q]] — Warp partitioning scheme that eliminates synchronization overhead
+- [[Warp Specialization]] — Producer-consumer asynchrony exploiting TMA and WGMMA
+- [[GEMM-Softmax Overlap]] — Pingpong scheduling to hide softmax latency under matmul
+- [[FP8 Attention]] — Low-precision attention with block quantization and incoherent processing
