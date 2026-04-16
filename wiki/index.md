@@ -14,6 +14,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Kafka: A Distributed Messaging System for Log Processing]] — Summary of the original Kafka paper from LinkedIn (2011)
 - [[Language Models are Few-Shot Learners (GPT-3)]] — The GPT-3 paper demonstrating scaling improves few-shot learning (2020)
 - [[CS 179: Introduction to GPU Programming - Lecture 1]] — Caltech course intro covering GPU architecture, CUDA, and parallel computing fundamentals
+- [[CS 179: Intro to SIMD and GPU Internals - Lecture 2]] — GPU internals: SIMD vs SIMT, thread hierarchy, warp divergence, streaming multiprocessors
 
 ## Entities
 
@@ -32,3 +33,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Emergent Abilities]] — Capabilities that appear at scale without explicit training
 - [[GPU Computing]] — Using GPUs for general-purpose parallel computation
 - [[Kernel (GPU)]] — Parallel functions that execute across many GPU threads
+- [[SIMD]] — Single Instruction, Multiple Data vector processing
+- [[SIMT]] — Single Instruction, Multiple Threads (CUDA model)
+- [[Streaming Multiprocessor]] — GPU processing unit that executes warps
+- [[Warp Divergence]] — Performance issue when threads in a warp branch differently

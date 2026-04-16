@@ -19,3 +19,9 @@ Key concepts: few-shot learning, in-context learning, emergent abilities.
 Ingested source: Caltech CS 179 Lecture 1 (2026) covering GPU architecture and CUDA.
 Created 1 source summary, 1 entity page, 2 concept pages.
 Key concepts: GPU computing, kernel functions, CPU vs GPU architecture, thread indexing.
+
+## [2026-04-16] ingest | CS 179: Intro to SIMD and GPU Internals - Lecture 2
+
+Ingested source: Caltech CS 179 Lecture 2 (2026) covering GPU hardware internals.
+Created 1 source summary, 4 concept pages.
+Key concepts: SIMD vs SIMT, thread hierarchy, warp divergence, streaming multiprocessors.
