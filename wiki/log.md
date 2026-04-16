@@ -31,3 +31,7 @@ Key concepts: SIMD vs SIMT, thread hierarchy, warp divergence, streaming multipr
 Ingested source: CS 179 Recitation 1 (2025) covering GPU hardware and prefix sum.
 Created 1 source summary, 1 concept page.
 Key concepts: prefix sum (scan), RTX 5090 Blackwell architecture.
+
+## [2026-04-16] query | What is In-Context Learning?
+
+Saved answer explaining ICL mechanism, few-shot relation, and scaling behavior.

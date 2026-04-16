@@ -32,6 +32,10 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Few-Shot Learning]] — Paradigm where models learn from examples in the prompt without fine-tuning
 - [[In-Context Learning]] — Mechanism enabling few-shot learning via attention to examples
 - [[Emergent Abilities]] — Capabilities that appear at scale without explicit training
+
+## Queries
+
+- [[What is In-Context Learning?]] — How LLMs learn from prompt examples without training
 - [[GPU Computing]] — Using GPUs for general-purpose parallel computation
 - [[Kernel (GPU)]] — Parallel functions that execute across many GPU threads
 - [[SIMD]] — Single Instruction, Multiple Data vector processing
