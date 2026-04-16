@@ -53,3 +53,9 @@ Key concepts: Memory hierarchy, coalescing, bank conflicts, register spilling, c
 Ingested source: CS 179 Lecture 5 (2026) covering synchronization and ILP.
 Created 1 source summary, 8 concept pages.
 Key concepts: CUDA synchronization, atomic operations, instruction dependencies, ILP, warp scheduler, occupancy, floating point precision.
+
+## [2026-04-17] ingest | FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness
+
+Ingested source: FlashAttention paper by Dao et al. (Stanford, 2022).
+Created 1 source summary, 5 concept pages.
+Key concepts: FlashAttention, IO-awareness, tiling, recomputation, block-sparse attention.

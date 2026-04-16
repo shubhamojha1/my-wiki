@@ -19,6 +19,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Best GPUs for Deep Learning in 2023]] — Tim Dettmers' comprehensive guide on GPU specs, Tensor Cores, precision formats, and recommendations
 - [[CS 179: GPU Memory Systems - Lecture 4]] — GPU memory hierarchy, coalescing, bank conflicts, register spilling, computational intensity
 - [[CS 179: Synchronization and ILP - Lecture 5]] — CUDA synchronization, atomic operations, ILP, warp scheduler, occupancy, floating point precision
+- [[FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness]] — Stanford paper: IO-aware exact attention with tiling and recomputation, 3-7x speedup
 
 ## Entities
 
@@ -70,3 +71,8 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Warp Scheduler]] — Hardware latency hiding via rapid warp switching
 - [[Occupancy]] — Active warps ratio for latency hiding
 - [[Floating Point Precision]] — Numerical accuracy, associativity, and FP16/BF16 stability
+- [[FlashAttention]] — IO-aware exact attention via tiling and recomputation
+- [[IO-Awareness]] — Algorithm design accounting for memory hierarchy
+- [[Tiling]] — Block-based computation for fast memory
+- [[Recomputation]] — Trading compute for memory via gradient checkpointing
+- [[Block-Sparse Attention]] — Approximate attention via structured sparsity
