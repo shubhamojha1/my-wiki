@@ -18,6 +18,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[CS179 Recitation 1 - GPU Overview and Prefix Sum]] — Recitation covering RTX 5090, prefix sum algorithm, VS Code remote setup
 - [[Best GPUs for Deep Learning in 2023]] — Tim Dettmers' comprehensive guide on GPU specs, Tensor Cores, precision formats, and recommendations
 - [[CS 179: GPU Memory Systems - Lecture 4]] — GPU memory hierarchy, coalescing, bank conflicts, register spilling, computational intensity
+- [[CS 179: Synchronization and ILP - Lecture 5]] — CUDA synchronization, atomic operations, ILP, warp scheduler, occupancy, floating point precision
 
 ## Entities
 
@@ -62,3 +63,10 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Register Spilling]] — When registers overflow to slow local memory
 - [[Computational Intensity]] — Ratio of compute to memory I/O
 - [[Latency vs Throughput]] — CPU latency-optimized vs GPU throughput-optimized design
+- [[CUDA Synchronization]] — Block-level barriers (__syncthreads) and deadlock prevention
+- [[Atomic Operations]] — CUDA atomic intrinsics (atomicAdd, atomicCAS) for fine-grained sync
+- [[Instruction Dependencies]] — Sequential constraints that limit parallelism
+- [[ILP]] — Instruction-level parallelism to hide latency
+- [[Warp Scheduler]] — Hardware latency hiding via rapid warp switching
+- [[Occupancy]] — Active warps ratio for latency hiding
+- [[Floating Point Precision]] — Numerical accuracy, associativity, and FP16/BF16 stability

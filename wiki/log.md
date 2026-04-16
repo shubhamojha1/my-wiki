@@ -47,3 +47,9 @@ Key concepts: Tensor Cores, memory bandwidth, precision formats (BF16/TF32/FP8),
 Ingested source: CS 179 Lecture 4 (2026) covering GPU memory systems.
 Created 1 source summary, 6 concept pages.
 Key concepts: Memory hierarchy, coalescing, bank conflicts, register spilling, computational intensity, latency vs throughput.
+
+## [2026-04-17] ingest | CS 179: Synchronization and ILP - Lecture 5
+
+Ingested source: CS 179 Lecture 5 (2026) covering synchronization and ILP.
+Created 1 source summary, 8 concept pages.
+Key concepts: CUDA synchronization, atomic operations, instruction dependencies, ILP, warp scheduler, occupancy, floating point precision.
