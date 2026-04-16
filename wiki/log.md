@@ -59,3 +59,9 @@ Key concepts: CUDA synchronization, atomic operations, instruction dependencies,
 Ingested source: FlashAttention paper by Dao et al. (Stanford, 2022).
 Created 1 source summary, 5 concept pages.
 Key concepts: FlashAttention, IO-awareness, tiling, recomputation, block-sparse attention.
+
+## [2026-04-17] ingest | FlashAttention-2: Faster Attention with Better Parallelism
+
+Ingested source: FlashAttention-2 paper by Tri Dao (2023).
+Created 1 source summary, 2 concept pages.
+Key concepts: FlashAttention-2, Split-Q warp partitioning, sequence-length parallelization.

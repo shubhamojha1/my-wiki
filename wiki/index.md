@@ -20,6 +20,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[CS 179: GPU Memory Systems - Lecture 4]] — GPU memory hierarchy, coalescing, bank conflicts, register spilling, computational intensity
 - [[CS 179: Synchronization and ILP - Lecture 5]] — CUDA synchronization, atomic operations, ILP, warp scheduler, occupancy, floating point precision
 - [[FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness]] — Stanford paper: IO-aware exact attention with tiling and recomputation, 3-7x speedup
+- [[FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning]] — Tri Dao 2023: 2x faster than FlashAttention, 73% theoretical max, Split-Q warp partitioning
 
 ## Entities
 
@@ -76,3 +77,5 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Tiling]] — Block-based computation for fast memory
 - [[Recomputation]] — Trading compute for memory via gradient checkpointing
 - [[Block-Sparse Attention]] — Approximate attention via structured sparsity
+- [[FlashAttention-2]] — Improved algorithm: Split-Q, sequence parallelization, reduced non-matmul FLOPs
+- [[Split-Q]] — Warp partitioning scheme that eliminates synchronization overhead
