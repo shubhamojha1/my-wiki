@@ -35,3 +35,9 @@ Key concepts: prefix sum (scan), RTX 5090 Blackwell architecture.
 ## [2026-04-16] query | What is In-Context Learning?
 
 Saved answer explaining ICL mechanism, few-shot relation, and scaling behavior.
+
+## [2026-04-16] ingest | Best GPUs for Deep Learning in 2023
+
+Ingested source: Tim Dettmers' GPU guide (2023).
+Created 1 source summary, 4 entity pages, 8 concept pages.
+Key concepts: Tensor Cores, memory bandwidth, precision formats (BF16/TF32/FP8), sparse training, L2 cache.

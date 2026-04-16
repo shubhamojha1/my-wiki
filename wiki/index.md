@@ -16,6 +16,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[CS 179: Introduction to GPU Programming - Lecture 1]] — Caltech course intro covering GPU architecture, CUDA, and parallel computing fundamentals
 - [[CS 179: Intro to SIMD and GPU Internals - Lecture 2]] — GPU internals: SIMD vs SIMT, thread hierarchy, warp divergence, streaming multiprocessors
 - [[CS179 Recitation 1 - GPU Overview and Prefix Sum]] — Recitation covering RTX 5090, prefix sum algorithm, VS Code remote setup
+- [[Best GPUs for Deep Learning in 2023]] — Tim Dettmers' comprehensive guide on GPU specs, Tensor Cores, precision formats, and recommendations
 
 ## Entities
 
@@ -23,6 +24,10 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[GPT-3]] — 175B parameter language model from OpenAI that pioneered few-shot learning
 - [[OpenAI]] — AI research company that built GPT-3
 - [[CUDA]] — NVIDIA's parallel computing platform for GPU programming
+- [[H100]] — Hopper architecture data center GPU, fastest for deep learning
+- [[A100]] — Ampere data center GPU, workhorse for enterprise deep learning
+- [[RTX 4090]] — Ada Lovelace consumer flagship, best single-GPU for individuals
+- [[RTX 3090]] — Ampere consumer flagship, popular for 24GB VRAM
 
 ## Concepts
 
@@ -43,3 +48,10 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Streaming Multiprocessor]] — GPU processing unit that executes warps
 - [[Warp Divergence]] — Performance issue when threads in a warp branch differently
 - [[Prefix Sum]] — Parallel algorithm for computing running sums (scan operation)
+- [[Tensor Cores]] — Specialized GPU hardware for efficient matrix multiplication
+- [[Memory Bandwidth]] — Critical metric for feeding data to Tensor Cores
+- [[L2 Cache]] — On-chip GPU cache that speeds up memory access
+- [[BF16]] — BrainFloat16, stable 16-bit format for deep learning
+- [[TF32]] — TensorFloat32, NVIDIA's fast 19-bit format
+- [[FP8]] — 8-bit float, emerging format for maximum speed
+- [[Sparse Network Training]] — 2x speedup via structured sparsity on Ampere+
