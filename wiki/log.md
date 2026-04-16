@@ -25,3 +25,9 @@ Key concepts: GPU computing, kernel functions, CPU vs GPU architecture, thread i
 Ingested source: Caltech CS 179 Lecture 2 (2026) covering GPU hardware internals.
 Created 1 source summary, 4 concept pages.
 Key concepts: SIMD vs SIMT, thread hierarchy, warp divergence, streaming multiprocessors.
+
+## [2026-04-16] ingest | CS179 Recitation 1 - GPU Overview and Prefix Sum
+
+Ingested source: CS 179 Recitation 1 (2025) covering GPU hardware and prefix sum.
+Created 1 source summary, 1 concept page.
+Key concepts: prefix sum (scan), RTX 5090 Blackwell architecture.
