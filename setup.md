@@ -242,7 +242,7 @@ This wiki is about: [YOUR TOPIC HERE]
 
 ## Step 7: First Ingest
 
-Drop a source into `raw/` — clip an article with Obsidian Web Clipper, paste a paper as `.md`, or copy any text file. Then tell OpenCode:
+Drop a source into `raw/` — clip an article with Obsidian Web Clipper, paste a paper as `.md`, or copy any text file. Then, tell OpenCode:
 
 ```
 Ingest raw/my-first-source.md — follow the ingest workflow from AGENTS.md.
