@@ -77,3 +77,10 @@ Key concepts: FlashAttention-2, Split-Q warp partitioning, sequence-length paral
 Ingested source: FlashAttention-3 paper by Shah et al. (2024).
 Created 1 source summary, 4 concept pages.
 Key concepts: FlashAttention-3, warp specialization, GEMM-softmax overlap, FP8 attention with block quantization.
+
+## [2026-04-19] ingest | HALP: Heuristic Aided Learned Preference Eviction Policy for YouTube CDN
+
+Ingested source: Google paper (USENIX NSDI 2024).
+Created 1 source summary, 3 concept pages, 2 entity pages.
+Key concepts: learned cache eviction, pairwise learning to rank, impact distribution analysis.
+Key entities: HALP, LRB, ARC.
