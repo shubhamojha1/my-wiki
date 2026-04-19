@@ -13,6 +13,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 
 - [[Kafka: A Distributed Messaging System for Log Processing]] — Summary of the original Kafka paper from LinkedIn (2011)
 - [[Language Models are Few-Shot Learners (GPT-3)]] — The GPT-3 paper demonstrating scaling improves few-shot learning (2020)
+- [[Distributed Systems: for fun and profit]] — Mixu's comprehensive intro to distributed systems fundamentals
 - [[CS 179: Introduction to GPU Programming - Lecture 1]] — Caltech course intro covering GPU architecture, CUDA, and parallel computing fundamentals
 - [[CS 179: Intro to SIMD and GPU Internals - Lecture 2]] — GPU internals: SIMD vs SIMT, thread hierarchy, warp divergence, streaming multiprocessors
 - [[CS179 Recitation 1 - GPU Overview and Prefix Sum]] — Recitation covering RTX 5090, prefix sum algorithm, VS Code remote setup
@@ -26,6 +27,11 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 ## Entities
 
 - [[Apache Kafka]] — The open-source distributed messaging system that evolved from the paper
+- [[Dynamo]] — Amazon's highly available key-value store (eventual consistency)
+- [[Paxos]] — Classic consensus algorithm (Lamport)
+- [[Raft]] — Understandable consensus algorithm (Ongaro & Ousterhout 2013)
+- [[ZAB]] — Zookeeper Atomic Broadcast protocol
+- [[Two-Phase Commit]] — Distributed atomic commit protocol
 - [[GPT-3]] — 175B parameter language model from OpenAI that pioneered few-shot learning
 - [[OpenAI]] — AI research company that built GPT-3
 - [[CUDA]] — NVIDIA's parallel computing platform for GPU programming
@@ -43,7 +49,53 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[In-Context Learning]] — Mechanism enabling few-shot learning via attention to examples
 - [[Emergent Abilities]] — Capabilities that appear at scale without explicit training
 
-## Queries
+## Distributed Systems Concepts
+
+### Properties & Goals
+
+- [[Scalability]] — Ability to handle growing work without degradation
+- [[Availability]] — Proportion of time system is functioning
+- [[Latency]] — Time between action and visible impact
+- [[Fault Tolerance]] — Well-defined behavior when faults occur
+- [[Partitioning]] — Dividing dataset across nodes
+- [[Replication (Distributed)]] — Copying data across multiple machines
+
+### Models & Tradeoffs
+
+- [[System Model]] — Assumptions about environment/facilities
+- [[Synchronous System Model]] — Known timing bounds
+- [[Asynchronous System Model]] — No timing guarantees
+- [[CAP Theorem]] — Consistency/Availability/Partition tradeoff
+- [[FLP Impossibility Result]] — Consensus impossible in async with failures
+- [[Consistency Model]] — Contract between programmer and system
+
+### Time & Ordering
+
+- [[Total Order]] — Exact order for every element
+- [[Partial Order]] — Natural distributed systems state
+- [[Lamport Clocks]] — Logical ordering without physical clocks
+- [[Vector Clocks]] — Accurate causal ordering
+- [[Failure Detector]] — Timeout-based crash detection
+- [[Epoch]] — Logical time period for consensus
+
+### Replication & Consensus
+
+- [[Synchronous Replication]] — Wait for all replicas
+- [[Asynchronous Replication]] — Replicate later
+- [[Primary-Backup Replication]] — Single master replication
+- [[Quorum (Distributed)]] — Agreement from subset of nodes
+- [[Network Partition]] — Network link failure
+- [[Consensus Problem]] — Getting all nodes to agree
+
+### Eventual & Weak Consistency
+
+- [[Eventual Consistency]] — Replicas eventually agree
+- [[CRDT]] — Convergent Replicated Data Types (guaranteed convergence)
+- [[CALM Theorem]] — Monotonic programs are eventually consistent
+- [[Bloom Language]] — Language for disorderly programming
+- [[Gossip Protocol]] — Probabilistic replica sync
+- [[Merkle Tree]] — Hierarchical hashes for efficient comparison
+- [[Consistent Hashing]] — Key-to-node mapping that minimizes remapping
 
 - [[What is In-Context Learning?]] — How LLMs learn from prompt examples without training
 - [[GPU Computing]] — Using GPUs for general-purpose parallel computation

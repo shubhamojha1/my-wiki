@@ -18,6 +18,12 @@ Key concepts: few-shot learning, in-context learning, emergent abilities.
 
 Ingested source: Caltech CS 179 Lecture 1 (2026) covering GPU architecture and CUDA.
 Created 1 source summary, 1 entity page, 2 concept pages.
+
+## [2026-04-19] ingest | Distributed Systems: for fun and profit
+
+Ingested source: Mixu's distributed systems book (2013).
+Created 1 source summary, 5 entity pages, 25+ concept pages.
+Key concepts: scalability, availability, CAP, FLP, partitions, replication, consensus, eventual consistency, CRDTs, CALM.
 Key concepts: GPU computing, kernel functions, CPU vs GPU architecture, thread indexing.
 
 ## [2026-04-16] ingest | CS 179: Intro to SIMD and GPU Internals - Lecture 2
