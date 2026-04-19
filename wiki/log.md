@@ -84,3 +84,9 @@ Ingested source: Google paper (USENIX NSDI 2024).
 Created 1 source summary, 3 concept pages, 2 entity pages.
 Key concepts: learned cache eviction, pairwise learning to rank, impact distribution analysis.
 Key entities: HALP, LRB, ARC.
+
+## [2026-04-20] ingest | Redis Cluster: Architecture, Replication, Sharding and Failover
+
+Ingested source: Redis Cluster article by Sajal Jain (2019).
+Created 1 source summary, 2 entity pages, 2 concept pages.
+Key concepts: Redis Cluster, hash slots (16384), failover, Redis Sentinel, master-slave.

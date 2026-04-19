@@ -1,9 +1,13 @@
 ---
 title: "Distributed Systems: for fun and profit"
 type: source
-tags: [distributed-systems, fundamentals, tutorial]
+tags:
+  - distributed-systems
+  - fundamentals
+  - tutorial
 created: 2026-04-19
-sources: []
+sources:
+  - https://book.mixu.net/distsys/single-page.html
 ---
 
 A comprehensive introduction to distributed systems by Mikito Takada (2013). Covers the fundamental concepts needed to understand modern distributed systems like Amazon Dynamo, Google's BigTable/MapReduce, and Apache Hadoop.

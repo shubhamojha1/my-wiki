@@ -28,6 +28,8 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 ## Entities
 
 - [[Apache Kafka]] — The open-source distributed messaging system that evolved from the paper
+- [[Redis]] — In-memory data structure store, used as cache/database
+- [[Redis Cluster]] — Redis distributed implementation with sharding and failover
 - [[Dynamo]] — Amazon's highly available key-value store (eventual consistency)
 - [[Paxos]] — Classic consensus algorithm (Lamport)
 - [[Raft]] — Understandable consensus algorithm (Ongaro & Ousterhout 2013)
@@ -50,6 +52,8 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Distributed Commit Log]] — The append-only, ordered data structure underlying Kafka's architecture
 - [[Pub/Sub Messaging]] — The publish-subscribe pattern that Kafka implements
 - [[Log Aggregation]] — The original use case that motivated Kafka at LinkedIn
+- [[Redis Sentinel]] — Redis monitoring and automatic failover system
+- [[Hash Slot]] — Redis Cluster's 16,384-slot partitioning mechanism
 - [[Few-Shot Learning]] — Paradigm where models learn from examples in the prompt without fine-tuning
 - [[In-Context Learning]] — Mechanism enabling few-shot learning via attention to examples
 - [[Emergent Abilities]] — Capabilities that appear at scale without explicit training
