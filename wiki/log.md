@@ -90,3 +90,7 @@ Key entities: HALP, LRB, ARC.
 Ingested source: Redis Cluster article by Sajal Jain (2019).
 Created 1 source summary, 2 entity pages, 2 concept pages.
 Key concepts: Redis Cluster, hash slots (16384), failover, Redis Sentinel, master-slave.
+
+## [2026-04-21] query | How does YouTube HALP work?
+
+Saved answer to wiki/queries/HALP.md describing HALP's hybrid ML+heuristic cache eviction.

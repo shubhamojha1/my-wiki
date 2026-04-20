@@ -147,3 +147,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Cache Eviction Policy]] — Algorithms for removing data from cache (LRU, LFU, ARC, learned policies)
 - [[Pairwise Learning to Rank]] — Learning ranking via pairwise comparisons
 - [[Impact Distribution Analysis]] — Measuring algorithm impact in noisy production environments
+
+## Queries
+
+- [[How does YouTube HALP work?]] — HALP: hybrid ML + heuristic cache eviction for YouTube CDN
