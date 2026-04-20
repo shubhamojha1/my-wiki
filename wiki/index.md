@@ -24,6 +24,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning]] — Tri Dao 2023: 2x faster than FlashAttention, 73% theoretical max, Split-Q warp partitioning
 - [[FlashAttention-3: Fast and Accurate Attention with Asynchrony and Low-precision]] — Tri Dao 2024: 740 TFLOPs/s (75% util), FP8 ~1.2 PFLOPs/s, warp specialization, GEMM-softmax overlap
 - [[HALP: Heuristic Aided Learned Preference Eviction Policy for YouTube CDN]] — Google: 9.1% byte miss reduction, 1.8% CPU overhead, impact distribution analysis
+- [[Dynamo: Amazon's Highly Available Key-Value Store]] — SOSP 2007: eventual consistency, vector clocks, sloppy quorum, hinted handoff
 
 ## Entities
 
@@ -147,6 +148,8 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Cache Eviction Policy]] — Algorithms for removing data from cache (LRU, LFU, ARC, learned policies)
 - [[Pairwise Learning to Rank]] — Learning ranking via pairwise comparisons
 - [[Impact Distribution Analysis]] — Measuring algorithm impact in noisy production environments
+- [[Sloppy Quorum]] — Quorum variant that skips unavailable nodes
+- [[Hinted Handoff]] — Failure handling: temporarily store replica on another node
 
 ## Queries
 

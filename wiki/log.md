@@ -94,3 +94,10 @@ Key concepts: Redis Cluster, hash slots (16384), failover, Redis Sentinel, maste
 ## [2026-04-21] query | How does YouTube HALP work?
 
 Saved answer to wiki/queries/HALP.md describing HALP's hybrid ML+heuristic cache eviction.
+
+## [2026-04-21] ingest | Dynamo: Amazon's Highly Available Key-Value Store
+
+Ingested source: SOSP 2007 paper (DeCandia et al.).
+Created 1 source summary, 3 new concept pages (Sloppy Quorum, Hinted Handoff).
+Key techniques: consistent hashing, vector clocks, sloppy quorum, hinted handoff, Merkle trees.
+Key concepts: eventual consistency, application-assisted conflict resolution.
