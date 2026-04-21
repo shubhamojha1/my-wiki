@@ -26,6 +26,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[FlashAttention-3: Fast and Accurate Attention with Asynchrony and Low-precision]] — Tri Dao 2024: 740 TFLOPs/s (75% util), FP8 ~1.2 PFLOPs/s, warp specialization, GEMM-softmax overlap
 - [[HALP: Heuristic Aided Learned Preference Eviction Policy for YouTube CDN]] — Google: 9.1% byte miss reduction, 1.8% CPU overhead, impact distribution analysis
 - [[Dynamo: Amazon's Highly Available Key-Value Store]] — SOSP 2007: eventual consistency, vector clocks, sloppy quorum, hinted handoff
+- [[CMU 15-445: Relational Model & Algebra - Lecture 1]] — CMU database systems intro: relational model, relational algebra, SQL fundamentals
 
 ## Entities
 
@@ -39,6 +40,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Two-Phase Commit]] — Distributed atomic commit protocol
 - [[GPT-3]] — 175B parameter language model from OpenAI that pioneered few-shot learning
 - [[OpenAI]] — AI research company that built GPT-3
+- [[Andy Pavlo]] — CMU professor teaching 15-445 Database Systems
 - [[CUDA]] — NVIDIA's parallel computing platform for GPU programming
 - [[H100]] — Hopper architecture data center GPU, fastest for deep learning
 - [[A100]] — Ampere data center GPU, workhorse for enterprise deep learning
@@ -154,6 +156,13 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Impact Distribution Analysis]] — Measuring algorithm impact in noisy production environments
 - [[Sloppy Quorum]] — Quorum variant that skips unavailable nodes
 - [[Hinted Handoff]] — Failure handling: temporarily store replica on another node
+- [[Relational Model]] — Table-based data model with tuples, attributes, and constraints
+- [[Relational Algebra]] — Fundamental query operations: select, project, union, join
+- [[Primary Key]] — Unique identifier for each row in a table
+- [[Foreign Key]] — Reference to primary key in another table
+- [[SQL]] — Declarative query language for relational databases
+- [[Document Database]] — NoSQL stores JSON/BSON documents (MongoDB)
+- [[Vector Database]] — Stores embeddings for nearest-neighbor search
 
 ## Queries
 

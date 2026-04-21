@@ -107,3 +107,9 @@ Key concepts: eventual consistency, application-assisted conflict resolution.
 Ingested source: CS 179 Recitation 2 (2025) covering matrix transpose optimization.
 Created 1 source summary, 3 concept pages.
 Key concepts: matrix transpose, warp, shared memory, bank conflict resolution via padding.
+
+## [2026-04-22] ingest | CMU 15-445: Relational Model & Algebra
+
+Ingested source: CMU 15-445 Lecture 1 (Spring 2026) by Andy Pavlo.
+Created 1 source summary, 1 entity page, 7 concept pages.
+Key concepts: relational model, relational algebra (select/project/union/join), primary key, foreign key, SQL, document/vector databases.
