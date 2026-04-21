@@ -27,6 +27,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[HALP: Heuristic Aided Learned Preference Eviction Policy for YouTube CDN]] — Google: 9.1% byte miss reduction, 1.8% CPU overhead, impact distribution analysis
 - [[Dynamo: Amazon's Highly Available Key-Value Store]] — SOSP 2007: eventual consistency, vector clocks, sloppy quorum, hinted handoff
 - [[CMU 15-445: Relational Model & Algebra - Lecture 1]] — CMU database systems intro: relational model, relational algebra, SQL fundamentals
+- [[CMU 15-445: Modern SQL - Lecture 2]] — Modern SQL: aggregates, GROUP BY, window functions, CTEs, recursive CTEs
 
 ## Entities
 
@@ -163,6 +164,12 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[SQL]] — Declarative query language for relational databases
 - [[Document Database]] — NoSQL stores JSON/BSON documents (MongoDB)
 - [[Vector Database]] — Stores embeddings for nearest-neighbor search
+- [[GROUP BY]] — Partition rows into groups for aggregation
+- [[HAVING]] — Filter groups after aggregation
+- [[Window Function]] — Sliding calculations across related rows
+- [[CTE]] — Common Table Expression: named temporary result set
+- [[Recursive CTE]] — Self-referencing CTE enabling recursion
+- [[Lateral Join]] — Subquery referencing left table columns
 
 ## Queries
 

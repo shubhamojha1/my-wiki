@@ -113,3 +113,9 @@ Key concepts: matrix transpose, warp, shared memory, bank conflict resolution vi
 Ingested source: CMU 15-445 Lecture 1 (Spring 2026) by Andy Pavlo.
 Created 1 source summary, 1 entity page, 7 concept pages.
 Key concepts: relational model, relational algebra (select/project/union/join), primary key, foreign key, SQL, document/vector databases.
+
+## [2026-04-22] ingest | CMU 15-445: Modern SQL
+
+Ingested source: CMU 15-445 Lecture 2 (Spring 2026) by Andy Pavlo.
+Created 1 source summary, 6 concept pages.
+Key concepts: aggregates, GROUP BY, HAVING, window functions, CTEs, recursive CTEs, lateral joins.
