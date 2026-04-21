@@ -101,3 +101,9 @@ Ingested source: SOSP 2007 paper (DeCandia et al.).
 Created 1 source summary, 3 new concept pages (Sloppy Quorum, Hinted Handoff).
 Key techniques: consistent hashing, vector clocks, sloppy quorum, hinted handoff, Merkle trees.
 Key concepts: eventual consistency, application-assisted conflict resolution.
+
+## [2026-04-22] ingest | CS 179: Matrix Transpose Optimization - Lecture 6
+
+Ingested source: CS 179 Recitation 2 (2025) covering matrix transpose optimization.
+Created 1 source summary, 3 concept pages.
+Key concepts: matrix transpose, warp, shared memory, bank conflict resolution via padding.

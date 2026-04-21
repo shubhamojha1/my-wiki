@@ -20,6 +20,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Best GPUs for Deep Learning in 2023]] — Tim Dettmers' comprehensive guide on GPU specs, Tensor Cores, precision formats, and recommendations
 - [[CS 179: GPU Memory Systems - Lecture 4]] — GPU memory hierarchy, coalescing, bank conflicts, register spilling, computational intensity
 - [[CS 179: Synchronization and ILP - Lecture 5]] — CUDA synchronization, atomic operations, ILP, warp scheduler, occupancy, floating point precision
+- [[CS 179: Matrix Transpose Optimization - Lecture 6]] — GPU matrix transpose using tiling, shared memory, and coalesced access
 - [[FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness]] — Stanford paper: IO-aware exact attention with tiling and recomputation, 3-7x speedup
 - [[FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning]] — Tri Dao 2023: 2x faster than FlashAttention, 73% theoretical max, Split-Q warp partitioning
 - [[FlashAttention-3: Fast and Accurate Attention with Asynchrony and Low-precision]] — Tri Dao 2024: 740 TFLOPs/s (75% util), FP8 ~1.2 PFLOPs/s, warp specialization, GEMM-softmax overlap
@@ -133,10 +134,13 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Instruction Dependencies]] — Sequential constraints that limit parallelism
 - [[ILP]] — Instruction-level parallelism to hide latency
 - [[Warp Scheduler]] — Hardware latency hiding via rapid warp switching
+- [[Warp (CUDA)]] — Group of 32 threads executing in lockstep
+- [[Shared Memory (GPU)]] — Fast on-chip block-level memory with bank structure
 - [[Occupancy]] — Active warps ratio for latency hiding
 - [[Floating Point Precision]] — Numerical accuracy, associativity, and FP16/BF16 stability
 - [[FlashAttention]] — IO-aware exact attention via tiling and recomputation
 - [[IO-Awareness]] — Algorithm design accounting for memory hierarchy
+- [[Matrix Transpose (GPU)]] — Optimizing matrix transpose to match memory copy bandwidth
 - [[Tiling]] — Block-based computation for fast memory
 - [[Recomputation]] — Trading compute for memory via gradient checkpointing
 - [[Block-Sparse Attention]] — Approximate attention via structured sparsity
