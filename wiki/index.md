@@ -35,6 +35,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[CMU 15-445: Hash Tables - Lecture 7]] — Static and dynamic hash tables: linear probe, chained, extendible, linear hashing
 - [[CMU 15-445: B+Tree Indexes - Lecture 8]] — B+Tree properties, node structure, insert/delete, composite indexes
 - [[CMU 15-445: Indexes & Filters II - Lecture 9]] — Advanced index topics: inverted index, vector index, partial/covering indexes
+- [[CMU 15-445: Index Concurrency Control - Lecture 10]] — Latches vs locks, reader-writer latch, latch crabbing protocol
 
 ## Entities
 
@@ -212,6 +213,9 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Vector Index]] — For embeddings and nearest-neighbor search
 - [[Partial Index]] — Subset of table
 - [[Covering Index]] — Query satisfied from index only
+- [[Latch]] — Short-duration lock for data structures
+- [[Reader-Writer Latch]] — Concurrent read/write lock
+- [[Latch Crabbing]] — B+Tree concurrency protocol
 
 ## Queries
 

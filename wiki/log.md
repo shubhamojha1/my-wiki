@@ -161,3 +161,9 @@ Key concepts: B+Tree, clustered index, secondary index, index scan.
 Ingested source: CMU 15-445 Lecture 9 (Spring 2026) by Andy Pavlo.
 Created 1 source summary, 4 concept pages.
 Key concepts: inverted index, vector index, partial index, covering index.
+
+## [2026-04-23] ingest | CMU 15-445: Index Concurrency Control
+
+Ingested source: CMU 15-445 Lecture 10 (Spring 2026) by Jignesh Patel.
+Created 1 source summary, 3 concept pages.
+Key concepts: latch vs lock, reader-writer latch, latch crabbing.
