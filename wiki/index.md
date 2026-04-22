@@ -31,6 +31,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[CMU 15-445: Database Storage I - Lecture 3]] — Disk-oriented DBMS architecture, database pages, heap files, storage manager, buffer pool
 - [[CMU 15-445: Memory Management & Buffer Pools - Lecture 4]] — Buffer pool organization, page table, replacement policies, memory-mapped I/O
 - [[CMU 15-445: Database Storage II - Lecture 5]] — Slotted pages, index-organized tables, log-structured storage, B+Tree
+- [[CMU 15-445: Storage Models & Compression - Lecture 6]] — Row stores vs column stores, OLTP vs OLAP, compression techniques
 
 ## Entities
 
@@ -189,6 +190,12 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[B+Tree]] — Self-balancing tree index structure
 - [[Log-Structured Storage]] — Append-only storage with compaction
 - [[Tuple]] — Row data stored in pages
+- [[Row Store]] — N-ary storage (row-oriented)
+- [[Column Store]] — Decomposition storage (column-oriented)
+- [[OLTP]] — Online transaction processing (row store workload)
+- [[OLAP]] — Online analytical processing (column store workload)
+- [[Data Compression]] — Reducing storage size
+- [[Run-Length Encoding]] — Compression for repeated values
 
 ## Queries
 
