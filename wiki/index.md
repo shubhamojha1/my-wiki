@@ -67,6 +67,13 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 
 ## Concepts
 
+- [[Graph Neural Network]] — Deep learning on graph-structured data
+- [[Message Passing]] — Core GNN aggregation mechanism
+- [[Graph Convolution]] — Convolution on graphs (spectral/spatial)
+- [[Graph Attention]] — Attention mechanism on graphs
+
+## Concepts (Distributed Systems)
+
 - [[Distributed Commit Log]] — The append-only, ordered data structure underlying Kafka's architecture
 - [[Pub/Sub Messaging]] — The publish-subscribe pattern that Kafka implements
 - [[Log Aggregation]] — The original use case that motivated Kafka at LinkedIn
