@@ -32,6 +32,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[CMU 15-445: Memory Management & Buffer Pools - Lecture 4]] — Buffer pool organization, page table, replacement policies, memory-mapped I/O
 - [[CMU 15-445: Database Storage II - Lecture 5]] — Slotted pages, index-organized tables, log-structured storage, B+Tree
 - [[CMU 15-445: Storage Models & Compression - Lecture 6]] — Row stores vs column stores, OLTP vs OLAP, compression techniques
+- [[CMU 15-445: Hash Tables - Lecture 7]] — Static and dynamic hash tables: linear probe, chained, extendible, linear hashing
 
 ## Entities
 
@@ -196,6 +197,12 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[OLAP]] — Online analytical processing (column store workload)
 - [[Data Compression]] — Reducing storage size
 - [[Run-Length Encoding]] — Compression for repeated values
+- [[Hash Table]] — Associative array using hash function
+- [[Hash Function]] — Maps keys to array indices
+- [[Linear Probe Hashing]] — Static hash with collision probing
+- [[Chained Hashing]] — Bucket-linked list hash table
+- [[Extendible Hashing]] — Dynamic hash with directory
+- [[Linear Hashing]] — Dynamic hash with split pointer
 
 ## Queries
 
