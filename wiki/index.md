@@ -30,6 +30,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[CMU 15-445: Modern SQL - Lecture 2]] — Modern SQL: aggregates, GROUP BY, window functions, CTEs, recursive CTEs
 - [[CMU 15-445: Database Storage I - Lecture 3]] — Disk-oriented DBMS architecture, database pages, heap files, storage manager, buffer pool
 - [[CMU 15-445: Memory Management & Buffer Pools - Lecture 4]] — Buffer pool organization, page table, replacement policies, memory-mapped I/O
+- [[CMU 15-445: Database Storage II - Lecture 5]] — Slotted pages, index-organized tables, log-structured storage, B+Tree
 
 ## Entities
 
@@ -183,6 +184,11 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Dirty Page]] — Modified page not yet written to disk
 - [[LRU]] — Least Recently Used cache eviction policy
 - [[Clock Replacement]] — Efficient LRU approximation
+- [[Slotted Page]] — Page with slot array for variable-length tuples
+- [[Index-Organized Table]] — B+Tree with data in leaf nodes
+- [[B+Tree]] — Self-balancing tree index structure
+- [[Log-Structured Storage]] — Append-only storage with compaction
+- [[Tuple]] — Row data stored in pages
 
 ## Queries
 
