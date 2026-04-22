@@ -179,3 +179,9 @@ Key concepts: query plan, iterator model, sequential scan.
 Ingested source: CMU 15-445 Lecture 12 (Spring 2026) by Andy Pavlo.
 Created 1 source summary, 3 concept pages.
 Key concepts: nested loop join, sort-merge join, hash join.
+
+## [2026-04-23] ingest | A Survey of Deep Learning: From Activations to Transformers
+
+Ingested source: arXiv paper by Schneider & Vlachos (2023/2024).
+Created 1 source summary, 4 concept pages.
+Key concepts: transformer, self-attention, vision transformer, self-supervised learning.

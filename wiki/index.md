@@ -38,6 +38,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[CMU 15-445: Index Concurrency Control - Lecture 10]] — Latches vs locks, reader-writer latch, latch crabbing protocol
 - [[CMU 15-445: Query Processing - Lecture 11]] — Query plans, execution models, sequential scan, index scan
 - [[CMU 15-445: Join Algorithms - Lecture 12]] — Nested loop, sort-merge, hash join algorithms
+- [[A Survey of Deep Learning: From Activations to Transformers]] — Deep learning survey: activations, normalization, transformers, self-supervised learning
 
 ## Entities
 
@@ -224,6 +225,10 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Nested Loop Join]] — Simple nested iteration join
 - [[Sort-Merge Join]] — Sort and merge approach
 - [[Hash Join]] — Hash-based matching
+- [[Transformer]] — Attention-based deep learning architecture
+- [[Self-Attention]] — Core transformer mechanism
+- [[Vision Transformer]] — Transformers for images
+- [[Self-Supervised Learning]] — Pretraining paradigm
 
 ## Queries
 
