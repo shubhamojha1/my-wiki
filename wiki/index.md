@@ -63,6 +63,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[ARC]] — Adaptive Replacement Cache: balances recency and frequency
 - [[Adaptive-TinyLFU]] — Frequency-based cache algorithm
 - [[B-LRU]] — LRU with Bloom filter admission control
+- [[BERT]] — Bidirectional encoder transformer from Google
 
 ## Concepts
 
@@ -229,6 +230,12 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Self-Attention]] — Core transformer mechanism
 - [[Vision Transformer]] — Transformers for images
 - [[Self-Supervised Learning]] — Pretraining paradigm
+- [[Activation Function]] — ReLU, GELU, SwiGLU
+- [[Normalization]] — BatchNorm, LayerNorm, RMSNorm
+- [[Skip Connection]] — Residual connections
+- [[Multi-Head Attention]] — Parallel attention heads
+- [[Positional Encoding]] — Position information in transformers
+- [[BERT]] — Bidirectional encoder transformer
 
 ## Queries
 

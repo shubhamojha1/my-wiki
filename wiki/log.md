@@ -183,5 +183,6 @@ Key concepts: nested loop join, sort-merge join, hash join.
 ## [2026-04-23] ingest | A Survey of Deep Learning: From Activations to Transformers
 
 Ingested source: arXiv paper by Schneider & Vlachos (2023/2024).
-Created 1 source summary, 4 concept pages.
+Created 1 source summary, 9 concept pages, 1 entity page.
 Key concepts: transformer, self-attention, vision transformer, self-supervised learning.
+Additional: activation functions, normalization, skip connections, multi-head attention, positional encoding.
