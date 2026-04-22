@@ -167,3 +167,9 @@ Key concepts: inverted index, vector index, partial index, covering index.
 Ingested source: CMU 15-445 Lecture 10 (Spring 2026) by Jignesh Patel.
 Created 1 source summary, 3 concept pages.
 Key concepts: latch vs lock, reader-writer latch, latch crabbing.
+
+## [2026-04-23] ingest | CMU 15-445: Query Processing
+
+Ingested source: CMU 15-445 Lecture 11 (Spring 2026) by Andy Pavlo.
+Created 1 source summary, 3 concept pages.
+Key concepts: query plan, iterator model, sequential scan.
