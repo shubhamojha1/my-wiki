@@ -119,3 +119,9 @@ Key concepts: relational model, relational algebra (select/project/union/join), 
 Ingested source: CMU 15-445 Lecture 2 (Spring 2026) by Andy Pavlo.
 Created 1 source summary, 6 concept pages.
 Key concepts: aggregates, GROUP BY, HAVING, window functions, CTEs, recursive CTEs, lateral joins.
+
+## [2026-04-23] ingest | CMU 15-445: Database Storage I
+
+Ingested source: CMU 15-445 Lecture 3 (Spring 2026) by Andy Pavlo.
+Created 1 source summary, 1 entity page, 5 concept pages.
+Key concepts: disk-oriented DBMS, database pages, heap files, storage manager, buffer pool.

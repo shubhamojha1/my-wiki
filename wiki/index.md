@@ -28,6 +28,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Dynamo: Amazon's Highly Available Key-Value Store]] — SOSP 2007: eventual consistency, vector clocks, sloppy quorum, hinted handoff
 - [[CMU 15-445: Relational Model & Algebra - Lecture 1]] — CMU database systems intro: relational model, relational algebra, SQL fundamentals
 - [[CMU 15-445: Modern SQL - Lecture 2]] — Modern SQL: aggregates, GROUP BY, window functions, CTEs, recursive CTEs
+- [[CMU 15-445: Database Storage I - Lecture 3]] — Disk-oriented DBMS architecture, database pages, heap files, storage manager, buffer pool
 
 ## Entities
 
@@ -42,6 +43,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[GPT-3]] — 175B parameter language model from OpenAI that pioneered few-shot learning
 - [[OpenAI]] — AI research company that built GPT-3
 - [[Andy Pavlo]] — CMU professor teaching 15-445 Database Systems
+- [[SQLite]] — Single-file embedded database using heap file organization
 - [[CUDA]] — NVIDIA's parallel computing platform for GPU programming
 - [[H100]] — Hopper architecture data center GPU, fastest for deep learning
 - [[A100]] — Ampere data center GPU, workhorse for enterprise deep learning
@@ -170,6 +172,11 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[CTE]] — Common Table Expression: named temporary result set
 - [[Recursive CTE]] — Self-referencing CTE enabling recursion
 - [[Lateral Join]] — Subquery referencing left table columns
+- [[Database Page]] — Fixed-size block containing tuples or index data
+- [[Heap File]] — Unordered collection of pages
+- [[Storage Manager]] — DBMS component managing disk I/O
+- [[Buffer Pool]] — Memory area caching disk pages
+- [[Disk-Oriented DBMS]] — Architecture assuming disk is primary storage
 
 ## Queries
 
