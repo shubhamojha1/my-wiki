@@ -173,3 +173,9 @@ Key concepts: latch vs lock, reader-writer latch, latch crabbing.
 Ingested source: CMU 15-445 Lecture 11 (Spring 2026) by Andy Pavlo.
 Created 1 source summary, 3 concept pages.
 Key concepts: query plan, iterator model, sequential scan.
+
+## [2026-04-23] ingest | CMU 15-445: Join Algorithms
+
+Ingested source: CMU 15-445 Lecture 12 (Spring 2026) by Andy Pavlo.
+Created 1 source summary, 3 concept pages.
+Key concepts: nested loop join, sort-merge join, hash join.
