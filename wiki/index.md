@@ -34,6 +34,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[CMU 15-445: Storage Models & Compression - Lecture 6]] — Row stores vs column stores, OLTP vs OLAP, compression techniques
 - [[CMU 15-445: Hash Tables - Lecture 7]] — Static and dynamic hash tables: linear probe, chained, extendible, linear hashing
 - [[CMU 15-445: B+Tree Indexes - Lecture 8]] — B+Tree properties, node structure, insert/delete, composite indexes
+- [[CMU 15-445: Indexes & Filters II - Lecture 9]] — Advanced index topics: inverted index, vector index, partial/covering indexes
 
 ## Entities
 
@@ -207,6 +208,10 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Clustered Index]] — Table physically ordered by index key
 - [[Secondary Index]] — Non-clustered index
 - [[Index Scan]] — Access method using index
+- [[Inverted Index]] — For full-text search
+- [[Vector Index]] — For embeddings and nearest-neighbor search
+- [[Partial Index]] — Subset of table
+- [[Covering Index]] — Query satisfied from index only
 
 ## Queries
 

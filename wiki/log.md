@@ -155,3 +155,9 @@ Key concepts: hash tables, linear probe, chained hashing, extendible hashing, li
 Ingested source: CMU 15-445 Lecture 8 (Spring 2026) by Andy Pavlo.
 Created 1 source summary, 3 concept pages.
 Key concepts: B+Tree, clustered index, secondary index, index scan.
+
+## [2026-04-23] ingest | CMU 15-445: Indexes & Filters II
+
+Ingested source: CMU 15-445 Lecture 9 (Spring 2026) by Andy Pavlo.
+Created 1 source summary, 4 concept pages.
+Key concepts: inverted index, vector index, partial index, covering index.
