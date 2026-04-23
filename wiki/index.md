@@ -44,6 +44,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[12 OOP Concepts Every Developer Should Know]] — AlgoMaster: 12 OOP concepts covering building blocks, four pillars, and object relationships
 - [[Enums]] — AlgoMaster: enumerations with properties/methods, state machine pattern for order processing
 - [[Interfaces]] — AlgoMaster: contracts, payment gateway and notification service examples, SOLID principles
+- [[Encapsulation]] — AlgoMaster: access modifiers, getters/setters, BankAccount and PaymentProcessor examples
 
 ## Entities
 
@@ -308,6 +309,9 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Dependency Inversion Principle]] — High-level and low-level depend on abstractions
 - [[Dependency Injection]] — Dependencies passed in from external sources
 - [[SOLID Principles]] — Five OOP design principles (SRP, OCP, LSP, ISP, DIP)
+- [[Access Modifiers]] — private, protected, public visibility control
+- [[Getter and Setter Pattern]] — Controlled access via getX()/setX()
+- [[Data Validation]] — Checking constraints before accepting data
 
 ## Queries
 

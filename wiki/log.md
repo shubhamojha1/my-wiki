@@ -187,7 +187,12 @@ Created 1 source summary, 9 concept pages, 1 entity page.
 Key concepts: transformer, self-attention, vision transformer, self-supervised learning.
 Additional: activation functions, normalization, skip connections, multi-head attention, positional encoding.
 
-## [2026-04-23] ingest | Interfaces + SOLID
+## [2026-04-23] ingest | Encapsulation
+
+Ingested source: AlgoMaster article on Encapsulation (2026).
+Created 1 source summary, 4 concept pages.
+Key concepts: access modifiers (private/protected/public), getter/setter pattern, data validation.
+Key examples: BankAccount (balance protection), PaymentProcessor (sensitive data masking).
 
 Ingested sources: AlgoMaster articles on interfaces and SOLID principles (2026).
 Created 1 source summary, 5 concept pages.
