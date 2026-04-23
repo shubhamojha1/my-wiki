@@ -43,6 +43,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Classes and Objects]] — AlgoMaster: classes as blueprints, objects as instances, practical order management example
 - [[12 OOP Concepts Every Developer Should Know]] — AlgoMaster: 12 OOP concepts covering building blocks, four pillars, and object relationships
 - [[Enums]] — AlgoMaster: enumerations with properties/methods, state machine pattern for order processing
+- [[Interfaces]] — AlgoMaster: contracts, payment gateway and notification service examples, SOLID principles
 
 ## Entities
 
@@ -303,6 +304,10 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Enum]] — Fixed set of named constants with type safety
 - [[Type Safety]] — Compiler prevents operations on inappropriate types
 - [[State Machine]] — System in finite states with transitions
+- [[Interface Segregation Principle]] — Clients not forced to depend on unused methods
+- [[Dependency Inversion Principle]] — High-level and low-level depend on abstractions
+- [[Dependency Injection]] — Dependencies passed in from external sources
+- [[SOLID Principles]] — Five OOP design principles (SRP, OCP, LSP, ISP, DIP)
 
 ## Queries
 

@@ -187,7 +187,12 @@ Created 1 source summary, 9 concept pages, 1 entity page.
 Key concepts: transformer, self-attention, vision transformer, self-supervised learning.
 Additional: activation functions, normalization, skip connections, multi-head attention, positional encoding.
 
-## [2026-04-23] ingest | Enums
+## [2026-04-23] ingest | Interfaces + SOLID
+
+Ingested sources: AlgoMaster articles on interfaces and SOLID principles (2026).
+Created 1 source summary, 5 concept pages.
+Key concepts: interface contracts, interface segregation (ISP), dependency inversion (DIP), dependency injection pattern, SOLID principles.
+Key examples: payment gateway, notification service.
 
 Ingested source: AlgoMaster article on Enums (2026).
 Created 1 source summary, 3 concept pages.
