@@ -42,6 +42,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Introduction to Architecting Systems for Scale]] — Will Larson (Digg/Yahoo!): load balancing, caching, offline processing, platform layer
 - [[Classes and Objects]] — AlgoMaster: classes as blueprints, objects as instances, practical order management example
 - [[12 OOP Concepts Every Developer Should Know]] — AlgoMaster: 12 OOP concepts covering building blocks, four pillars, and object relationships
+- [[Enums]] — AlgoMaster: enumerations with properties/methods, state machine pattern for order processing
 
 ## Entities
 
@@ -299,6 +300,9 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Composition]] — "Has-a" with owned parts that die with whole
 - [[Dependency]] — Temporary "uses-a" relationship
 - [[Realization]] — Interface to implementing class relationship
+- [[Enum]] — Fixed set of named constants with type safety
+- [[Type Safety]] — Compiler prevents operations on inappropriate types
+- [[State Machine]] — System in finite states with transitions
 
 ## Queries
 

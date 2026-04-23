@@ -187,7 +187,12 @@ Created 1 source summary, 9 concept pages, 1 entity page.
 Key concepts: transformer, self-attention, vision transformer, self-supervised learning.
 Additional: activation functions, normalization, skip connections, multi-head attention, positional encoding.
 
-## [2026-04-23] ingest | Classes and Objects + 12 OOP Concepts
+## [2026-04-23] ingest | Enums
+
+Ingested source: AlgoMaster article on Enums (2026).
+Created 1 source summary, 3 concept pages.
+Key concepts: enum with properties/methods, type safety, state machine pattern.
+Key example: order processing system with OrderStatus and PaymentMethod enums.
 
 Ingested sources: AlgoMaster.io articles on OOP fundamentals (2026).
 Created 2 source summaries, 1 entity page, 12 concept pages.
