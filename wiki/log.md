@@ -187,7 +187,12 @@ Created 1 source summary, 9 concept pages, 1 entity page.
 Key concepts: transformer, self-attention, vision transformer, self-supervised learning.
 Additional: activation functions, normalization, skip connections, multi-head attention, positional encoding.
 
-## [2026-04-23] ingest | Introduction to Architecting Systems for Scale
+## [2026-04-23] ingest | Classes and Objects + 12 OOP Concepts
+
+Ingested sources: AlgoMaster.io articles on OOP fundamentals (2026).
+Created 2 source summaries, 1 entity page, 12 concept pages.
+Key concepts: class, object, interface, four pillars (encapsulation, abstraction, inheritance, polymorphism), five object relationships (association, aggregation, composition, dependency, realization).
+Key entity: Ashish Pratap Singh (AlgoMaster.io creator).
 
 Ingested source: Will Larson's foundational article on scalable system architecture (2011).
 Created 1 source summary, 6 entity pages, 18 concept pages.

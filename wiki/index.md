@@ -40,6 +40,8 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[CMU 15-445: Join Algorithms - Lecture 12]] — Nested loop, sort-merge, hash join algorithms
 - [[A Survey of Deep Learning: From Activations to Transformers]] — Survey: activations, normalization, transformers, self-supervised learning
 - [[Introduction to Architecting Systems for Scale]] — Will Larson (Digg/Yahoo!): load balancing, caching, offline processing, platform layer
+- [[Classes and Objects]] — AlgoMaster: classes as blueprints, objects as instances, practical order management example
+- [[12 OOP Concepts Every Developer Should Know]] — AlgoMaster: 12 OOP concepts covering building blocks, four pillars, and object relationships
 
 ## Entities
 
@@ -70,6 +72,9 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Memcached]] — In-memory key-value cache
 - [[RabbitMQ]] — Message broker implementing AMQP
 - [[Hadoop]] — Distributed data processing framework with MapReduce
+- [[Ashish Pratap Singh]] — Educator running AlgoMaster.io for LLD interview preparation
+
+## Entities
 
 ## Concepts
 
@@ -271,6 +276,29 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Scheduling Periodic Tasks]] — Cron-based recurring computation
 - [[Map-Reduce]] — Batch processing model for large datasets
 - [[Platform Layer]] — Intermediate API layer between apps and backend
+
+## Concepts (OOP/LLD)
+
+### Building Blocks
+
+- [[Class]] — Blueprint/template defining object structure and behavior
+- [[Object]] — Concrete instance of a class with actual values
+- [[Interface]] — Contract defining required methods without implementation
+
+### Four Pillars
+
+- [[Encapsulation]] — Bundling data with methods, restricting direct access
+- [[Abstraction]] — Hiding complexity, exposing essential features
+- [[Inheritance]] — Deriving child classes from parent classes
+- [[Polymorphism]] — Objects of different types through common interface
+
+### Object Relationships
+
+- [[Association]] — "Knows-about" relationship, both independent
+- [[Aggregation]] — "Has-a" with independent parts
+- [[Composition]] — "Has-a" with owned parts that die with whole
+- [[Dependency]] — Temporary "uses-a" relationship
+- [[Realization]] — Interface to implementing class relationship
 
 ## Queries
 
