@@ -187,7 +187,12 @@ Created 1 source summary, 9 concept pages, 1 entity page.
 Key concepts: transformer, self-attention, vision transformer, self-supervised learning.
 Additional: activation functions, normalization, skip connections, multi-head attention, positional encoding.
 
-## [2026-04-23] ingest | Encapsulation
+## [2026-04-23] ingest | Abstraction
+
+Ingested source: AlgoMaster article on Abstraction (2026).
+Created 1 source summary, 3 concept pages.
+Key concepts: abstract classes (shared behavior + abstract methods), public APIs, abstraction vs encapsulation.
+Key example: MediaPlayer with PlayerController (player-agnostic).
 
 Ingested source: AlgoMaster article on Encapsulation (2026).
 Created 1 source summary, 4 concept pages.

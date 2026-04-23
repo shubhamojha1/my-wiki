@@ -45,6 +45,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Enums]] — AlgoMaster: enumerations with properties/methods, state machine pattern for order processing
 - [[Interfaces]] — AlgoMaster: contracts, payment gateway and notification service examples, SOLID principles
 - [[Encapsulation]] — AlgoMaster: access modifiers, getters/setters, BankAccount and PaymentProcessor examples
+- [[Abstraction]] — AlgoMaster: abstract classes, interfaces, public APIs, media player example
 
 ## Entities
 
@@ -312,6 +313,8 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Access Modifiers]] — private, protected, public visibility control
 - [[Getter and Setter Pattern]] — Controlled access via getX()/setX()
 - [[Data Validation]] — Checking constraints before accepting data
+- [[Abstract Class]] — Blueprint with abstract + concrete methods
+- [[Public API]] — External interface hiding internal complexity
 
 ## Queries
 
