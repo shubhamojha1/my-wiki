@@ -46,6 +46,8 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Interfaces]] — AlgoMaster: contracts, payment gateway and notification service examples, SOLID principles
 - [[Encapsulation]] — AlgoMaster: access modifiers, getters/setters, BankAccount and PaymentProcessor examples
 - [[Abstraction]] — AlgoMaster: abstract classes, interfaces, public APIs, media player example
+- [[Inheritance]] — AlgoMaster: extends, notification system example, method overriding
+- [[Polymorphism]] — AlgoMaster: overloading vs overriding, runtime vs compile-time
 
 ## Entities
 
@@ -315,6 +317,8 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Data Validation]] — Checking constraints before accepting data
 - [[Abstract Class]] — Blueprint with abstract + concrete methods
 - [[Public API]] — External interface hiding internal complexity
+- [[Method Overriding]] — Subclass provides specific implementation of parent method
+- [[Method Overloading]] — Multiple methods with same name, different parameters
 
 ## Queries
 
