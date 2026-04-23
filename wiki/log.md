@@ -187,7 +187,9 @@ Created 1 source summary, 9 concept pages, 1 entity page.
 Key concepts: transformer, self-attention, vision transformer, self-supervised learning.
 Additional: activation functions, normalization, skip connections, multi-head attention, positional encoding.
 
-## [2026-04-23] ingest | Graph Neural Networks
+## [2026-04-23] ingest | Introduction to Architecting Systems for Scale
 
-Ingested concepts from deep learning survey covering GNN architecture patterns.
-Created 4 concept pages: GNN, message passing, graph convolution, graph attention.
+Ingested source: Will Larson's foundational article on scalable system architecture (2011).
+Created 1 source summary, 6 entity pages, 18 concept pages.
+Key concepts: load balancing (smart clients, hardware, software), caching (application, database, in-memory, CDN), cache invalidation, offline processing (message queues, cron, map-reduce), platform layer.
+Key entities: Will Larson, HAProxy, Memcached, RabbitMQ, Hadoop.

@@ -1,9 +1,13 @@
 ---
 title: "Kafka: A Distributed Messaging System for Log Processing"
 type: source
-tags: [messaging, distributed-systems, log-processing]
+tags:
+  - messaging
+  - distributed-systems
+  - log-processing
 created: 2026-04-05
-sources: [Kafka.pdf]
+sources:
+  - Kafka.pdf
 ---
 
 # Kafka: A Distributed Messaging System for Log Processing

@@ -38,7 +38,8 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[CMU 15-445: Index Concurrency Control - Lecture 10]] — Latches vs locks, reader-writer latch, latch crabbing protocol
 - [[CMU 15-445: Query Processing - Lecture 11]] — Query plans, execution models, sequential scan, index scan
 - [[CMU 15-445: Join Algorithms - Lecture 12]] — Nested loop, sort-merge, hash join algorithms
-- [[A Survey of Deep Learning: From Activations to Transformers]] — Deep learning survey: activations, normalization, transformers, self-supervised learning
+- [[A Survey of Deep Learning: From Activations to Transformers]] — Survey: activations, normalization, transformers, self-supervised learning
+- [[Introduction to Architecting Systems for Scale]] — Will Larson (Digg/Yahoo!): load balancing, caching, offline processing, platform layer
 
 ## Entities
 
@@ -64,6 +65,11 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Adaptive-TinyLFU]] — Frequency-based cache algorithm
 - [[B-LRU]] — LRU with Bloom filter admission control
 - [[BERT]] — Bidirectional encoder transformer from Google
+- [[Will Larson]] — Engineer, author of "An Elegant Puzzle" and "Staff Engineer"
+- [[HAProxy]] — Open-source software load balancer
+- [[Memcached]] — In-memory key-value cache
+- [[RabbitMQ]] — Message broker implementing AMQP
+- [[Hadoop]] — Distributed data processing framework with MapReduce
 
 ## Concepts
 
@@ -243,6 +249,28 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Multi-Head Attention]] — Parallel attention heads
 - [[Positional Encoding]] — Position information in transformers
 - [[BERT]] — Bidirectional encoder transformer
+
+## Concepts (Scalability Architecture)
+
+- [[Load Balancing]] — Distributing requests across multiple resources
+- [[Horizontal Scalability]] — Linear capacity increase with added machines
+- [[Redundancy]] — Graceful degradation when components fail
+- [[Software Load Balancer]] — Software-based load distribution (HAProxy)
+- [[Hardware Load Balancer]] — Dedicated appliance for load balancing
+- [[Smart Client]] — Client-side load balancing logic
+- [[Caching]] — Storing copies for faster access
+- [[Application Caching]] — Explicit caching in application code
+- [[Database Caching]] — Transparent database-level caching
+- [[In-Memory Cache]] — RAM-based caching (Memcached, Redis)
+- [[CDN]] — Content distribution network for static assets
+- [[Cache Invalidation]] — Maintaining consistency between cache and source
+- [[Read-Through Cache]] — Cache that self-populates on miss
+- [[Write-Through Cache]] — Synchronous cache and database updates
+- [[Offline Processing]] — Computation decoupled from user requests
+- [[Message Queue]] — Asynchronous communication channel
+- [[Scheduling Periodic Tasks]] — Cron-based recurring computation
+- [[Map-Reduce]] — Batch processing model for large datasets
+- [[Platform Layer]] — Intermediate API layer between apps and backend
 
 ## Queries
 

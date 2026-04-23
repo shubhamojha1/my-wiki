@@ -1,9 +1,15 @@
 ---
 title: "HALP: Heuristic Aided Learned Preference Eviction Policy for YouTube CDN"
 type: source
-tags: [cdn, caching, machine-learning, learned-cache, youtube]
+tags:
+  - cdn
+  - caching
+  - machine-learning
+  - learned-cache
+  - youtube
 created: 2026-04-19
-sources: [HALP - Youtube Heuristic CDNs.pdf]
+sources:
+  - HALP - Youtube Heuristic CDNs.pdf
 ---
 
 # HALP: Heuristic Aided Learned Preference Eviction Policy for YouTube CDN
