@@ -1,3 +1,8 @@
+## [2026-04-24] ingest | Thread Lifecycle and States
+
+Ingested source: AlgoMaster.io thread lifecycle (2026).
+Created 1 source summary, 1 concept page.
+
 ## [2026-04-24] ingest | Processes vs Threads
 
 Ingested source: AlgoMaster.io processes vs threads (2026).

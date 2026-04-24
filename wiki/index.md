@@ -51,6 +51,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[algomaster-Introduction to Concurrency]] — AlgoMaster: concurrency fundamentals, benefits, challenges (2026)
 - [[algomaster-Concurrency vs Parallelism]] — AlgoMaster: restaurant analogy, levels of parallelism (2026)
 - [[algomaster-Processes vs Threads]] — AlgoMaster: context switching, fault isolation (2026)
+- [[algomaster-Thread Lifecycle and States]] — AlgoMaster: NEW, RUNNABLE, BLOCKED, WAITING, TERMINATED (2026)
 - [[Processes vs Threads]] — Units of execution with different isolation tradeoffs
 
 ## Entities
