@@ -1,3 +1,9 @@
+## [2026-04-24] ingest | Processes vs Threads
+
+Ingested source: AlgoMaster.io processes vs threads (2026).
+Enhanced concept page with context switching details.
+Created 1 source summary, updated 1 concept page.
+
 ## [2026-04-24] update | Concurrency vs Parallelism
 
 Enhanced concept page with AlgoMaster's restaurant analogy, four scenarios, and levels of parallelism.
