@@ -1,3 +1,7 @@
+## [2026-04-24] update | Concurrency vs Parallelism
+
+Enhanced concept page with AlgoMaster's restaurant analogy, four scenarios, and levels of parallelism.
+
 ## [2026-04-24] ingest | Introduction to Concurrency
 
 Ingested source: AlgoMaster.io intro to concurrency (2026).

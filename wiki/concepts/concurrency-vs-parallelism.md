@@ -3,7 +3,7 @@ title: "Concurrency vs Parallelism"
 type: concept
 tags: [concurrency, parallelism]
 created: 2026-04-24
-sources: [introduction-to-concurrency]
+sources: [introduction-to-concurrency, concurrency-vs-parallelism]
 ---
 
 # Concurrency vs Parallelism
@@ -19,26 +19,37 @@ These terms are often used interchangeably but represent distinct concepts.
 | **Execution** | Interleaved on single core | Simultaneous on multiple cores |
 | **Focus** | Dealing with multiple things at once | Doing multiple things at once |
 
-## Analogy
+## Restaurant Analogy
 
-- **Concurrency** = One barista handling multiple drink orders by starting each drink then switching while waiting for espresso
-- **Parallelism** = Multiple baristas each making a drink simultaneously
+From AlgoMaster's detailed analogy:
 
-## In Practice
+### Scenario 1: Sequential
+One chef. One dish at a time. Customers wait long times.
 
-A concurrent program may run on a single CPU core with time-slicing (context switching), achieving interleaved execution. A parallel program explicitly uses multiple CPU cores.
+### Scenario 2: Concurrent (One Chef)
+Same chef, working on multiple dishes during overlapping periods: while soup simmers, chop vegetables for salad. While mushroom rests, plate appetizer. All dishes make progress. This is concurrency without parallelism.
 
-```python
-# Concurrent (interleaved on single core)
-async def fetch_all(urls):
-    tasks = [fetch(url) for url in urls]
-    return await asyncio.gather(*tasks)
+### Scenario 3: Parallel (Multiple Chefs)
+Three chefs, each working on a dish simultaneously. All literally being prepared at same instant. Requires concurrent structure (independent tasks).
 
-# Parallel (simultaneous on multiple cores)  
-def fetch_all(urls):
-    with ThreadPoolExecutor() as executor:
-        return list(executor.map(fetch, urls))
-```
+### Scenario 4: Concurrent + Parallel
+Three chefs, each handling multiple dishes concurrently, all working in parallel. How modern web servers work: multiple threads/processes, each handling multiple connections.
+
+## Key Relationships
+
+- **Parallelism requires concurrency** (has independent tasks)
+- **Concurrency doesn't guarantee parallelism** — depends on hardware and scheduler
+- **Single core** = concurrent only (interleaved)
+- **Multi-core** = can be both
+
+## Levels of Parallelism
+
+| Level | Description | Example |
+|-------|-------------|---------|
+| Bit-level | Word size optimization | 32-bit → 64-bit operations |
+| Instruction-level | Pipelining, ILP | CPU pipeline stages |
+| Data | Same operation on data chunks | SIMD, vectorization |
+| Task | Independent subtasks | Multi-threading |
 
 ## When Each Applies
 

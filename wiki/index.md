@@ -49,6 +49,8 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Inheritance]] — AlgoMaster: extends, notification system example, method overriding
 - [[Polymorphism]] — AlgoMaster: overloading vs overriding, runtime vs compile-time
 - [[Introduction to Concurrency]] — AlgoMaster: concurrency fundamentals, benefits, challenges (2026)
+- [[Concurrency vs Parallelism]] — AlgoMaster: restaurant analogy, levels of parallelism (2026)
+- [[Processes vs Threads]] — Units of execution with different isolation tradeoffs
 
 ## Entities
 
