@@ -1,3 +1,9 @@
+## [2026-04-24] ingest | Introduction to Concurrency
+
+Ingested source: AlgoMaster.io intro to concurrency (2026).
+Created 1 source summary, 6 concept pages.
+Key concepts: concurrency vs parallelism, processes vs threads, race conditions, critical sections, thread safety.
+
 ## [2026-04-05] init | Wiki initialized
 
 Empty wiki created, ready for first ingest.

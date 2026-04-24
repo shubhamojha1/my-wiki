@@ -48,6 +48,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Abstraction]] — AlgoMaster: abstract classes, interfaces, public APIs, media player example
 - [[Inheritance]] — AlgoMaster: extends, notification system example, method overriding
 - [[Polymorphism]] — AlgoMaster: overloading vs overriding, runtime vs compile-time
+- [[Introduction to Concurrency]] — AlgoMaster: concurrency fundamentals, benefits, challenges (2026)
 
 ## Entities
 

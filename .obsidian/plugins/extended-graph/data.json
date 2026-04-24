@@ -79,14 +79,29 @@
   },
   "additionalProperties": {},
   "backupGraphOptions": {
-    "collapse-filter": true,
+    "collapse-filter": false,
     "search": "",
     "showTags": false,
     "showAttachments": false,
     "hideUnresolved": false,
     "showOrphans": true,
     "collapse-color-groups": true,
-    "colorGroups": [],
+    "colorGroups": [
+      {
+        "query": "tag:#gpu  ",
+        "color": {
+          "a": 1,
+          "rgb": 14701138
+        }
+      },
+      {
+        "query": "",
+        "color": {
+          "a": 1,
+          "rgb": 14725458
+        }
+      }
+    ],
     "collapse-display": true,
     "showArrow": false,
     "textFadeMultiplier": 0,
@@ -97,8 +112,8 @@
     "repelStrength": 10,
     "linkStrength": 1,
     "linkDistance": 250,
-    "scale": 0.5087618855792493,
-    "close": true
+    "scale": 0.18462326225857753,
+    "close": false
   },
   "openInNewTab": false,
   "canonicalizePropertiesWithDataview": true,
