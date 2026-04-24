@@ -1,3 +1,8 @@
+## [2026-04-24] ingest | Race Conditions and Critical Sections
+
+Ingested source: AlgoMaster.io race conditions (2026).
+Created 1 source summary, updated 2 concept pages.
+
 ## [2026-04-24] ingest | Thread Lifecycle and States
 
 Ingested source: AlgoMaster.io thread lifecycle (2026).

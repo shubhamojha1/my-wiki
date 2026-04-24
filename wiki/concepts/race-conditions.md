@@ -3,59 +3,42 @@ title: "Race Conditions"
 type: concept
 tags: [concurrency, race-condition, thread-safety]
 created: 2026-04-24
-sources: [algomaster-introduction-to-concurrency]
+sources: [algomaster-introduction-to-concurrency, algomaster-race-conditions-and-critical-sections]
 ---
 
 # Race Conditions
 
 A **race condition** occurs when a program's behavior depends on the timing of uncontrolled events (thread interleaving), producing incorrect results.
 
-## Definition
+> From AlgoMaster: "Concurrent access to shared data produces incorrect results" — outcome depends on which thread executes first.
 
-From AlgoMaster: Race conditions happen when "concurrent access to shared data produces incorrect results" — the outcome depends on which thread executes first.
-
-## Classic Example: Bank Account
-
-```python
-# Two threads executing concurrently
-def withdraw(amount):
-    balance = get_balance()  # Thread reads current balance
-    balance -= amount     # Thread calculates
-    set_balance(balance)  # Thread writes new balance
-
-# Both threads read balance=100, both write balance=80
-# Expected: 100 - 50 - 30 = 20
-# With race: 100 - 50 = 50, then 100 - 30 = 70 (wrong!)
-```
-
-## Types of Race Conditions
+## How Race Conditions Happen
 
 ### Read-Modify-Write
 ```python
-counter = counter + 1  # Not atomic: read, add, write
+counter = counter + 1  # 3 steps: read, add, write
 ```
+Two threads read same value, both increment, both write → one increment lost.
 
 ### Check-Then-Act
 ```python
-if resource_available:  # Check
-    allocate(resource)    # Act (but another thread may have taken it)
+if balance >= withdrawal:  # Check
+    balance -= withdrawal   # Act (another thread may have changed balance)
 ```
 
 ## Conditions for Race
 
-1. **Mutual exclusion** — Multiple threads access same data
-2. **At least one write** — Not purely read-only
-3. **No synchronization** — Uncoordinated access timing
+1. **Multiple threads** access shared data
+2. **At least one write** operation
+3. **No synchronization** — uncoordinated timing
 
 ## Prevention
 
 - **Mutual exclusion** — Only one thread in critical section
-- **Memory barriers** — Ensures visibility between threads
-- **Atomic operations** — Interlocked read-modify-write
+- **Atomic operations** — Single indivisible operation
 
 ## Related
 
-- [[Critical Sections]] — Code accessing shared resources
-- [[Thread Safety]] — Correct behavior under concurrency
-- [[Processes vs Threads]] — Where races occur
-- [[Introduction to Concurrency]]
+- [[Critical Sections]] — Code where races occur
+- [[Thread Safety]] — Correct behavior
+- [[algomaster-Processes vs Threads]]
