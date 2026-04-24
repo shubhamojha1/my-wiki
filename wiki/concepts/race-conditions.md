@@ -3,7 +3,7 @@ title: "Race Conditions"
 type: concept
 tags: [concurrency, race-condition, thread-safety]
 created: 2026-04-24
-sources: [introduction-to-concurrency]
+sources: [algomaster-introduction-to-concurrency]
 ---
 
 # Race Conditions

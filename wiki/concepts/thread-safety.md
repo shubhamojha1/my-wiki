@@ -3,7 +3,7 @@ title: "Thread Safety"
 type: concept
 tags: [concurrency, thread-safety]
 created: 2026-04-24
-sources: [introduction-to-concurrency]
+sources: [algomaster-introduction-to-concurrency]
 ---
 
 # Thread Safety

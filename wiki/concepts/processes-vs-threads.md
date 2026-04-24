@@ -3,7 +3,7 @@ title: "Processes vs Threads"
 type: concept
 tags: [process, thread, concurrency]
 created: 2026-04-24
-sources: [introduction-to-concurrency]
+sources: [algomaster-introduction-to-concurrency]
 ---
 
 # Processes vs Threads

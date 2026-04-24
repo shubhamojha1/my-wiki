@@ -3,7 +3,7 @@ title: "Critical Sections"
 type: concept
 tags: [concurrency, synchronization, critical-section]
 created: 2026-04-24
-sources: [introduction-to-concurrency]
+sources: [algomaster-introduction-to-concurrency]
 ---
 
 # Critical Sections

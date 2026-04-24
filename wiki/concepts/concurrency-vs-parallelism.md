@@ -3,7 +3,7 @@ title: "Concurrency vs Parallelism"
 type: concept
 tags: [concurrency, parallelism]
 created: 2026-04-24
-sources: [introduction-to-concurrency, concurrency-vs-parallelism]
+sources: [algomaster-introduction-to-concurrency, algomaster-concurrency-vs-parallelism]
 ---
 
 # Concurrency vs Parallelism
