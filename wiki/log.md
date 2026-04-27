@@ -1,3 +1,9 @@
+## [2026-04-27] ingest | AlgoMaster: Single Point of Failure (SPOF)
+
+Ingested source: AlgoMaster.io SPOF (2026).
+Created 1 source summary, 1 concept page.
+Key concepts: single points of failure, redundancy, load balancing, strategies to eliminate.
+
 ## [2026-04-27] ingest | AlgoMaster: Scalability, Availability, Reliability
 
 Ingested sources: AlgoMaster.io Scalability, Availability, Reliability (2026).
