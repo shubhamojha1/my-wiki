@@ -1,3 +1,9 @@
+## [2026-04-28] ingest | Checksums
+
+Ingested source: AlgoMaster.io Checksums (October 2025).
+Created 1 source summary, 4 concept pages (CRC, MD5, SHA-256, Cryptographic Hash).
+Key concepts: CRC for errors, cryptographic hashes, SHA-256 standard.
+
 ## [2026-04-28] ingest | Load Balancing Algorithms
 
 Ingested source: AlgoMaster.io Load Balancing Algorithms (June 2024).

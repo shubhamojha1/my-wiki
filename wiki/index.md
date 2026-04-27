@@ -18,6 +18,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[HTTP and HTTPS]] — AlgoMaster: HTTP methods, TLS handshake, HTTP/2, HTTP/3 (2025)
 - [[TCP vs UDP]] — AlgoMaster: TCP reliable vs UDP fast (2025)
 - [[Load Balancing Algorithms]] — AlgoMaster: round robin, least connections, health checks (2024)
+- [[Checksums]] — AlgoMaster: CRC, MD5, SHA, error detection (2025)
 - [[Kafka: A Distributed Messaging System for Log Processing]] — Summary of the original Kafka paper from LinkedIn (2011)
 - [[Language Models are Few-Shot Learners (GPT-3)]] — The GPT-3 paper demonstrating scaling improves few-shot learning (2020)
 - [[Distributed Systems: for fun and profit]] — Mixu's comprehensive intro to distributed systems fundamentals
@@ -354,6 +355,11 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Weighted Round Robin]] — Capacity-based distribution
 - [[Least Connections]] — Fewest active connections
 - [[Health Check]] — Server health monitoring
+- [[Checksums]] — Error detection fingerprints
+- [[CRC]] — Cyclic Redundancy Check
+- [[MD5]] — 128-bit hash (deprecated)
+- [[SHA-256]] — 256-bit current standard
+- [[Cryptographic Hash]] — One-way security function
 
 ## Concepts (OOP/LLD)
 
