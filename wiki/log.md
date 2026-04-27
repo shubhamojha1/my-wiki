@@ -1,3 +1,9 @@
+## [2026-04-27] ingest | AlgoMaster: Latency vs Throughput vs Bandwidth
+
+Ingested source: AlgoMaster.io Latency vs Throughput vs Bandwidth (2026).
+Created 1 source summary, updated 1 concept page.
+Key concepts: delay vs volume vs capacity, BDP, bottleneck.
+
 ## [2026-04-27] ingest | AlgoMaster: Single Point of Failure (SPOF)
 
 Ingested source: AlgoMaster.io SPOF (2026).

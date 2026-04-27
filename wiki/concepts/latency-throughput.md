@@ -3,7 +3,7 @@ title: "Latency vs Throughput"
 type: concept
 tags: [gpu, hardware, performance, cpu]
 created: 2026-04-16
-sources: [cs179_2026_lec04.pdf]
+sources: [cs179_2026_lec04.pdf, "algomaster.io/learn/system-design/latency-vs-throughput"]
 ---
 
 # Latency vs Throughput
