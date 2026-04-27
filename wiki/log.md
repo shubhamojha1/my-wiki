@@ -1,3 +1,9 @@
+## [2026-04-28] ingest | Load Balancing Algorithms
+
+Ingested source: AlgoMaster.io Load Balancing Algorithms (June 2024).
+Created 1 source summary, 4 concept pages (Round Robin, Weighted Round Robin, Least Connections, Health Check).
+Key concepts: algorithms (round robin, weighted, least connections), L4 vs L7, health checks.
+
 ## [2026-04-28] ingest | TCP vs UDP
 
 Ingested source: AlgoMaster.io TCP vs UDP (November 2025).

@@ -17,6 +17,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Proxy vs Reverse Proxy]] — AlgoMaster: forward proxy, reverse proxy, load balancing (2026)
 - [[HTTP and HTTPS]] — AlgoMaster: HTTP methods, TLS handshake, HTTP/2, HTTP/3 (2025)
 - [[TCP vs UDP]] — AlgoMaster: TCP reliable vs UDP fast (2025)
+- [[Load Balancing Algorithms]] — AlgoMaster: round robin, least connections, health checks (2024)
 - [[Kafka: A Distributed Messaging System for Log Processing]] — Summary of the original Kafka paper from LinkedIn (2011)
 - [[Language Models are Few-Shot Learners (GPT-3)]] — The GPT-3 paper demonstrating scaling improves few-shot learning (2020)
 - [[Distributed Systems: for fun and profit]] — Mixu's comprehensive intro to distributed systems fundamentals
@@ -349,6 +350,10 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[HTTP/3]] — HTTP version 3 (QUIC/UDP)
 - [[TCP]] — Connection-oriented, reliable
 - [[UDP]] — Connectionless, fast
+- [[Round Robin]] — Sequential distribution
+- [[Weighted Round Robin]] — Capacity-based distribution
+- [[Least Connections]] — Fewest active connections
+- [[Health Check]] — Server health monitoring
 
 ## Concepts (OOP/LLD)
 
