@@ -52,6 +52,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[AlgoMaster: Aggregation]] — AlgoMaster: "has-a" with independent parts, UML hollow diamond
 - [[AlgoMaster: Dependency]] — AlgoMaster: temporary "uses-a", UML dashed arrow
 - [[AlgoMaster: Composition]] — AlgoMaster: strong "owns-a" with dependent lifecycle, UML filled diamond
+- [[AlgoMaster: DRY Principle]] — AlgoMaster: "don't repeat yourself", single source of truth
 - [[algomaster-Introduction to Concurrency]] — AlgoMaster: concurrency fundamentals, benefits, challenges (2026)
 - [[algomaster-Concurrency vs Parallelism]] — AlgoMaster: restaurant analogy, levels of parallelism (2026)
 - [[algomaster-Processes vs Threads]] — AlgoMaster: context switching, fault isolation (2026)
@@ -326,6 +327,10 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Getter and Setter Pattern]] — Controlled access via getX()/setX()
 - [[Data Validation]] — Checking constraints before accepting data
 - [[Abstract Class]] — Blueprint with abstract + concrete methods
+
+### Design Principles
+
+- [[DRY Principle]] — Don't repeat yourself, single source of truth
 - [[Public API]] — External interface hiding internal complexity
 - [[Method Overriding]] — Subclass provides specific implementation of parent method
 - [[Method Overloading]] — Multiple methods with same name, different parameters

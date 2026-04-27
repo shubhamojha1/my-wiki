@@ -1,3 +1,9 @@
+## [2026-04-27] ingest | AlgoMaster: DRY Principle
+
+Ingested source: AlgoMaster.io DRY Principle (2026).
+Created 1 source summary, 1 concept page.
+Key concepts: don't repeat yourself, single source of truth, Rule of Three.
+
 ## [2026-04-27] ingest | AlgoMaster: Composition
 
 Ingested source: AlgoMaster.io Composition (2026).
