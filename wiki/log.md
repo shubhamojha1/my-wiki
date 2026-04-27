@@ -1,3 +1,9 @@
+## [2026-04-28] ingest | REST vs GraphQL
+
+Ingested source: AlgoMaster.io REST vs GraphQL (March 2025).
+Created 1 source summary, 2 concept pages (Over-fetching, Under-fetching).
+Key differences: over-fetching, under-fetching, single vs multiple endpoints, caching.
+
 ## [2026-04-28] ingest | API Gateway
 
 Ingested source: AlgoMaster.io API Gateway (December 2024).

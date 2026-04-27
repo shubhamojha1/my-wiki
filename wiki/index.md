@@ -21,6 +21,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Checksums]] — AlgoMaster: CRC, MD5, SHA, error detection (2025)
 - [[API]] — AlgoMaster: APIs, REST, GraphQL, gRPC (2025)
 - [[API Gateway]] — AlgoMaster: central entry point, rate limiting (2024)
+- [[REST vs GraphQL]] — AlgoMaster: REST vs GraphQL comparison (2025)
 - [[Kafka: A Distributed Messaging System for Log Processing]] — Summary of the original Kafka paper from LinkedIn (2011)
 - [[Language Models are Few-Shot Learners (GPT-3)]] — The GPT-3 paper demonstrating scaling improves few-shot learning (2020)
 - [[Distributed Systems: for fun and profit]] — Mixu's comprehensive intro to distributed systems fundamentals
@@ -368,6 +369,8 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[gRPC]] — High-performance RPC
 - [[API Gateway]] — Central API management
 - [[Rate Limiting]] — Request throttling per client
+- [[Over-fetching]] — Returns more data than needed (REST issue)
+- [[Under-fetching]] — Multiple requests for related data (REST issue)
 
 ## Concepts (OOP/LLD)
 
