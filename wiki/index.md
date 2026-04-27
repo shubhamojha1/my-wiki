@@ -13,6 +13,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 
 - [[OSI Model]] — AlgoMaster: 7-layer network framework, encapsulation (2026)
 - [[IP Address]] — AlgoMaster: IPv4, IPv6, CIDR, subnetting, NAT (2026)
+- [[DNS]] — AlgoMaster: domain name resolution, DNS records, caching (2026)
 - [[Kafka: A Distributed Messaging System for Log Processing]] — Summary of the original Kafka paper from LinkedIn (2011)
 - [[Language Models are Few-Shot Learners (GPT-3)]] — The GPT-3 paper demonstrating scaling improves few-shot learning (2020)
 - [[Distributed Systems: for fun and profit]] — Mixu's comprehensive intro to distributed systems fundamentals
@@ -329,6 +330,11 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[OSI Layer 7: Application]] — User-facing protocols (HTTP, DNS, FTP)
 - [[Encapsulation and Decapsulation]] — How data flows through the stack
 - [[OSI vs TCP/IP Model]] — Theoretical vs deployed standards
+- [[DNS]] — Domain name to IP resolution
+- [[DNS Record]] — A, AAAA, CNAME, MX, TXT records
+- [[Recursive Resolver]] — DNS query resolver
+- [[Authoritative Name Server]] — Domain's official DNS server
+- [[DNS Caching]] — DNS response caching
 
 ## Concepts (OOP/LLD)
 

@@ -1,3 +1,9 @@
+## [2026-04-28] ingest | DNS
+
+Ingested source: AlgoMaster.io DNS (September 2025).
+Created 1 source summary, 4 concept pages (DNS Record, Recursive Resolver, Authoritative Name Server, DNS Caching).
+Key concepts: resolution process, DNS hierarchy, record types, caching levels.
+
 ## [2026-04-28] ingest | IP Address
 
 Ingested source: AlgoMaster.io IP Address (March 2026).
