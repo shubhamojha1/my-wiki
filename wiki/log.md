@@ -1,3 +1,9 @@
+## [2026-04-27] ingest | AlgoMaster: YAGNI Principle
+
+Ingested source: AlgoMaster.io YAGNI Principle (2026).
+Created 1 source summary, 1 concept page.
+Key concepts: "you aren't gonna need it", build for now not later.
+
 ## [2026-04-27] ingest | AlgoMaster: DRY Principle
 
 Ingested source: AlgoMaster.io DRY Principle (2026).
