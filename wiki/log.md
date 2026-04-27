@@ -1,3 +1,9 @@
+## [2026-04-27] ingest | AlgoMaster: Association
+
+Ingested source: AlgoMaster.io Association (2026).
+Created 1 source summary, updated 1 concept page.
+Key concepts: "knows-about" relationship, UML representation, multiplicity (1-to-1, 1-to-many, many-to-many), unidirectional vs bidirectional, intermediary pattern for many-to-many.
+
 ## [2026-04-24] ingest | Race Conditions and Critical Sections
 
 Ingested source: AlgoMaster.io race conditions (2026).
