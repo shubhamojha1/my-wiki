@@ -1,3 +1,9 @@
+## [2026-04-28] ingest | Proxy vs Reverse Proxy
+
+Ingested source: AlgoMaster.io Proxy vs Reverse Proxy (October 2024).
+Created 1 source summary, 4 concept pages (Proxy, Reverse Proxy, SSL Termination, WAF).
+Key concepts: forward proxy vs reverse proxy, load balancing, SSL termination.
+
 ## [2026-04-28] ingest | DNS
 
 Ingested source: AlgoMaster.io DNS (September 2025).
