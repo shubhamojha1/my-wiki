@@ -1,3 +1,9 @@
+## [2026-04-28] ingest | OSI Model
+
+Ingested source: AlgoMaster.io OSI Model (March 2026).
+Created 1 source summary, 9 concept pages (7 layers + encapsulation + OSI vs TCP/IP), updated index.
+Key concepts: 7-layer framework, MAC/IP/ports, encapsulation, decapsulation, troubleshooting value.
+
 ## [2026-04-27] ingest | CockroachDB: Fault Tolerance
 
 Ingested source: CockroachDB Fault Tolerance (2023).

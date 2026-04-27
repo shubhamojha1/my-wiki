@@ -11,6 +11,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 
 ## Sources
 
+- [[OSI Model]] — AlgoMaster: 7-layer network framework, encapsulation (2026)
 - [[Kafka: A Distributed Messaging System for Log Processing]] — Summary of the original Kafka paper from LinkedIn (2011)
 - [[Language Models are Few-Shot Learners (GPT-3)]] — The GPT-3 paper demonstrating scaling improves few-shot learning (2020)
 - [[Distributed Systems: for fun and profit]] — Mixu's comprehensive intro to distributed systems fundamentals
@@ -69,6 +70,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[algomaster-Concurrency vs Parallelism]] — AlgoMaster: restaurant analogy, levels of parallelism (2026)
 - [[algomaster-Processes vs Threads]] — AlgoMaster: context switching, fault isolation (2026)
 - [[algomaster-Thread Lifecycle and States]] — AlgoMaster: NEW, RUNNABLE, BLOCKED, WAITING, TERMINATED (2026)
+- [[OSI Model]] — AlgoMaster: 7-layer framework, encapsulation, OSI vs TCP/IP (2026)
 - [[algomaster-Race Conditions and Critical Sections]] — AlgoMaster: read-modify-write, check-then-act (2026)
 - [[Processes vs Threads]] — Units of execution with different isolation tradeoffs
 
@@ -305,6 +307,19 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Scheduling Periodic Tasks]] — Cron-based recurring computation
 - [[Map-Reduce]] — Batch processing model for large datasets
 - [[Platform Layer]] — Intermediate API layer between apps and backend
+
+## Concepts (Networking)
+
+- [[OSI Model]] — 7-layer network communication framework
+- [[OSI Layer 1: Physical]] — Raw bit transmission over physical medium
+- [[OSI Layer 2: Data Link]] — Frame organization, MAC addresses, switches
+- [[OSI Layer 3: Network]] — Packet routing, IP addresses, routers
+- [[OSI Layer 4: Transport]] — Application delivery, ports, TCP/UDP
+- [[OSI Layer 5: Session]] — Connection lifecycle management
+- [[OSI Layer 6: Presentation]] — Translation, encryption, compression
+- [[OSI Layer 7: Application]] — User-facing protocols (HTTP, DNS, FTP)
+- [[Encapsulation and Decapsulation]] — How data flows through the stack
+- [[OSI vs TCP/IP Model]] — Theoretical vs deployed standards
 
 ## Concepts (OOP/LLD)
 
