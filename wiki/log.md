@@ -1,3 +1,9 @@
+## [2026-04-27] ingest | AlgoMaster: Consistent Hashing
+
+Ingested source: AlgoMaster.io Consistent Hashing (2026).
+Created 1 source summary, updated 1 concept page.
+Key concepts: hash ring, virtual nodes, minimal remapping on scaling.
+
 ## [2026-04-27] ingest | AlgoMaster: Latency vs Throughput vs Bandwidth
 
 Ingested source: AlgoMaster.io Latency vs Throughput vs Bandwidth (2026).
