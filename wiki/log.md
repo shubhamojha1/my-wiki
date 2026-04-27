@@ -1,3 +1,9 @@
+## [2026-04-28] ingest | API
+
+Ingested source: AlgoMaster.io API (October 2025).
+Created 1 source summary, 4 concept pages (REST API, GraphQL, gRPC, API Gateway).
+Key concepts: request-response model, REST, GraphQL, gRPC, API Gateway.
+
 ## [2026-04-28] ingest | Checksums
 
 Ingested source: AlgoMaster.io Checksums (October 2025).
