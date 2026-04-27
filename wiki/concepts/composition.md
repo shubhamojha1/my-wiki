@@ -3,12 +3,12 @@ title: "Composition"
 type: concept
 tags: [oop, relationships, has-a, ownership]
 created: 2026-04-23
-sources: ["blog.algomaster.io/p/12-oop-concepts-every-developer-should-know"]
+sources: ["blog.algomaster.io/p/12-oop-concepts-every-developer-should-know", "algomaster.io/learn/lld/composition"]
 ---
 
 # Composition
 
-**Definition:** A strong "has-a" relationship where the whole **owns** the parts entirely. When the whole is destroyed, the parts are destroyed with it. Parts have no meaning outside the whole.
+**Definition:** A strong "Has-A" relationship where the whole **owns** the parts entirely. When the whole is destroyed, the parts are destroyed with it. Parts have **no meaning outside** the whole.
 
 ## Real-World Example
 
@@ -16,6 +16,24 @@ Order ↔ LineItems:
 - Each line item (2x T-Shirt, 1x Laptop) only exists as part of that order
 - If the order is cancelled/deleted, line items go with it
 - A line item floating around without an order makes no sense
+
+## UML Representation
+
+- **Symbol**: Filled diamond (◆) + solid line
+- **Direction**: From whole to part
+
+```
+┌─────────────┐◆──────┐─────────────┐
+│    Car    │◆──────│   Engine   │
+└─────────────┘       └─────────────┘
+```
+
+| Relationship | UML Symbol |
+|-------------|-----------|
+| Dependency | Dashed arrow |
+| Association | Solid line |
+| Aggregation | ◇ (hollow diamond) |
+| **Composition** | **◆ (filled diamond)** |
 
 ## Code Example
 
@@ -73,8 +91,17 @@ order.cancel();  // Line items destroyed
 | Creation | Whole creates parts | Parts passed in from outside |
 | Lifecycle | Parts die with whole | Parts survive whole |
 | Ownership | Strong (owns) | Weak (references) |
-| "Is-a" test | "Order has LineItems" | "Team has Services" |
+| Symbol | ◆ (filled) | ◇ (hollow) |
+
+## Full Comparison
+
+| Relationship | UML | Coupling | Lifecycle |
+|--------------|-----|----------|-----------|
+| Dependency | Dashed | Loosest | None |
+| Association | Solid | Loose | Independent |
+| Aggregation | ◇ hollow | Moderate | Independent |
+| Composition | ◆ filled | Tightest | Dependent |
 
 ## Related Concepts
 
-[[Aggregation]], [[Association]], [[Ownership]], [[Lifecycle Control]]
+[[Aggregation]], [[Association]], [[Composition Over Inheritance]], [[Ownership]], [[Lifecycle Control]]

@@ -1,3 +1,9 @@
+## [2026-04-27] ingest | AlgoMaster: Composition
+
+Ingested source: AlgoMaster.io Composition (2026).
+Created 1 source summary, updated 1 concept page.
+Key concepts: strong "owns-a", filled diamond UML, parts die with whole, tight coupling.
+
 ## [2026-04-27] ingest | AlgoMaster: Dependency
 
 Ingested source: AlgoMaster.io Dependency (2026).
