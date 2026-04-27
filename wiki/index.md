@@ -54,6 +54,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[AlgoMaster: Composition]] — AlgoMaster: strong "owns-a" with dependent lifecycle, UML filled diamond
 - [[AlgoMaster: DRY Principle]] — AlgoMaster: "don't repeat yourself", single source of truth
 - [[AlgoMaster: YAGNI Principle]] — AlgoMaster: "you aren't gonna need it", build for now not later
+- [[AlgoMaster: KISS Principle]] — AlgoMaster: "keep it simple", avoid over-engineering
 - [[algomaster-Introduction to Concurrency]] — AlgoMaster: concurrency fundamentals, benefits, challenges (2026)
 - [[algomaster-Concurrency vs Parallelism]] — AlgoMaster: restaurant analogy, levels of parallelism (2026)
 - [[algomaster-Processes vs Threads]] — AlgoMaster: context switching, fault isolation (2026)
@@ -333,6 +334,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 
 - [[DRY Principle]] — Don't repeat yourself, single source of truth
 - [[YAGNI Principle]] — Don't build for requirements that don't exist yet
+- [[KISS Principle]] — Keep it simple, avoid over-engineering
 - [[Public API]] — External interface hiding internal complexity
 - [[Method Overriding]] — Subclass provides specific implementation of parent method
 - [[Method Overloading]] — Multiple methods with same name, different parameters

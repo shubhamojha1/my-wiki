@@ -1,3 +1,9 @@
+## [2026-04-27] ingest | AlgoMaster: KISS Principle
+
+Ingested source: AlgoMaster.io KISS Principle (2026).
+Created 1 source summary, 1 concept page.
+Key concepts: "keep it simple", over-engineering, clear over clever.
+
 ## [2026-04-27] ingest | AlgoMaster: YAGNI Principle
 
 Ingested source: AlgoMaster.io YAGNI Principle (2026).
