@@ -3,42 +3,30 @@ title: "CAP Theorem"
 type: concept
 tags: [distributed-systems, consistency, tradeoff]
 created: 2026-04-19
-sources: [mixu-distributed-systems-book]
+sources: [mixu-distributed-systems-book, "algomaster.io/learn/system-design/cap-theorem"]
 ---
 
 CAP theorem states that a distributed system can only provide two of: Consistency, Availability, Partition Tolerance.
 
 ## Three Properties
 
-### Consistency (C)
-All nodes see the same data at the same time.
+| Property | Meaning |
+|----------|---------|
+| Consistency (C) | Every read sees most recent write or error |
+| Availability (A) | Every request gets non-error response |
+| Partition Tolerance (P) | System works despite network failures |
 
-### Availability (A)
-Node failures do not prevent survivors from continuing to operate.
+## The Trade-Off
 
-### Partition Tolerance (P)
-System continues to operate despite message loss due to network/node failure.
+During a **network partition**, must choose:
+
+- **CP**: Consistency over availability (MongoDB, ZooKeeper)
+- **AP**: Availability over consistency (Cassandra, DynamoDB)
 
 ## System Types
 
-### CA (Consistency + Availability)
-- Cannot tolerate partitions
-- Example: [[Two-Phase Commit]], full strict quorum
-
-### CP (Consistency + Partition Tolerance)
-- Majority quorum protocols
-- Example: [[Paxos]], [[Raft]]
-- Minority partition becomes unavailable
-
-### AP (Availability + Partition Tolerance)
-- Conflict resolution
-- Example: [[Dynamo]]
-- Allows divergence during partition
-
-## Practical Implications
-During a partition, must choose between:
-- Availability (allow writes on both sides → divergence)
-- Consistency (disable writes → maintain single copy)
-
-## Key Insight
-"Consistency" is not singular: ACID ≠ CAP ≠ "oatmeal"
+| Type | Behavior |
+|------|----------|
+| CP | Sacrifice availability during partition |
+| AP | Always respond, may return stale data |
+| CA | Only when no partitions (theoretical) |

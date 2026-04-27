@@ -1,3 +1,9 @@
+## [2026-04-27] ingest | AlgoMaster: CAP Theorem
+
+Ingested source: AlgoMaster.io CAP Theorem (2026).
+Created 1 source summary, updated 1 concept page.
+Key concepts: C/A/P tradeoff, CP vs AP systems.
+
 ## [2026-04-27] ingest | AlgoMaster: Consistent Hashing
 
 Ingested source: AlgoMaster.io Consistent Hashing (2026).
