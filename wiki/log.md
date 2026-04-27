@@ -1,3 +1,9 @@
+## [2026-04-28] ingest | API Gateway
+
+Ingested source: AlgoMaster.io API Gateway (December 2024).
+Created 1 source summary, 1 concept page (Rate Limiting).
+Key features: request validation, auth, rate limiting, routing.
+
 ## [2026-04-28] ingest | API
 
 Ingested source: AlgoMaster.io API (October 2025).
