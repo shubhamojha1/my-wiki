@@ -3,7 +3,7 @@ title: "SOLID Principles"
 type: concept
 tags: [oop, design-principles, solid]
 created: 2026-04-23
-sources: ["algomaster.io/learn/lld/dip", "algomaster.io/learn/lld/isp", "blog.algomaster.io/p/solid-principles-explained-with-code"]
+sources: ["algomaster.io/learn/lld/dip", "algomaster.io/learn/lld/isp", "blog.algomaster.io/p/solid-principles-explained-with-code", "medium.com/@ugonnathelma/the-s-o-l-i-d-principles-in-pictures"]
 ---
 
 # SOLID Principles

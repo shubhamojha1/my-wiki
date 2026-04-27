@@ -3,24 +3,38 @@ title: "Scalability"
 type: concept
 tags: [distributed-systems, properties]
 created: 2026-04-19
-sources: [mixu-distributed-systems-book]
+sources: [mixu-distributed-systems-book, "algomaster.io/learn/system-design/scalability"]
 ---
 
 Scalability is the ability of a system to handle growing amounts of work without degrading performance.
 
-## Dimensions
+## Dimensions (Distributed Systems)
 
 ### Size Scalability
-Adding more nodes should make the system linearly faster; growing dataset should not increase latency.
+Adding more nodes should make the system linearly faster.
 
 ### Geographic Scalability
-Using multiple data centers to reduce response time while handling cross-data center latency.
+Using multiple data centers to reduce response time.
 
 ### Administrative Scalability
-Adding more nodes should not increase administrative costs (e.g., admin-to-machine ratio).
+Adding more nodes should not increase administrative costs.
 
-## Ideal Case
-Linear scaling: 2x nodes → 2x performance. In practice, coordination overhead prevents perfect scaling.
+## Scaling Strategies (Practical)
 
-## Key Challenge
-Tradeoffs between size, geographic distribution, and administrative complexity.
+### Vertical Scaling (Scale Up)
+Add more power to existing machines — CPU, RAM, storage.
+- Simple but has limits
+- Single point of failure
+
+### Horizontal Scaling (Scale Out)
+Add more machines to distribute load.
+- Requires stateless services
+- Needs load balancer
+- Better fault tolerance
+
+### Key Patterns
+- **Stateless services** — Store state in shared store (Redis)
+- **Load balancing** — Distribute across servers
+- **Auto-scaling** — Adjust based on load
+- **Database scaling** — Read replicas, sharding
+- **Caching** — Reduce DB load

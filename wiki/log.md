@@ -1,3 +1,9 @@
+## [2026-04-27] ingest | AlgoMaster: Scalability, Availability, Reliability
+
+Ingested sources: AlgoMaster.io Scalability, Availability, Reliability (2026).
+Created 3 source summaries, updated 2 concept pages.
+Key concepts: vertical/horizontal scaling, stateless services, redundancy, nines, circuit breakers.
+
 ## [2026-04-27] ingest | AlgoMaster: SOLID Principles
 
 Ingested source: AlgoMaster.io SOLID Principles (2026).
