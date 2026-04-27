@@ -1,3 +1,9 @@
+## [2026-04-27] ingest | AlgoMaster: Dependency
+
+Ingested source: AlgoMaster.io Dependency (2026).
+Created 1 source summary, updated 1 concept page.
+Key concepts: temporary "uses-a", UML dashed arrow, method parameters, loose coupling.
+
 ## [2026-04-27] ingest | AlgoMaster: Aggregation
 
 Ingested source: AlgoMaster.io Aggregation (2026).
