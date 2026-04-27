@@ -1,3 +1,9 @@
+## [2026-04-27] ingest | AlgoMaster: Aggregation
+
+Ingested source: AlgoMaster.io Aggregation (2026).
+Created 1 source summary, updated 1 concept page.
+Key concepts: "has-a" with independent parts, hollow diamond UML symbol, reassignment allowed.
+
 ## [2026-04-27] ingest | AlgoMaster: Association
 
 Ingested source: AlgoMaster.io Association (2026).

@@ -49,6 +49,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Inheritance]] — AlgoMaster: extends, notification system example, method overriding
 - [[Polymorphism]] — AlgoMaster: overloading vs overriding, runtime vs compile-time
 - [[AlgoMaster: Association]] — AlgoMaster: "knows-about" relationships, UML, multiplicity types, hospital example
+- [[AlgoMaster: Aggregation]] — AlgoMaster: "has-a" with independent parts, UML hollow diamond
 - [[algomaster-Introduction to Concurrency]] — AlgoMaster: concurrency fundamentals, benefits, challenges (2026)
 - [[algomaster-Concurrency vs Parallelism]] — AlgoMaster: restaurant analogy, levels of parallelism (2026)
 - [[algomaster-Processes vs Threads]] — AlgoMaster: context switching, fault isolation (2026)

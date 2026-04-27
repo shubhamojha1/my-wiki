@@ -3,12 +3,12 @@ title: "Aggregation"
 type: concept
 tags: [oop, relationships, has-a]
 created: 2026-04-23
-sources: ["blog.algomaster.io/p/12-oop-concepts-every-developer-should-know"]
+sources: ["blog.algomaster.io/p/12-oop-concepts-every-developer-should-know", "algomaster.io/learn/lld/aggregation"]
 ---
 
 # Aggregation
 
-**Definition:** A specialized form of association representing a "has-a" relationship where the whole contains parts, but **parts can exist independently** of the whole.
+**Definition:** A "Has-A" relationship where the whole contains parts, but **parts can exist independently** of the whole.
 
 ## Real-World Example
 
@@ -16,6 +16,17 @@ Team ↔ Microservice:
 - A team owns multiple microservices
 - If the team is reorganized, the services don't disappear
 - Services get reassigned, not deleted
+
+## UML Representation
+
+- **Symbol**: Hollow diamond (◇) on containing class side + solid line
+- **Direction**: From containing class to contained class
+
+| Symbol | Meaning |
+|--------|---------|
+| ◇ (hollow) | Aggregation (independent parts) |
+| ◆ (filled) | Composition (dependent parts) |
+| Solid line | Association (knows-about) |
 
 ## Code Example
 
@@ -57,14 +68,29 @@ Team checkoutTeam = new Team("Checkout");
 checkoutTeam.addService(paymentService);  // Reassigned, not recreated
 ```
 
-## Aggregation vs Composition
+## Aggregation vs Composition vs Association
 
-| Aspect | Aggregation | Composition |
-|--------|-------------|-------------|
-| Part existence | Independent | Dependent on whole |
-| Lifecycle | Parts survive whole | Parts die with whole |
-| Creation | Parts created outside | Whole creates parts |
-| Reassignment | Allowed | Not applicable |
+| Aspect | Association | Aggregation | Composition |
+|--------|------------|-------------|-------------|
+| Relationship | "Knows-about" | "Has-A" | "Owns-A" |
+| Coupling | Loosest | Moderate | Tightest |
+| Lifecycle | Independent | Independent | Parts die with whole |
+| UML Symbol | Solid line | ◇ (hollow diamond) | ◆ (filled diamond) |
+| Creation | Both created separately | Parts created outside | Whole creates parts |
+| Reassignment | N/A | Allowed | Not applicable |
+
+## Comparison with Code
+
+```java
+// Aggregation: part passed in, can be reassigned
+Team team = new Team("Platform");
+Microservice svc = new Microservice("payment");
+team.addService(svc);  // svc created externally
+
+// Another team can use the same service
+Team other = new Team("Checkout");
+other.addService(svc);  // Reassigned, not recreated
+```
 
 ## Related Concepts
 
