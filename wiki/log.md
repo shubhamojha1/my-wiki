@@ -1,3 +1,9 @@
+## [2026-04-28] ingest | HTTP and HTTPS
+
+Ingested source: AlgoMaster.io HTTP and HTTPS (October 2025).
+Created 1 source summary, 5 concept pages (HTTP, HTTPS, TLS, HTTP/2, HTTP/3).
+Key concepts: HTTP methods, TLS handshake, HTTP/2 multiplexing, HTTP/3 QUIC.
+
 ## [2026-04-28] ingest | Proxy vs Reverse Proxy
 
 Ingested source: AlgoMaster.io Proxy vs Reverse Proxy (October 2024).
