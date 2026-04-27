@@ -1,3 +1,9 @@
+## [2026-04-27] ingest | AlgoMaster: SOLID Principles
+
+Ingested source: AlgoMaster.io SOLID Principles (2026).
+Created 1 source summary, updated 1 concept page.
+Key concepts: SRP, OCP, LSP, ISP, DIP with code examples.
+
 ## [2026-04-27] ingest | AlgoMaster: KISS Principle
 
 Ingested source: AlgoMaster.io KISS Principle (2026).

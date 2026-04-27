@@ -55,6 +55,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[AlgoMaster: DRY Principle]] — AlgoMaster: "don't repeat yourself", single source of truth
 - [[AlgoMaster: YAGNI Principle]] — AlgoMaster: "you aren't gonna need it", build for now not later
 - [[AlgoMaster: KISS Principle]] — AlgoMaster: "keep it simple", avoid over-engineering
+- [[AlgoMaster: SOLID Principles]] — AlgoMaster: SRP, OCP, LSP, ISP, DIP with code examples
 - [[algomaster-Introduction to Concurrency]] — AlgoMaster: concurrency fundamentals, benefits, challenges (2026)
 - [[algomaster-Concurrency vs Parallelism]] — AlgoMaster: restaurant analogy, levels of parallelism (2026)
 - [[algomaster-Processes vs Threads]] — AlgoMaster: context switching, fault isolation (2026)
