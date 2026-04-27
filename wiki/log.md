@@ -1,3 +1,9 @@
+## [2026-04-28] ingest | TCP vs UDP
+
+Ingested source: AlgoMaster.io TCP vs UDP (November 2025).
+Created 1 source summary, 2 concept pages (TCP, UDP).
+Key concepts: three-way handshake, reliable vs fastest, use cases.
+
 ## [2026-04-28] ingest | HTTP and HTTPS
 
 Ingested source: AlgoMaster.io HTTP and HTTPS (October 2025).
