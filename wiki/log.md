@@ -1,3 +1,9 @@
+## [2026-04-27] ingest | CockroachDB: Fault Tolerance
+
+Ingested source: CockroachDB Fault Tolerance (2023).
+Created 1 source summary, updated 1 concept page.
+Key concepts: quorum, replication factor, automatic recovery.
+
 ## [2026-04-27] ingest | Druva: Failover
 
 Ingested source: Druva Failover Definition (2026).

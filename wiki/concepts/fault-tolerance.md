@@ -3,29 +3,36 @@ title: "Fault Tolerance"
 type: concept
 tags: [distributed-systems, properties]
 created: 2026-04-19
-sources: [mixu-distributed-systems-book]
+sources: [mixu-distributed-systems-book, "cockroachlabs.com/blog/what-is-fault-tolerance"]
 ---
 
-Fault tolerance is the ability of a system to behave in a well-defined manner when faults occur.
+Fault tolerance is the ability of a system to handle errors/outages without loss of functionality.
 
 ## Core Principle
-Define what faults you expect, then design a system or algorithm tolerant of them. You can't tolerate faults you haven't considered.
+Define what faults to expect, design system to tolerate them.
 
-## Types
+## Types of Faults
 
-### Crash-Fail
-Nodes stop executing. Most common assumption.
+| Type | Description |
+|------|------------|
+| Crash-Fail | Nodes stop executing |
+| Partition | Network fails between nodes |
+| Byzantine | Nodes behave arbitrarily (rare) |
 
-### Partition
-Network fails between nodes. Nodes remain operational but can't communicate.
+## How It Works
 
-### Byzantine
-Nodes behave arbitrarily/maliciously. Rare in commercial systems due to complexity and cost.
+1. **Replicate data** across multiple nodes
+2. **Quorum commits** — majority required to write
+3. **Automatic recovery** — re-replicate when nodes fail
+4. **Rebalance** — redistribute when nodes recover
 
-## Redundancy Levels
-- Component redundancy
-- Server redundancy  
-- Datacenter redundancy
+## Quorum Formula
 
-## Tradeoffs
-More redundancy = higher availability but also higher probability of some component failing (increasing with number of components).
+`max failures = (replication factor - 1) / 2`
+
+- 3 replicas → tolerate 1 failure
+- 5 replicas → tolerate 2 failures
+
+## Related
+
+[[Redundancy]], [[Failover]], [[High Availability]], [[Quorum]]
