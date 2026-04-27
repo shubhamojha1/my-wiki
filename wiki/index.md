@@ -12,6 +12,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 ## Sources
 
 - [[OSI Model]] — AlgoMaster: 7-layer network framework, encapsulation (2026)
+- [[IP Address]] — AlgoMaster: IPv4, IPv6, CIDR, subnetting, NAT (2026)
 - [[Kafka: A Distributed Messaging System for Log Processing]] — Summary of the original Kafka paper from LinkedIn (2011)
 - [[Language Models are Few-Shot Learners (GPT-3)]] — The GPT-3 paper demonstrating scaling improves few-shot learning (2020)
 - [[Distributed Systems: for fun and profit]] — Mixu's comprehensive intro to distributed systems fundamentals
@@ -310,6 +311,14 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 
 ## Concepts (Networking)
 
+- [[IP Address]] — 32-bit (IPv4) / 128-bit (IPv6) network identifiers
+- [[IPv4]] — Classic 32-bit addressing
+- [[IPv6]] — Modern 128-bit successor
+- [[CIDR Notation]] — /prefix subnet notation
+- [[Subnet Mask]] — Network/host division
+- [[Private IP Address]] — RFC 1918 non-routable addresses
+- [[Public IP Address]] — Globally routable addresses
+- [[NAT]] — Network Address Translation
 - [[OSI Model]] — 7-layer network communication framework
 - [[OSI Layer 1: Physical]] — Raw bit transmission over physical medium
 - [[OSI Layer 2: Data Link]] — Frame organization, MAC addresses, switches

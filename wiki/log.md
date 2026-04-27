@@ -1,3 +1,9 @@
+## [2026-04-28] ingest | IP Address
+
+Ingested source: AlgoMaster.io IP Address (March 2026).
+Created 1 source summary, 6 concept pages (IPv4, IPv6, CIDR, NAT, Private/Public IP).
+Key concepts: 32-bit IPv4, 128-bit IPv6, CIDR notation, subnetting, NAT, RFC 1918.
+
 ## [2026-04-28] ingest | OSI Model
 
 Ingested source: AlgoMaster.io OSI Model (March 2026).
