@@ -1,3 +1,9 @@
+## [2026-04-27] ingest | Druva: Failover
+
+Ingested source: Druva Failover Definition (2026).
+Created 1 source summary, 1 concept page.
+Key concepts: heartbeat, active-active vs active-passive, cluster.
+
 ## [2026-04-27] ingest | AlgoMaster: CAP Theorem
 
 Ingested source: AlgoMaster.io CAP Theorem (2026).

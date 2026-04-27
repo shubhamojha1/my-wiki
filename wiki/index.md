@@ -63,6 +63,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[AlgoMaster: Latency vs Throughput vs Bandwidth]] — AlgoMaster: delay vs volume vs capacity
 - [[AlgoMaster: Consistent Hashing]] — AlgoMaster: hash ring, virtual nodes, minimal remapping
 - [[AlgoMaster: CAP Theorem]] — AlgoMaster: C/A/P tradeoff, CP vs AP systems
+- [[Druva: Failover]] — Druva: heartbeat, active-active vs active-passive, clusters
 - [[algomaster-Introduction to Concurrency]] — AlgoMaster: concurrency fundamentals, benefits, challenges (2026)
 - [[algomaster-Concurrency vs Parallelism]] — AlgoMaster: restaurant analogy, levels of parallelism (2026)
 - [[algomaster-Processes vs Threads]] — AlgoMaster: context switching, fault isolation (2026)
