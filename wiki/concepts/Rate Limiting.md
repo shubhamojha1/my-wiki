@@ -3,7 +3,7 @@ title: "Rate Limiting"
 type: concept
 tags: [api, gateway, rate-limiting]
 created: 2026-04-28
-sources: ["algomaster-api-gateway"]
+sources: ["algomaster-api-gateway", "algomaster-rate-limiting-algorithms"]
 ---
 
 # Rate Limiting
@@ -32,10 +32,30 @@ sources: ["algomaster-api-gateway"]
 
 ## Algorithms
 
-- **Token Bucket**: Tokens refill over time
-- **Leaky Bucket**: Fixed rate processing
-- **Fixed Window**: Reset count each window
-- **Sliding Window**: Smooth rate distribution
+### [[Token Bucket]]
+- Bucket holds tokens, refilled at fixed rate
+- Allows bursts up to bucket capacity
+- Simple to implement
+
+### [[Leaky Bucket]]
+- Queue-based; requests processed at constant rate
+- Smooths out traffic, prevents bursts
+- Drops excess requests immediately
+
+### [[Fixed Window Counter]]
+- Time divided into fixed windows; counter resets each window
+- Boundary problem: allows 2x rate at window edges
+- Simplest algorithm
+
+### [[Sliding Window Log]]
+- Stores timestamp log per request; removes expired entries
+- Most accurate, no boundary issues
+- Memory-intensive for high-volume APIs
+
+### [[Sliding Window Counter]]
+- Hybrid: weighted sum of current + previous window counts
+- Good accuracy, low memory (O(1) per client)
+- Trade-off: approximation vs exact accuracy
 
 ## Related Concepts
 

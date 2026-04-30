@@ -51,6 +51,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[CMU 15-445: Join Algorithms - Lecture 12]] — Nested loop, sort-merge, hash join algorithms
 - [[A Survey of Deep Learning: From Activations to Transformers]] — Survey: activations, normalization, transformers, self-supervised learning
 - [[Introduction to Architecting Systems for Scale]] — Will Larson (Digg/Yahoo!): load balancing, caching, offline processing, platform layer
+- [[AlgoMaster: Rate Limiting Algorithms]] — AlgoMaster: 5 algorithms with code (Token Bucket, Leaky Bucket, Fixed/Sliding Window) (2024)
 - [[AlgoMaster: Idempotency]] — AlgoMaster: idempotent operations, keys, deduplication stores (2024)
 - [[AlgoMaster: Webhooks]] — AlgoMaster: event-driven push notifications, receiver setup, scalable pipeline (2025)
 - [[Classes and Objects]] — AlgoMaster: classes as blueprints, objects as instances, practical order management example
@@ -371,6 +372,11 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[gRPC]] — High-performance RPC
 - [[API Gateway]] — Central API management
 - [[Rate Limiting]] — Request throttling per client
+- [[Token Bucket]] — Token-based rate limiting that allows bursts
+- [[Leaky Bucket]] — Queue-based rate limiting that smooths traffic
+- [[Fixed Window Counter]] — Time-windowed counter with boundary problem
+- [[Sliding Window Log]] — Timestamp log; accurate but memory-intensive
+- [[Sliding Window Counter]] — Hybrid: weighted sum of current + previous window
 - [[Over-fetching]] — Returns more data than needed (REST issue)
 - [[Under-fetching]] — Multiple requests for related data (REST issue)
 - [[WebSockets]] — Full-duplex bidirectional communication over persistent TCP connection

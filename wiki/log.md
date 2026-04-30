@@ -1,3 +1,9 @@
+## [2026-05-01] ingest | Rate Limiting Algorithms
+
+Ingested source: AlgoMaster.io Rate Limiting Algorithms (Jul 2024).
+Created 1 source summary, 5 concept pages (Token Bucket, Leaky Bucket, Fixed Window Counter, Sliding Window Log, Sliding Window Counter). Updated existing Rate Limiting page with cross-references.
+Key concepts: Token Bucket (burst-friendly, simple), Leaky Bucket (smooths traffic, drops excess), Fixed Window Counter (boundary problem allows 2x rate), Sliding Window Log (accurate but memory-heavy), Sliding Window Counter (hybrid: weighted approximation with O(1) memory).
+
 ## [2026-05-01] ingest | Idempotency
 
 Ingested source: AlgoMaster.io Idempotency (Nov 2024).
