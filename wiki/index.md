@@ -82,7 +82,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[algomaster-Thread Lifecycle and States]] — AlgoMaster: NEW, RUNNABLE, BLOCKED, WAITING, TERMINATED (2026)
 - [[OSI Model]] — AlgoMaster: 7-layer framework, encapsulation, OSI vs TCP/IP (2026)
 - [[algomaster-Race Conditions and Critical Sections]] — AlgoMaster: read-modify-write, check-then-act (2026)
-- [[Processes vs Threads]] — Units of execution with different isolation tradeoffs
+- [[AlgoMaster: WebSockets]] — AlgoMaster: full-duplex real-time protocol, handshake, use cases (2024)
 
 ## Entities
 
@@ -371,6 +371,11 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Rate Limiting]] — Request throttling per client
 - [[Over-fetching]] — Returns more data than needed (REST issue)
 - [[Under-fetching]] — Multiple requests for related data (REST issue)
+- [[WebSockets]] — Full-duplex bidirectional communication over persistent TCP connection
+- [[HTTP 101]] — Switching Protocols status code for WebSocket handshake
+- [[Polling]] — Client repeatedly requests server at fixed intervals
+- [[Long-Polling]] — Server holds response until data available
+- [[Frame (WebSocket)]] — Minimal-overhead data unit in WebSocket protocol
 
 ## Concepts (OOP/LLD)
 

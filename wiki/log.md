@@ -404,4 +404,10 @@ Key entity: Ashish Pratap Singh (AlgoMaster.io creator).
 Ingested source: Will Larson's foundational article on scalable system architecture (2011).
 Created 1 source summary, 6 entity pages, 18 concept pages.
 Key concepts: load balancing (smart clients, hardware, software), caching (application, database, in-memory, CDN), cache invalidation, offline processing (message queues, cron, map-reduce), platform layer.
+## [2026-05-01] ingest | WebSockets
+
+Ingested source: AlgoMaster.io WebSockets (Aug 2024).
+Created 1 source summary, 5 concept pages (WebSockets, HTTP 101, Polling, Long-Polling, Frame).
+Key concepts: full-duplex bidirectional communication, HTTP handshake with 101 switch, persistent connections vs HTTP/polling/long-polling, use cases (chat, gaming, notifications, financial feeds, collaboration, IoT), challenges (scalability, security, network reliability, proxy compatibility).
+
 Key entities: Will Larson, HAProxy, Memcached, RabbitMQ, Hadoop.
