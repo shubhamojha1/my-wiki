@@ -51,6 +51,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[CMU 15-445: Join Algorithms - Lecture 12]] — Nested loop, sort-merge, hash join algorithms
 - [[A Survey of Deep Learning: From Activations to Transformers]] — Survey: activations, normalization, transformers, self-supervised learning
 - [[Introduction to Architecting Systems for Scale]] — Will Larson (Digg/Yahoo!): load balancing, caching, offline processing, platform layer
+- [[AlgoMaster: Webhooks]] — AlgoMaster: event-driven push notifications, receiver setup, scalable pipeline (2025)
 - [[Classes and Objects]] — AlgoMaster: classes as blueprints, objects as instances, practical order management example
 - [[12 OOP Concepts Every Developer Should Know]] — AlgoMaster: 12 OOP concepts covering building blocks, four pillars, and object relationships
 - [[Enums]] — AlgoMaster: enumerations with properties/methods, state machine pattern for order processing
@@ -376,6 +377,10 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Polling]] — Client repeatedly requests server at fixed intervals
 - [[Long-Polling]] — Server holds response until data available
 - [[Frame (WebSocket)]] — Minimal-overhead data unit in WebSocket protocol
+- [[Webhooks]] — Event-driven push notifications via HTTP POST
+- [[Event Idempotency]] — Exactly-once processing via event ID deduplication
+- [[Dead Letter Queue]] — Holding queue for permanently failing events
+- [[Exponential Backoff]] — Retry strategy with increasing delays and jitter
 
 ## Concepts (OOP/LLD)
 

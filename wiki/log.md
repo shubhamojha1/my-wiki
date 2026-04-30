@@ -1,3 +1,9 @@
+## [2026-05-01] ingest | Webhooks
+
+Ingested source: AlgoMaster.io Webhooks (Apr 2025).
+Created 1 source summary, 4 concept pages (Webhooks, Event Idempotency, Dead Letter Queue, Exponential Backoff).
+Key concepts: event-driven push notifications, webhook anatomy (POST, JSON, HMAC signature), receiver setup (idempotency, signature verification), scalable pipeline (queue → store → async workers → retry with backoff → DLQ → observability).
+
 ## [2026-04-28] ingest | REST vs GraphQL
 
 Ingested source: AlgoMaster.io REST vs GraphQL (March 2025).
