@@ -51,6 +51,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[CMU 15-445: Join Algorithms - Lecture 12]] — Nested loop, sort-merge, hash join algorithms
 - [[A Survey of Deep Learning: From Activations to Transformers]] — Survey: activations, normalization, transformers, self-supervised learning
 - [[Introduction to Architecting Systems for Scale]] — Will Larson (Digg/Yahoo!): load balancing, caching, offline processing, platform layer
+- [[REST API Design Best Practices]] — Abdul Rafee Wahab: 13 best practices for REST API design (2021)
 - [[AlgoMaster: Rate Limiting Algorithms]] — AlgoMaster: 5 algorithms with code (Token Bucket, Leaky Bucket, Fixed/Sliding Window) (2024)
 - [[AlgoMaster: Idempotency]] — AlgoMaster: idempotent operations, keys, deduplication stores (2024)
 - [[AlgoMaster: Webhooks]] — AlgoMaster: event-driven push notifications, receiver setup, scalable pipeline (2025)
@@ -117,6 +118,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[RabbitMQ]] — Message broker implementing AMQP
 - [[Hadoop]] — Distributed data processing framework with MapReduce
 - [[Ashish Pratap Singh]] — Educator running AlgoMaster.io for LLD interview preparation
+- [[Abdul Rafee Wahab]] — Software architect, REST API design best practices author
 
 ## Entities
 
@@ -377,6 +379,12 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Fixed Window Counter]] — Time-windowed counter with boundary problem
 - [[Sliding Window Log]] — Timestamp log; accurate but memory-intensive
 - [[Sliding Window Counter]] — Hybrid: weighted sum of current + previous window
+- [[REST API Design Best Practices]] — Resource-oriented URIs, proper HTTP usage, predictable errors
+- [[HTTP 202 Accepted]] — Request accepted for async processing (not yet complete)
+- [[Error Response Format]] — Standardized JSON error structure with field-level details
+- [[URI Naming Conventions]] — Plural nouns, no verbs, no nesting, trailing slash handling
+- [[Query String Filtering]] — Filter resource collections via URL query parameters
+- [[Page Pagination]] — Numbered pages with page + page_size parameters
 - [[Over-fetching]] — Returns more data than needed (REST issue)
 - [[Under-fetching]] — Multiple requests for related data (REST issue)
 - [[WebSockets]] — Full-duplex bidirectional communication over persistent TCP connection

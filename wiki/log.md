@@ -1,3 +1,9 @@
+## [2026-05-01] ingest | REST API Design Best Practices
+
+Ingested source: Abdul Rafee Wahab - REST API Design Best Practices (Oct 2021).
+Created 1 source summary, 6 concept pages (REST API Design Best Practices, HTTP 202, Error Response Format, URI Naming Conventions, Query String Filtering, Page Pagination), 1 entity page.
+Key concepts: resource-oriented URIs (plural nouns, no verbs, no nesting), Content-Type importance, meaningful HTTP status codes (never 200 with error body), 401 vs 403 distinction, query string filtering + pagination, REST-specific frameworks, trailing slash handling.
+
 ## [2026-05-01] ingest | Rate Limiting Algorithms
 
 Ingested source: AlgoMaster.io Rate Limiting Algorithms (Jul 2024).
