@@ -1,3 +1,9 @@
+## [2026-05-01] ingest | Idempotency
+
+Ingested source: AlgoMaster.io Idempotency (Nov 2024).
+Created 1 source summary, 4 concept pages (Idempotency, Idempotency Key, Deduplication Store, Upsert).
+Key concepts: idempotent operations (GET/PUT/DELETE vs POST), idempotency keys for deduplication, database upsert patterns, deduplication store design, two-phase reservation pattern, handling race conditions in distributed systems.
+
 ## [2026-05-01] ingest | Webhooks
 
 Ingested source: AlgoMaster.io Webhooks (Apr 2025).

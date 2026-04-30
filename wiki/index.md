@@ -51,6 +51,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[CMU 15-445: Join Algorithms - Lecture 12]] — Nested loop, sort-merge, hash join algorithms
 - [[A Survey of Deep Learning: From Activations to Transformers]] — Survey: activations, normalization, transformers, self-supervised learning
 - [[Introduction to Architecting Systems for Scale]] — Will Larson (Digg/Yahoo!): load balancing, caching, offline processing, platform layer
+- [[AlgoMaster: Idempotency]] — AlgoMaster: idempotent operations, keys, deduplication stores (2024)
 - [[AlgoMaster: Webhooks]] — AlgoMaster: event-driven push notifications, receiver setup, scalable pipeline (2025)
 - [[Classes and Objects]] — AlgoMaster: classes as blueprints, objects as instances, practical order management example
 - [[12 OOP Concepts Every Developer Should Know]] — AlgoMaster: 12 OOP concepts covering building blocks, four pillars, and object relationships
@@ -381,6 +382,10 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Event Idempotency]] — Exactly-once processing via event ID deduplication
 - [[Dead Letter Queue]] — Holding queue for permanently failing events
 - [[Exponential Backoff]] — Retry strategy with increasing delays and jitter
+- [[Idempotency]] — Same operation multiple times = same result; critical for distributed systems
+- [[Idempotency Key]] — Unique client-generated ID to prevent duplicate processing
+- [[Deduplication Store]] — Storage for tracking processed operation identifiers
+- [[Upsert]] — Update-or-insert database operation for idempotent writes
 
 ## Concepts (OOP/LLD)
 
