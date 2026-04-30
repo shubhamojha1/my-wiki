@@ -3,7 +3,7 @@ title: "Webhooks"
 type: concept
 tags: [event-driven, system-design, real-time]
 created: 2026-05-01
-sources: [webhooks-algomaster.md]
+sources: [algomaster-webhooks.md]
 ---
 
 # Webhooks

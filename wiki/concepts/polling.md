@@ -3,7 +3,7 @@ title: "Polling"
 type: concept
 tags: [networking, real-time, pattern]
 created: 2026-05-01
-sources: [websockets-algomaster.md]
+sources: [algomaster-websockets.md]
 ---
 
 # Polling

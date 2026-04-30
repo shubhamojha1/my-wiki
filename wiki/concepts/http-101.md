@@ -3,7 +3,7 @@ title: "HTTP 101"
 type: concept
 tags: [networking, http, protocol]
 created: 2026-05-01
-sources: [websockets-algomaster.md]
+sources: [algomaster-websockets.md]
 ---
 
 # HTTP 101 (Switching Protocols)

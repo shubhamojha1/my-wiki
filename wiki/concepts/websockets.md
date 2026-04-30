@@ -3,7 +3,7 @@ title: "WebSockets"
 type: concept
 tags: [networking, real-time, protocol]
 created: 2026-05-01
-sources: [websockets-algomaster.md]
+sources: [algomaster-websockets.md]
 ---
 
 # WebSockets

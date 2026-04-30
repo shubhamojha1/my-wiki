@@ -3,7 +3,7 @@ title: "Exponential Backoff"
 type: concept
 tags: [system-design, reliability, retry]
 created: 2026-05-01
-sources: [webhooks-algomaster.md]
+sources: [algomaster-webhooks.md]
 ---
 
 # Exponential Backoff

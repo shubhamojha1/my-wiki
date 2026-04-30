@@ -3,7 +3,7 @@ title: "Dead Letter Queue"
 type: concept
 tags: [system-design, reliability, messaging]
 created: 2026-05-01
-sources: [webhooks-algomaster.md]
+sources: [algomaster-webhooks.md]
 ---
 
 # Dead Letter Queue (DLQ)

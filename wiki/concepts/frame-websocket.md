@@ -3,7 +3,7 @@ title: "Frame (WebSocket)"
 type: concept
 tags: [networking, websocket, protocol]
 created: 2026-05-01
-sources: [websockets-algomaster.md]
+sources: [algomaster-websockets.md]
 ---
 
 # Frame (WebSocket)

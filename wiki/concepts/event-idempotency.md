@@ -3,7 +3,7 @@ title: "Event Idempotency"
 type: concept
 tags: [system-design, reliability, pattern]
 created: 2026-05-01
-sources: [webhooks-algomaster.md]
+sources: [algomaster-webhooks.md]
 ---
 
 # Event Idempotency
