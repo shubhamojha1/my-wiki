@@ -3,7 +3,7 @@ title: "Application Caching"
 type: concept
 tags: [caching, application-layer]
 created: 2026-04-23
-sources: ["lethain.com/introduction-to-architecting-systems-for-scale/"]
+sources: ["lethain.com/introduction-to-architecting-systems-for-scale/", "https://github.com/donnemartin/system-design-primer#cache"]
 ---
 
 # Application Caching
@@ -63,6 +63,19 @@ def get_user(user_id):
 - Custom invalidation logic required
 - Non-standard data structures
 
+## Caching Levels
+
+### Database Query Level
+Hash the query as a key and store the result. Simple but suffers from expiration issues:
+- Hard to delete specific cached results for complex queries
+- One cell change may require invalidating many cached queries
+
+### Object Level
+Assemble data into objects (class instances, data structures):
+- Remove object from cache if underlying data changes
+- Allows asynchronous workers to assemble objects from cached data
+- Suggestions: user sessions, fully rendered web pages, activity streams, user graph data
+
 ## Advantages
 
 - **Precise control** — Cache exactly what you need
@@ -77,4 +90,4 @@ def get_user(user_id):
 
 ## Related Concepts
 
-[[Caching]], [[Read-Through Cache]], [[Cache Invalidation]], [[In-Memory Cache]], [[Memcached]]
+[[Caching]], [[Read-Through Cache]], [[Cache-Aside]], [[Write-Through Cache]], [[Write-Behind Cache]], [[Refresh-Ahead Cache]], [[Cache Invalidation]], [[In-Memory Cache]], [[Memcached]]

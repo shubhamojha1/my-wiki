@@ -88,6 +88,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[algomaster-Race Conditions and Critical Sections]] — AlgoMaster: read-modify-write, check-then-act (2026)
 - [[AlgoMaster: WebSockets]] — AlgoMaster: full-duplex real-time protocol, handshake, use cases (2024)
 - [[AWS Caching Overview]] — AWS: 5-layer caching stack, ElastiCache, CloudFront, Route 53 (2026)
+- [[System Design Primer: Cache]] — Donne Martin: 5 cache locations, 2 caching levels, 4 update strategies (2026)
 
 ## Entities
 
@@ -400,6 +401,9 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Event Idempotency]] — Exactly-once processing via event ID deduplication
 - [[Web Caching]] — Server-side and client-side caching of web artifacts
 - [[Session Management]] — Centralized HTTP session store for elastic architectures
+- [[Cache-Aside]] — Lazy loading pattern: app checks cache, loads from DB on miss (Memcached pattern)
+- [[Write-Behind Cache]] — Async write-back pattern: app writes to cache, async flush to DB
+- [[Refresh-Ahead Cache]] — Proactive refresh of hot entries before TTL expiry
 - [[Dead Letter Queue]] — Holding queue for permanently failing events
 - [[Exponential Backoff]] — Retry strategy with increasing delays and jitter
 - [[Idempotency]] — Same operation multiple times = same result; critical for distributed systems

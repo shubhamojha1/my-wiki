@@ -3,7 +3,7 @@ title: "Caching"
 type: concept
 tags: [performance, architecture, optimization]
 created: 2026-04-23
-sources: ["lethain.com/introduction-to-architecting-systems-for-scale/", "https://aws.amazon.com/caching/"]
+sources: ["lethain.com/introduction-to-architecting-systems-for-scale/", "https://aws.amazon.com/caching/", "https://github.com/donnemartin/system-design-primer#cache"]
 ---
 
 # Caching
@@ -65,6 +65,31 @@ Caching is important **earlier** in development than load balancing. Starting wi
 - **Hot spots** — Popular items may overwhelm single cache server
 - **Invalidation** — Knowing when to evict stale data
 
+## Four Cache Update Strategies
+
+| Strategy | Write Path | Read Path | Consistency | Use Case |
+|----------|-----------|-----------|-------------|----------|
+| [[Cache-Aside]] (lazy loading) | App writes to DB | Cache miss → load from DB → populate cache | Eventual | Read-heavy, Memcached pattern |
+| [[Write-Through Cache\|Write-Through]] | Write cache + DB synchronously | Cache hit | Strong | Consistency-critical |
+| [[Write-Behind Cache\|Write-Behind]] | Write cache only, async flush to DB | Cache hit | Weak (async) | Write-heavy, non-critical data |
+| [[Refresh-Ahead Cache\|Refresh-Ahead]] | Configurable | Cache auto-refreshes before TTL expiry | Strong (if prediction accurate) | Predictable access patterns |
+
+### Cache-Aside (Lazy Loading)
+
+Most common pattern. App checks cache; on miss, loads from DB, populates cache, returns. Used by [[Memcached]]. Simple but has 3-trip penalty on misses and risk of stale data.
+
+### Write-Through
+
+Cache is main data store; synchronously writes to DB. Never stale, but write latency is higher.
+
+### Write-Behind (Write-Back)
+
+App updates cache; DB write happens asynchronously in background. Fast writes; risk of data loss on cache failure.
+
+### Refresh-Ahead
+
+Cache proactively refreshes hot entries nearing TTL expiration. Low latency if predictions are accurate; wastes resources if not.
+
 ## AWS 5-Layer Caching Stack
 
 | Layer | Use Case | AWS Solution |
@@ -89,4 +114,4 @@ A dedicated caching layer with independent lifecycle allows app nodes to scale i
 
 ## Related Concepts
 
-[[Application Caching]], [[Database Caching]], [[In-Memory Cache]], [[CDN]], [[Cache Invalidation]], [[Read-Through Cache]], [[Write-Through Cache]], [[LRU]], [[Web Caching]], [[Session Management]], [[Amazon ElastiCache]], [[Amazon CloudFront]], [[Amazon Route 53]]
+[[Application Caching]], [[Database Caching]], [[In-Memory Cache]], [[CDN]], [[Cache Invalidation]], [[Read-Through Cache]], [[Write-Through Cache]], [[Write-Behind Cache]], [[Cache-Aside]], [[Refresh-Ahead Cache]], [[LRU]], [[Web Caching]], [[Session Management]], [[Amazon ElastiCache]], [[Amazon CloudFront]], [[Amazon Route 53]]

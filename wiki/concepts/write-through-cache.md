@@ -77,4 +77,4 @@ def update_user(user_id, data):
 
 ## Related Concepts
 
-[[Caching]], [[Read-Through Cache]], [[Cache Invalidation]]
+[[Caching]], [[Cache-Aside]], [[Write-Behind Cache]], [[Refresh-Ahead Cache]], [[Read-Through Cache]], [[Cache Invalidation]]

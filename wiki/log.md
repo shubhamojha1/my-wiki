@@ -428,6 +428,12 @@ Key entity: Ashish Pratap Singh (AlgoMaster.io creator).
 Ingested source: Will Larson's foundational article on scalable system architecture (2011).
 Created 1 source summary, 6 entity pages, 18 concept pages.
 Key concepts: load balancing (smart clients, hardware, software), caching (application, database, in-memory, CDN), cache invalidation, offline processing (message queues, cron, map-reduce), platform layer.
+## [2026-05-08] ingest | System Design Primer: Cache
+
+Ingested source: Donne Martin's system-design-primer cache section (GitHub).
+Created 1 source summary, 3 concept pages (Cache-Aside, Write-Behind Cache, Refresh-Ahead Cache). Updated Caching and Application Caching pages.
+Key concepts: 4 cache update strategies (cache-aside/lazy loading, write-through, write-behind/write-back, refresh-ahead), 2 caching levels (database query hashing vs object-level), 5 cache locations (client, CDN, web server, database, application).
+
 ## [2026-05-08] ingest | AWS Caching Overview
 
 Ingested source: AWS Caching Overview page (2026).
