@@ -3,7 +3,7 @@ title: "Web Caching"
 type: concept
 tags: [caching, web, performance, cdn]
 created: 2026-05-08
-sources: ["https://aws.amazon.com/caching/", "https://www.freecodecamp.org/news/http-caching-in-depth-part-1-a853c6af99db/"]
+sources: ["https://aws.amazon.com/caching/", "https://www.freecodecamp.org/news/http-caching-in-depth-part-1-a853c6af99db/", "https://www.freecodecamp.org/news/an-in-depth-introduction-to-http-caching-cache-control-and-vary/"]
 ---
 
 # Web Caching
@@ -45,6 +45,32 @@ Browser HTTP cache stores resources on the user's filesystem. On a cache hit, th
 
 See [[Browser Caching]] for the full treatment.
 
+## Cache-Control for Web Caching
+
+Web caching behavior is governed by the [[Cache-Control]] header:
+
+```http
+# Static asset — cache in browser and CDN for a year
+Cache-Control: public, max-age=31536000, immutable
+
+# HTML page — always revalidate
+Cache-Control: no-cache
+```
+
+The `public` vs `private` distinction is critical for web caches:
+- **`public`** — any cache may store (browser, CDN, proxy)
+- **`private`** — only browser cache may store (default)
+
+### Representations and the Vary Header
+
+Content negotiation means the same URL can serve different representations. The [[Vary Header]] tells caches which headers to differentiate on:
+
+```http
+Vary: Accept-Encoding, Accept-Language
+```
+
+Without Vary, a compressed response could be served to a browser that doesn't support compression. See [[Vary Header]] for normalization and combinatorial explosion considerations.
+
 ## Key Benefits
 
 - Eliminates disk reads for cached assets
@@ -54,4 +80,4 @@ See [[Browser Caching]] for the full treatment.
 
 ## Related Pages
 
-- [[Caching]], [[CDN]], [[Amazon CloudFront]], [[Reverse Proxy]], [[HTTP]], [[HTTP Caching]], [[Browser Caching]], [[Proxy Cache]]
+- [[Caching]], [[CDN]], [[Amazon CloudFront]], [[Reverse Proxy]], [[HTTP]], [[HTTP Caching]], [[Browser Caching]], [[Proxy Cache]], [[Cache-Control]], [[Vary Header]]

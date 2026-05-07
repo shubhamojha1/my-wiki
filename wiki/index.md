@@ -90,6 +90,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[AWS Caching Overview]] — AWS: 5-layer caching stack, ElastiCache, CloudFront, Route 53 (2026)
 - [[System Design Primer: Cache]] — Donne Martin: 5 cache locations, 2 caching levels, 4 update strategies (2026)
 - [[HTTP Caching In-Depth Part 1]] — Léo Jacquemin: 3 HTTP caching actors, latency bottleneck, request anatomy (2018)
+- [[HTTP Caching: Cache-Control & Vary]] — Léo Jacquemin: cache-control directives, Vary header, 4-outcome decision tree (2019)
 
 ## Entities
 
@@ -408,6 +409,10 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[HTTP Caching]] — Protocol-level caching across browsers, proxies, and CDNs (RFC 7234)
 - [[Browser Caching]] — Client-side filesystem HTTP cache, heuristics, multi-layer complexity
 - [[Proxy Cache]] — Private HTTP reverse proxy caches (Varnish, Squid, Nginx, Traffic Server)
+- [[Cache-Control]] — HTTP caching directives: max-age, no-store, no-cache, must-revalidate, public, private, s-maxage
+- [[Vary Header]] — Content negotiation cache key extension, normalization, combinatorial explosion
+- [[Conditional Request]] — ETag/If-Modified-Since validation, 304 Not Modified flow
+- [[ETag]] — Entity Tags for resource version validation (strong vs weak)
 - [[Dead Letter Queue]] — Holding queue for permanently failing events
 - [[Exponential Backoff]] — Retry strategy with increasing delays and jitter
 - [[Idempotency]] — Same operation multiple times = same result; critical for distributed systems

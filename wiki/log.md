@@ -428,6 +428,12 @@ Key entity: Ashish Pratap Singh (AlgoMaster.io creator).
 Ingested source: Will Larson's foundational article on scalable system architecture (2011).
 Created 1 source summary, 6 entity pages, 18 concept pages.
 Key concepts: load balancing (smart clients, hardware, software), caching (application, database, in-memory, CDN), cache invalidation, offline processing (message queues, cron, map-reduce), platform layer.
+## [2026-05-08] ingest | HTTP Caching: Cache-Control & Vary
+
+Ingested source: freeCodeCamp article by Léo Jacquemin (Oct 2019), Part 2 of series.
+Created 1 source summary, 5 concept pages (Cache-Control, Vary Header, Conditional Request, ETag). Updated HTTP Caching, Web Caching, Browser Caching, and Caching pages.
+Key concepts: 4-outcome caching decision tree, Cache-Control directives (max-age, no-store, no-cache, must-revalidate, public/private, s-maxage, stale-while-revalidate, stale-if-error), Vary header for content negotiation, normalization (44 Accept-Encoding values, 8000+ User-Agent values), strong vs weak ETags, freshness vs validation distinction, conditional request flow (304 vs 200).
+
 ## [2026-05-08] ingest | HTTP Caching In-Depth Part 1
 
 Ingested source: freeCodeCamp article by Léo Jacquemin (Dec 2018).

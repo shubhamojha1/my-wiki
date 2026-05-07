@@ -3,7 +3,7 @@ title: "Caching"
 type: concept
 tags: [performance, architecture, optimization]
 created: 2026-04-23
-sources: ["lethain.com/introduction-to-architecting-systems-for-scale/", "https://aws.amazon.com/caching/", "https://github.com/donnemartin/system-design-primer#cache", "https://www.freecodecamp.org/news/http-caching-in-depth-part-1-a853c6af99db/"]
+sources: ["lethain.com/introduction-to-architecting-systems-for-scale/", "https://aws.amazon.com/caching/", "https://github.com/donnemartin/system-design-primer#cache", "https://www.freecodecamp.org/news/http-caching-in-depth-part-1-a853c6af99db/", "https://www.freecodecamp.org/news/an-in-depth-introduction-to-http-caching-cache-control-and-vary/"]
 ---
 
 # Caching
@@ -127,4 +127,4 @@ A dedicated caching layer with independent lifecycle allows app nodes to scale i
 
 ## Related Concepts
 
-[[Application Caching]], [[Database Caching]], [[In-Memory Cache]], [[CDN]], [[HTTP Caching]], [[Browser Caching]], [[Proxy Cache]], [[Cache Invalidation]], [[Read-Through Cache]], [[Write-Through Cache]], [[Write-Behind Cache]], [[Cache-Aside]], [[Refresh-Ahead Cache]], [[LRU]], [[Web Caching]], [[Session Management]], [[Amazon ElastiCache]], [[Amazon CloudFront]], [[Amazon Route 53]]
+[[Application Caching]], [[Database Caching]], [[In-Memory Cache]], [[CDN]], [[HTTP Caching]], [[Browser Caching]], [[Proxy Cache]], [[Cache-Control]], [[Vary Header]], [[Conditional Request]], [[ETag]], [[Cache Invalidation]], [[Read-Through Cache]], [[Write-Through Cache]], [[Write-Behind Cache]], [[Cache-Aside]], [[Refresh-Ahead Cache]], [[LRU]], [[Web Caching]], [[Session Management]], [[Amazon ElastiCache]], [[Amazon CloudFront]], [[Amazon Route 53]]

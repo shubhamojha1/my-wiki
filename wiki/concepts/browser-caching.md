@@ -3,7 +3,7 @@ title: "Browser Caching"
 type: concept
 tags: [http, caching, browser, web-performance]
 created: 2026-05-08
-sources: ["https://www.freecodecamp.org/news/http-caching-in-depth-part-1-a853c6af99db/"]
+sources: ["https://www.freecodecamp.org/news/http-caching-in-depth-part-1-a853c6af99db/", "https://www.freecodecamp.org/news/an-in-depth-introduction-to-http-caching-cache-control-and-vary/"]
 ---
 
 # Browser Caching
@@ -70,14 +70,32 @@ This works for static files but provides no benefit for dynamic API responses (J
 
 These layers interact in priority order, with the fastest checked first.
 
+## Cache-Control Implications
+
+Browser caches interpret [[Cache-Control]] directives:
+- `max-age=3600` — resource is fresh for 1 hour; browser serves from disk without network
+- `no-cache` — browser must always revalidate (shows spinner while waiting)
+- `no-store` — browser must not store at all (always downloads)
+- `private` — safe for user-specific content (default behavior)
+- `public` — OK for shared assets; no difference from private for browser alone
+
+### The Freshness Trap
+
+Setting `max-age=86400` on an HTML file means the browser will not request it for 24 hours — even if the server has new content. There is no server-initiated way to invalidate this. This is why HTML should use `no-cache` and versioned URLs should be used for all other assets.
+
+### The Vary Header in Browsers
+
+Unlike public caches, each browser cache stores representations matching only its own user's preferences. The [[Vary Header]] has minimal impact on browser caches because there is naturally only one representation per URI per user in the private cache.
+
 ## Best Practices
 
 - Always set explicit Cache-Control headers — never rely on browser heuristics
-- Use versioned URLs (fingerprinting) for long-lived assets (max-age=1 year)
-- Cache HTML with short TTL or no-cache
-- Use ETag for efficient revalidation of dynamic content
-- Never assume you can invalidate browser caches remotely
+- Use versioned URLs (fingerprinting) for long-lived assets (`Cache-Control: public, max-age=31536000, immutable`)
+- Cache HTML with `no-cache` (store but always revalidate)
+- Use [[ETag]] for efficient revalidation of dynamic content
+- Never assume you can invalidate browser caches remotely — freshness is time-bound
+- Understand that `max-age` means the browser will not contact the server for that duration regardless of content changes
 
 ## Related Pages
 
-- [[HTTP Caching]], [[Proxy Cache]], [[CDN]], [[Web Caching]], [[Caching]], [[HTTP]], [[Cache Invalidation]], [[TLS]]
+- [[HTTP Caching]], [[Proxy Cache]], [[CDN]], [[Web Caching]], [[Caching]], [[Cache-Control]], [[Conditional Request]], [[ETag]], [[HTTP]], [[Cache Invalidation]], [[TLS]]
