@@ -428,6 +428,12 @@ Key entity: Ashish Pratap Singh (AlgoMaster.io creator).
 Ingested source: Will Larson's foundational article on scalable system architecture (2011).
 Created 1 source summary, 6 entity pages, 18 concept pages.
 Key concepts: load balancing (smart clients, hardware, software), caching (application, database, in-memory, CDN), cache invalidation, offline processing (message queues, cron, map-reduce), platform layer.
+## [2026-05-08] ingest | ACID Transactions
+
+Ingested source: AlgoMaster.io article by Ashish Pratap Singh (Oct 2025).
+Created 1 source summary, 1 concept page (ACID Transactions).
+Key concepts: atomicity (WAL, commit/rollback), consistency (integrity constraints), isolation (dirty/non-repeatable/phantom reads, levels Read Uncommitted through Serializable, MVCC, snapshot isolation, locking), durability (WAL, sync/async replication, backups).
+
 ## [2026-05-08] ingest | RFC 2308: DNS Negative Caching
 
 Ingested source: RFC 2308 (Mark Andrews, March 1998).
