@@ -92,6 +92,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[HTTP Caching In-Depth Part 1]] — Léo Jacquemin: 3 HTTP caching actors, latency bottleneck, request anatomy (2018)
 - [[HTTP Caching: Cache-Control & Vary]] — Léo Jacquemin: cache-control directives, Vary header, 4-outcome decision tree (2019)
 - [[Two Hard Things]] — Martin Fowler: Phil Karlton's "cache invalidation and naming things" quote (2009)
+- [[Cache Invalidation Strategies]] — CoVaib DeepLearn: purge/ban, 6 strategies, 3 advanced patterns, stampede (2025)
 
 ## Entities
 
@@ -415,6 +416,11 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Vary Header]] — Content negotiation cache key extension, normalization, combinatorial explosion
 - [[Conditional Request]] — ETag/If-Modified-Since validation, 304 Not Modified flow
 - [[ETag]] — Entity Tags for resource version validation (strong vs weak)
+- [[Write-Around Cache]] — Bypass cache on writes, cache only reads
+- [[Tag-Based Invalidation]] — Bulk cache invalidation by grouping entries under tags
+- [[Version-Based Invalidation]] — Version counters for cache freshness without explicit purge
+- [[Cache Warming]] — Pre-populating cache before expected load
+- [[Cache Stampede]] — Thundering herd problem when multiple requests miss cache simultaneously
 - [[Dead Letter Queue]] — Holding queue for permanently failing events
 - [[Exponential Backoff]] — Retry strategy with increasing delays and jitter
 - [[Idempotency]] — Same operation multiple times = same result; critical for distributed systems

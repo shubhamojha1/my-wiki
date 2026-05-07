@@ -3,7 +3,7 @@ title: "Cache Invalidation"
 type: concept
 tags: [caching, consistency, architecture]
 created: 2026-04-23
-sources: ["lethain.com/introduction-to-architecting-systems-for-scale/", "https://martinfowler.com/bliki/TwoHardThings.html"]
+sources: ["lethain.com/introduction-to-architecting-systems-for-scale/", "https://martinfowler.com/bliki/TwoHardThings.html", "https://medium.com/@shivanimutke2501/day-48-system-design-concept-cache-invalidation-strategies-de15e32020cf"]
 ---
 
 # Cache Invalidation
@@ -57,26 +57,62 @@ When cache is deleted, multiple concurrent requests might all:
 
 **Mitigation**: Write-through caches reduce this risk.
 
-## Complex Invalidation Scenarios
+## Core Invalidation Methods
 
-### Fuzzy Queries
-Hard to invalidate caches for complex searches (e.g., "all users near Seattle"):
-- Option 1: Rely on database caching
-- Option 2: Aggressive TTL expiration
-- Option 3: Rework query to be cache-key friendly
+### Purge
+Immediately removes cached content for a specific object or URL. The next request fetches fresh data from the origin. Simple and precise — best for known individual keys.
 
-### Bulk Deletes
-"Delete all objects created more than a week ago":
-```python
-# Bad: Don't do this
-db.execute("DELETE FROM logs WHERE created < :cutoff")
-
-# Better: Explicit invalidation
-items = db.query("SELECT * FROM logs WHERE created < :cutoff")
-for item in items:
-    cache.delete("log.%s" % item.id)
-db.execute("DELETE FROM logs WHERE id IN (:ids)", [item.id])
+### Ban
+Invalidates based on criteria such as URL patterns or headers. Any cached content matching the pattern is removed. Useful for bulk invalidation when you don't know every affected key:
 ```
+BAN /products/* HTTP/1.1
+Host: example.com
+```
+
+## Invalidation Strategies
+
+### TTL (Time-Based)
+Simplest and most widely used. Each cache entry has a [[Cache-Control|max-age]] or TTL after which it automatically expires. No explicit invalidation logic needed. Tradeoff: data may be stale within the TTL window.
+
+### Event-Driven Invalidation
+Trigger cache updates in response to specific system events using pub/sub or message queues:
+
+```python
+# Publisher (on data update)
+publish("user.updated", {"user_id": 123})
+
+# Subscriber (cache listener)
+subscribe("user.updated", lambda event: cache.delete(f"user:{event['user_id']}"))
+```
+
+Provides near real-time consistency. Requires additional infrastructure (message broker).
+
+### Write-Through
+Write to cache and database synchronously. See [[Write-Through Cache]].
+
+### Write-Around
+Write directly to database, bypassing cache. See [[Write-Around Cache]].
+
+### Write-Behind
+Write to cache, asynchronously flush to database. See [[Write-Behind Cache]].
+
+### Lazy Loading (Cache-Aside)
+Check cache first; on miss, load from database and populate cache. See [[Cache-Aside]].
+
+## Advanced Invalidation Patterns
+
+### Tag-Based Invalidation
+Group related cache entries under descriptive tags for bulk invalidation (e.g., "category:electronics"). When data changes, invalidate all entries matching the tag. See [[Tag-Based Invalidation]].
+
+### Dependency-Based Invalidation
+Track data dependencies explicitly. If resource A depends on resource B, any change to B triggers invalidation of all cache entries derived from B. Requires a dependency graph.
+
+### Version-Based Invalidation
+Use monotonically increasing version counters per resource. Cache entries include the version; on read, compare against the current version. No explicit purge needed. See [[Version-Based Invalidation]].
+
+## Cache Stampede
+
+When a popular cache entry expires, multiple concurrent requests may all miss and query the database simultaneously — overwhelming it. See [[Cache Stampede]] for mitigations (locking, probabilistic early expiration, stale-while-revalidate).
 
 ## Multi-Datacenter Challenges
 
@@ -86,8 +122,8 @@ Invalidation becomes complex with:
 - Multiple code paths writing to database
 
 Single datacenter: straightforward
-Multiple datacenters: significant engineering effort required
+Multiple datacenters: significant engineering effort required — often solved with global invalidation buses or version-based approaches.
 
 ## Related Concepts
 
-[[Caching]], [[Write-Through Cache]], [[Read-Through Cache]], [[Eventual Consistency]], [[Martin Fowler]]
+[[Caching]], [[Write-Through Cache]], [[Write-Around Cache]], [[Write-Behind Cache]], [[Read-Through Cache]], [[Cache-Aside]], [[Tag-Based Invalidation]], [[Version-Based Invalidation]], [[Cache Stampede]], [[Cache Warming]], [[Eventual Consistency]], [[Martin Fowler]]

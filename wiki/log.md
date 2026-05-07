@@ -428,6 +428,12 @@ Key entity: Ashish Pratap Singh (AlgoMaster.io creator).
 Ingested source: Will Larson's foundational article on scalable system architecture (2011).
 Created 1 source summary, 6 entity pages, 18 concept pages.
 Key concepts: load balancing (smart clients, hardware, software), caching (application, database, in-memory, CDN), cache invalidation, offline processing (message queues, cron, map-reduce), platform layer.
+## [2026-05-08] ingest | Cache Invalidation Strategies
+
+Ingested source: Medium article by CoVaib DeepLearn (Sep 2025).
+Created 1 source summary, 5 concept pages (Write-Around Cache, Tag-Based Invalidation, Version-Based Invalidation, Cache Warming, Cache Stampede). Updated Cache Invalidation page with purge/ban methods, event-driven strategy, dependency-based invalidation.
+Key concepts: purge vs ban, TTL/event-driven/write-through/write-around/write-behind/lazy-loading strategies, tag-based/dependency-based/version-based advanced patterns, cache warming (scheduled/event-driven/JIT), cache stampede (thundering herd) with 5 mitigations.
+
 ## [2026-05-08] ingest | Two Hard Things
 
 Ingested source: Martin Fowler's bliki (2009, updated 2021).
