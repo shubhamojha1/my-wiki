@@ -428,6 +428,12 @@ Key entity: Ashish Pratap Singh (AlgoMaster.io creator).
 Ingested source: Will Larson's foundational article on scalable system architecture (2011).
 Created 1 source summary, 6 entity pages, 18 concept pages.
 Key concepts: load balancing (smart clients, hardware, software), caching (application, database, in-memory, CDN), cache invalidation, offline processing (message queues, cron, map-reduce), platform layer.
+## [2026-05-08] ingest | Two Hard Things
+
+Ingested source: Martin Fowler's bliki (2009, updated 2021).
+Created 1 source summary, 1 entity page (Martin Fowler). Updated Cache Invalidation page with the Phil Karlton quote.
+Key content: famous Phil Karlton quote "there are only two hard things: cache invalidation and naming things", 4 notable variations.
+
 ## [2026-05-08] ingest | HTTP Caching: Cache-Control & Vary
 
 Ingested source: freeCodeCamp article by Léo Jacquemin (Oct 2019), Part 2 of series.

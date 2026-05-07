@@ -91,6 +91,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[System Design Primer: Cache]] — Donne Martin: 5 cache locations, 2 caching levels, 4 update strategies (2026)
 - [[HTTP Caching In-Depth Part 1]] — Léo Jacquemin: 3 HTTP caching actors, latency bottleneck, request anatomy (2018)
 - [[HTTP Caching: Cache-Control & Vary]] — Léo Jacquemin: cache-control directives, Vary header, 4-outcome decision tree (2019)
+- [[Two Hard Things]] — Martin Fowler: Phil Karlton's "cache invalidation and naming things" quote (2009)
 
 ## Entities
 
@@ -126,6 +127,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Amazon ElastiCache]] — Managed Redis/Memcached caching service on AWS
 - [[Amazon CloudFront]] — Global CDN service on AWS
 - [[Amazon Route 53]] — Cloud DNS web service on AWS
+- [[Martin Fowler]] — Software engineer, author of Refactoring, popularized the "two hard things" quote
 
 ## Entities
 

@@ -3,10 +3,12 @@ title: "Cache Invalidation"
 type: concept
 tags: [caching, consistency, architecture]
 created: 2026-04-23
-sources: ["lethain.com/introduction-to-architecting-systems-for-scale/"]
+sources: ["lethain.com/introduction-to-architecting-systems-for-scale/", "https://martinfowler.com/bliki/TwoHardThings.html"]
 ---
 
 # Cache Invalidation
+
+> *"There are only two hard things in Computer Science: cache invalidation and naming things."* — Phil Karlton (~1996), popularized by [[Martin Fowler]]
 
 **Definition:** The process of removing or updating cached data when the source of truth changes, maintaining consistency between cache and database.
 
@@ -88,4 +90,4 @@ Multiple datacenters: significant engineering effort required
 
 ## Related Concepts
 
-[[Caching]], [[Write-Through Cache]], [[Read-Through Cache]], [[Eventual Consistency]]
+[[Caching]], [[Write-Through Cache]], [[Read-Through Cache]], [[Eventual Consistency]], [[Martin Fowler]]
