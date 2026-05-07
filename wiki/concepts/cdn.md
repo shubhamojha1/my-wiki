@@ -3,7 +3,7 @@ title: "CDN"
 type: concept
 tags: [infrastructure, caching, distribution]
 created: 2026-04-23
-sources: ["lethain.com/introduction-to-architecting-systems-for-scale/"]
+sources: ["lethain.com/introduction-to-architecting-systems-for-scale/", "https://www.freecodecamp.org/news/http-caching-in-depth-part-1-a853c6af99db/"]
 ---
 
 # CDN (Content Distribution Network)
@@ -63,6 +63,22 @@ If your site isn't large enough for CDN yet, prepare by:
 2. Using lightweight HTTP server (e.g., Nginx)
 3. Pointing DNS to CDN when ready
 
+## CDN as HTTP Proxy
+
+CDNs are fundamentally HTTP proxy servers. They speak standard HTTP (RFC 7234) — no proprietary application protocols. This means any knowledge of HTTP caching is directly applicable to CDN configuration.
+
+### Programmatic Instant Purging
+Most modern CDNs advertise the ability to programmatically purge resources from the entire network instantly. This effectively solves one of the "two hard problems" of caching (invalidation). However, experience shows some CDNs have gaps between marketed capabilities and production reality — supplemental cache-busting techniques may still be needed.
+
+### Configuration Outside Codebase
+CDNs provide web interfaces to set caching rules that can override or supplement origin Cache-Control headers. This allows:
+- Non-developers to tune caching policy
+- Performance configuration factored out of application code
+- Quick policy changes without deployments
+
+### Performance at Infrastructure Level
+With well-configured caching headers and CDN settings, poorly optimized server code can still deliver most responses in under 300ms by serving cached, still-fresh versions. The entire performance layer can live at the infrastructure level.
+
 ## AWS CloudFront
 
 [[Amazon CloudFront]] is AWS's global CDN service:
@@ -83,4 +99,4 @@ If your site isn't large enough for CDN yet, prepare by:
 
 ## Related Concepts
 
-[[Caching]], [[Cache Invalidation]], [[Read-Through Cache]], [[Load Balancing]], [[Amazon CloudFront]]
+[[Caching]], [[Cache Invalidation]], [[Read-Through Cache]], [[Load Balancing]], [[Amazon CloudFront]], [[HTTP Caching]], [[Proxy Cache]], [[Browser Caching]]

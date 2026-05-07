@@ -3,7 +3,7 @@ title: "Web Caching"
 type: concept
 tags: [caching, web, performance, cdn]
 created: 2026-05-08
-sources: ["https://aws.amazon.com/caching/"]
+sources: ["https://aws.amazon.com/caching/", "https://www.freecodecamp.org/news/http-caching-in-depth-part-1-a853c6af99db/"]
 ---
 
 # Web Caching
@@ -34,6 +34,17 @@ sources: ["https://aws.amazon.com/caching/"]
 | Reverse Proxy | Caching proxy before app servers | Nginx, Varnish |
 | Web Server | Application-level cache | Redis session store |
 
+## Browser Caching Specifics
+
+Browser HTTP cache stores resources on the user's filesystem. On a cache hit, there is zero network activity — no DNS, no TCP, no TLS. However:
+- **No server-initiated invalidation** — developers cannot force browsers to evict content
+- **Browsers apply heuristics** when Cache-Control headers are absent — often unpredictable
+- **Users can disable/flush** the cache at will
+- **Multiple cache layers** (Service Worker, Memory Cache, Disk Cache, Push Cache) interact in complex ways
+- **HTML cached cautiously** — typically minutes at most, since it's the entry point for all other resources
+
+See [[Browser Caching]] for the full treatment.
+
 ## Key Benefits
 
 - Eliminates disk reads for cached assets
@@ -43,4 +54,4 @@ sources: ["https://aws.amazon.com/caching/"]
 
 ## Related Pages
 
-- [[Caching]], [[CDN]], [[Amazon CloudFront]], [[Reverse Proxy]], [[HTTP]]
+- [[Caching]], [[CDN]], [[Amazon CloudFront]], [[Reverse Proxy]], [[HTTP]], [[HTTP Caching]], [[Browser Caching]], [[Proxy Cache]]

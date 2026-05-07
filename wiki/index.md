@@ -89,6 +89,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[AlgoMaster: WebSockets]] — AlgoMaster: full-duplex real-time protocol, handshake, use cases (2024)
 - [[AWS Caching Overview]] — AWS: 5-layer caching stack, ElastiCache, CloudFront, Route 53 (2026)
 - [[System Design Primer: Cache]] — Donne Martin: 5 cache locations, 2 caching levels, 4 update strategies (2026)
+- [[HTTP Caching In-Depth Part 1]] — Léo Jacquemin: 3 HTTP caching actors, latency bottleneck, request anatomy (2018)
 
 ## Entities
 
@@ -404,6 +405,9 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Cache-Aside]] — Lazy loading pattern: app checks cache, loads from DB on miss (Memcached pattern)
 - [[Write-Behind Cache]] — Async write-back pattern: app writes to cache, async flush to DB
 - [[Refresh-Ahead Cache]] — Proactive refresh of hot entries before TTL expiry
+- [[HTTP Caching]] — Protocol-level caching across browsers, proxies, and CDNs (RFC 7234)
+- [[Browser Caching]] — Client-side filesystem HTTP cache, heuristics, multi-layer complexity
+- [[Proxy Cache]] — Private HTTP reverse proxy caches (Varnish, Squid, Nginx, Traffic Server)
 - [[Dead Letter Queue]] — Holding queue for permanently failing events
 - [[Exponential Backoff]] — Retry strategy with increasing delays and jitter
 - [[Idempotency]] — Same operation multiple times = same result; critical for distributed systems

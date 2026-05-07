@@ -3,7 +3,7 @@ title: "Caching"
 type: concept
 tags: [performance, architecture, optimization]
 created: 2026-04-23
-sources: ["lethain.com/introduction-to-architecting-systems-for-scale/", "https://aws.amazon.com/caching/", "https://github.com/donnemartin/system-design-primer#cache"]
+sources: ["lethain.com/introduction-to-architecting-systems-for-scale/", "https://aws.amazon.com/caching/", "https://github.com/donnemartin/system-design-primer#cache", "https://www.freecodecamp.org/news/http-caching-in-depth-part-1-a853c6af99db/"]
 ---
 
 # Caching
@@ -90,6 +90,19 @@ App updates cache; DB write happens asynchronously in background. Fast writes; r
 
 Cache proactively refreshes hot entries nearing TTL expiration. Low latency if predictions are accurate; wastes resources if not.
 
+## HTTP Caching (Protocol Level)
+
+HTTP caching operates at three tiers:
+- **[[Browser Caching]]** — client-side filesystem cache, instant delivery, no server-invoked invalidation
+- **[[Proxy Cache]]** — private reverse proxies (Varnish, Nginx, Squid) between client and origin
+- **[[CDN]]** — globally distributed proxy servers ([[Amazon CloudFront]], Akamai, Fastly)
+
+All three speak the same HTTP protocol (RFC 7234) and can be modeled as a single logical proxy.
+
+### Why HTTP Caching Matters
+
+Latency, not bandwidth, is the bottleneck. A typical web app requires ~75 requests × ~8 round trips each = ~600 RT. At 50ms RTT (Europe↔US), that's ~30 seconds of pure latency. HTTP caching reduces this by serving from browser disk or CDN edge — effectively reducing the network distance to zero on cache hits. See [[HTTP Caching]] for details.
+
 ## AWS 5-Layer Caching Stack
 
 | Layer | Use Case | AWS Solution |
@@ -114,4 +127,4 @@ A dedicated caching layer with independent lifecycle allows app nodes to scale i
 
 ## Related Concepts
 
-[[Application Caching]], [[Database Caching]], [[In-Memory Cache]], [[CDN]], [[Cache Invalidation]], [[Read-Through Cache]], [[Write-Through Cache]], [[Write-Behind Cache]], [[Cache-Aside]], [[Refresh-Ahead Cache]], [[LRU]], [[Web Caching]], [[Session Management]], [[Amazon ElastiCache]], [[Amazon CloudFront]], [[Amazon Route 53]]
+[[Application Caching]], [[Database Caching]], [[In-Memory Cache]], [[CDN]], [[HTTP Caching]], [[Browser Caching]], [[Proxy Cache]], [[Cache Invalidation]], [[Read-Through Cache]], [[Write-Through Cache]], [[Write-Behind Cache]], [[Cache-Aside]], [[Refresh-Ahead Cache]], [[LRU]], [[Web Caching]], [[Session Management]], [[Amazon ElastiCache]], [[Amazon CloudFront]], [[Amazon Route 53]]
