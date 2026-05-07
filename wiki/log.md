@@ -428,6 +428,12 @@ Key entity: Ashish Pratap Singh (AlgoMaster.io creator).
 Ingested source: Will Larson's foundational article on scalable system architecture (2011).
 Created 1 source summary, 6 entity pages, 18 concept pages.
 Key concepts: load balancing (smart clients, hardware, software), caching (application, database, in-memory, CDN), cache invalidation, offline processing (message queues, cron, map-reduce), platform layer.
+## [2026-05-08] ingest | RFC 2308: DNS Negative Caching
+
+Ingested source: RFC 2308 (Mark Andrews, March 1998).
+Created 1 source summary, 1 concept page (DNS Negative Caching). Updated algomaster-dns source with RFC reference.
+Key concepts: negative caching of NXDOMAIN (name error) and NODATA (no records of type), SOA-derived TTL (min of SOA.MINIMUM and SOA.TTL), SOA MINIMUM redefined as negative TTL only, $TTL directive, security risks (DoS via injected NXDOMAIN), optional server failure caching (5-minute max).
+
 ## [2026-05-08] ingest | Broadcasting Live Video to Millions
 
 Ingested source: Facebook Engineering blog (Dec 2015).

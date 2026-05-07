@@ -94,6 +94,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Two Hard Things]] — Martin Fowler: Phil Karlton's "cache invalidation and naming things" quote (2009)
 - [[Cache Invalidation Strategies]] — CoVaib DeepLearn: purge/ban, 6 strategies, 3 advanced patterns, stampede (2025)
 - [[Broadcasting Live Video to Millions]] — Facebook Engineering: multi-layer edge cache, request coalescing, thundering herd, RTMP (2015)
+- [[RFC 2308: DNS NCACHE]] — Standards Track: negative caching of DNS queries, NXDOMAIN/NODATA, SOA MINIMUM field (1998)
 
 ## Entities
 
@@ -423,6 +424,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Cache Warming]] — Pre-populating cache before expected load
 - [[Cache Stampede]] — Thundering herd problem when multiple requests miss cache simultaneously
 - [[Edge Cache]] — Geographically distributed cache layer for low-latency content delivery
+- [[DNS Negative Caching]] — Caching DNS nonexistence (NXDOMAIN/NODATA), RFC 2308
 - [[Dead Letter Queue]] — Holding queue for permanently failing events
 - [[Exponential Backoff]] — Retry strategy with increasing delays and jitter
 - [[Idempotency]] — Same operation multiple times = same result; critical for distributed systems

@@ -3,7 +3,7 @@ title: "DNS"
 type: source
 tags: [system-design, networking, dns]
 created: 2026-04-28
-sources: ["algomaster-dns"]
+sources: ["algomaster-dns", "https://www.rfc-editor.org/rfc/rfc2308"]
 ---
 
 # DNS
