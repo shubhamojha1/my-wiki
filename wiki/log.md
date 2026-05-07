@@ -428,6 +428,12 @@ Key entity: Ashish Pratap Singh (AlgoMaster.io creator).
 Ingested source: Will Larson's foundational article on scalable system architecture (2011).
 Created 1 source summary, 6 entity pages, 18 concept pages.
 Key concepts: load balancing (smart clients, hardware, software), caching (application, database, in-memory, CDN), cache invalidation, offline processing (message queues, cron, map-reduce), platform layer.
+## [2026-05-08] ingest | Broadcasting Live Video to Millions
+
+Ingested source: Facebook Engineering blog (Dec 2015).
+Created 1 source summary, 1 concept page (Edge Cache). Updated Cache Stampede page with request coalescing strategy and Facebook Live case study.
+Key concepts: multi-layer edge cache architecture (98%+ hit rate), request coalescing for thundering herd prevention, HLS 3-second segments vs RTMP push model (4KB chunks, 5x latency reduction), nginx-rtmp modification for Facebook Live.
+
 ## [2026-05-08] ingest | Cache Invalidation Strategies
 
 Ingested source: Medium article by CoVaib DeepLearn (Sep 2025).

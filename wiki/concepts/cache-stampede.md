@@ -3,7 +3,7 @@ title: "Cache Stampede"
 type: concept
 tags: [caching, failure-mode, concurrency]
 created: 2026-05-08
-sources: ["https://medium.com/@shivanimutke2501/day-48-system-design-concept-cache-invalidation-strategies-de15e32020cf"]
+sources: ["https://medium.com/@shivanimutke2501/day-48-system-design-concept-cache-invalidation-strategies-de15e32020cf", "https://engineering.fb.com/2015/12/03/ios/under-the-hood-broadcasting-live-video-to-millions/"]
 ---
 
 # Cache Stampede (Thundering Herd)
@@ -83,7 +83,10 @@ The cache itself manages refreshing without exposing the miss to clients:
 cache.get(key, ttl=3600, refresh_ahead=True)
 ```
 
-### 5. Global Cache Lock / Bulkhead
+### 5. Request Coalescing (Edge Cache)
+A popular pattern for live/real-time content where multiple clients request the same uncached object simultaneously. The first request is forwarded to origin; subsequent requests are **queued at the edge** until the response arrives, then all are served from cache. See [[Edge Cache]] for Facebook's production implementation.
+
+### 6. Global Cache Lock / Bulkhead
 Limit concurrent recomputations with a semaphore:
 
 ```python
@@ -99,6 +102,17 @@ def get_with_bulkhead(key):
     return data
 ```
 
+## Real-World Case Study: Facebook Live
+
+When Facebook launched Live for Mentions (2015), public figures with millions of followers could trigger sudden traffic spikes. Their solution:
+
+1. **Multi-layer edge cache** — 3-second HLS video segments cached at edge data centers worldwide
+2. **98%+ edge hit rate** — only 1.8% of segment requests reached origin
+3. **Request coalescing** at both edge and origin layers — queuing concurrent requests for the same uncached segment
+4. **Result:** live stream servers received only a tiny fraction of the potential thundering herd
+
+See [[Edge Cache]].
+
 ## Detection
 
 Key metrics to monitor for stampede risk:
@@ -108,4 +122,4 @@ Key metrics to monitor for stampede risk:
 
 ## Related Pages
 
-- [[Caching]], [[Cache Invalidation]], [[Cache Warming]], [[Read-Through Cache]], [[Refresh-Ahead Cache]], [[Cache-Control]]
+- [[Caching]], [[Cache Invalidation]], [[Cache Warming]], [[Read-Through Cache]], [[Refresh-Ahead Cache]], [[Cache-Control]], [[Edge Cache]]
