@@ -428,6 +428,12 @@ Key entity: Ashish Pratap Singh (AlgoMaster.io creator).
 Ingested source: Will Larson's foundational article on scalable system architecture (2011).
 Created 1 source summary, 6 entity pages, 18 concept pages.
 Key concepts: load balancing (smart clients, hardware, software), caching (application, database, in-memory, CDN), cache invalidation, offline processing (message queues, cron, map-reduce), platform layer.
+## [2026-05-08] ingest | SQL vs NoSQL
+
+Ingested source: AlgoMaster.io article by Ashish Pratap Singh (Oct 2025).
+Created 1 source summary, 1 concept page (NoSQL). Updated SQL concept page with comparison table and when-to-choose guidance.
+Key concepts: 7 SQL vs NoSQL differences (data model, schema, scalability, query language, transactions, performance, use cases), 4 NoSQL models (key-value, document, column-family, graph), BASE vs ACID tradeoffs.
+
 ## [2026-05-08] ingest | ACID Transactions
 
 Ingested source: AlgoMaster.io article by Ashish Pratap Singh (Oct 2025).
