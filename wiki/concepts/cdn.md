@@ -63,6 +63,15 @@ If your site isn't large enough for CDN yet, prepare by:
 2. Using lightweight HTTP server (e.g., Nginx)
 3. Pointing DNS to CDN when ready
 
+## AWS CloudFront
+
+[[Amazon CloudFront]] is AWS's global CDN service:
+- Edge locations worldwide for low-latency delivery
+- Caches static assets (videos, images, HTML, JS, CSS)
+- Configurable for dynamic content (fetches from origin)
+- Integrates with other AWS services
+- No minimum usage commitments
+
 ## Benefits Summary
 
 | Benefit | Impact |
@@ -74,4 +83,4 @@ If your site isn't large enough for CDN yet, prepare by:
 
 ## Related Concepts
 
-[[Caching]], [[Cache Invalidation]], [[Read-Through Cache]], [[Load Balancing]]
+[[Caching]], [[Cache Invalidation]], [[Read-Through Cache]], [[Load Balancing]], [[Amazon CloudFront]]

@@ -87,6 +87,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[OSI Model]] — AlgoMaster: 7-layer framework, encapsulation, OSI vs TCP/IP (2026)
 - [[algomaster-Race Conditions and Critical Sections]] — AlgoMaster: read-modify-write, check-then-act (2026)
 - [[AlgoMaster: WebSockets]] — AlgoMaster: full-duplex real-time protocol, handshake, use cases (2024)
+- [[AWS Caching Overview]] — AWS: 5-layer caching stack, ElastiCache, CloudFront, Route 53 (2026)
 
 ## Entities
 
@@ -119,6 +120,9 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Hadoop]] — Distributed data processing framework with MapReduce
 - [[Ashish Pratap Singh]] — Educator running AlgoMaster.io for LLD interview preparation
 - [[Abdul Rafee Wahab]] — Software architect, REST API design best practices author
+- [[Amazon ElastiCache]] — Managed Redis/Memcached caching service on AWS
+- [[Amazon CloudFront]] — Global CDN service on AWS
+- [[Amazon Route 53]] — Cloud DNS web service on AWS
 
 ## Entities
 
@@ -394,6 +398,8 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Frame (WebSocket)]] — Minimal-overhead data unit in WebSocket protocol
 - [[Webhooks]] — Event-driven push notifications via HTTP POST
 - [[Event Idempotency]] — Exactly-once processing via event ID deduplication
+- [[Web Caching]] — Server-side and client-side caching of web artifacts
+- [[Session Management]] — Centralized HTTP session store for elastic architectures
 - [[Dead Letter Queue]] — Holding queue for permanently failing events
 - [[Exponential Backoff]] — Retry strategy with increasing delays and jitter
 - [[Idempotency]] — Same operation multiple times = same result; critical for distributed systems

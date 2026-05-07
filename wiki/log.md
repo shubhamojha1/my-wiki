@@ -428,6 +428,12 @@ Key entity: Ashish Pratap Singh (AlgoMaster.io creator).
 Ingested source: Will Larson's foundational article on scalable system architecture (2011).
 Created 1 source summary, 6 entity pages, 18 concept pages.
 Key concepts: load balancing (smart clients, hardware, software), caching (application, database, in-memory, CDN), cache invalidation, offline processing (message queues, cron, map-reduce), platform layer.
+## [2026-05-08] ingest | AWS Caching Overview
+
+Ingested source: AWS Caching Overview page (2026).
+Created 1 source summary, 3 entity pages (Amazon ElastiCache, Amazon CloudFront, Amazon Route 53), 2 concept pages (Web Caching, Session Management). Updated Caching and CDN concept pages.
+Key concepts: 5-layer caching stack (client, DNS, web, app, database), distributed caching with independent lifecycle, 5 benefits (performance, cost, predictability, hotspots, IOPS), use cases across 9 domains and 10 industries, AWS caching services (ElastiCache for Redis/Memcached, CloudFront CDN, Route 53 DNS).
+
 ## [2026-05-01] ingest | WebSockets
 
 Ingested source: AlgoMaster.io WebSockets (Aug 2024).
