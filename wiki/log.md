@@ -498,6 +498,13 @@ Re-ingested AlgoMaster.io OSI Model article from Wayback Machine archive (Dec 20
 Updated source page with factory assembly line analogy, HTTPS L5-7 blurring insight, and additional protocol mentions.
 Updated 5 concept pages: Encapsulation (HTTP GET walkthrough), OSI vs TCP/IP (HTTPS spanning L5-7), OSI Layer 7 (gRPC, WebSocket), OSI Layer 6 (JSON, XML, Protobuf), OSI Layer 5 (RPC/WebSocket sessions).
 
+## [2026-05-10] ingest | IP Address
+
+Re-ingested AlgoMaster.io IP Address article from Wayback Machine archive (Dec 2025).
+Created 5 new concept pages: IP Address (postal analogy, Network ID + Host ID structure), Subnet Mask, Static vs Dynamic IP (DHCP), Broadcast Address, Multicast Address.
+Updated 4 existing pages: source page with SLAAC/IPsec/static-DHCP details, IPv4 (address exhaustion), IPv6 (SLAAC, mandatory IPsec, simplified header), Private IP Address (NAT gateway for internet access).
+Key concepts: Network ID vs Host ID, DHCP DORA flow, broadcast vs multicast, SLAAC.
+
 Ingested source: AlgoMaster.io WebSockets (Aug 2024).
 Created 1 source summary, 5 concept pages (WebSockets, HTTP 101, Polling, Long-Polling, Frame).
 Key concepts: full-duplex bidirectional communication, HTTP handshake with 101 switch, persistent connections vs HTTP/polling/long-polling, use cases (chat, gaming, notifications, financial feeds, collaboration, IoT), challenges (scalability, security, network reliability, proxy compatibility).

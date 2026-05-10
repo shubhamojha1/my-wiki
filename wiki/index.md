@@ -343,7 +343,11 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[IPv4]] — Classic 32-bit addressing
 - [[IPv6]] — Modern 128-bit successor
 - [[CIDR Notation]] — /prefix subnet notation
-- [[Subnet Mask]] — Network/host division
+- [[Subnet Mask]] — Binary mask separating network/host portions
+- [[Broadcast Address]] — Send to all devices on a local subnet (all host bits = 1)
+- [[Multicast Address]] — One-to-many group communication (Class D / ff00::/8)
+- [[Static vs Dynamic IP]] — Manual configuration vs DHCP-assigned addresses
+- [[SLAAC]] — IPv6 stateless address autoconfiguration without DHCP
 - [[Private IP Address]] — RFC 1918 non-routable addresses
 - [[Public IP Address]] — Globally routable addresses
 - [[NAT]] — Network Address Translation

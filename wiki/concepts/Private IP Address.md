@@ -25,9 +25,13 @@ sources: ["algomaster-ip-address"]
 - Reusable in different networks
 - Require NAT to communicate with internet
 
+## Internet Access
+
+Private IPs cannot directly access the internet. A NAT gateway (e.g., home router) replaces the private source IP with its public IP, tracks the mapping, and forwards responses back to the correct private device.
+
 ## Common Use Cases
 
-- Home networks (typically 192.168.1.x)
+- Home networks (typically 192.168.1.x via DHCP)
 - Enterprise networks (often 10.x.x.x)
 - Data centers
 

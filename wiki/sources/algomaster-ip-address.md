@@ -50,12 +50,26 @@ NAT maps private to public IPs for internet access.
 
 Device checks if destination is on local subnet via AND operation. If yes, sends directly; if not, forwards to default gateway (router).
 
+## Additional Details from Archived Article
+
+Retrieved from Wayback Machine (Dec 2025). The article adds:
+- **Postal system analogy**: IP as home address, network as neighborhood, routers as mail carriers
+- **Network ID + Host ID structure**: Routers forward using Network ID only (e.g., `192.168.1` as network, `10` as host)
+- **Static vs Dynamic IP**: DHCP operation (Discover → Offer → Request → ACK)
+- **Special addresses**: Broadcast (all host bits = 1), Multicast (Class D / `ff00::/8`), Link-local (`169.254.0.0/16`)
+- **IPv6 improvements over IPv4**: SLAAC (stateless autoconfiguration), mandatory IPsec, simplified header for faster routing
+
 ## Related Concepts
 
+- [[IP Address]] — Overview concept
 - [[OSI Layer 3: Network]] — Layer using IP addresses
 - [[CIDR Notation]] — Classless subnet notation
 - [[NAT]] — Network Address Translation
 - [[Subnet Mask]] — Network/host division
+- [[Broadcast Address]] — Send to all devices on subnet
+- [[Multicast Address]] — Send to group of receivers
+- [[Static vs Dynamic IP]] — DHCP-based address assignment
+- [[SLAAC]] — IPv6 stateless autoconfiguration
 
 ## Source
 

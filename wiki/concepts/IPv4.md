@@ -40,7 +40,11 @@ Example binary: 11000000.10101000.00000001.00000001
 Class D (224-239): Multicast
 Class E (240-255): Experimental
 
-Replaced by CIDR in 1993 due to address exhaustion.
+## Limitation: Address Exhaustion
+
+With ~4.3 billion addresses, IPv4 has **effectively run out** due to the explosion of internet-connected devices. This drove the development of IPv6 and the widespread adoption of NAT to share single public IPs across private networks.
+
+Replaced by CIDR in 1993 due to inefficient allocation.
 
 ## Related Concepts
 

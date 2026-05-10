@@ -32,9 +32,11 @@ Eight groups of 4 hex digits separated by colons:
 ## Key Differences from IPv4
 
 - Larger address space (no NAT needed)
-- No broadcast (multicast instead)
-- Simplified header
-- Built-in security (IPsec)
+- No broadcast (uses multicast instead, more efficient)
+- Simplified header for faster router processing
+- **SLAAC** (Stateless Address Autoconfiguration): Devices can generate their own IP without a DHCP server
+- **IPsec mandatory**: IPsec suite for secure communications is built-in, not optional
+- **Efficient routing**: Simplified packet headers allow faster processing by routers
 
 ## Special Addresses
 
