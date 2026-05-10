@@ -21,6 +21,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Checksums]] — AlgoMaster: CRC, MD5, SHA, error detection (2025)
 - [[Publish-Subscribe (Pub/Sub)]] — AlgoMaster: async messaging, broker, topics (2026)
 - [[Message Queues]] — AlgoMaster: broker, P2P/Pub/Sub/DLQ, async processing (2025)
+- [[Change Data Capture (CDC)]] — AlgoMaster: timestamp/trigger/log-based CDC, Debezium, Kafka (2025)
 - [[API]] — AlgoMaster: APIs, REST, GraphQL, gRPC (2025)
 - [[API Gateway]] — AlgoMaster: central entry point, rate limiting (2024)
 - [[REST vs GraphQL]] — AlgoMaster: REST vs GraphQL comparison (2025)
@@ -138,6 +139,8 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 
 ## Entities
 
+- [[Debezium]] — Open-source CDC platform for streaming database changes to Kafka
+
 ## Concepts
 
 - [[Graph Neural Network]] — Deep learning on graph-structured data
@@ -150,6 +153,8 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Distributed Commit Log]] — The append-only, ordered data structure underlying Kafka's architecture
 - [[Pub/Sub Messaging]] — The publish-subscribe pattern that Kafka implements
 - [[Log Aggregation]] — The original use case that motivated Kafka at LinkedIn
+- [[Change Data Capture (CDC)]] — Track and stream database changes in real time
+- [[Event Sourcing]] — Recording state changes as immutable event sequences
 - [[Redis Sentinel]] — Redis monitoring and automatic failover system
 - [[Hash Slot]] — Redis Cluster's 16,384-slot partitioning mechanism
 - [[Few-Shot Learning]] — Paradigm where models learn from examples in the prompt without fine-tuning

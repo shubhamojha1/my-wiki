@@ -556,6 +556,12 @@ Ingested AlgoMaster.io article (Oct 2025) via Wayback Machine (Feb 2026).
 Created new source page: Message Queues (5 components, 6-step flow, queue types, best practices).
 Updated message-queue concept page with broker component, 6-step flow (create → enqueue → store → dequeue → ack → delete), queue types (P2P, Pub/Sub, priority, DLQ), best practices (idempotency, durability, security, monitoring), when-to-use scenarios, missing systems (Google Cloud Pub/Sub, ActiveMQ), throttling benefit.
 
+## [2026-05-10] ingest | Change Data Capture (CDC)
+
+Ingested AlgoMaster.io article (Oct 2025) via Wayback Machine (Feb 2026).
+Created source page, CDC concept page (3 approaches: timestamp/trigger/log-based, 4 use cases, Debezium/Kafka implementation, challenges), Event Sourcing concept page (immutable event sequences, audit trail, temporal query), Debezium entity page (log-based CDC, Kafka Connect integration, schema evolution handling).
+Key concepts: timestamp CDC misses deletes and has clock skew, trigger CDC slows writes, log-based CDC (WAL/binlog) is preferred for production, Debezium + Kafka as standard CDC stack.
+
 Ingested source: AlgoMaster.io WebSockets (Aug 2024).
 Created 1 source summary, 5 concept pages (WebSockets, HTTP 101, Polling, Long-Polling, Frame).
 Key concepts: full-duplex bidirectional communication, HTTP handshake with 101 switch, persistent connections vs HTTP/polling/long-polling, use cases (chat, gaming, notifications, financial feeds, collaboration, IoT), challenges (scalability, security, network reliability, proxy compatibility).
