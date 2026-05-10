@@ -16,22 +16,30 @@ sources: ["algomaster-load-balancing-algorithms"]
 - Requests sequentially to each server
 - Simple, even distribution
 - Use when servers have similar capacity
+- [Python code](https://github.com/ashishps1/awesome-system-design-resources/blob/main/implementations/python/load_balancing_algorithms/round_robin.py.py)
 
 ### Weighted Round Robin
 - Servers assigned weights based on capacity
 - Higher weight = more requests
+- Example: weights `[5, 1, 1]` → server1 gets 5x traffic
+- [Python code](https://github.com/ashishps1/awesome-system-design-resources/blob/main/implementations/python/load_balancing_algorithms/weighted_round_robin.py)
 
 ### Least Connections
 - Routes to server with fewest active connections
 - Dynamic, adapts to current load
+- Requires `release_connection()` when request completes
+- [Python code](https://github.com/ashishps1/awesome-system-design-resources/blob/main/implementations/python/load_balancing_algorithms/least_connections.py)
 
 ### Least Response Time
 - Routes to server with fastest response time
-- Minimizes latency
+- Minimizes latency; adapts to performance changes
+- [Python code](https://github.com/ashishps1/awesome-system-design-resources/blob/main/implementations/python/load_balancing_algorithms/least_response_time.py)
 
 ### IP Hash
 - Hash of client IP to determine server
 - Enables sticky sessions (same client → same server)
+- Uses MD5 hash modulo server count
+- [Python code](https://github.com/ashishps1/awesome-system-design-resources/blob/main/implementations/python/load_balancing_algorithms/ip_hash.py)
 
 ## Health Checks
 

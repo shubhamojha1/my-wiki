@@ -13,21 +13,42 @@ sources: ["algomaster-load-balancing-algorithms"]
 ## How It Works
 
 1. Track active connections per server
-2. New request goes to server with least connections
+2. New request goes to server with fewest active connections
+3. Release connection when request completes (decrement count)
+
+## Implementation
+
+```python
+class LeastConnections:
+    def __init__(self, servers):
+        self.connections = {server: 0 for server in servers}
+
+    def get_next_server(self):
+        server = min(self.connections, key=self.connections.get)
+        self.connections[server] += 1
+        return server
+
+    def release_connection(self, server):
+        if self.connections[server] > 0:
+            self.connections[server] -= 1
+```
 
 ## Use Cases
 
-- Varying request durations
+- Varying request durations (some fast, some slow)
 - Similar server capabilities
+- Workloads where connection count approximates actual load
 
 ## Pros
 
-- Dynamic load distribution
-- Adapts to current server load
+- Dynamic load distribution adapting to current load
+- Prevents any single server from becoming overloaded
 
 ## Cons
 
-- Requires tracking active connections
+- May not be optimal if servers have different processing capabilities
+- Requires tracking active connections per server
+- Assumes connection count correlates with actual load
 
 ## Related Concepts
 

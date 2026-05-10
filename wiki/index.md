@@ -382,6 +382,8 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Round Robin]] — Sequential distribution
 - [[Weighted Round Robin]] — Capacity-based distribution
 - [[Least Connections]] — Fewest active connections
+- [[Least Response Time]] — Fastest response time routing
+- [[IP Hash]] — Client IP hash for sticky sessions
 - [[Health Check]] — Server health monitoring
 - [[Checksums]] — Error detection fingerprints
 - [[CRC]] — Cyclic Redundancy Check

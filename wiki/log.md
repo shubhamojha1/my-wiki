@@ -530,6 +530,13 @@ Ingested AlgoMaster.io article (Nov 2025) via Wayback Machine (Jan 2026).
 Updated 3 existing pages: source page (QUIC details with TLS 1.3/multiplexing, decision framework, hybrid approach, TCP termination, security TLS vs DTLS), TCP (connection termination four-step, sliding window, error detection, TLS foundation), UDP (fire-and-forget model, datagram routing, DTLS security).
 Key additions: TCP graceful shutdown, QUIC as best-of-both-worlds with mandatory encryption, TCP vs UDP decision matrix for system design, hybrid approach patterns, DTLS for UDP security.
 
+## [2026-05-10] ingest | Load Balancing Algorithms Explained with Code
+
+Ingested AlgoMaster blog post by Ashish Pratap Singh (Jun 2024).
+Created 2 new concept pages: Least Response Time (fastest server routing, response time monitoring), IP Hash (MD5 hash modulo, sticky sessions).
+Updated 5 existing pages: source page (code links to GitHub, decision summary), Round Robin (Python implementation with index tracking), Weighted Round Robin (Python code with weight iteration), Least Connections (Python code with release_connection).
+All 5 algorithm concept pages now include Python implementations.
+
 Ingested source: AlgoMaster.io WebSockets (Aug 2024).
 Created 1 source summary, 5 concept pages (WebSockets, HTTP 101, Polling, Long-Polling, Frame).
 Key concepts: full-duplex bidirectional communication, HTTP handshake with 101 switch, persistent connections vs HTTP/polling/long-polling, use cases (chat, gaming, notifications, financial feeds, collaboration, IoT), challenges (scalability, security, network reliability, proxy compatibility).
