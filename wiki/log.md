@@ -512,6 +512,12 @@ Created 3 new concept pages: DNS (hierarchy overview), Anycast (global routing, 
 Updated 4 existing pages: source page (anycast, GeoDNS, CDN, load balancing), DNS Caching (TTL/propagation), Recursive Resolver (anycast), Authoritative Name Server (GeoDNS).
 Key concepts: anycast routing for DNS, GeoDNS for region-aware resolution, DNS load balancing with multiple A records, CDN edge server resolution.
 
+## [2026-05-10] ingest | Proxy vs Reverse Proxy Explained
+
+Ingested AlgoMaster blog post by Ashish Pratap Singh (Oct 2024).
+Updated 3 existing pages: source page (Nginx config, TTL caching, middleman/gatekeeper analogies, VPN vs proxy), Proxy (TTL caching, VPN comparison), Reverse Proxy (Nginx config with upstream, gatekeeper analogy, Cloudflare WAF/DDoS).
+Key additions: Nginx configuration examples (basic reverse proxy, upstream load balancing with ip_hash), proxy caching with TTL-based expiration, "middleman" vs "gatekeeper" framing.
+
 Ingested source: AlgoMaster.io WebSockets (Aug 2024).
 Created 1 source summary, 5 concept pages (WebSockets, HTTP 101, Polling, Long-Polling, Frame).
 Key concepts: full-duplex bidirectional communication, HTTP handshake with 101 switch, persistent connections vs HTTP/polling/long-polling, use cases (chat, gaming, notifications, financial feeds, collaboration, IoT), challenges (scalability, security, network reliability, proxy compatibility).

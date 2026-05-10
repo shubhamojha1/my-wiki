@@ -8,7 +8,7 @@ sources: ["algomaster-proxy-vs-reverse-proxy"]
 
 # Proxy
 
-A **proxy** (or forward proxy) is a server that acts on behalf of clients, sitting between a private network and the public internet.
+A **proxy** (or forward proxy) is a server that acts on behalf of clients. Think of it as a **middleman** that sits between a private network and the public internet.
 
 ## How It Works
 
@@ -23,8 +23,8 @@ A **proxy** (or forward proxy) is a server that acts on behalf of clients, sitti
 
 - **Privacy**: Hide client's real IP address
 - **Access Control**: Content filtering and restrictions
-- **Caching**: Store frequently accessed content
-- **Geo-bypassing**: Access region-locked content
+- **Caching**: Store frequently accessed content with TTL-based expiration
+- **Geo-bypassing**: Access region-locked content (e.g., US Netflix from another country)
 
 ## VPN vs Proxy
 
