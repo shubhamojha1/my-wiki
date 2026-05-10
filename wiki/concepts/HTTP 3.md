@@ -14,11 +14,19 @@ sources: ["algomaster-http-https"]
 
 Runs over **UDP** via the **QUIC** protocol instead of TCP.
 
+## Why UDP
+
+TCP's head-of-line blocking persists even in HTTP/2: a single lost TCP packet stalls *all* streams on that connection. HTTP/3 moves to UDP via QUIC to eliminate this.
+
 ## Benefits
 
-- **No head-of-line blocking**: Lost packets don't stall other streams
-- **0-RTT**: Fast repeat connections
-- **Connection migration**: Seamless network switching (Wi-Fi to cellular)
+- **No head-of-line blocking**: Lost packets only affect the affected stream, not all streams
+- **0-RTT**: Fast repeat connections — send data in the first packet
+- **Connection migration**: Identified by connection ID, not IP/port — seamless Wi-Fi to cellular switching
+
+## System Design Impact
+
+Ideal for real-time applications, faster connection setup, improved performance on unreliable networks. Major adopters: Google, YouTube, Cloudflare.
 
 ## QUIC
 

@@ -30,7 +30,23 @@ sources: ["algomaster-http-https"]
 
 ## PKI
 
-Public Key Infrastructure uses public/private key pairs and CA-issued certificates.
+**Public Key Infrastructure (PKI)** is the foundation of HTTPS. It uses public/private key pairs along with digital certificates issued by trusted **Certificate Authorities (CAs)** to establish secure connections.
+
+## HTTP vs HTTPS Comparison
+
+| Feature | HTTP | HTTPS |
+|---------|------|-------|
+| Security | Unencrypted, plain text | Encrypted via SSL/TLS |
+| Port | 80 | 443 |
+| Performance | Slightly faster | Negligible overhead (TLS 1.3) |
+| Authentication | None | Server via CA certificates |
+| Data Integrity | No guarantee | Tamper-proof |
+| SEO & Trust | Lower ranking, "Not Secure" warning | Preferred, padlock icon |
+| Use Case | Local dev, internal | All production traffic |
+
+## TLS 1.3 Optimization
+
+0-RTT (Zero Round Trip Time) for repeat connections eliminates handshake latency.
 
 ## Related Concepts
 

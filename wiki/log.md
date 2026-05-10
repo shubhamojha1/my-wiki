@@ -518,6 +518,12 @@ Ingested AlgoMaster blog post by Ashish Pratap Singh (Oct 2024).
 Updated 3 existing pages: source page (Nginx config, TTL caching, middleman/gatekeeper analogies, VPN vs proxy), Proxy (TTL caching, VPN comparison), Reverse Proxy (Nginx config with upstream, gatekeeper analogy, Cloudflare WAF/DDoS).
 Key additions: Nginx configuration examples (basic reverse proxy, upstream load balancing with ip_hash), proxy caching with TTL-based expiration, "middleman" vs "gatekeeper" framing.
 
+## [2026-05-10] ingest | HTTP and HTTPS
+
+Ingested AlgoMaster.io article (Oct 2025) via Wayback Machine (Dec 2025).
+Updated 5 existing pages: source page (full methods table, status code categories, idempotency, HTTP vs HTTPS comparison, attack vectors), HTTP (PUT/DELETE/PATCH methods, idempotency, full status codes, statelessness tradeoffs, security risks), HTTPS (PKI details, HTTP vs HTTPS comparison table), HTTP/2 (TCP HoL blocking explanation, system design impact), HTTP/3 (why UDP, TCP HoL persistence, system design impact, major adopters).
+Key additions: idempotency concept for distributed retries, HTTP/2 and HTTP/3 system design impacts, MITM/eavesdropping/injection attack vectors, HTTP vs HTTPS feature comparison.
+
 Ingested source: AlgoMaster.io WebSockets (Aug 2024).
 Created 1 source summary, 5 concept pages (WebSockets, HTTP 101, Polling, Long-Polling, Frame).
 Key concepts: full-duplex bidirectional communication, HTTP handshake with 101 switch, persistent connections vs HTTP/polling/long-polling, use cases (chat, gaming, notifications, financial feeds, collaboration, IoT), challenges (scalability, security, network reliability, proxy compatibility).
