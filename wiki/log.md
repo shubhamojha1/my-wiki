@@ -537,6 +537,12 @@ Created 2 new concept pages: Least Response Time (fastest server routing, respon
 Updated 5 existing pages: source page (code links to GitHub, decision summary), Round Robin (Python implementation with index tracking), Weighted Round Robin (Python code with weight iteration), Least Connections (Python code with release_connection).
 All 5 algorithm concept pages now include Python implementations.
 
+## [2026-05-10] ingest | Checksums
+
+Ingested AlgoMaster.io article (Oct 2025) via Wayback Machine (Jan 2026).
+Created 2 new concept pages: Checksums (photo analogy, parity bit, data backups), Parity Bit (single-bit error detection, even/odd parity, limitation).
+Updated source page with photo analogy, parity bit entry in algorithm table, data backups use case.
+
 Ingested source: AlgoMaster.io WebSockets (Aug 2024).
 Created 1 source summary, 5 concept pages (WebSockets, HTTP 101, Polling, Long-Polling, Frame).
 Key concepts: full-duplex bidirectional communication, HTTP handshake with 101 switch, persistent connections vs HTTP/polling/long-polling, use cases (chat, gaming, notifications, financial feeds, collaboration, IoT), challenges (scalability, security, network reliability, proxy compatibility).

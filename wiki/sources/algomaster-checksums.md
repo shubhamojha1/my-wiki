@@ -8,7 +8,7 @@ sources: ["algomaster-checksums"]
 
 # Checksums
 
-A **checksum** is a small block of data derived from digital data to detect errors. Acts as a "fingerprint" - if data changes, checksum changes.
+A **checksum** is a small block of data derived from digital data to detect errors. Like taking a photo of a letter before mailing it — if the recipient's photo matches, the data wasn't altered.
 
 ## How It Works
 
@@ -21,6 +21,7 @@ A **checksum** is a small block of data derived from digital data to detect erro
 
 | Algorithm | Type | Output | Use Case |
 |-----------|------|-------|---------|
+| Parity Bit | Simple | 1 bit | Low-level error detection |
 | CRC32 | Non-crypto | 32 bits | Network packets, storage |
 | Adler-32 | Non-crypto | 32 bits | Fast compression |
 | MD5 | Crypto | 128 bits | Legacy file verification |
@@ -34,8 +35,9 @@ A **checksum** is a small block of data derived from digital data to detect erro
 
 ## Use Cases
 
-- File downloads verification
+- File download verification
 - Network packet integrity
+- Data backups — ensures accuracy of backed-up data
 - Disk I/O error detection
 - Database replication
 - Firmware updates

@@ -387,6 +387,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Health Check]] — Server health monitoring
 - [[Checksums]] — Error detection fingerprints
 - [[CRC]] — Cyclic Redundancy Check
+- [[Parity Bit]] — Single-bit odd/even error detection
 - [[MD5]] — 128-bit hash (deprecated)
 - [[SHA-256]] — 256-bit current standard
 - [[Cryptographic Hash]] — One-way security function
