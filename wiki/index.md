@@ -19,6 +19,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[TCP vs UDP]] — AlgoMaster: TCP reliable vs UDP fast (2025)
 - [[Load Balancing Algorithms]] — AlgoMaster: round robin, least connections, health checks (2024)
 - [[Checksums]] — AlgoMaster: CRC, MD5, SHA, error detection (2025)
+- [[Publish-Subscribe (Pub/Sub)]] — AlgoMaster: async messaging, broker, topics (2026)
 - [[API]] — AlgoMaster: APIs, REST, GraphQL, gRPC (2025)
 - [[API Gateway]] — AlgoMaster: central entry point, rate limiting (2024)
 - [[REST vs GraphQL]] — AlgoMaster: REST vs GraphQL comparison (2025)
