@@ -27,6 +27,15 @@ The **OSI model** is a theoretical 7-layer framework. The **TCP/IP model** is th
 | Purpose | Theoretical reference framework | Practical, deployed internet standard |
 | Troubleshooting Value | High: Granular separation allows precise issue pinpointing | Low: "Application" layer lumps too many functions |
 
+## Blurring in Practice
+
+In real systems, the lines between layers blur. **HTTPS** technically operates across Layers 5–7 simultaneously:
+- **L7 (Application)**: HTTP request/response
+- **L6 (Presentation)**: TLS encryption/decryption
+- **L5 (Session)**: TLS session establishment and management
+
+This is why the TCP/IP model consolidates L5–L7 into a single "Application" layer.
+
 ## Why Learn OSI if TCP/IP Is Used?
 
 The OSI model remains the better mental model for reasoning about network issues. Its 7-layer granularity lets teams quickly identify where a problem lives:

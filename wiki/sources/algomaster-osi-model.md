@@ -24,6 +24,14 @@ The **OSI (Open Systems Interconnection) Model** is a 7-layer conceptual framewo
 
 Mnemonic (bottom to top): **P**lease **D**o **N**ot **T**hrow **S**ausage **P**izza **A**way
 
+## Additional Details from Article
+
+The article frames the OSI model as a **factory assembly line** where each station performs a specialized task before passing the product to the next. Key insights:
+
+- **HTTPS spans Layers 5-7**: HTTPS involves application requests (L7), encryption/TLS (L6), and session establishment (L5) simultaneously — a real-world example of blurring between OSI layers.
+- **Additional protocols per layer**: L7 includes gRPC, WebSocket, SSH; L6 includes JSON, XML, Protocol Buffers for serialization; L5 aligns with RPC sessions and WebSocket connections.
+- **Encapsulation data unit names**: Application → Data, Transport → Segment (TCP) / Datagram (UDP), Network → Packet, Data Link → Frame, Physical → Bits.
+
 ## Key Concepts
 
 - [[Encapsulation and Decapsulation]] — How data flows through the stack

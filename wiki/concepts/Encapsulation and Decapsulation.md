@@ -20,6 +20,20 @@ Each layer wraps incoming data with its own header (and sometimes trailer) as it
 4. **Layer 2 (Data Link)**: Adds Ethernet header (source MAC, destination MAC) and trailer (checksum/FCS) → creates **Frame**
 5. **Layer 1 (Physical)**: Converts frame into raw binary bits and transmits
 
+### Concrete Walkthrough: HTTP GET Request
+
+Tracing a browser's HTTP GET request to a web server:
+
+1. **L7 (Application)**: Browser creates `GET /index.html HTTP/1.1`
+2. **L6 (Presentation)**: Data is compressed, then encrypted by TLS
+3. **L5 (Session)**: TLS session is managed
+4. **L4 (Transport)**: Encrypted data is segmented; TCP header added (SRC=50000, DEST=443) → **TCP Segment**
+5. **L3 (Network)**: IP header added (SRC=your-IP, DEST=server-IP) → **IP Packet**
+6. **L2 (Data Link)**: Ethernet header/trailer added (SRC=your-MAC, DEST=router-MAC) → **Ethernet Frame**
+7. **L1 (Physical)**: Frame converted to electrical/optical signals and transmitted
+
+At the receiver, the process reverses: each layer strips its header in order (L1→L2→L3→L4→L5→L6→L7), delivering the original HTTP request to the web server application.
+
 ### Analogy
 
 Mailing a letter: letter (app data) → envelope with address (IP header) → mail bag with barcode (Ethernet frame) → truck transports the bag (physical bits)

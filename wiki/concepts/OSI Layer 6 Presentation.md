@@ -20,9 +20,14 @@ sources: ["algomaster-osi-model"]
 
 1. **Encryption**: TLS/SSL for HTTPS connections
 2. **Compression**: gzip, Brotli to reduce bandwidth usage
-3. **Encoding**: character sets (ASCII/UTF-8), data formats (JPEG/JSON)
+3. **Serialization/Encoding**: character sets (ASCII/UTF-8), data formats (JSON, XML, Protocol Buffers)
 
-## Key Details
+## Examples
+
+- TLS/SSL (encryption)
+- JSON, XML (data interchange formats)
+- Protocol Buffers (binary serialization)
+- MIME (email attachment format specification)
 
 - HTTPS connections perform Layer 6 encryption as part of the Layer 7 HTTPS protocol
 - Modern protocols often consolidate Presentation functions into Application layer

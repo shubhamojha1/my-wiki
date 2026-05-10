@@ -20,6 +20,7 @@ sources: ["algomaster-osi-model"]
 - Handles session authentication and reconnection
 - Most modern protocols fold session management into the Application layer
 - The concept remains critical for stateful connections
+- Aligns with RPC sessions, TLS handshake state, and WebSocket connection lifecycle
 
 ## Examples
 

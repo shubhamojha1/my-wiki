@@ -490,6 +490,14 @@ Key concepts: 5-layer caching stack (client, DNS, web, app, database), distribut
 
 ## [2026-05-01] ingest | WebSockets
 
+- 
+
+## [2026-05-10] update | OSI Model
+
+Re-ingested AlgoMaster.io OSI Model article from Wayback Machine archive (Dec 2025) since current version is paywalled.
+Updated source page with factory assembly line analogy, HTTPS L5-7 blurring insight, and additional protocol mentions.
+Updated 5 concept pages: Encapsulation (HTTP GET walkthrough), OSI vs TCP/IP (HTTPS spanning L5-7), OSI Layer 7 (gRPC, WebSocket), OSI Layer 6 (JSON, XML, Protobuf), OSI Layer 5 (RPC/WebSocket sessions).
+
 Ingested source: AlgoMaster.io WebSockets (Aug 2024).
 Created 1 source summary, 5 concept pages (WebSockets, HTTP 101, Polling, Long-Polling, Frame).
 Key concepts: full-duplex bidirectional communication, HTTP handshake with 101 switch, persistent connections vs HTTP/polling/long-polling, use cases (chat, gaming, notifications, financial feeds, collaboration, IoT), challenges (scalability, security, network reliability, proxy compatibility).

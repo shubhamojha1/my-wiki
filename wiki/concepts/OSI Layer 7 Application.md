@@ -29,6 +29,8 @@ sources: ["algomaster-osi-model"]
 - SMTP/IMAP (email)
 - FTP/SFTP (file transfer)
 - SSH (remote access)
+- gRPC (high-performance RPC)
+- WebSocket (full-duplex communication)
 - DHCP (IP address assignment)
 
 ## Related Concepts
