@@ -44,13 +44,40 @@ sources: ["algomaster-tcp-vs-udp"]
 
 ## QUIC
 
-Google's QUIC runs on UDP but adds reliability - used in HTTP/3.
+Google's **QUIC** (basis for HTTP/3) runs on UDP but adds TCP-like reliability. Key advantages:
+- Avoids TCP handshake latency
+- Built-in encryption (TLS 1.3 mandatory)
+- Multiplexing: multiple streams without head-of-line blocking
+- Custom reliability layers can be built over UDP (e.g., game uses UDP for movement, TCP-style ACKs for critical events)
+
+## Decision Framework
+
+| Requirement | Protocol |
+|-------------|----------|
+| Guaranteed/ordered delivery | TCP |
+| Lowest possible latency | UDP or QUIC |
+| Tolerates some packet loss | UDP |
+| High accuracy/data integrity | TCP |
+| Real-time communication | UDP |
+| Built-in flow/congestion control | TCP |
+
+Many large-scale systems use a **hybrid approach**: TCP for auth/API calls, UDP for telemetry, QUIC/HTTP/3 for web content and streaming.
+
+## Security
+
+- **TCP** is the foundation for **TLS** (HTTPS). Its reliable ordered stream is a prerequisite for TLS.
+- **UDP** has no built-in security; applications use **DTLS** (Datagram TLS) for encryption.
+
+## TCP Connection Termination (Four-Step)
+
+1. FIN → 2. ACK → 3. FIN → 4. ACK — graceful shutdown ensures no data loss.
 
 ## Related Concepts
 
 - [[OSI Layer 4: Transport]] — Layer using TCP/UDP
 - [[HTTP/3]] — Uses QUIC (UDP)
 - [[TCP]] — Detailed concept
+- [[UDP]] — Detailed concept
 
 ## Source
 

@@ -524,6 +524,12 @@ Ingested AlgoMaster.io article (Oct 2025) via Wayback Machine (Dec 2025).
 Updated 5 existing pages: source page (full methods table, status code categories, idempotency, HTTP vs HTTPS comparison, attack vectors), HTTP (PUT/DELETE/PATCH methods, idempotency, full status codes, statelessness tradeoffs, security risks), HTTPS (PKI details, HTTP vs HTTPS comparison table), HTTP/2 (TCP HoL blocking explanation, system design impact), HTTP/3 (why UDP, TCP HoL persistence, system design impact, major adopters).
 Key additions: idempotency concept for distributed retries, HTTP/2 and HTTP/3 system design impacts, MITM/eavesdropping/injection attack vectors, HTTP vs HTTPS feature comparison.
 
+## [2026-05-10] ingest | TCP vs UDP
+
+Ingested AlgoMaster.io article (Nov 2025) via Wayback Machine (Jan 2026).
+Updated 3 existing pages: source page (QUIC details with TLS 1.3/multiplexing, decision framework, hybrid approach, TCP termination, security TLS vs DTLS), TCP (connection termination four-step, sliding window, error detection, TLS foundation), UDP (fire-and-forget model, datagram routing, DTLS security).
+Key additions: TCP graceful shutdown, QUIC as best-of-both-worlds with mandatory encryption, TCP vs UDP decision matrix for system design, hybrid approach patterns, DTLS for UDP security.
+
 Ingested source: AlgoMaster.io WebSockets (Aug 2024).
 Created 1 source summary, 5 concept pages (WebSockets, HTTP 101, Polling, Long-Polling, Frame).
 Key concepts: full-duplex bidirectional communication, HTTP handshake with 101 switch, persistent connections vs HTTP/polling/long-polling, use cases (chat, gaming, notifications, financial feeds, collaboration, IoT), challenges (scalability, security, network reliability, proxy compatibility).
