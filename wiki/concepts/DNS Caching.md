@@ -33,8 +33,10 @@ sources: ["algomaster-dns"]
 
 ## Cache Invalidation
 
-- TTL expiration
-- DNS updates propagate naturally
+- TTL expiration — cache is discarded when TTL reaches zero
+- DNS updates propagate naturally as TTLs expire across all caching layers
+- Lower TTLs = faster propagation but more load on authoritative servers
+- Higher TTLs = better performance but slower updates (e.g., during migration)
 
 ## Related Concepts
 

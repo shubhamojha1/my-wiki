@@ -33,17 +33,29 @@ The process happens in milliseconds.
 - **AAAA** — Domain to IPv6
 - **CNAME** — Alias to another domain
 - **MX** — Email routing
-- **TXT** — Verification
+- **TXT** — Verification (SPF, DKIM, DMARC)
 
 ## Caching
 
-Cached at multiple levels: browser, OS, and recursive resolver.
+Multi-level caching (browser, OS, resolver) with TTL-based expiration and natural propagation.
+
+## Speed and Reliability Mechanisms
+
+- **[[Anycast]]** — Root servers and public resolvers advertise the same IP from hundreds of global locations; queries route to nearest server automatically
+- **Redundant authoritative servers** — Domains have multiple authoritative servers across regions; if one fails, another responds
+- **[[GeoDNS]]** — Same domain resolves to different IPs based on request origin (performance + compliance)
+- **DNS load balancing** — Multiple A/AAAA records for a single domain distribute traffic across servers
+- **[[CDN]] integration** — DNS resolves to edge servers nearest to the user for static content delivery
 
 ## Related Concepts
 
+- [[DNS]] — Parent concept
 - [[DNS Record]] — Individual DNS record types
 - [[Recursive Resolver]] — DNS query resolver
 - [[Authoritative Name Server]] — Domain's official DNS server
+- [[DNS Caching]] — Multi-level caching system
+- [[Anycast]] — Global anycast routing for DNS
+- [[GeoDNS]] — Geographic DNS resolution
 
 ## Source
 

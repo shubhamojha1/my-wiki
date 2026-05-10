@@ -27,6 +27,13 @@ A **recursive resolver** (also called DNS resolver) is a server that handles DNS
 | Cloudflare | 1.1.1.1, 1.0.0.1 |
 | OpenDNS | 208.67.222.222 |
 
+## Anycast
+
+Public recursive resolvers (Google 8.8.8.8, Cloudflare 1.1.1.1) use **[[Anycast]] routing**:
+- Same IP advertised from hundreds of locations worldwide
+- Queries automatically route to the nearest server
+- Inherent fault tolerance — if one node fails, traffic shifts to the next closest
+
 ## Caching
 
 Recursive resolvers cache DNS responses to reduce latency and load on upstream servers.

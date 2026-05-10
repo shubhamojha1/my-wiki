@@ -366,6 +366,8 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Recursive Resolver]] — DNS query resolver
 - [[Authoritative Name Server]] — Domain's official DNS server
 - [[DNS Caching]] — DNS response caching
+- [[Anycast]] — Global routing to nearest server (same IP, multiple locations)
+- [[GeoDNS]] — Geographic DNS resolution for latency and compliance
 - [[Proxy]] — Acts on behalf of clients
 - [[Reverse Proxy]] — Acts on behalf of servers
 - [[SSL Termination]] — SSL offloading at reverse proxy

@@ -505,6 +505,13 @@ Created 5 new concept pages: IP Address (postal analogy, Network ID + Host ID st
 Updated 4 existing pages: source page with SLAAC/IPsec/static-DHCP details, IPv4 (address exhaustion), IPv6 (SLAAC, mandatory IPsec, simplified header), Private IP Address (NAT gateway for internet access).
 Key concepts: Network ID vs Host ID, DHCP DORA flow, broadcast vs multicast, SLAAC.
 
+## [2026-05-10] ingest | How DNS Actually Works
+
+Ingested AlgoMaster blog post by Ashish Pratap Singh (Sep 2025).
+Created 3 new concept pages: DNS (hierarchy overview), Anycast (global routing, DNS use case), GeoDNS (geographic resolution, compliance).
+Updated 4 existing pages: source page (anycast, GeoDNS, CDN, load balancing), DNS Caching (TTL/propagation), Recursive Resolver (anycast), Authoritative Name Server (GeoDNS).
+Key concepts: anycast routing for DNS, GeoDNS for region-aware resolution, DNS load balancing with multiple A records, CDN edge server resolution.
+
 Ingested source: AlgoMaster.io WebSockets (Aug 2024).
 Created 1 source summary, 5 concept pages (WebSockets, HTTP 101, Polling, Long-Polling, Frame).
 Key concepts: full-duplex bidirectional communication, HTTP handshake with 101 switch, persistent connections vs HTTP/polling/long-polling, use cases (chat, gaming, notifications, financial feeds, collaboration, IoT), challenges (scalability, security, network reliability, proxy compatibility).

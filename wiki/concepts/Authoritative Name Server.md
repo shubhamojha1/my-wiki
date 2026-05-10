@@ -15,7 +15,13 @@ An **authoritative name server** is the DNS server that holds the official DNS r
 - Has the **source of truth** for a domain
 - Returns actual IP addresses (A/AAAA records)
 - Can return multiple IPs for load balancing
-- Usually multiple servers for redundancy
+- Usually multiple servers for redundancy across regions
+
+## GeoDNS
+
+Authoritative servers can implement **[[GeoDNS]]**: returning different IPs based on the requester's location. Used for:
+- Routing users to the nearest data center for lower latency
+- Directing traffic to country-specific servers for data residency compliance
 
 ## Types
 
