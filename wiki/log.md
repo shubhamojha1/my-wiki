@@ -574,3 +574,10 @@ Ingested AlgoMaster.io article by Ashish Pratap Singh (Oct 2025) via Wayback Mac
 Created 1 source summary, 10 new concept pages (Database Index, Primary Index, Dense Index, Sparse Index, Bitmap Index, Hash Index, Filtered Index, Function-Based Index, Full-Text Index, Spatial Index).
 Updated 3 existing pages: Clustered Index, Secondary Index (added non-clustered alias), Covering Index.
 Key concepts: book index analogy, B-Tree/B+Tree vs Hash Table vs Bitmap data structures, dense vs sparse indexing, best practices (selective columns, composite indexes, avoid over-indexing).
+
+## [2026-05-11] ingest | AlgoMaster: Sharding
+
+Ingested AlgoMaster.io article by Ashish Pratap Singh (Oct 2025) via Wayback Machine (Dec 2025).
+Created 1 source summary, 8 new concept pages (Database Sharding, Shard Key, Hash-Based Sharding, Range-Based Sharding, Geo-Based Sharding, Directory-Based Sharding, Cross-Shard Query, Data Rebalancing).
+Updated 2 existing pages: Partitioning (added sharding links), Consistent Hashing (added sharding use case).
+Key concepts: Instagram/Amazon/Google sharding examples, 4 strategies (hash/range/geo/directory), consistent hashing for rebalancing, cross-shard query challenges, best practices for shard key selection.

@@ -28,4 +28,4 @@ Each physical server gets multiple positions on ring for even distribution.
 
 ## Used In
 
-[[Dynamo]], distributed caches, load balancing
+[[Dynamo]], distributed caches, load balancing, [[Database Sharding]] (minimizes remapping during rebalancing)

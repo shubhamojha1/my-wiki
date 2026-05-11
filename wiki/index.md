@@ -149,6 +149,17 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Graph Convolution]] — Convolution on graphs (spectral/spatial)
 - [[Graph Attention]] — Attention mechanism on graphs
 
+## Sharding Concepts
+
+- [[Database Sharding]] — Horizontal scaling via independent shards across servers
+- [[Shard Key]] — Attribute determining shard placement
+- [[Hash-Based Sharding]] — Hash function distributes data evenly
+- [[Range-Based Sharding]] — Contiguous value ranges per shard
+- [[Geo-Based Sharding]] — Geographic region placement
+- [[Directory-Based Sharding]] — Lookup table mapping keys to shards
+- [[Cross-Shard Query]] — Query spanning multiple shards
+- [[Data Rebalancing]] — Redistributing data across shards
+
 ## Index Concepts
 
 - [[Database Index]] — Core concept: lookup structure for fast data retrieval

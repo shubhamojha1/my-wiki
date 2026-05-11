@@ -31,3 +31,9 @@ Partitioning divides a dataset into smaller, independent sets across multiple no
 - Range-based partitioning
 - Hash-based partitioning
 - Directory-based lookup
+
+## Related
+
+- [[Database Sharding]] — Horizontal scaling via partitioned databases
+- [[Hash-Based Sharding]] — Hash-based data distribution
+- [[Range-Based Sharding]] — Range-based data distribution
