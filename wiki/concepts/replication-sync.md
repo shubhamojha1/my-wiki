@@ -30,6 +30,13 @@ Synchronous replication (also: eager, active, push, pessimistic) waits for all r
 - Client certain all N servers received/stored
 
 ## Use Cases
-- When data cannot be lost
+- When data cannot be lost ([[RPO and RTO|RPO]] near zero)
 - Financial systems
 - Critical metadata
+- In-region deployments with low network latency
+
+## Related
+
+- [[Data Replication]] — General concept
+- [[RPO and RTO]] — Recovery metrics
+- [[Asynchronous Replication]] — Alternative approach

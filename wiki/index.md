@@ -149,6 +149,19 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Graph Convolution]] — Convolution on graphs (spectral/spatial)
 - [[Graph Attention]] — Attention mechanism on graphs
 
+## Replication Concepts
+
+- [[Data Replication]] — Keeping copies of data synced across locations
+- [[Transactional Replication]] — Real-time ordered change streaming
+- [[Snapshot Replication]] — Point-in-time data copy
+- [[Merge Replication]] — Independent concurrent writes reconciled
+- [[Key-Based Replication]] — Timestamp/ID incremental replication
+- [[Full Replication]] — Complete dataset to all replicas
+- [[Partial Replication]] — Subset of data per region/workload
+- [[Active-Active Geo Distribution]] — Multi-master with CRDTs
+- [[Replication Lag]] — Staleness window in async replication
+- [[RPO and RTO]] — Disaster recovery metrics
+
 ## Sharding Concepts
 
 - [[Database Sharding]] — Horizontal scaling via independent shards across servers

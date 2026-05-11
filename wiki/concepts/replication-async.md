@@ -30,5 +30,13 @@ Asynchronous replication (also: lazy, passive, pull) responds immediately and re
 
 ## Risk
 - Divergence possible
-- Reads may return different results
+- Reads may return different results ([[Replication Lag]])
 - Global constraints cannot be enforced
+- Primary failure during lag causes data loss (higher [[RPO and RTO|RPO]])
+
+## Related
+
+- [[Data Replication]] — General concept
+- [[Replication Lag]] — Staleness window
+- [[RPO and RTO]] — Recovery metrics
+- [[Synchronous Replication]] — Alternative approach

@@ -41,3 +41,20 @@ Exposes replication internals. Lower latency, higher availability.
 - Respond immediately, replicate later
 - Poor durability, high performance
 - 1-of-N approach
+
+## Replication Types
+
+- [[Transactional Replication]] — Real-time ordered change streaming
+- [[Snapshot Replication]] — Point-in-time copies
+- [[Merge Replication]] — Independent concurrent writes reconciled
+- [[Key-Based Replication]] — Timestamp/ID incremental replication
+
+## Scope
+
+- [[Full Replication]] — Complete dataset to all replicas
+- [[Partial Replication]] — Subset per region or workload
+
+## Related
+
+- [[Data Replication]] — General overview
+- [[Active-Active Geo Distribution]] — Multi-master with CRDTs

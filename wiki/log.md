@@ -581,3 +581,10 @@ Ingested AlgoMaster.io article by Ashish Pratap Singh (Oct 2025) via Wayback Mac
 Created 1 source summary, 8 new concept pages (Database Sharding, Shard Key, Hash-Based Sharding, Range-Based Sharding, Geo-Based Sharding, Directory-Based Sharding, Cross-Shard Query, Data Rebalancing).
 Updated 2 existing pages: Partitioning (added sharding links), Consistent Hashing (added sharding use case).
 Key concepts: Instagram/Amazon/Google sharding examples, 4 strategies (hash/range/geo/directory), consistent hashing for rebalancing, cross-shard query challenges, best practices for shard key selection.
+
+## [2026-05-11] ingest | Redis: Data Replication Explained
+
+Ingested Redis blog post by Paula Dallabetta (Apr 2026).
+Created 1 source summary, 11 new concept pages (Data Replication, Transactional Replication, Snapshot Replication, Merge Replication, Key-Based Replication, Full Replication, Partial Replication, Active-Active Geo Distribution, Replication Lag, RPO and RTO).
+Updated 5 existing pages: Synchronous Replication (RPO/RTO), Asynchronous Replication (lag), Replication (Distributed) (types/scope), Redis (Active-Active), CRDT (production use in Redis).
+Key concepts: replication vs backup, CDC-based change capture, 6 replication types, sync vs async trade-offs, partial resync, Active-Active Geo Distribution with CRDTs, RPO/RTO metrics.

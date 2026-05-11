@@ -36,3 +36,6 @@ Adds monitoring and automatic failover
 
 ### Cluster
 Active-passive with hash-based sharding
+
+### Active-Active Geo Distribution
+Multi-region deployment using [[Active-Active Geo Distribution]] — all nodes accept writes, CRDT-based conflict resolution, zero cross-region write latency. Available in Redis Cloud and Redis Software.

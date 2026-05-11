@@ -43,3 +43,7 @@ Operations that form semilattices can merge in any order and always converge to 
 
 ## Tradeoff
 Must use appropriate data type matching application semantics.
+
+## Use in Production
+
+CRDTs power [[Active-Active Geo Distribution]] in Redis Cloud and Redis Software, enabling multi-region write-anywhere deployments with automatic conflict resolution.
