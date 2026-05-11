@@ -102,6 +102,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[AlgoMaster: SQL vs NoSQL]] — Ashish Pratap Singh: 7 differences across data model, schema, scalability, query, transactions, performance, use cases (2025)
 - [[AlgoMaster: Indexing]] — Ashish Pratap Singh: database indexes overview, types, B-Tree/Hash/Bitmap data structures, best practices (2025)
 - [[AlgoMaster: How to Scale a Database]] — Ashish Pratap Singh: 8 strategies (vertical scaling, indexing, sharding, vertical partitioning, caching, replication, materialized views, denormalization) (2024)
+- [[AlgoMaster: 15 Types of Databases]] — Ashish Pratap Singh: relational, key-value, document, graph, wide-column, in-memory, time-series, OODB, search, spatial, blob, ledger, hierarchical, vector, embedded (2024)
 
 ## Entities
 
@@ -149,6 +150,19 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Message Passing]] — Core GNN aggregation mechanism
 - [[Graph Convolution]] — Convolution on graphs (spectral/spatial)
 - [[Graph Attention]] — Attention mechanism on graphs
+
+## Database Type Concepts
+
+- [[Key-Value Store]] — Simple key-value pairs for high-throughput lookups
+- [[Graph Database]] — Nodes, edges, and traversals for connected data
+- [[Wide-Column Store]] — Dynamic column schema for large-scale distributed storage
+- [[In-Memory Database]] — RAM-resident database for microsecond latency
+- [[Time-Series Database]] — Append-heavy storage for timestamped data points
+- [[Object-Oriented Database]] — Objects with attributes and methods, OOP-native
+- [[Blob Datastore]] — Large unstructured binary data (images, videos, backups)
+- [[Ledger Database]] — Immutable append-only records with cryptographic chaining
+- [[Hierarchical Database]] — Tree-structured parent-child records
+- [[Embedded Database]] — In-process database with zero configuration
 
 ## Database Scaling Concepts
 

@@ -594,3 +594,9 @@ Key concepts: replication vs backup, CDC-based change capture, 6 replication typ
 Ingested AlgoMaster blog post by Ashish Pratap Singh (Jul 2024).
 Created 1 source summary, 3 new concept pages (Vertical Partitioning, Materialized View, Data Denormalization).
 Key concepts: 8 database scaling strategies overview — vertical scaling, indexing, sharding, vertical partitioning (split columns by access frequency), caching, replication, materialized views (pre-computed query results), data denormalization (redundancy to avoid joins).
+
+## [2026-05-11] ingest | AlgoMaster: 15 Types of Databases
+
+Ingested AlgoMaster blog post by Ashish Pratap Singh (Mar 2024).
+Created 1 source summary, 10 new concept pages (Key-Value Store, Graph Database, Wide-Column Store, In-Memory Database, Time-Series Database, Object-Oriented Database, Blob Datastore, Ledger Database, Hierarchical Database, Embedded Database).
+Key concepts: 15 database types covering data models, use cases, examples (including relational, document, vector which were already in wiki). New additions complete the landscape from key-value through embedded databases.
