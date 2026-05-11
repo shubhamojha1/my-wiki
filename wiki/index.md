@@ -92,6 +92,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[AlgoMaster: WebSockets]] — AlgoMaster: full-duplex real-time protocol, handshake, use cases (2024)
 - [[AlgoMaster: Client-Server Architecture]] — AlgoMaster: computing model, tiers (1T to NT), scaling techniques (2025)
 - [[Hashmap: The What, Why, and How of a Microservices Architecture]] — Hashmap: microservices definition, benefits, 8-key implementation framework (2018)
+- [[AlgoMaster: Serverless Architecture]] — AlgoMaster: serverless/FaaS model, benefits, challenges, use cases, best practices (2026 draft)
 - [[AWS Caching Overview]] — AWS: 5-layer caching stack, ElastiCache, CloudFront, Route 53 (2026)
 - [[System Design Primer: Cache]] — Donne Martin: 5 cache locations, 2 caching levels, 4 update strategies (2026)
 - [[HTTP Caching In-Depth Part 1]] — Léo Jacquemin: 3 HTTP caching actors, latency bottleneck, request anatomy (2018)
@@ -604,6 +605,8 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Three-Tier Architecture]] — Presentation + application + data layers
 - [[N-Tier Architecture]] — 3-tier plus specialized layers (caching, auth, LB, etc.)
 - [[Microservices]] — Loosely coupled, independently deployable services per bounded context
+- [[Serverless Architecture]] — Cloud-managed event-driven functions, pay-per-use, auto-scaling
+- [[FaaS]] — Functions as a Service, the execution model behind serverless
 
 ## Queries
 

@@ -48,6 +48,7 @@ Microservices extend the [[N-Tier Architecture]] concept by fully decomposing th
 
 ## See Also
 
+- [[Serverless Architecture]] — serverless as a deployment model for microservices
 - [[Client-Server Architecture]]
 - [[N-Tier Architecture]]
 - [[Service Discovery]]

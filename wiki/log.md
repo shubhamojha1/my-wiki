@@ -675,3 +675,9 @@ Key concepts: 3 components (client, server, network), 4-tier model from 1T to NT
 Ingested Medium article by Jetinder Singh (Hashmap, Jun 2018) on microservices architecture.
 Created 1 source summary, 1 concept page (Microservices) — this fills a previously dangling [[Microservices]] WikiLink from distributed-tracing.md and ntier-architecture.md.
 Key concepts: loosely coupled services, independent deployment, fault isolation, polyglot flexibility, domain-driven decomposition, 8-key implementation framework, smart endpoints/dumb pipes, design for failure.
+
+## [2026-05-11] ingest | AlgoMaster: Serverless Architecture
+
+Ingested unpublished Substack draft by Ashish Pratap Singh on serverless architecture (tagged System Design, ~1689 words).
+Created 1 source summary, 2 concept pages (Serverless Architecture, FaaS). Updated Microservices concept page with serverless cross-link.
+Key concepts: FaaS model, event-driven stateless functions, pay-per-use billing, auto-scaling, cold start latency, vendor lock-in, use cases (APIs, data processing, microservices, CI/CD).
