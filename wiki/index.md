@@ -107,6 +107,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[MongoDB Atlas Architecture Center]] — MongoDB's Well-Architected Framework: 5 pillars, replica sets, auto-scaling, high availability, DR (2026)
 - [[AlgoMaster: Heartbeats in Distributed Systems]] — Ashish Pratap Singh: push/pull heartbeats, failure detection, frequency/timeout trade-offs, split-brain (2024)
 - [[AlgoMaster: Service Discovery in Distributed Systems]] — Ashish Pratap Singh: service registry, self/sidecar/orchestrator registration, client-side vs server-side discovery (2024)
+- [[Consensus in Distributed System]] — Bhattacharjee & Mahapatra: consensus properties, crash vs Byzantine failures, pBFT, PoW/PoS (2023)
 
 ## Entities
 
@@ -159,6 +160,9 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 ## Distributed Systems Mechanisms
 
 - [[Service Discovery]] — Dynamic service-to-service communication without hardcoded addresses
+- [[Consensus]] — Agreement on common values across non-faulty nodes
+- [[Byzantine Failure]] — Arbitrary/malicious node behavior in distributed systems
+- [[Practical Byzantine Fault Tolerance]] — Consensus algorithm tolerating Byzantine faults
 
 - [[Heartbeat]] — Periodic health signals between nodes for failure detection
 

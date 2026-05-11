@@ -626,3 +626,9 @@ Key concepts: push vs pull heartbeats, frequency/timeout trade-offs, false posit
 Ingested AlgoMaster blog post by Ashish Pratap Singh (Dec 2024).
 Created 1 source summary, 1 new concept page (Service Discovery).
 Key concepts: service registry, 5 registration options (manual/self/sidecar/orchestrator/config), client-side (Eureka) vs server-side (AWS ELB) discovery models, best practices for HA, health checks, caching, naming conventions.
+
+## [2026-05-11] ingest | Consensus in Distributed System
+
+Ingested Medium article by Bhattacharjee & Mahapatra (Jan 2023).
+Created 1 source summary, 3 new concept pages (Consensus, Byzantine Failure, Practical Byzantine Fault Tolerance).
+Key concepts: 3 consensus properties (agreement, validity, termination), crash vs Byzantine failure models, pBFT 3-phase protocol (pre-prepare, prepare, commit), 2/3 majority rule, view change, proof-based algorithms (PoW, PoS).
