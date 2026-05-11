@@ -650,3 +650,10 @@ Key concepts: anti-entropy vs rumor-mongering vs aggregation models, push/pull/p
 Ingested Geek Culture article by Hasitha Subhashana (Jun 2021).
 Created 1 source summary, 1 new concept page (Circuit Breaker Pattern).
 Key concepts: 3 states (closed/open/half-open), threshold-based tripping (latency or failure rate), fail-fast during open state, background health probes for self-healing, cascading failure prevention.
+
+## [2026-05-11] ingest | Google Cloud: What Is Disaster Recovery?
+
+Ingested Google Cloud article on disaster recovery.
+Created 1 source summary, 1 new concept page (Disaster Recovery).
+Updated 1 existing page: RPO and RTO (added link to DR).
+Key concepts: 5-step DR planning (risk assessment, BIA, planning, implementation, testing), 3-2-1 backup rule, DR types (backups, BaaS, DRaaS, snapshots, virtual DR, DR sites), preventive/detective/corrective recovery elements.

@@ -8,7 +8,7 @@ sources: [redis-data-replication]
 
 # RPO and RTO
 
-**Recovery Point Objective (RPO)** and **Recovery Time Objective (RTO)** are the two key metrics defining disaster recovery quality.
+**Recovery Point Objective (RPO)** and **Recovery Time Objective (RTO)** are the two key metrics defining [[Disaster Recovery]] quality.
 
 ## RPO (Recovery Point Objective)
 

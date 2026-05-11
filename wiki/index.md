@@ -111,6 +111,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[How to Do Distributed Locking]] — Martin Kleppmann: Redlock critique, fencing tokens, process pause problem, efficiency vs correctness locks (2016)
 - [[Gossip Protocol Explained]] — NK: anti-entropy/rumor-mongering/aggregation models, push/pull strategies, fanout, real-world uses (Cassandra, Consul, Dynamo, S3) (2023)
 - [[Circuit Breaker Pattern (Design Patterns for Microservices)]] — Hasitha Subhashana: 3 states (closed/open/half-open), cascading failure prevention, threshold-based tripping (2021)
+- [[Google Cloud: What Is Disaster Recovery?]] — GC: DR planning, 3-2-1 rule, BaaS/DRaaS/snapshots/virtual DR, RTO/RPO, 5-step DR process
 
 ## Entities
 
@@ -160,7 +161,11 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Graph Convolution]] — Convolution on graphs (spectral/spatial)
 - [[Graph Attention]] — Attention mechanism on graphs
 
-## ## Microservices Patterns
+## ## ## Disaster Recovery
+
+- [[Disaster Recovery]] — Restoring IT infrastructure after disaster events, 5-step planning, 3-2-1 rule
+
+## Microservices Patterns
 
 - [[Circuit Breaker Pattern]] — Fail-fast pattern preventing cascading failures via 3-state proxy
 
