@@ -638,3 +638,9 @@ Key concepts: 3 consensus properties (agreement, validity, termination), crash v
 Ingested Martin Kleppmann's blog post (Feb 2016).
 Created 1 source summary, 3 new concept pages (Distributed Lock, Fencing Token, Redlock).
 Key concepts: efficiency vs correctness locks, process pause/GC pause problem, fencing tokens (monotonically increasing IDs validated by storage server), Redlock critique (no fencing tokens, clock dependency, synchronous assumptions), recommendation (single Redis for efficiency, ZooKeeper/etcd for correctness).
+
+## [2026-05-11] ingest | Gossip Protocol Explained
+
+Ingested High Scalability article by NK (Jul 2023).
+Created 1 source summary, significantly expanded existing Gossip Protocol concept page (from 28 to 120 lines).
+Key concepts: anti-entropy vs rumor-mongering vs aggregation models, push/pull/push-pull strategies, fanout and cycle performance (O(log n) convergence), peer sampling service, seed nodes, generation clocks, gossip digest format, real-world uses (Cassandra, Consul, Dynamo, S3, CockroachDB, Bitcoin, Redis Cluster, Riak, Hyperledger Fabric).

@@ -109,6 +109,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[AlgoMaster: Service Discovery in Distributed Systems]] — Ashish Pratap Singh: service registry, self/sidecar/orchestrator registration, client-side vs server-side discovery (2024)
 - [[Consensus in Distributed System]] — Bhattacharjee & Mahapatra: consensus properties, crash vs Byzantine failures, pBFT, PoW/PoS (2023)
 - [[How to Do Distributed Locking]] — Martin Kleppmann: Redlock critique, fencing tokens, process pause problem, efficiency vs correctness locks (2016)
+- [[Gossip Protocol Explained]] — NK: anti-entropy/rumor-mongering/aggregation models, push/pull strategies, fanout, real-world uses (Cassandra, Consul, Dynamo, S3) (2023)
 
 ## Entities
 
