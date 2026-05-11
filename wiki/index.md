@@ -90,6 +90,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[OSI Model]] — AlgoMaster: 7-layer framework, encapsulation, OSI vs TCP/IP (2026)
 - [[algomaster-Race Conditions and Critical Sections]] — AlgoMaster: read-modify-write, check-then-act (2026)
 - [[AlgoMaster: WebSockets]] — AlgoMaster: full-duplex real-time protocol, handshake, use cases (2024)
+- [[AlgoMaster: Client-Server Architecture]] — AlgoMaster: computing model, tiers (1T to NT), scaling techniques (2025)
 - [[AWS Caching Overview]] — AWS: 5-layer caching stack, ElastiCache, CloudFront, Route 53 (2026)
 - [[System Design Primer: Cache]] — Donne Martin: 5 cache locations, 2 caching levels, 4 update strategies (2026)
 - [[HTTP Caching In-Depth Part 1]] — Léo Jacquemin: 3 HTTP caching actors, latency bottleneck, request anatomy (2018)
@@ -593,6 +594,14 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Public API]] — External interface hiding internal complexity
 - [[Method Overriding]] — Subclass provides specific implementation of parent method
 - [[Method Overloading]] — Multiple methods with same name, different parameters
+
+## Architecture Patterns
+
+- [[Client-Server Architecture]] — Foundational computing model with clients, servers, and networks
+- [[One-Tier Architecture]] — Monolithic single-application model (UI + logic + data together)
+- [[Two-Tier Architecture]] — Client (UI) + server (logic + data) split
+- [[Three-Tier Architecture]] — Presentation + application + data layers
+- [[N-Tier Architecture]] — 3-tier plus specialized layers (caching, auth, LB, etc.)
 
 ## Queries
 

@@ -3,7 +3,7 @@ title: "Ashish Pratap Singh"
 type: entity
 tags: [person, educator, content-creator]
 created: 2026-04-23
-sources: ["algomaster.io/learn/lld/classes-and-objects", "blog.algomaster.io/p/12-oop-concepts-every-developer-should-know"]
+sources: ["algomaster.io/learn/lld/classes-and-objects", "blog.algomaster.io/p/12-oop-concepts-every-developer-should-know", "algomaster.io/learn/system-design/client-server-architecture"]
 ---
 
 # Ashish Pratap Singh
@@ -19,6 +19,7 @@ Software engineer and educator specializing in Low-Level Design (LLD) and Object
 
 - Low-Level Design (LLD) / Object-Oriented Design (OOD)
 - OOP fundamentals and SOLID principles
+- System design fundamentals
 - System design patterns
 - Coding interview preparation
 
@@ -26,8 +27,9 @@ Software engineer and educator specializing in Low-Level Design (LLD) and Object
 
 - **AlgoMaster LLD Course** — Structured curriculum on classes, objects, design patterns
 - **12 OOP Concepts Every Developer Should Know** — Comprehensive OOP guide
-- **Classes and Objects** — Foundation article on OOP building blocks
-- **How to Answer a LLD Interview Problem** — Interview preparation guide
+  - **Classes and Objects** — Foundation article on OOP building blocks
+  - **Client-Server Architecture** — System design article on the foundational computing model
+  - **How to Answer a LLD Interview Problem** — Interview preparation guide
 
 ## Teaching Style
 

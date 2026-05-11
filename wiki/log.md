@@ -663,3 +663,9 @@ Key concepts: 5-step DR planning (risk assessment, BIA, planning, implementation
 Ingested Dynatrace knowledge base article (Apr 2026).
 Created 1 source summary, 1 new concept page (Distributed Tracing).
 Key concepts: trace IDs spanning all services, spans as units of work (name, timestamps, parent-child hierarchy), three pillars of observability (logs, metrics, traces), head-based vs tail-based sampling, centralized vs distributed logging, MTTD/MTTR reduction.
+
+## [2026-05-11] ingest | AlgoMaster: Client-Server Architecture
+
+Ingested AlgoMaster.io article by Ashish Pratap Singh (Oct 2025) on client-server architecture.
+Created 1 source summary, 5 concept pages (Client-Server Architecture, One-Tier Architecture, Two-Tier Architecture, Three-Tier Architecture, N-Tier Architecture). Updated Ashish Pratap Singh entity with new publication.
+Key concepts: 3 components (client, server, network), 4-tier model from 1T to NT, 5-step communication flow, scaling techniques (load balancing, caching, horizontal scaling, microservices).
