@@ -28,8 +28,14 @@ A **secondary index** is an index that is not the clustered index. It provides a
 - **Pros**: Fast alternate access paths, can index any columns
 - **Cons**: Additional storage, maintenance overhead on writes
 
+## Also Known As
+
+- Non-clustered index
+- Non-clustered or secondary index (AlgoMaster terminology)
+
 ## Related
 
 - [[Clustered Index]] — The primary/index table order
 - [[Index Scan]] — Access method
 - [[Covering Index]] — Query answered from index alone
+- [[Database Index]] — General concept

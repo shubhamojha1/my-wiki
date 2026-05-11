@@ -100,6 +100,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[RFC 2308: DNS NCACHE]] — Standards Track: negative caching of DNS queries, NXDOMAIN/NODATA, SOA MINIMUM field (1998)
 - [[AlgoMaster: ACID Transactions]] — Ashish Pratap Singh: atomicity, consistency, isolation, durability, WAL, MVCC (2025)
 - [[AlgoMaster: SQL vs NoSQL]] — Ashish Pratap Singh: 7 differences across data model, schema, scalability, query, transactions, performance, use cases (2025)
+- [[AlgoMaster: Indexing]] — Ashish Pratap Singh: database indexes overview, types, B-Tree/Hash/Bitmap data structures, best practices (2025)
 
 ## Entities
 
@@ -147,6 +148,19 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Message Passing]] — Core GNN aggregation mechanism
 - [[Graph Convolution]] — Convolution on graphs (spectral/spatial)
 - [[Graph Attention]] — Attention mechanism on graphs
+
+## Index Concepts
+
+- [[Database Index]] — Core concept: lookup structure for fast data retrieval
+- [[Primary Index]] — Auto-created index on primary key
+- [[Dense Index]] — Entry for every search key value
+- [[Sparse Index]] — Entry for some search key values
+- [[Bitmap Index]] — Binary array index for low-cardinality columns
+- [[Hash Index]] — Hash-function-based index for exact-match lookups
+- [[Filtered Index]] — Index on a subset of rows
+- [[Function-Based Index]] — Index on expression/function result
+- [[Full-Text Index]] — Index for efficient text search
+- [[Spatial Index]] — Index for geographical/geometric data
 
 ## Concepts (Distributed Systems)
 

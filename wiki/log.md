@@ -567,3 +567,10 @@ Created 1 source summary, 5 concept pages (WebSockets, HTTP 101, Polling, Long-P
 Key concepts: full-duplex bidirectional communication, HTTP handshake with 101 switch, persistent connections vs HTTP/polling/long-polling, use cases (chat, gaming, notifications, financial feeds, collaboration, IoT), challenges (scalability, security, network reliability, proxy compatibility).
 
 Key entities: Will Larson, HAProxy, Memcached, RabbitMQ, Hadoop.
+
+## [2026-05-11] ingest | AlgoMaster: Indexing
+
+Ingested AlgoMaster.io article by Ashish Pratap Singh (Oct 2025) via Wayback Machine (Jan 2026).
+Created 1 source summary, 10 new concept pages (Database Index, Primary Index, Dense Index, Sparse Index, Bitmap Index, Hash Index, Filtered Index, Function-Based Index, Full-Text Index, Spatial Index).
+Updated 3 existing pages: Clustered Index, Secondary Index (added non-clustered alias), Covering Index.
+Key concepts: book index analogy, B-Tree/B+Tree vs Hash Table vs Bitmap data structures, dense vs sparse indexing, best practices (selective columns, composite indexes, avoid over-indexing).

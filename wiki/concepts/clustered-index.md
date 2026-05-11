@@ -26,3 +26,5 @@ A **clustered index** determines the physical order of data in a table. The tabl
 - [[B+Tree]] — Usually the underlying structure
 - [[Secondary Index]] — Additional indexes point to clustered index
 - [[Index-Organized Table]] — Extreme form of clustering
+- [[Database Index]] — General concept
+- [[Primary Index]] — Often implemented as a clustered index

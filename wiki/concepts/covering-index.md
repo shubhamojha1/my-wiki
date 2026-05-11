@@ -32,3 +32,4 @@ A **covering index** is an index that contains all columns needed to satisfy a q
 - [[Index Scan]] — Access method
 - [[Index-Organized Table]] — Alternative approach
 - [[Secondary Index]] — Non-covering index
+- [[Database Index]] — General concept
