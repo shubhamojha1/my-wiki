@@ -644,3 +644,9 @@ Key concepts: efficiency vs correctness locks, process pause/GC pause problem, f
 Ingested High Scalability article by NK (Jul 2023).
 Created 1 source summary, significantly expanded existing Gossip Protocol concept page (from 28 to 120 lines).
 Key concepts: anti-entropy vs rumor-mongering vs aggregation models, push/pull/push-pull strategies, fanout and cycle performance (O(log n) convergence), peer sampling service, seed nodes, generation clocks, gossip digest format, real-world uses (Cassandra, Consul, Dynamo, S3, CockroachDB, Bitcoin, Redis Cluster, Riak, Hyperledger Fabric).
+
+## [2026-05-11] ingest | Circuit Breaker Pattern
+
+Ingested Geek Culture article by Hasitha Subhashana (Jun 2021).
+Created 1 source summary, 1 new concept page (Circuit Breaker Pattern).
+Key concepts: 3 states (closed/open/half-open), threshold-based tripping (latency or failure rate), fail-fast during open state, background health probes for self-healing, cascading failure prevention.
