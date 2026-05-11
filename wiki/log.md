@@ -632,3 +632,9 @@ Key concepts: service registry, 5 registration options (manual/self/sidecar/orch
 Ingested Medium article by Bhattacharjee & Mahapatra (Jan 2023).
 Created 1 source summary, 3 new concept pages (Consensus, Byzantine Failure, Practical Byzantine Fault Tolerance).
 Key concepts: 3 consensus properties (agreement, validity, termination), crash vs Byzantine failure models, pBFT 3-phase protocol (pre-prepare, prepare, commit), 2/3 majority rule, view change, proof-based algorithms (PoW, PoS).
+
+## [2026-05-11] ingest | How to Do Distributed Locking
+
+Ingested Martin Kleppmann's blog post (Feb 2016).
+Created 1 source summary, 3 new concept pages (Distributed Lock, Fencing Token, Redlock).
+Key concepts: efficiency vs correctness locks, process pause/GC pause problem, fencing tokens (monotonically increasing IDs validated by storage server), Redlock critique (no fencing tokens, clock dependency, synchronous assumptions), recommendation (single Redis for efficiency, ZooKeeper/etcd for correctness).

@@ -108,6 +108,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[AlgoMaster: Heartbeats in Distributed Systems]] — Ashish Pratap Singh: push/pull heartbeats, failure detection, frequency/timeout trade-offs, split-brain (2024)
 - [[AlgoMaster: Service Discovery in Distributed Systems]] — Ashish Pratap Singh: service registry, self/sidecar/orchestrator registration, client-side vs server-side discovery (2024)
 - [[Consensus in Distributed System]] — Bhattacharjee & Mahapatra: consensus properties, crash vs Byzantine failures, pBFT, PoW/PoS (2023)
+- [[How to Do Distributed Locking]] — Martin Kleppmann: Redlock critique, fencing tokens, process pause problem, efficiency vs correctness locks (2016)
 
 ## Entities
 
@@ -163,6 +164,9 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Consensus]] — Agreement on common values across non-faulty nodes
 - [[Byzantine Failure]] — Arbitrary/malicious node behavior in distributed systems
 - [[Practical Byzantine Fault Tolerance]] — Consensus algorithm tolerating Byzantine faults
+- [[Distributed Lock]] — Exclusive access guarantees across nodes
+- [[Fencing Token]] — Monotonically increasing numbers for safe lock usage
+- [[Redlock]] — Redis-based distributed lock algorithm (controversial)
 
 - [[Heartbeat]] — Periodic health signals between nodes for failure detection
 
