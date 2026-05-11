@@ -33,3 +33,8 @@ Failure detectors abstract the problem of detecting crashed nodes using timeouts
 
 ## Connection to Consensus
 Even weak failure detector (⋄W) can solve consensus in async systems.
+
+## Related
+
+- [[Heartbeat]] — The mechanism used by failure detectors
+- [[Gossip Protocol]] — Heartbeat dissemination at scale

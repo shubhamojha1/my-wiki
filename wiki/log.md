@@ -613,3 +613,10 @@ Ingested MongoDB Atlas Well-Architected Framework docs (v20260330).
 Created 1 source summary, 1 entity page (MongoDB Atlas).
 Updated 1 existing concept page: Document Database (added MongoDB Atlas link).
 Key concepts: 5-pillar framework (Operational Efficiency, Security, Reliability, Performance, Cost Optimization), 3-node replica sets across AZs, automatic failover in seconds, `majority` write concern, auto-scaling compute/storage, sharding strategies, Performance Advisor, data tiering, zero-downtime vertical scaling, IaC (Terraform, CLI, K8s Operator).
+
+## [2026-05-11] ingest | AlgoMaster: Heartbeats in Distributed Systems
+
+Ingested AlgoMaster blog post by Ashish Pratap Singh (Apr 2024).
+Created 1 source summary, 1 new concept page (Heartbeat).
+Updated 1 existing page: Failure Detector (added heartbeat link).
+Key concepts: push vs pull heartbeats, frequency/timeout trade-offs, false positives, split-brain challenges, real-world uses (Kubernetes node → control plane, Elasticsearch gossip, DB replication).

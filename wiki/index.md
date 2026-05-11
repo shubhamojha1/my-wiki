@@ -105,6 +105,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[AlgoMaster: 15 Types of Databases]] — Ashish Pratap Singh: relational, key-value, document, graph, wide-column, in-memory, time-series, OODB, search, spatial, blob, ledger, hierarchical, vector, embedded (2024)
 - [[AlgoMaster: Bloom Filters]] — Ashish Pratap Singh: probabilistic data structure, bit array, k hash functions, false positives, applications (2025)
 - [[MongoDB Atlas Architecture Center]] — MongoDB's Well-Architected Framework: 5 pillars, replica sets, auto-scaling, high availability, DR (2026)
+- [[AlgoMaster: Heartbeats in Distributed Systems]] — Ashish Pratap Singh: push/pull heartbeats, failure detection, frequency/timeout trade-offs, split-brain (2024)
 
 ## Entities
 
@@ -153,6 +154,10 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Message Passing]] — Core GNN aggregation mechanism
 - [[Graph Convolution]] — Convolution on graphs (spectral/spatial)
 - [[Graph Attention]] — Attention mechanism on graphs
+
+## Distributed Systems Mechanisms
+
+- [[Heartbeat]] — Periodic health signals between nodes for failure detection
 
 ## Probabilistic Data Structures
 
