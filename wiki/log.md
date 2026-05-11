@@ -606,3 +606,10 @@ Key concepts: 15 database types covering data models, use cases, examples (inclu
 Ingested AlgoMaster.io article by Ashish Pratap Singh (Oct 2025) via Wayback Machine (Feb 2026).
 Created 1 source summary, 2 new concept pages (Bloom Filter, Counting Bloom Filter).
 Key concepts: bit array + k hash functions for probabilistic membership, no false negatives but false positives possible, no deletions in standard form, applications in web caching (Apache), databases (Cassandra, HBase, Redis), recommendations (Netflix), social networks (Facebook), Counting Bloom Filter variant for deletion support.
+
+## [2026-05-11] ingest | MongoDB Atlas Architecture Center
+
+Ingested MongoDB Atlas Well-Architected Framework docs (v20260330).
+Created 1 source summary, 1 entity page (MongoDB Atlas).
+Updated 1 existing concept page: Document Database (added MongoDB Atlas link).
+Key concepts: 5-pillar framework (Operational Efficiency, Security, Reliability, Performance, Cost Optimization), 3-node replica sets across AZs, automatic failover in seconds, `majority` write concern, auto-scaling compute/storage, sharding strategies, Performance Advisor, data tiering, zero-downtime vertical scaling, IaC (Terraform, CLI, K8s Operator).

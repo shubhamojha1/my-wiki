@@ -104,9 +104,11 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[AlgoMaster: How to Scale a Database]] — Ashish Pratap Singh: 8 strategies (vertical scaling, indexing, sharding, vertical partitioning, caching, replication, materialized views, denormalization) (2024)
 - [[AlgoMaster: 15 Types of Databases]] — Ashish Pratap Singh: relational, key-value, document, graph, wide-column, in-memory, time-series, OODB, search, spatial, blob, ledger, hierarchical, vector, embedded (2024)
 - [[AlgoMaster: Bloom Filters]] — Ashish Pratap Singh: probabilistic data structure, bit array, k hash functions, false positives, applications (2025)
+- [[MongoDB Atlas Architecture Center]] — MongoDB's Well-Architected Framework: 5 pillars, replica sets, auto-scaling, high availability, DR (2026)
 
 ## Entities
 
+- [[MongoDB Atlas]] — Fully managed multi-cloud MongoDB service
 - [[Apache Kafka]] — The open-source distributed messaging system that evolved from the paper
 - [[Redis]] — In-memory data structure store, used as cache/database
 - [[Redis Cluster]] — Redis distributed implementation with sharding and failover
