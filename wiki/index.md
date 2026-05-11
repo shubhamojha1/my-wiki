@@ -101,6 +101,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[AlgoMaster: ACID Transactions]] — Ashish Pratap Singh: atomicity, consistency, isolation, durability, WAL, MVCC (2025)
 - [[AlgoMaster: SQL vs NoSQL]] — Ashish Pratap Singh: 7 differences across data model, schema, scalability, query, transactions, performance, use cases (2025)
 - [[AlgoMaster: Indexing]] — Ashish Pratap Singh: database indexes overview, types, B-Tree/Hash/Bitmap data structures, best practices (2025)
+- [[AlgoMaster: How to Scale a Database]] — Ashish Pratap Singh: 8 strategies (vertical scaling, indexing, sharding, vertical partitioning, caching, replication, materialized views, denormalization) (2024)
 
 ## Entities
 
@@ -148,6 +149,12 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Message Passing]] — Core GNN aggregation mechanism
 - [[Graph Convolution]] — Convolution on graphs (spectral/spatial)
 - [[Graph Attention]] — Attention mechanism on graphs
+
+## Database Scaling Concepts
+
+- [[Vertical Partitioning]] — Splitting tables by column access frequency
+- [[Materialized View]] — Pre-computed, disk-stored query results
+- [[Data Denormalization]] — Intentional redundancy to avoid joins
 
 ## Replication Concepts
 

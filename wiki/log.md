@@ -588,3 +588,9 @@ Ingested Redis blog post by Paula Dallabetta (Apr 2026).
 Created 1 source summary, 11 new concept pages (Data Replication, Transactional Replication, Snapshot Replication, Merge Replication, Key-Based Replication, Full Replication, Partial Replication, Active-Active Geo Distribution, Replication Lag, RPO and RTO).
 Updated 5 existing pages: Synchronous Replication (RPO/RTO), Asynchronous Replication (lag), Replication (Distributed) (types/scope), Redis (Active-Active), CRDT (production use in Redis).
 Key concepts: replication vs backup, CDC-based change capture, 6 replication types, sync vs async trade-offs, partial resync, Active-Active Geo Distribution with CRDTs, RPO/RTO metrics.
+
+## [2026-05-11] ingest | AlgoMaster: How to Scale a Database
+
+Ingested AlgoMaster blog post by Ashish Pratap Singh (Jul 2024).
+Created 1 source summary, 3 new concept pages (Vertical Partitioning, Materialized View, Data Denormalization).
+Key concepts: 8 database scaling strategies overview — vertical scaling, indexing, sharding, vertical partitioning (split columns by access frequency), caching, replication, materialized views (pre-computed query results), data denormalization (redundancy to avoid joins).
