@@ -657,3 +657,9 @@ Ingested Google Cloud article on disaster recovery.
 Created 1 source summary, 1 new concept page (Disaster Recovery).
 Updated 1 existing page: RPO and RTO (added link to DR).
 Key concepts: 5-step DR planning (risk assessment, BIA, planning, implementation, testing), 3-2-1 backup rule, DR types (backups, BaaS, DRaaS, snapshots, virtual DR, DR sites), preventive/detective/corrective recovery elements.
+
+## [2026-05-11] ingest | Dynatrace: What Is Distributed Tracing?
+
+Ingested Dynatrace knowledge base article (Apr 2026).
+Created 1 source summary, 1 new concept page (Distributed Tracing).
+Key concepts: trace IDs spanning all services, spans as units of work (name, timestamps, parent-child hierarchy), three pillars of observability (logs, metrics, traces), head-based vs tail-based sampling, centralized vs distributed logging, MTTD/MTTR reduction.

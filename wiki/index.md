@@ -112,6 +112,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Gossip Protocol Explained]] — NK: anti-entropy/rumor-mongering/aggregation models, push/pull strategies, fanout, real-world uses (Cassandra, Consul, Dynamo, S3) (2023)
 - [[Circuit Breaker Pattern (Design Patterns for Microservices)]] — Hasitha Subhashana: 3 states (closed/open/half-open), cascading failure prevention, threshold-based tripping (2021)
 - [[Google Cloud: What Is Disaster Recovery?]] — GC: DR planning, 3-2-1 rule, BaaS/DRaaS/snapshots/virtual DR, RTO/RPO, 5-step DR process
+- [[Dynatrace: What Is Distributed Tracing?]] — Trace IDs, spans, observability pillars, head-based vs tail-based sampling, MTTD/MTTR (2026)
 
 ## Entities
 
@@ -161,7 +162,11 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Graph Convolution]] — Convolution on graphs (spectral/spatial)
 - [[Graph Attention]] — Attention mechanism on graphs
 
-## ## ## Disaster Recovery
+## ## ## ## Observability
+
+- [[Distributed Tracing]] — End-to-end request tracking across microservices via trace IDs and spans
+
+## Disaster Recovery
 
 - [[Disaster Recovery]] — Restoring IT infrastructure after disaster events, 5-step planning, 3-2-1 rule
 
