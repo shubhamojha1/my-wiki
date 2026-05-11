@@ -103,6 +103,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[AlgoMaster: Indexing]] — Ashish Pratap Singh: database indexes overview, types, B-Tree/Hash/Bitmap data structures, best practices (2025)
 - [[AlgoMaster: How to Scale a Database]] — Ashish Pratap Singh: 8 strategies (vertical scaling, indexing, sharding, vertical partitioning, caching, replication, materialized views, denormalization) (2024)
 - [[AlgoMaster: 15 Types of Databases]] — Ashish Pratap Singh: relational, key-value, document, graph, wide-column, in-memory, time-series, OODB, search, spatial, blob, ledger, hierarchical, vector, embedded (2024)
+- [[AlgoMaster: Bloom Filters]] — Ashish Pratap Singh: probabilistic data structure, bit array, k hash functions, false positives, applications (2025)
 
 ## Entities
 
@@ -150,6 +151,11 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Message Passing]] — Core GNN aggregation mechanism
 - [[Graph Convolution]] — Convolution on graphs (spectral/spatial)
 - [[Graph Attention]] — Attention mechanism on graphs
+
+## Probabilistic Data Structures
+
+- [[Bloom Filter]] — Space-efficient probabilistic set membership with false positives
+- [[Counting Bloom Filter]] — Bloom filter variant with counter-based deletion support
 
 ## Database Type Concepts
 

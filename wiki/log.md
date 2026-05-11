@@ -600,3 +600,9 @@ Key concepts: 8 database scaling strategies overview — vertical scaling, index
 Ingested AlgoMaster blog post by Ashish Pratap Singh (Mar 2024).
 Created 1 source summary, 10 new concept pages (Key-Value Store, Graph Database, Wide-Column Store, In-Memory Database, Time-Series Database, Object-Oriented Database, Blob Datastore, Ledger Database, Hierarchical Database, Embedded Database).
 Key concepts: 15 database types covering data models, use cases, examples (including relational, document, vector which were already in wiki). New additions complete the landscape from key-value through embedded databases.
+
+## [2026-05-11] ingest | AlgoMaster: Bloom Filters
+
+Ingested AlgoMaster.io article by Ashish Pratap Singh (Oct 2025) via Wayback Machine (Feb 2026).
+Created 1 source summary, 2 new concept pages (Bloom Filter, Counting Bloom Filter).
+Key concepts: bit array + k hash functions for probabilistic membership, no false negatives but false positives possible, no deletions in standard form, applications in web caching (Apache), databases (Cassandra, HBase, Redis), recommendations (Netflix), social networks (Facebook), Counting Bloom Filter variant for deletion support.
