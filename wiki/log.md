@@ -669,3 +669,9 @@ Key concepts: trace IDs spanning all services, spans as units of work (name, tim
 Ingested AlgoMaster.io article by Ashish Pratap Singh (Oct 2025) on client-server architecture.
 Created 1 source summary, 5 concept pages (Client-Server Architecture, One-Tier Architecture, Two-Tier Architecture, Three-Tier Architecture, N-Tier Architecture). Updated Ashish Pratap Singh entity with new publication.
 Key concepts: 3 components (client, server, network), 4-tier model from 1T to NT, 5-step communication flow, scaling techniques (load balancing, caching, horizontal scaling, microservices).
+
+## [2026-05-11] ingest | Hashmap: The What, Why, and How of a Microservices Architecture
+
+Ingested Medium article by Jetinder Singh (Hashmap, Jun 2018) on microservices architecture.
+Created 1 source summary, 1 concept page (Microservices) — this fills a previously dangling [[Microservices]] WikiLink from distributed-tracing.md and ntier-architecture.md.
+Key concepts: loosely coupled services, independent deployment, fault isolation, polyglot flexibility, domain-driven decomposition, 8-key implementation framework, smart endpoints/dumb pipes, design for failure.
