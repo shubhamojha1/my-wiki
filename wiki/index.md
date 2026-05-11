@@ -106,6 +106,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[AlgoMaster: Bloom Filters]] — Ashish Pratap Singh: probabilistic data structure, bit array, k hash functions, false positives, applications (2025)
 - [[MongoDB Atlas Architecture Center]] — MongoDB's Well-Architected Framework: 5 pillars, replica sets, auto-scaling, high availability, DR (2026)
 - [[AlgoMaster: Heartbeats in Distributed Systems]] — Ashish Pratap Singh: push/pull heartbeats, failure detection, frequency/timeout trade-offs, split-brain (2024)
+- [[AlgoMaster: Service Discovery in Distributed Systems]] — Ashish Pratap Singh: service registry, self/sidecar/orchestrator registration, client-side vs server-side discovery (2024)
 
 ## Entities
 
@@ -156,6 +157,8 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Graph Attention]] — Attention mechanism on graphs
 
 ## Distributed Systems Mechanisms
+
+- [[Service Discovery]] — Dynamic service-to-service communication without hardcoded addresses
 
 - [[Heartbeat]] — Periodic health signals between nodes for failure detection
 

@@ -620,3 +620,9 @@ Ingested AlgoMaster blog post by Ashish Pratap Singh (Apr 2024).
 Created 1 source summary, 1 new concept page (Heartbeat).
 Updated 1 existing page: Failure Detector (added heartbeat link).
 Key concepts: push vs pull heartbeats, frequency/timeout trade-offs, false positives, split-brain challenges, real-world uses (Kubernetes node → control plane, Elasticsearch gossip, DB replication).
+
+## [2026-05-11] ingest | AlgoMaster: Service Discovery
+
+Ingested AlgoMaster blog post by Ashish Pratap Singh (Dec 2024).
+Created 1 source summary, 1 new concept page (Service Discovery).
+Key concepts: service registry, 5 registration options (manual/self/sidecar/orchestrator/config), client-side (Eureka) vs server-side (AWS ELB) discovery models, best practices for HA, health checks, caching, naming conventions.
