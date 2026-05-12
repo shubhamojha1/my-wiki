@@ -17,6 +17,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[System Design: Vertical vs Horizontal Scaling]] — AlgoMaster: detailed guide on scaling up vs scaling out, pros/cons, decision framework (2024)
 - [[Concurrency vs Parallelism]] — AlgoMaster: distinguishing managing multiple tasks from executing simultaneously, with examples and code (2024)
 - [[Long Polling vs WebSockets]] — AlgoMaster: comparing real-time communication techniques with decision framework and alternatives (2025)
+- [[Batch vs Stream Processing - What's the Difference?]] — AlgoMaster: batch and stream processing workflows, challenges, frameworks, and decision guidance (2024)
 
 - [[OSI Model]] — AlgoMaster: 7-layer network framework, encapsulation (2026)
 - [[IP Address]] — AlgoMaster: IPv4, IPv6, CIDR, subnetting, NAT (2026)
@@ -456,6 +457,8 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Read-Through Cache]] — Cache that self-populates on miss
 - [[Write-Through Cache]] — Synchronous cache and database updates
 - [[Offline Processing]] — Computation decoupled from user requests
+- [[Batch Processing]] — Scheduled bulk data processing with collection, execution, and completion stages
+- [[Stream Processing]] — Real-time event-driven data processing on continuous unbounded streams
 - [[Message Queue]] — Asynchronous communication channel
 - [[Scheduling Periodic Tasks]] — Cron-based recurring computation
 - [[Map-Reduce]] — Batch processing model for large datasets

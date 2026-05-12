@@ -1,3 +1,9 @@
+## [2026-05-12] ingest | Batch vs Stream Processing - What's the Difference?
+
+Ingested AlgoMaster article on batch vs stream processing.
+Created 1 source summary, 2 new concept pages (Batch Processing with full workflow/characteristics/challenges/frameworks; Stream Processing with workflow/state management/windowing/challenges/frameworks), updated Offline Processing with Batch cross-ref.
+Key concepts: batch workflow (collect → pre-process → execute → post-process), stream workflow (ingest → transform → state mgmt → output), micro-batch hybrid, decision factors (volume, latency need, complexity, data nature), tools (Hadoop, Spark, Flink, Kafka, Kinesis, AWS Batch).
+
 ## [2026-05-12] ingest | Long Polling vs WebSockets
 
 Ingested AlgoMaster article on long polling vs WebSockets for real-time communication.

@@ -42,4 +42,4 @@ Processing that must occur periodically:
 
 ## Related Concepts
 
-[[Message Queue]], [[Scheduling Periodic Tasks]], [[Map-Reduce]], [[Scalability]]
+[[Message Queue]], [[Scheduling Periodic Tasks]], [[Map-Reduce]], [[Scalability]], [[Batch Processing]]
