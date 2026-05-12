@@ -16,6 +16,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[System Design: Top 15 Trade-Offs]] — AlgoMaster: catalog of 15 fundamental system design trade-offs with examples (2024)
 - [[System Design: Vertical vs Horizontal Scaling]] — AlgoMaster: detailed guide on scaling up vs scaling out, pros/cons, decision framework (2024)
 - [[Concurrency vs Parallelism]] — AlgoMaster: distinguishing managing multiple tasks from executing simultaneously, with examples and code (2024)
+- [[Long Polling vs WebSockets]] — AlgoMaster: comparing real-time communication techniques with decision framework and alternatives (2025)
 
 - [[OSI Model]] — AlgoMaster: 7-layer network framework, encapsulation (2026)
 - [[IP Address]] — AlgoMaster: IPv4, IPv6, CIDR, subnetting, NAT (2026)

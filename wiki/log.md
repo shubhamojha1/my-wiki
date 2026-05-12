@@ -1,3 +1,9 @@
+## [2026-05-12] ingest | Long Polling vs WebSockets
+
+Ingested AlgoMaster article on long polling vs WebSockets for real-time communication.
+Created 1 source summary, updated 2 concept pages (Long-Polling with pros/cons/detail/alternatives; WebSockets with decision framework and alternative protocols section).
+Key concepts: why HTTP push isn't enough, long polling mechanics (hold-open reconnect loop), WebSocket handshake and full-duplex persistent connection, decision framework (complexity, scalability, interaction type, network constraints), alternatives (SSE, MQTT, Socket.io).
+
 ## [2026-05-12] ingest | Concurrency vs Parallelism
 
 Ingested AlgoMaster article on concurrency vs parallelism.

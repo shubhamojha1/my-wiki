@@ -37,6 +37,16 @@ WebSocket connection begins with an [[HTTP]] handshake:
 - Collaborative editing (Google Docs)
 - IoT device communication
 
+## Choosing WebSockets vs Long Polling
+
+| Factor | WebSockets | [[Long-Polling]] |
+|--------|------------|------------------|
+| Setup complexity | Higher (needs capable proxy: Nginx, HAProxy) | Simple (standard HTTP) |
+| Scalability | Better for high-frequency, many concurrent users | Resource-intensive at scale |
+| Data frequency | High-frequency, bidirectional | Infrequent, one-way preferred |
+| Network constraints | May face firewall/proxy issues | Works universally |
+| Latency | Ultra-low (persistent connection) | Higher (reconnect per message) |
+
 ## Comparison
 
 | Protocol | Latency | Bidirectional | Connection |
@@ -45,6 +55,12 @@ WebSocket connection begins with an [[HTTP]] handshake:
 | [[Polling]] | Medium | No | Repeated requests |
 | [[Long-Polling]] | Medium | No | Reconnect after each response |
 | WebSockets | Low | Yes | Persistent |
+
+## Alternative Real-Time Protocols
+
+- **Server-Sent Events (SSE)** — Server push over HTTP, one-way, simpler than WebSockets. Good for news feeds, notifications.
+- **MQTT** — Lightweight pub/sub optimized for IoT with minimal bandwidth overhead.
+- **Socket.io** — Library abstracting WebSockets with automatic fallback to long polling for cross-browser compatibility.
 
 ## See Also
 - [[Frame (WebSocket)]]
