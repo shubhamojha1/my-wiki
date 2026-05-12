@@ -41,6 +41,21 @@ Horizontal scalability requires:
 - [[Database Sharding]] — Partition data across nodes
 - [[Message Queues]] — Decouple processing for parallel workers
 
+## When to Choose Horizontal Over Vertical
+
+| Scenario | Choose Horizontal | Choose Vertical |
+|----------|------------------|-----------------|
+| Growth rate | Rapid, unpredictable | Limited, predictable |
+| Availability needs | High (fault tolerance critical) | Moderate (downtime tolerable) |
+| App distribution | Easy to partition | Tight coupling, legacy code |
+| Architecture | Microservices | Monolithic |
+| Budget preference | Commodity hardware, operational expense | Single powerful machine, capital expense |
+| Latency requirements | Tolerates inter-server communication | Latency-critical (single machine) |
+
+## Combining with Vertical
+
+Many systems use both: powerful individual machines (vertical) as nodes in a horizontally-scaled cluster (horizontal). Example: [[Database Sharding]] partitions data across horizontally-scaled DB servers, while each server is vertically scaled for performance.
+
 ## Related Concepts
 
-[[Scalability]], [[Redundancy]], [[Load Balancing]], [[Caching]]
+[[Scalability]], [[Redundancy]], [[Load Balancing]], [[Caching]], [[Database Sharding]]

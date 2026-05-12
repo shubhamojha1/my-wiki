@@ -14,6 +14,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Event-Driven Architecture (EDA): A Complete Introduction]] — Confluent: comprehensive EDA guide covering patterns, tech stack, advantages (2026)
 - [[Peer-To-Peer Networks: Features, Pros, and Cons]] — Spiceworks: P2P network architecture, features, trade-offs, and applications (2023)
 - [[System Design: Top 15 Trade-Offs]] — AlgoMaster: catalog of 15 fundamental system design trade-offs with examples (2024)
+- [[System Design: Vertical vs Horizontal Scaling]] — AlgoMaster: detailed guide on scaling up vs scaling out, pros/cons, decision framework (2024)
 
 - [[OSI Model]] — AlgoMaster: 7-layer network framework, encapsulation (2026)
 - [[IP Address]] — AlgoMaster: IPv4, IPv6, CIDR, subnetting, NAT (2026)

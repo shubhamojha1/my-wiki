@@ -1,3 +1,9 @@
+## [2026-05-12] ingest | System Design: Vertical vs Horizontal Scaling
+
+Ingested AlgoMaster article on vertical vs horizontal scaling.
+Created 1 source summary, updated 2 concept pages (Scalability with detailed pros/cons/decision framework/combining strategies; Horizontal Scalability with comparison table and combining strategies section).
+Key concepts: vertical scaling (upgrade CPU/RAM/storage), horizontal scaling (add servers + load balancer), decision factors (cost, workload, complexity, growth), combining both strategies, vertically-scaled clusters, database sharding.
+
 ## [2026-05-12] ingest | System Design: Top 15 Trade-Offs
 
 Ingested AlgoMaster article by Ashish Pratap Singh cataloging 15 system design trade-offs.
