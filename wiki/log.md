@@ -1,3 +1,9 @@
+## [2026-05-12] ingest | Concurrency vs Parallelism
+
+Ingested AlgoMaster article on concurrency vs parallelism.
+Created 1 source summary, updated concept page with context switching mechanics, 4-combinations matrix (concurrent/parallel permutations), real-world examples (browsers, web servers, ML training, video rendering, Spark), and summary comparison table.
+Key insight: concurrency manages tasks via context switching; parallelism executes subtasks on separate cores simultaneously.
+
 ## [2026-05-12] ingest | System Design: Vertical vs Horizontal Scaling
 
 Ingested AlgoMaster article on vertical vs horizontal scaling.

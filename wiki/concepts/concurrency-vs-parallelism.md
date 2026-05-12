@@ -8,7 +8,7 @@ sources: [algomaster-introduction-to-concurrency, algomaster-concurrency-vs-para
 
 # Concurrency vs Parallelism
 
-These terms are often used interchangeably but represent distinct concepts.
+These terms are often used interchangeably but represent distinct concepts. Concurrency is about **managing** multiple tasks; parallelism is about **executing** multiple tasks at the same instant.
 
 ## Core Distinction
 
@@ -16,12 +16,30 @@ These terms are often used interchangeably but represent distinct concepts.
 |--------|-------------|-------------|
 | **Definition** | Structuring a program to handle multiple tasks | Actually executing multiple tasks |
 | **Goal** | Make progress on multiple tasks | Speed up by executing simultaneously |
+| **Mechanism** | Context switching (interleaved) | Multi-core/processor execution |
 | **Execution** | Interleaved on single core | Simultaneous on multiple cores |
 | **Focus** | Dealing with multiple things at once | Doing multiple things at once |
 
-## Restaurant Analogy
+## How Concurrency Works
 
-From AlgoMaster's detailed analogy:
+A single CPU core achieves concurrency through **context switching**:
+1. **Save** current task state (program counter, registers) to memory
+2. **Load** next task's saved context
+3. **Execute** until switch triggered (timer interrupt, I/O wait)
+4. Repeat — switching so fast it creates illusion of simultaneity
+
+**Cost**: context switching consumes CPU cycles. Excessive switching degrades performance.
+
+## How Parallelism Works
+
+1. **Divide** problem into independent subtasks
+2. **Distribute** across multiple CPU cores or GPUs
+3. **Execute** each subtask simultaneously on its own core
+4. **Aggregate** results into final output
+
+Requires hardware with multiple processing units (multi-core CPU, GPU cluster).
+
+## Restaurant Analogy
 
 ### Scenario 1: Sequential
 One chef. One dish at a time. Customers wait long times.
@@ -34,6 +52,28 @@ Three chefs, each working on a dish simultaneously. All literally being prepared
 
 ### Scenario 4: Concurrent + Parallel
 Three chefs, each handling multiple dishes concurrently, all working in parallel. How modern web servers work: multiple threads/processes, each handling multiple connections.
+
+## The 4 Combinations
+
+| | Not Parallel | Parallel |
+|---|---|---|
+| **Concurrent** | Single core switching between tasks (single-chef kitchen) | Multiple tasks, each subdivided across cores (modern multi-core server) |
+| **Not Concurrent** | Sequential execution, one at a time (simple script) | Single task's subtasks across cores (video rendering) |
+
+## Real-World Examples
+
+### Concurrency
+- **Web browsers** — render HTML/CSS, fetch resources, respond to clicks simultaneously
+- **Web servers** — Apache/Nginx handling many client requests via threads or async I/O
+- **Chat apps** — process incoming messages, update UI, send outgoing messages
+- **Video games** — graphics rendering, input processing, physics simulation, audio playback
+
+### Parallelism
+- **ML training** — dataset batches processed across multiple GPUs simultaneously
+- **Video rendering** — frames rendered independently on separate cores
+- **Web crawlers** — URL list chunked and fetched in parallel across nodes
+- **Big data** — Apache Spark distributing computations across a cluster
+- **Scientific simulations** — weather modeling, molecular dynamics divided across cores
 
 ## Key Relationships
 
@@ -60,3 +100,4 @@ Three chefs, each handling multiple dishes concurrently, all working in parallel
 
 - [[Processes vs Threads]] — Units enabling concurrency/parallelism
 - [[Introduction to Concurrency]]
+- [[Context Switching]] — The mechanism underlying concurrency
