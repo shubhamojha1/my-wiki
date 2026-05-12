@@ -1,3 +1,9 @@
+## [2026-05-12] ingest | Event-Driven Architecture (EDA): A Complete Introduction
+
+Ingested Confluent guide on event-driven architecture.
+Created 1 source summary (event-driven-architecture-intro), 3 entity pages (Apache Flink, Confluent, updated Apache Kafka with EDA role), 3 new concept pages (Event-Driven Architecture, CQRS, Event-Driven Microservices), updated 2 existing concept pages (Pub/Sub Messaging, Event Sourcing).
+Key concepts: EDA definition and mechanics, loose coupling via event brokers, event sourcing + CQRS patterns, pub/sub messaging, EDA advantages (scalability, real-time, fault tolerance, system integration) and disadvantages (complexity, ordering, consistency, debugging), Kafka + Flink + Confluent technology stack, 10 real-world use cases, event-driven microservices.
+
 ## [2026-05-01] ingest | REST API Design Best Practices
 
 Ingested source: Abdul Rafee Wahab - REST API Design Best Practices (Oct 2021).

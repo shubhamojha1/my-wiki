@@ -37,8 +37,23 @@ Kafka's commit log design enables:
 - Message retention independent of consumption
 - Replay capability for debugging and reprocessing
 
+## Role in Event-Driven Architecture
+
+Kafka is the most widely adopted event broker for [[Event-Driven Architecture]]. It provides the foundational plumbing for EDA by acting as a highly scalable, fault-tolerant event storage and distribution layer:
+
+- **Event Source of Truth** — Durable append-only log for event persistence
+- **Asynchronous Decoupling** — Producers and consumers operate independently via topics
+- **Ordered Delivery** — Partition-based ordering guarantees within event streams
+- **Replay Capability** — Consumers can reprocess events from any point in the log
+
+Paired with [[Apache Flink]] for stream processing and [[Confluent]] for managed operations, Kafka forms the backbone of modern EDA implementations.
+
 ## Related Concepts
 
 - [[Distributed Commit Log]] — The architectural pattern
 - [[Pub/Sub Messaging]] — The messaging paradigm
 - [[Log Aggregation]] — Original use case at LinkedIn
+- [[Event-Driven Architecture]] — The architectural pattern Kafka powers
+- [[Event Sourcing]] — State management via immutable event logs
+- [[CQRS]] — Read/write separation enabled by Kafka topics
+- [[Event-Driven Microservices]] — Microservices communication via Kafka

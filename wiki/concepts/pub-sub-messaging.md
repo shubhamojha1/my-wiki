@@ -52,10 +52,10 @@ Unlike traditional pub/sub, Kafka adds:
 
 ## Use Cases
 
-- Event-driven architectures
+- [[Event-Driven Architecture]] — Core communication model for EDA
 - Real-time notifications (social media likes, comments)
 - Data pipeline integration
-- Microservices communication
+- [[Microservices]] communication
 - Activity monitoring
 - IoT data aggregation (sensor data published to topics)
 
@@ -63,3 +63,5 @@ Unlike traditional pub/sub, Kafka adds:
 
 - [[Apache Kafka]]
 - [[Distributed Commit Log]]
+- [[Event-Driven Architecture]]
+- [[Event-Driven Microservices]]

@@ -36,3 +36,7 @@ Each event is immutable. To fix an error, a compensating event is appended rathe
 - [[Change Data Capture (CDC)]] — Often used to implement event sourcing
 - [[Apache Kafka]] — Commonly used as the event store
 - [[Distributed Commit Log]] — Append-only log structure underlying event sourcing
+- [[Event-Driven Architecture]] — The architectural pattern that uses event sourcing
+- [[CQRS]] — Often paired with event sourcing for read/write separation
+- [[Apache Flink]] — Stream processing on event-sourced data
+- [[Event-Driven Microservices]] — Microservices using event sourcing for state

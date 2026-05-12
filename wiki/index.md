@@ -11,6 +11,8 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 
 ## Sources
 
+- [[Event-Driven Architecture (EDA): A Complete Introduction]] — Confluent: comprehensive EDA guide covering patterns, tech stack, advantages (2026)
+
 - [[OSI Model]] — AlgoMaster: 7-layer network framework, encapsulation (2026)
 - [[IP Address]] — AlgoMaster: IPv4, IPv6, CIDR, subnetting, NAT (2026)
 - [[DNS]] — AlgoMaster: domain name resolution, DNS records, caching (2026)
@@ -120,7 +122,9 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 ## Entities
 
 - [[MongoDB Atlas]] — Fully managed multi-cloud MongoDB service
-- [[Apache Kafka]] — The open-source distributed messaging system that evolved from the paper
+- [[Apache Kafka]] — The open-source distributed messaging system that evolved from the paper; core event broker for EDA
+- [[Apache Flink]] — Open-source stream processing framework for event-time and stateful computations
+- [[Confluent]] — Managed data streaming platform built on Kafka and Flink
 - [[Redis]] — In-memory data structure store, used as cache/database
 - [[Redis Cluster]] — Redis distributed implementation with sharding and failover
 - [[Dynamo]] — Amazon's highly available key-value store (eventual consistency)
@@ -250,13 +254,19 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Full-Text Index]] — Index for efficient text search
 - [[Spatial Index]] — Index for geographical/geometric data
 
+## Event-Driven Architecture
+
+- [[Event-Driven Architecture]] — Software design pattern for real-time event detection, processing, and reaction
+- [[Event Sourcing]] — Recording state changes as immutable event sequences
+- [[CQRS]] — Command Query Responsibility Segregation: separating read and write operations
+- [[Event-Driven Microservices]] — Microservices communicating asynchronously through events
+
 ## Concepts (Distributed Systems)
 
 - [[Distributed Commit Log]] — The append-only, ordered data structure underlying Kafka's architecture
 - [[Pub/Sub Messaging]] — The publish-subscribe pattern that Kafka implements
 - [[Log Aggregation]] — The original use case that motivated Kafka at LinkedIn
 - [[Change Data Capture (CDC)]] — Track and stream database changes in real time
-- [[Event Sourcing]] — Recording state changes as immutable event sequences
 - [[Redis Sentinel]] — Redis monitoring and automatic failover system
 - [[Hash Slot]] — Redis Cluster's 16,384-slot partitioning mechanism
 - [[Few-Shot Learning]] — Paradigm where models learn from examples in the prompt without fine-tuning
