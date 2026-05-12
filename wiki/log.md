@@ -1,3 +1,9 @@
+## [2026-05-12] ingest | Strong vs. Eventual Consistency
+
+Ingested AlgoMaster article on strong vs eventual consistency.
+Created 1 source summary, rewrote 2 concept pages (Consistency Model with strong/eventual mechanics, client-centric variants, decision framework; Eventual Consistency with mechanics, examples, conflict resolution strategies, client-centric guarantees).
+Key concepts: replication lag, strong consistency via consensus (Paxos/Raft), eventual consistency via async propagation, client-centric variants (causal, RYW, monotonic reads/writes), conflict resolution (LWW, CRDTs, custom merge), decision framework (data criticality, UX, latency, availability, scalability, complexity).
+
 ## [2026-05-12] ingest | Stateful vs. Stateless Architecture
 
 Ingested AlgoMaster article on stateful vs stateless architecture.

@@ -19,6 +19,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Long Polling vs WebSockets]] — AlgoMaster: comparing real-time communication techniques with decision framework and alternatives (2025)
 - [[Batch vs Stream Processing - What's the Difference?]] — AlgoMaster: batch and stream processing workflows, challenges, frameworks, and decision guidance (2024)
 - [[Stateful vs. Stateless Architecture]] — AlgoMaster: comparing stateful and stateless designs with patterns, trade-offs, and hybrid approach (2025)
+- [[Strong vs. Eventual Consistency]] — AlgoMaster: consistency models, replication lag mechanics, client-centric variants, and decision framework (2025)
 
 - [[OSI Model]] — AlgoMaster: 7-layer network framework, encapsulation (2026)
 - [[IP Address]] — AlgoMaster: IPv4, IPv6, CIDR, subnetting, NAT (2026)
