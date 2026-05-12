@@ -48,8 +48,13 @@ Centralized management, scalability (vertical/horizontal), data integrity, resou
 - [[Horizontal Scalability]] — add more servers instead of bigger ones
 - [[Microservices]] — decompose monolith into independent deployable services
 
+## Contrast: Peer-to-Peer Architecture
+
+In [[Peer-to-Peer Network|P2P architecture]], there is no central server. Each peer acts as both client and server, sharing resources directly. Client-server offers simpler management and predictable performance, while P2P provides better fault tolerance and horizontal scalability at the cost of coordination complexity.
+
 ## See Also
 
 - [[Scalability]]
 - [[Availability]]
 - [[Reliability]]
+- [[Peer-to-Peer Network]] — The decentralized alternative

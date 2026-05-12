@@ -12,6 +12,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 ## Sources
 
 - [[Event-Driven Architecture (EDA): A Complete Introduction]] — Confluent: comprehensive EDA guide covering patterns, tech stack, advantages (2026)
+- [[Peer-To-Peer Networks: Features, Pros, and Cons]] — Spiceworks: P2P network architecture, features, trade-offs, and applications (2023)
 
 - [[OSI Model]] — AlgoMaster: 7-layer network framework, encapsulation (2026)
 - [[IP Address]] — AlgoMaster: IPv4, IPv6, CIDR, subnetting, NAT (2026)
@@ -610,6 +611,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 ## Architecture Patterns
 
 - [[Client-Server Architecture]] — Foundational computing model with clients, servers, and networks
+- [[Peer-to-Peer Network]] — Decentralized architecture where peers act as both clients and servers
 - [[One-Tier Architecture]] — Monolithic single-application model (UI + logic + data together)
 - [[Two-Tier Architecture]] — Client (UI) + server (logic + data) split
 - [[Three-Tier Architecture]] — Presentation + application + data layers

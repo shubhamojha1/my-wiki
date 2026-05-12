@@ -1,3 +1,9 @@
+## [2026-05-12] ingest | Peer-To-Peer Networks: Features, Pros, and Cons
+
+Ingested Spiceworks article on peer-to-peer networking by Vijay Kanade.
+Created 1 source summary, 1 concept page (Peer-to-Peer Network), updated Client-Server Architecture with P2P contrast section.
+Key concepts: decentralization, self-organizing systems, resource sharing, direct communication, horizontal scalability, fault tolerance, applications (BitTorrent, Bitcoin, Skype, SETI@home, P2P CDNs, P2P VPNs).
+
 ## [2026-05-12] ingest | Event-Driven Architecture (EDA): A Complete Introduction
 
 Ingested Confluent guide on event-driven architecture.
