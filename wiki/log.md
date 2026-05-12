@@ -1,3 +1,9 @@
+## [2026-05-12] ingest | System Design: Top 15 Trade-Offs
+
+Ingested AlgoMaster article by Ashish Pratap Singh cataloging 15 system design trade-offs.
+Created 1 source summary, 1 concept page (System Design Trade-Offs) with cross-references to 30+ existing wiki pages covering all 15 trade-offs.
+Key content: every design decision is a trade-off — scalability vs performance, vertical vs horizontal scaling, latency vs throughput, SQL vs NoSQL, CAP theorem, strong vs eventual consistency, cache strategies, batch vs stream processing, sync vs async, stateful vs stateless, long polling vs WebSockets, normalization vs denormalization, monolithic vs microservices, REST vs GraphQL, TCP vs UDP.
+
 ## [2026-05-12] ingest | Peer-To-Peer Networks: Features, Pros, and Cons
 
 Ingested Spiceworks article on peer-to-peer networking by Vijay Kanade.
