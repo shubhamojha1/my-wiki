@@ -18,6 +18,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Concurrency vs Parallelism]] — AlgoMaster: distinguishing managing multiple tasks from executing simultaneously, with examples and code (2024)
 - [[Long Polling vs WebSockets]] — AlgoMaster: comparing real-time communication techniques with decision framework and alternatives (2025)
 - [[Batch vs Stream Processing - What's the Difference?]] — AlgoMaster: batch and stream processing workflows, challenges, frameworks, and decision guidance (2024)
+- [[Stateful vs. Stateless Architecture]] — AlgoMaster: comparing stateful and stateless designs with patterns, trade-offs, and hybrid approach (2025)
 
 - [[OSI Model]] — AlgoMaster: 7-layer network framework, encapsulation (2026)
 - [[IP Address]] — AlgoMaster: IPv4, IPv6, CIDR, subnetting, NAT (2026)
@@ -619,6 +620,8 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 
 - [[Client-Server Architecture]] — Foundational computing model with clients, servers, and networks
 - [[Peer-to-Peer Network]] — Decentralized architecture where peers act as both clients and servers
+- [[Stateful Architecture]] — Server retains client data across requests (sessions, carts, auth)
+- [[Stateless Architecture]] — Each request independent; server discards all temporary data after responding
 
 ## Design Principles & Trade-Offs
 

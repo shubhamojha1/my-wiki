@@ -1,3 +1,9 @@
+## [2026-05-12] ingest | Stateful vs. Stateless Architecture
+
+Ingested AlgoMaster article on stateful vs stateless architecture.
+Created 1 source summary, 2 new concept pages (Stateful Architecture with sticky sessions/centralized store patterns, advantages/challenges/use cases; Stateless Architecture with JWT/idempotent API patterns, scaling benefits, hybrid approach), updated System Design Trade-Offs with deep links.
+Key concepts: stateful (retains context, sticky sessions, Redis centralized store), stateless (self-contained requests, JWT auth, idempotent APIs), hybrid (stateless APIs + external session store), decision framework.
+
 ## [2026-05-12] ingest | Batch vs Stream Processing - What's the Difference?
 
 Ingested AlgoMaster article on batch vs stream processing.

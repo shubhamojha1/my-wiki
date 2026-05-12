@@ -62,7 +62,7 @@ See [[Write-Through Cache]], [[Read-Through Cache]].
 
 **Stateful**: server remembers session context across requests (shopping cart). Simpler client logic, but harder to [[Horizontal Scalability|scale horizontally]] (sticky sessions required). **Stateless**: each request is independent with all context provided ([[REST API]]). Easy to scale and route to any server, but shifts state management to the client or external store ([[Redis]], DB).
 
-See [[Session Management]].
+See [[Stateful Architecture]], [[Stateless Architecture]], [[Session Management]].
 
 ## 11. Long Polling vs WebSockets
 
