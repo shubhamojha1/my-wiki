@@ -3,33 +3,70 @@ title: "HTTP/2"
 type: concept
 tags: [networking, http]
 created: 2026-04-28
+updated: 2026-05-20
 sources: ["algomaster-http-https"]
 ---
 
 # HTTP/2
 
-**HTTP/2** is the second major version of HTTP, introduced in 2015.
+**HTTP/2** (RFC 7540, 2015) is the second major version of HTTP. It keeps HTTP's familiar request/response semantics but replaces the text-based wire format with a binary framing layer, enabling multiplexing, header compression, and server push over a single TCP connection.
 
-## Problems Solved
+## Problems with HTTP/1.1
 
-HTTP/1.1 allowed one outstanding request per TCP connection. Workarounds (multiple connections, pipelining) were partial fixes. A slow request still blocked subsequent ones on the same connection — **head-of-line blocking**.
+| Problem | Description |
+|---------|-------------|
+| **Head-of-line blocking** | Requests on a connection are serialized; one slow response stalls all later ones |
+| **Connection overhead** | Browsers open 6–8 parallel TCP connections per host to work around HoL blocking |
+| **Verbose headers** | Headers (cookies, user-agent) repeat on every request with no compression |
+| **No server initiative** | Server can only respond; can't push resources the client will obviously need |
 
-## Features
+## Key Features
 
-- **Binary framing**: Data in binary format, more efficient to parse than text
-- **Multiplexing**: Multiple concurrent requests over a single TCP connection — eliminates head-of-line blocking
-- **Header compression (HPACK)**: Reduces redundant header data, saves bandwidth
-- **Server push**: Servers proactively send anticipated resources (e.g., CSS before HTML is requested)
+### Binary Framing
 
-## System Design Impact
+HTTP/2 breaks messages into **frames** (the smallest unit) — typed binary envelopes. Frame types: HEADERS, DATA, SETTINGS, PING, WINDOW_UPDATE, PUSH_PROMISE, etc.
 
-Reduced latency significantly for complex pages with many assets. Modern APIs and microservices often build on HTTP/2 for multiplexing benefits.
+### Multiplexing
 
-## vs HTTP/1.1
+Multiple **streams** (request/response pairs) share one TCP connection. Each stream is identified by a stream ID. Frames from different streams are **interleaved** on the wire:
 
-HTTP/1.1 requires multiple TCP connections for parallel requests (head-of-line blocking). HTTP/2 solves this.
+```
+Connection:
+  ← [Stream 1: HEADERS] [Stream 3: DATA] [Stream 1: DATA] [Stream 5: HEADERS] →
+```
+
+This eliminates application-level HoL blocking (TCP-level HoL blocking remains — addressed by HTTP/3).
+
+### HPACK Header Compression
+
+HPACK maintains a shared compression table of previously seen headers. Repeated headers (e.g., `content-type`, cookies) are sent as a 1-byte index instead of full text. Typical compression ratio: 85–95% for header bytes.
+
+### Server Push
+
+Server can proactively send resources (e.g., CSS, JS) by sending a `PUSH_PROMISE` frame before the client requests them. Eliminated in HTTP/3 (misused in practice; early hints replaced it).
+
+### Stream Prioritization
+
+Clients can assign weights and dependencies to streams, letting servers prioritize which responses to send first (e.g., critical CSS over images). In practice, prioritization was poorly implemented by servers.
+
+## HTTP/1.1 vs HTTP/2 vs HTTP/3
+
+| Feature | HTTP/1.1 | HTTP/2 | HTTP/3 |
+|---------|---------|--------|--------|
+| Transport | TCP | TCP | QUIC (UDP) |
+| Multiplexing | No (workaround: parallel connections) | Yes | Yes |
+| Header compression | None | HPACK | QPACK |
+| HoL blocking | App + TCP | TCP only | Eliminated |
+| Connection setup | TCP + TLS (2 RTT) | TCP + TLS (2 RTT) | 0-RTT / 1-RTT |
+| Server push | No | Yes (mostly unused) | No |
+
+## Adoption
+
+Broadly supported by major browsers since 2015. Requires TLS in practice (browsers enforce HTTPS). ~65% of web traffic as of 2024.
 
 ## Related Concepts
 
-- [[HTTP]] — Version 1.x
-- [[HTTP/3]] — Next version over QUIC
+- [[HTTP]] — HTTP/1.1 foundation
+- [[HTTP/3]] — QUIC-based successor that eliminates TCP HoL blocking
+- [[TLS]] — required by all major browsers for HTTP/2
+- [[gRPC]] — uses HTTP/2 for multiplexed RPC streams
