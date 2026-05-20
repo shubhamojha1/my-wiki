@@ -3,35 +3,89 @@ title: "Session Management"
 type: concept
 tags: [caching, web, session, state-management]
 created: 2026-05-08
+updated: 2026-05-20
 sources: ["https://aws.amazon.com/caching/"]
 ---
 
 # Session Management
 
-**Definition:** Storing and managing HTTP session data (login info, shopping cart, preferences) in a centralized data store so all web servers share consistent user state.
+**Session management** tracks user state (authentication, preferences, shopping cart) across multiple HTTP requests. Because HTTP is stateless, sessions require an external mechanism to persist state between requests.
 
-## Why Centralized Session Storage
+## The Problem with Server-Side Local Sessions
 
-In modern elastic architectures, web servers scale in/out dynamically. A local in-memory session store on each server means:
-- User session lost if redirected to different server
-- Inconsistent user experience
-- Session data lost when server terminates
+If each server stores sessions in local memory:
+```
+Request 1 → Server A → session created in Server A's memory
+Request 2 → Server B (load balancer routes differently) → session not found → user logged out
+```
 
-A centralized session management data store solves this.
+Horizontal scaling or server restarts destroy sessions. A centralized store fixes this.
 
-## Benefits
+## Session Storage Patterns
 
-- **Consistent user experience** across all web servers
-- **Session durability** — session survives server scaling events
-- **Higher availability** — session data replicated across cache servers
-- **Elastic-friendly** — new servers instantly have access to all sessions
+### 1. Server-Side Session (Centralized Store)
 
-## Implementation
+```
+Client → Load Balancer → Any Server
+                             │
+                             └─ session_id → Redis/DB [{"user_id":1001, "cart":[...]}]
+```
 
-Typically backed by an in-memory key-value store:
-- [[Amazon ElastiCache|ElastiCache for Redis]] — supports session replication and persistence
-- [[Memcached]] — simple key-value session store
+Server-side advantages:
+- Session data not exposed to client
+- Can store large amounts of data
+- Easy to invalidate (delete from store)
 
-## Related Pages
+### 2. Client-Side Session (JWT / Cookie)
 
-- [[Caching]], [[In-Memory Cache]], [[Amazon ElastiCache]], [[Redis]], [[Memcached]]
+```
+Client stores the session data (encrypted/signed) in a cookie or JWT:
+  { "user_id": 1001, "role": "admin", "exp": 1716400000 }
+  → signed with server secret → tamper-evident
+
+Server decodes on every request (no storage needed).
+```
+
+Client-side advantages:
+- Stateless — no session store needed
+- Works well for horizontal scaling
+- Disadvantage: cannot invalidate before expiry; size-limited
+
+## Implementation Options
+
+| Store | Best For | Notes |
+|-------|----------|-------|
+| **Redis** | High throughput, TTL-based expiry | In-memory; optionally persistent; atomic operations |
+| **Memcached** | Simple cache; no persistence needed | Faster than Redis for pure caching; no TTL per field |
+| **Relational DB** | Durable sessions with complex queries | Slower; good for compliance/audit |
+| **JWT (stateless)** | Microservices, API tokens | No server-side storage; cannot revoke |
+
+## Session Lifecycle
+
+```
+Login:     server creates session → generates session_id → stores {user_id, ...} in Redis
+           → sets cookie: session_id=abc123 (HttpOnly, Secure)
+
+Request:   client sends cookie → server looks up session_id in Redis → finds user state
+
+Logout:    server deletes session_id from Redis → cookie cleared
+           (contrast: JWT cannot be "deleted" — must wait for expiry or use a denylist)
+
+Expiry:    Redis TTL auto-expires inactive sessions (e.g., 30 minutes idle)
+```
+
+## Security Considerations
+
+| Risk | Mitigation |
+|------|-----------|
+| Session hijacking | HttpOnly + Secure cookie flags; short TTL |
+| CSRF attacks | SameSite=Strict cookie; CSRF tokens |
+| Fixation attacks | Rotate session ID after login |
+| JWT not revokable | Use short expiry + refresh token rotation |
+
+## Related Concepts
+
+- [[Caching]] — the general caching pattern session stores leverage
+- [[Redis]] — most popular session store
+- [[Idempotency Key]] — different from session; tracks per-operation state
+- [[OSI Layer 5: Session]] — the OSI concept of connection sessions (different from HTTP sessions)
