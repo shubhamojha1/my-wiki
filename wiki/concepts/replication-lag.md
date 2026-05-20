@@ -3,34 +3,67 @@ title: "Replication Lag"
 type: concept
 tags: [distributed-systems, replication, consistency]
 created: 2026-05-11
+updated: 2026-05-20
 sources: [redis-data-replication]
 ---
 
 # Replication Lag
 
-**Replication lag** is the time delay between a write on the primary node and when that write is applied to a replica in an asynchronous replication setup.
+**Replication lag** is the delay between when a write is committed on the primary and when it is visible on a replica. In asynchronous replication, the primary does not wait for replicas before acknowledging the client — so replicas can be behind by milliseconds, seconds, or even minutes under load.
 
-## Impact
+## Anatomy of Lag
 
-- Applications reading from a replica may see **stale data** immediately after a write
-- A primary failure during the lag window can cause **data loss**
-- Lag increases with geographic distance between nodes
+```
+Primary:  WRITE committed at T=0  →  WAL entry written  →  send to replica
+Replica:  Receive WAL at T=50ms   →  Apply at T=55ms
+
+Replication lag at T=50ms = 50ms
+```
+
+Sources of lag:
+- **Network latency**: Distance between primary and replica (same DC: <1ms; cross-continent: 100ms+)
+- **I/O bottleneck on replica**: Replica disk is slower than primary; applying log falls behind
+- **High write rate**: Primary produces more log than replica can apply
+- **Single-threaded apply**: Some databases (older MySQL) apply relay log serially
+
+## Impacts
+
+| Problem | Description |
+|---------|-------------|
+| **Stale reads** | Reading from replica shows data before the latest write |
+| **Monotonic read violation** | User reads data from replica A, then replica B — B may be further behind, showing older data |
+| **Data loss on failover** | If primary fails and a lagging replica is promoted, writes in the lag window are lost |
+| **Incorrect reports** | Analytics running on replica undercount recent transactions |
 
 ## Mitigations
 
-- **Read-your-own-writes**: Route reads to primary after a write
-- **Synchronous replication** on critical paths
-- **Eventual consistency patterns** at the application layer
-- **Monitoring**: Track lag metrics and alert on anomalies
+| Strategy | Trade-off |
+|----------|---------|
+| **Read-your-own-writes**: route reads to primary after user writes | Increases primary load |
+| **Wait for replica**: wait until replica catches up before reading | Adds latency |
+| **Synchronous replication**: primary waits for replica ACK before commit | Higher write latency; replica slowdown blocks primary |
+| **Semi-sync**: primary waits for at least one replica | Balanced durability/latency |
+| **Monotonic read sessions**: always read from same replica | May hit a slow replica |
 
-## Metrics
+## Measuring Lag
 
-- **Recovery Point Objective (RPO)**: How much data could be lost
-- **Recovery Time Objective (RTO)**: How long to fail over
-- Asynchronous replication trades lower RTO for potentially higher RPO
+- **MySQL**: `SHOW SLAVE STATUS` → `Seconds_Behind_Master`
+- **PostgreSQL**: `SELECT * FROM pg_stat_replication` → `write_lag`, `flush_lag`, `replay_lag`
+- **Prometheus**: expose replica lag as a metric, alert when > threshold
 
-## Related
+## Lag and RPO
 
-- [[Data Replication]] — General concept
-- [[Asynchronous Replication]] — Primary source of replication lag
-- [[RPO and RTO]] — Recovery metrics driven by lag
+Replication lag directly determines the maximum **RPO** (Recovery Point Objective) on failover:
+
+```
+RPO ≈ replication lag at time of primary failure
+```
+
+If lag = 30 seconds and primary fails, up to 30 seconds of committed writes may be lost.
+
+## Related Concepts
+
+- [[Primary-Backup Replication]] — the topology where lag arises
+- [[Asynchronous Replication]] — root cause of lag
+- [[Synchronous Replication]] — eliminates lag at the cost of write latency
+- [[Failover]] — lag determines RPO on failover
