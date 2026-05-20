@@ -3,27 +3,55 @@ title: "Sparse Index"
 type: concept
 tags: [database, index, structure]
 created: 2026-05-11
+updated: 2026-05-20
 sources: [algomaster-indexing]
 ---
 
 # Sparse Index
 
-A **sparse index** has entries only for some of the search key values in the table. It stores pointers to blocks or pages rather than individual rows.
+A **sparse index** stores one entry per data block (or page) rather than one entry per row. Each entry holds the smallest (or first) key in its block and a pointer to that block.
 
-## Characteristics
+## Dense vs Sparse Comparison
 
-- **Partial entries**: Only some keys are indexed
-- **Block pointers**: Points to the page/block, not the exact row
-- **Smaller size**: Fewer entries than dense index
-- **Best for**: Tables with many distinct key values where sequential storage is used
+```
+Dense index:            Sparse index:
+key → exact row ptr     key → block ptr
 
-## How It Works
+[1] → row 1             [1]  → block A  (covers rows 1-100)
+[2] → row 2
+...                     [101]→ block B  (covers rows 101-200)
+[99]→ row 99
+```
 
-1. Search the sparse index for the largest key ≤ the search key
-2. Follow the pointer to the data block
-3. Scan within the block to find the exact record
+| | Dense | Sparse |
+|-|-------|--------|
+| Entries | One per row | One per block/page |
+| Size | Large | Small (fits in memory easily) |
+| Lookup | Direct | Find block, then scan within block |
+| Requirement | None | Data must be sorted on the indexed key |
 
-## Related
+## Lookup Algorithm
 
-- [[Dense Index]] — Indexes every key
-- [[Database Index]] — General concept
+1. Binary-search the sparse index for the largest key **≤** search key.
+2. Follow the pointer to that data block.
+3. Sequential scan within the block to locate the exact record.
+
+The extra block-level scan is cheap when blocks are small (one disk I/O per block).
+
+## When Sparse Indexes Make Sense
+
+- **Clustered / sorted data**: The physical sort order guarantees the target record is within the pointed-to block.
+- **Large tables**: A sparse index can fit in RAM even when the dense index would not.
+- **LSM-Trees**: Each SSTable (sorted file) has a sparse index at its head to locate data blocks; used in LevelDB, RocksDB, Cassandra.
+
+## Limitations
+
+- Requires sorted storage — cannot be used on heap files with random row order.
+- Each lookup incurs an extra within-block scan (typically negligible, but non-zero).
+
+## Related Concepts
+
+- [[Dense Index]] — indexes every row; larger but no within-block scan
+- [[Database Index]] — general index concepts
+- [[B+Tree]] — leaf level is effectively a dense index over sorted pages
+- [[LSM Tree]] — uses sparse indexes over SSTables
