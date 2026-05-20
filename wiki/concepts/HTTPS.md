@@ -44,10 +44,6 @@ sources: ["algomaster-http-https"]
 | SEO & Trust | Lower ranking, "Not Secure" warning | Preferred, padlock icon |
 | Use Case | Local dev, internal | All production traffic |
 
-## TLS 1.3 Optimization
-
-0-RTT (Zero Round Trip Time) for repeat connections eliminates handshake latency.
-
 ## Related Concepts
 
 - [[HTTP]] — Plaintext version

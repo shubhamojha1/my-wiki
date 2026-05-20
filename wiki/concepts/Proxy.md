@@ -3,35 +3,66 @@ title: "Proxy"
 type: concept
 tags: [networking, proxy]
 created: 2026-04-28
+updated: 2026-05-20
 sources: ["algomaster-proxy-vs-reverse-proxy"]
 ---
 
-# Proxy
+# Proxy (Forward Proxy)
 
-A **proxy** (or forward proxy) is a server that acts on behalf of clients. Think of it as a **middleman** that sits between a private network and the public internet.
+A **forward proxy** (usually just called a "proxy") is a server that sits between clients and the internet, making requests on clients' behalf. The destination server sees the proxy's IP address, not the client's.
 
-## How It Works
+## Traffic Flow
 
-1. Client sends request
-2. Proxy intercepts the request
-3. Proxy decides to forward, deny, or serve cached
-4. Forwarded request goes to target server
-5. Server sees only proxy's IP, not client's
-6. Proxy relays response back to client
+```
+Client ──→ Forward Proxy ──→ Internet / Target Server
+  (private network)    ↑
+                       Intercepts, filters, caches,
+                       or anonymizes outbound requests
+```
+
+Compare with a [[Reverse Proxy]], which sits in front of servers and handles inbound traffic on their behalf.
 
 ## Use Cases
 
-- **Privacy**: Hide client's real IP address
-- **Access Control**: Content filtering and restrictions
-- **Caching**: Store frequently accessed content with TTL-based expiration
-- **Geo-bypassing**: Access region-locked content (e.g., US Netflix from another country)
+| Use Case | How Proxy Helps |
+|----------|----------------|
+| **Privacy / Anonymity** | Server sees proxy IP, not client IP |
+| **Content filtering** | Corporate proxy blocks social media, malware domains |
+| **Caching** | Frequently requested resources served from proxy cache, saving bandwidth |
+| **Geo-bypassing** | Exit through a proxy in a different region |
+| **Access control** | Enforce allowlist/denylist of external URLs |
+| **Logging / DLP** | Inspect all outbound HTTP requests for data exfiltration |
 
-## VPN vs Proxy
+## Explicit vs Transparent Proxy
 
-- VPN encrypts all traffic
-- Proxy forwards specific requests without encryption
+| Type | Client configured? | Example |
+|------|-------------------|---------|
+| **Explicit** | Client configured with proxy address | Corporate HTTPS proxy; browser setting |
+| **Transparent** | Client unaware; traffic intercepted at network level | ISP/school firewall interception |
+
+## Forward Proxy vs VPN
+
+| Feature | Forward Proxy | VPN |
+|---------|--------------|-----|
+| Scope | Usually application-level (HTTP/S) | All traffic (OS-level tunnel) |
+| Encryption | Optional (CONNECT tunnel for HTTPS) | Always (tunnel encrypted) |
+| Setup | Browser/app config | OS network setting |
+| Latency | Lower | Higher (encryption overhead) |
+| Use case | Corporate filtering, caching | Privacy, remote access |
+
+## CONNECT Tunneling (HTTPS Proxies)
+
+For HTTPS traffic, the client sends a `CONNECT` request to the proxy:
+```
+Client → Proxy: CONNECT example.com:443 HTTP/1.1
+Proxy:          200 Connection Established
+Client ←→ Proxy ←→ example.com  (encrypted tunnel; proxy can't inspect content)
+```
+The proxy acts as a raw TCP tunnel — it cannot decrypt or cache HTTPS content (without SSL inspection / MitM certificate).
 
 ## Related Concepts
 
-- [[Proxy vs Reverse Proxy]] — Parent concept
-- [[Reverse Proxy]] — Opposite direction
+- [[Reverse Proxy]] — handles inbound traffic for servers
+- [[SSL Termination]] — reverse proxy variant that decrypts HTTPS
+- [[API Gateway]] — a specialized reverse proxy for APIs
+- [[CDN]] — a globally distributed forward+reverse caching proxy

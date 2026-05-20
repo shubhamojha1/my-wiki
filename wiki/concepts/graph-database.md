@@ -3,33 +3,95 @@ title: "Graph Database"
 type: concept
 tags: [database, nosql, graph]
 created: 2026-05-11
+updated: 2026-05-20
 sources: [algomaster-15-db-types]
 ---
 
 # Graph Database
 
-A **graph database** specializes in storing, managing, and querying complex networks of interconnected data using nodes, edges, and properties.
+A **graph database** stores and queries data as a network of **nodes** (entities) connected by **edges** (relationships), with optional properties on both. The core optimization is **index-free adjacency**: each node directly references its neighboring nodes, so traversing a relationship is O(1) regardless of total graph size — unlike relational JOIN, which is O(n log n).
 
 ## Data Model
 
-- **Nodes**: Entities (users, products, places)
-- **Edges**: Relationships between entities (follows, purchased, located_in)
-- **Properties**: Attributes on nodes and edges (name, since, weight)
-- **Traversals**: Navigate relationships efficiently via index-free adjacency
+```
+(Alice: User {age: 30})
+      │
+  [FOLLOWS]
+      │
+ (Bob: User {age: 25})
+      │
+  [PURCHASED]
+      │
+(Laptop: Product {price: 999})
+```
+
+| Element | Description |
+|---------|-------------|
+| **Node** | An entity (person, product, location). Has a label and properties. |
+| **Edge** | A directed relationship between two nodes. Has a type and optional properties. |
+| **Property** | Key-value attributes on nodes or edges (name, since, weight) |
+| **Label/Type** | Categorizes nodes (`:User`, `:Product`) and edges (`[:FOLLOWS]`) |
+
+## Query Language
+
+**Cypher** (Neo4j, openCypher standard):
+```cypher
+-- Find friends of friends of Alice
+MATCH (alice:User {name: 'Alice'})-[:FOLLOWS*2]->(fof)
+RETURN fof.name
+
+-- Fraud: accounts sharing device AND IP
+MATCH (a:Account)-[:USED]->(d:Device)<-[:USED]-(b:Account),
+      (a)-[:FROM]->(ip:IP)<-[:FROM]-(b)
+WHERE a <> b
+RETURN a, b
+```
+
+## Why Graph DBs Beat Relational for Traversals
+
+Modeling a social network in SQL requires self-joins:
+```sql
+-- 3-hop friends in SQL: expensive recursive JOIN
+SELECT u3.name FROM users u1
+JOIN follows f1 ON u1.id = f1.follower_id
+JOIN follows f2 ON f1.followee_id = f2.follower_id
+JOIN users u3 ON f2.followee_id = u3.id
+WHERE u1.name = 'Alice';
+```
+
+With 1M users, each JOIN scans the entire `follows` table. In a graph DB, the same traversal follows pointers in microseconds.
 
 ## Use Cases
 
-- **Social networks**: Friend graphs, recommendations, influence analysis
-- **Recommendation engines**: "Customers who bought X also bought Y"
-- **Knowledge graphs**: Semantic search, entity resolution
-- **Fraud detection**: Suspicious connection patterns
+| Use Case | Why Graph Fits |
+|----------|---------------|
+| Social networks | Friendship/follow relationships; recommendations |
+| Fraud detection | Suspicious shared attributes (device, IP, address) across accounts |
+| Knowledge graphs | Entity resolution, semantic search (Google Knowledge Graph) |
+| Recommendation engines | "Customers who bought X also liked Y" collaborative filtering |
+| Network topology | IT infrastructure dependency mapping |
+| Supply chain | Multi-hop traceability |
 
-## Examples
+## Popular Graph Databases
 
-- Neo4j — Leading native graph database
-- Amazon Neptune — Managed graph service (property graph + RDF)
+| Database | Notes |
+|----------|-------|
+| **Neo4j** | Native graph; Cypher; property graph model; most mature |
+| **Amazon Neptune** | Managed; supports Gremlin (property graph) + SPARQL (RDF) |
+| **TigerGraph** | GSQL; scales to billions of nodes; analytics focus |
+| **Memgraph** | In-memory; compatible with Cypher/Neo4j clients |
 
-## Related
+## Graph DB vs Relational vs Document
 
-- [[Document Database]] — Alternative for less connected data
-- [[Relational Model]] — Graphs can be modeled with join tables (less efficient)
+| Aspect | Graph DB | Relational | Document |
+|--------|----------|-----------|---------|
+| Relationship traversal | O(1) per hop | O(n log n) JOIN | Hard (no joins) |
+| Schema | Flexible | Rigid | Flexible |
+| Query for connected data | Natural | Complex multi-joins | Manual denorm |
+| Aggregations | Limited | Excellent | Moderate |
+
+## Related Concepts
+
+- [[Relational Model]] — alternative; joins become expensive for multi-hop traversals
+- [[Document Database]] — better for hierarchical/self-contained data
+- [[Graph Neural Network]] — ML on graph-structured data

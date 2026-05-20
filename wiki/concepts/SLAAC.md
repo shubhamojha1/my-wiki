@@ -3,28 +3,56 @@ title: "SLAAC"
 type: concept
 tags: [networking, ipv6, autoconfiguration]
 created: 2026-05-10
+updated: 2026-05-20
 sources: ["algomaster-ip-address"]
 ---
 
-# SLAAC
+# SLAAC (Stateless Address Autoconfiguration)
 
-**SLAAC** (Stateless Address Autoconfiguration) allows IPv6 devices to generate their own IP address without needing a DHCP server.
+**SLAAC** lets IPv6 devices configure their own global unicast address without a DHCP server. The router provides only the network prefix; the device generates the host portion itself.
 
 ## How It Works
 
-1. Device sends a **Router Solicitation** (RS) message
-2. Router responds with a **Router Advertisement** (RA) containing the network prefix (e.g., `/64`)
-3. Device combines the prefix with a self-generated interface identifier (typically derived from its MAC address via EUI-64, or randomly generated for privacy)
-4. Device performs **Duplicate Address Detection** (DAD) to ensure the address is unique
+```
+Device                        Router
+  |                             |
+  |── Router Solicitation ──→   |   (ICMPv6 type 133, multicast)
+  |                             |
+  |←── Router Advertisement ── |   (ICMPv6 type 134, prefix + lifetime)
+  |                             |
+  [Device constructs address]
+  prefix (64 bits) + interface ID (64 bits)
+  |
+  [DAD: Neighbor Solicitation to tentative address]
+  → if no reply after timeout → address is unique → use it
+```
 
-## Key Benefits
+## Interface Identifier Generation
 
-- Zero configuration required — plug-and-play networking
-- No DHCP server needed for address assignment
-- Each device generates a globally unique address
+| Method | Description | Privacy |
+|--------|-------------|---------|
+| **EUI-64** | Derived from 48-bit MAC (insert `FF:FE` in middle, flip bit 6) | Low — stable, trackable |
+| **RFC 7217 Stable** | Pseudo-random, host-specific, stable per network | Medium |
+| **Temporary (RFC 4941)** | Random, rotated periodically | High — default on modern OSes |
+
+## Duplicate Address Detection (DAD)
+
+Before using the address, the device sends a Neighbor Solicitation for the tentative address. If another host replies (Neighbor Advertisement), there is a collision and the device must generate a new interface ID. DAD typically resolves within ~1 second.
+
+## SLAAC vs. DHCPv6
+
+| Feature | SLAAC | DHCPv6 |
+|---------|-------|--------|
+| Server required | No | Yes |
+| Address assignment | Self-generated | Server-assigned |
+| DNS configuration | Via RA (RDNSS option, RFC 8106) | Via DHCP options |
+| Logging/tracking | Harder | Centralized |
+| Control | Low | High |
+
+Most networks use **SLAAC + RDNSS** for plug-and-play, or **Managed mode** (DHCPv6) when address control matters.
 
 ## Related Concepts
 
-- [[IPv6]] — Where SLAAC operates
-- [[Static vs Dynamic IP]] — SLAAC as an alternative to DHCP
-- [[MAC Address]] — Often used as basis for the interface identifier
+- [[IPv6]] — the address space SLAAC operates within
+- [[MAC Address]] — basis for EUI-64 interface identifiers
+- [[ICMPv6]] — the protocol carrying Router Solicitation/Advertisement

@@ -1,35 +1,65 @@
 ---
 title: "Dead Letter Queue"
 type: concept
-tags: [system-design, reliability, messaging]
+tags: [system-design, reliability, messaging, fault-tolerance]
 created: 2026-05-01
-sources: [algomaster-webhooks.md]
+updated: 2026-05-20
+sources: [algomaster-webhooks.md, algomaster-message-queues]
 ---
 
 # Dead Letter Queue (DLQ)
 
-A special holding queue for messages or events that consistently fail processing after multiple retry attempts.
+A **dead letter queue** is a special queue that receives messages or events that have consistently failed processing and cannot be retried further. It acts as a safety net: instead of silently discarding failed messages or clogging the main queue, they are parked for investigation.
 
-## Purpose
+## Why DLQs Exist
 
-Prevents bad events from clogging the main processing pipeline and ensures no event is silently lost.
+Without a DLQ:
+- A "poison message" (one that always fails) blocks the consumer indefinitely
+- Retrying forever wastes compute and delays other messages
+- Failed events vanish with no audit trail
 
-## When Events Go to DLQ
+## When Messages Go to DLQ
 
-- Persistent downstream service unavailability
-- Malformed payloads that cannot be parsed
-- Data validation failures that won't resolve on retry
+| Reason | Description |
+|--------|-------------|
+| **Max retries exceeded** | Consumer failed N times (e.g., 3 attempts) |
+| **Malformed payload** | Message cannot be deserialized — will never succeed |
+| **Validation failure** | Business rule violation that won't self-resolve |
+| **Consumer timeout** | Processing took too long repeatedly |
+| **Expired TTL** | Message too old to be worth processing |
 
 ## Workflow
 
-1. Worker attempts to process event
-2. Processing fails; retry counter increments
-3. After exceeding max retries, event is moved to DLQ
-4. DLQ triggers alerts for investigation
-5. Events can be manually retried after root cause is fixed
+```
+[Producer] → [Main Queue]
+                  ↓
+           [Consumer] → success → done
+                     → failure → retry
+                     → retries exhausted → [Dead Letter Queue]
+                                               ↓
+                                         [Alert/Monitor]
+                                               ↓
+                                    [Fix root cause] → replay
+```
 
-## Common Implementations
+## Implementations
 
-- AWS SQS Dead Letter Queues
-- RabbitMQ DLX (Dead Letter Exchange)
-- Kafka topic for failed events (with separate consumer group)
+| Platform | DLQ Mechanism |
+|---------|--------------|
+| **AWS SQS** | Configurable `redrive policy`: max receives → DLQ |
+| **RabbitMQ** | Dead Letter Exchange (DLX) with routing key |
+| **Apache Kafka** | No built-in DLQ; use separate topic + consumer group |
+| **Azure Service Bus** | Built-in dead-letter subqueue |
+
+## Operations
+
+- **Monitoring**: Alert on DLQ depth; high DLQ rate indicates a systemic problem
+- **Replay**: After fixing the root cause, messages can be moved back to the main queue for reprocessing
+- **Inspection**: DLQ stores original message, metadata, and failure reason for debugging
+
+## Related Concepts
+
+- [[Message Queue]] — the main queue DLQ backs up
+- [[Exponential Backoff]] — retry strategy before DLQ
+- [[Idempotency]] — ensures replayed messages are safe to reprocess
+- [[Dead Letter Queue]] — also applies to event-driven architectures
