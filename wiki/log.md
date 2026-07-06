@@ -1,3 +1,7 @@
+## [2026-07-07] ingest | Design a Distributed Rate Limiter
+
+Ingested Hello Interview's distributed rate limiter system design breakdown. Created 1 source summary, 2 entity pages (Hello Interview, ZooKeeper), and 6 concept pages (Distributed Rate Limiter, Rate Limit Rule, Rate Limiter Failure Mode, Rate Limiter Hot Key, Dynamic Rate Limit Configuration, DDoS Protection). Updated Rate Limiting, Token Bucket, API Gateway, Redis, Redis Cluster, and Consistent Hashing with gateway placement, Redis/Lua atomicity, sharding, fail-closed behavior, latency, hot-key, and dynamic configuration details.
+
 ## [2026-05-12] ingest | Strong vs. Eventual Consistency
 
 Ingested AlgoMaster article on strong vs eventual consistency.

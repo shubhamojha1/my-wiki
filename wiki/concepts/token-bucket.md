@@ -3,7 +3,7 @@ title: "Token Bucket"
 type: concept
 tags: [rate-limiting, algorithm, system-design]
 created: 2026-05-01
-sources: [algomaster-rate-limiting-algorithms.md]
+sources: [algomaster-rate-limiting-algorithms.md, "https://www.hellointerview.com/learn/system-design/problem-breakdowns/distributed-rate-limiter"]
 ---
 
 # Token Bucket
@@ -40,3 +40,22 @@ Bucket capacity: 10 tokens, refill: 1 token/second
 - After 10s idle: bucket full (10 tokens)
 - User can burst 10 requests instantly
 - Then limited to 1 request/second
+
+## Distributed Implementation
+
+In a [[Distributed Rate Limiter]], every gateway must see the same bucket state for a client. If each gateway stores buckets locally, load-balanced requests can split a client's usage across gateways and allow more traffic than intended.
+
+A Redis-backed token bucket stores two fields per client:
+
+- `tokens`: current token count
+- `last_refill`: timestamp used to calculate elapsed refill
+
+The full read-refill-decrement-write sequence must be atomic. Wrapping only the writes in Redis `MULTI/EXEC` is not enough if `HMGET` happens before the transaction, because two concurrent gateways can read the same token count. A Redis Lua script is the stronger pattern because it executes the whole read-modify-write decision atomically.
+
+`EXPIRE` can be set on inactive buckets so idle clients do not leave state in Redis forever.
+
+## Related Concepts
+
+- [[Rate Limiting]]
+- [[Distributed Rate Limiter]]
+- [[Redis]]

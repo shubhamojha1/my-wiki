@@ -3,7 +3,7 @@ title: "Redis Cluster"
 type: entity
 tags: [redis, distributed-systems, cluster, sharding]
 created: 2026-04-20
-sources: [redis-cluster-architecture]
+sources: [redis-cluster-architecture, "https://www.hellointerview.com/learn/system-design/problem-breakdowns/distributed-rate-limiter"]
 ---
 
 Redis Cluster is an active-passive cluster implementation for automatic sharding and high availability.
@@ -44,3 +44,11 @@ With 3 masters:
 2. Other masters vote via gossip protocol
 3. Failed master's slave promoted to master
 4. Failed master rejoins as slave
+
+## Rate Limiting Use
+
+[[Distributed Rate Limiter]] designs use Redis Cluster when one Redis instance cannot handle the write rate. Rate-limit checks are write-heavy because every request updates a counter or token bucket.
+
+Redis Cluster maps keys into 16,384 hash slots and distributes those slots across masters. For rate limiting, the key must be derived from the enforcement identity, such as user ID, IP address, or API key, so all requests for the same client reach the same bucket. Splitting one client's bucket across shards breaks global enforcement.
+
+Cluster replication and failover reduce the need to enter a [[Rate Limiter Failure Mode]], but the application still needs a policy for Redis unavailability.

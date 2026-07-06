@@ -126,6 +126,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Circuit Breaker Pattern (Design Patterns for Microservices)]] — Hasitha Subhashana: 3 states (closed/open/half-open), cascading failure prevention, threshold-based tripping (2021)
 - [[Google Cloud: What Is Disaster Recovery?]] — GC: DR planning, 3-2-1 rule, BaaS/DRaaS/snapshots/virtual DR, RTO/RPO, 5-step DR process
 - [[Dynatrace: What Is Distributed Tracing?]] — Trace IDs, spans, observability pillars, head-based vs tail-based sampling, MTTD/MTTR (2026)
+- [[Design a Distributed Rate Limiter]] — Hello Interview: API-gateway rate limiter with token bucket, Redis/Lua atomicity, sharding, fail-closed policy, latency, hot keys, and dynamic config (2026)
 
 ## Entities
 
@@ -165,6 +166,8 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Amazon CloudFront]] — Global CDN service on AWS
 - [[Amazon Route 53]] — Cloud DNS web service on AWS
 - [[Martin Fowler]] — Software engineer, author of Refactoring, popularized the "two hard things" quote
+- [[Hello Interview]] — Interview-preparation publisher of system design problem breakdowns
+- [[ZooKeeper]] — Distributed coordination service for configuration, watches, leader election, and coordination
 
 ## Entities
 
@@ -526,11 +529,17 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[gRPC]] — High-performance RPC
 - [[API Gateway]] — Central API management
 - [[Rate Limiting]] — Request throttling per client
+- [[Distributed Rate Limiter]] — Global rate-limit enforcement across gateways using shared state
+- [[Rate Limit Rule]] — Policy object defining client scope, endpoint scope, quota, and priority
 - [[Token Bucket]] — Token-based rate limiting that allows bursts
 - [[Leaky Bucket]] — Queue-based rate limiting that smooths traffic
 - [[Fixed Window Counter]] — Time-windowed counter with boundary problem
 - [[Sliding Window Log]] — Timestamp log; accurate but memory-intensive
 - [[Sliding Window Counter]] — Hybrid: weighted sum of current + previous window
+- [[Rate Limiter Failure Mode]] — Fail-open vs fail-closed behavior when limiter state is unavailable
+- [[Rate Limiter Hot Key]] — One client identifier overloading a rate-limit shard
+- [[Dynamic Rate Limit Configuration]] — Runtime updates to rate-limit rules via polling or push
+- [[DDoS Protection]] — Edge filtering and mitigation for malicious distributed traffic
 - [[REST API Design Best Practices]] — Resource-oriented URIs, proper HTTP usage, predictable errors
 - [[HTTP 202 Accepted]] — Request accepted for async processing (not yet complete)
 - [[Error Response Format]] — Standardized JSON error structure with field-level details

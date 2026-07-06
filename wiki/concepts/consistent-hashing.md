@@ -4,7 +4,7 @@ type: concept
 tags: [distributed-systems, partitioning, hashing, load-balancing]
 created: 2026-04-19
 updated: 2026-05-20
-sources: [mixu-distributed-systems-book, "algomaster.io/learn/system-design/consistent-hashing"]
+sources: [mixu-distributed-systems-book, "algomaster.io/learn/system-design/consistent-hashing", "https://www.hellointerview.com/learn/system-design/problem-breakdowns/distributed-rate-limiter"]
 ---
 
 # Consistent Hashing
@@ -56,6 +56,7 @@ Physical servers get **multiple positions** (virtual nodes) on the ring:
 - **Distributed caches** — Memcached, Redis clusters use consistent hashing to route keys to cache nodes
 - **[[Database Sharding]]** — minimizes data movement during shard rebalancing
 - **CDN routing** — consistent hashing directs requests for the same URL to the same edge node (cache locality)
+- **[[Distributed Rate Limiter]]** - routes all checks for a user ID, IP address, or API key to the same Redis shard so rate-limit state is not split
 
 ## Limitations
 

@@ -4,7 +4,7 @@ type: concept
 tags: [api, gateway, microservices, architecture]
 created: 2026-04-28
 updated: 2026-05-20
-sources: ["algomaster-api", "algomaster-api-gateway"]
+sources: ["algomaster-api", "algomaster-api-gateway", "https://www.hellointerview.com/learn/system-design/problem-breakdowns/distributed-rate-limiter"]
 ---
 
 # API Gateway
@@ -52,6 +52,20 @@ An **API Gateway** is a server that acts as the single entry point for all clien
 - **Single point of failure** — must be highly available (deploy in active-active or with health checks)
 - **Added latency** — one extra network hop per request
 - **Bottleneck risk** — all traffic flows through one component
+
+## Rate Limiting Placement
+
+For a [[Distributed Rate Limiter]], the gateway is a strong placement because it rejects excess traffic before requests consume application-server capacity. It also avoids the extra per-request hop that a dedicated rate-limiter service would add after the request reaches an application server.
+
+The trade-off is context. Gateway rate limiting can use request-visible data such as:
+
+- URL/path and query parameters
+- `Authorization` headers or JWT claims
+- `X-API-Key`
+- `X-Forwarded-For` or client IP
+- user-agent and other headers
+
+Rules that depend on deeper application state, such as premium tier or account status, need that state encoded in the request token/header or require an external lookup that adds latency.
 
 ## Examples
 
