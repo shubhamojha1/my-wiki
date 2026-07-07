@@ -1,3 +1,7 @@
+## [2026-07-07] ingest | Lecture 02. What a Harness Actually Is
+
+Ingested Learn Harness Engineering's follow-up lecture defining the harness as five subsystems (instruction, tool, environment, state, feedback). Created 1 source summary, 1 new concept page (Controlled Variable Exclusion Test), 2 new entity pages (AutoGPT, Cursor). Substantially expanded Harness Engineering with the five-subsystem model, "the repo IS the spec" framing, and the maps-not-manuals/constrain-via-rules principles. Updated Capability Gap with the staged 20%->60%->80%->80-100% case study, Definition of Done with the verification-commands example, Codex with git-worktree/observability detail, and Learn Harness Engineering/index.md to also cover Lecture 01's previously-uningested pages (Harness Engineering, Capability Gap, Verification Gap, Diagnostic Loop, Definition of Done, Context Anxiety, Agent State Management, and related entities were created in an earlier session but never added to the index).
+
 ## [2026-07-07] update | Lecture 01. Strong Models Don't Mean Reliable Execution
 
 Re-fetched the lecture URL via WebFetch and diffed against the existing source summary. Added benchmark pass-rate stat (~50-60%), the 20-minute-bare vs 6-hour-harnessed timing detail for the Anthropic case study, a direct quote, and the practical `AGENTS.md`-file recommendation from the "Practical Solution" section, which the original page had omitted.

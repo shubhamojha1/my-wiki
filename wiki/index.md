@@ -127,6 +127,8 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Google Cloud: What Is Disaster Recovery?]] — GC: DR planning, 3-2-1 rule, BaaS/DRaaS/snapshots/virtual DR, RTO/RPO, 5-step DR process
 - [[Dynatrace: What Is Distributed Tracing?]] — Trace IDs, spans, observability pillars, head-based vs tail-based sampling, MTTD/MTTR (2026)
 - [[Design a Distributed Rate Limiter]] — Hello Interview: API-gateway rate limiter with token bucket, Redis/Lua atomicity, sharding, fail-closed policy, latency, hot keys, and dynamic config (2026)
+- [[Lecture 01. Strong Models Don't Mean Reliable Execution]] — Learn Harness Engineering: model capability vs. execution reliability, five failure modes, Anthropic/OpenAI case studies (2026)
+- [[Lecture 02. What a Harness Actually Is]] — Learn Harness Engineering: five-subsystem harness model (instruction/tool/environment/state/feedback), tool survey, staged 20%->100% case study (2026)
 
 ## Entities
 
@@ -168,6 +170,14 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Martin Fowler]] — Software engineer, author of Refactoring, popularized the "two hard things" quote
 - [[Hello Interview]] — Interview-preparation publisher of system design problem breakdowns
 - [[ZooKeeper]] — Distributed coordination service for configuration, watches, leader election, and coordination
+- [[Learn Harness Engineering]] — Lecture series on making coding agents reliable via harness design
+- [[Walking Labs]] — Publisher/host of the Learn Harness Engineering lecture series
+- [[Anthropic]] — AI company; source of the planner/generator/evaluator harness case study
+- [[Claude Sonnet]] — Model family used in the lecture's API-endpoint harness example
+- [[Codex]] — OpenAI's coding agent; reference point for harness engineering, git worktrees, observability
+- [[SWE-bench]] — Benchmark for coding agents on real GitHub-issue tasks
+- [[Cursor]] — AI-assisted code editor; `.cursorrules` instructions, weak state management across IDE sessions
+- [[AutoGPT]] — Cautionary example of missing state management causing context accumulation and loops
 
 ## Entities
 
@@ -643,6 +653,18 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Microservices]] — Loosely coupled, independently deployable services per bounded context
 - [[Serverless Architecture]] — Cloud-managed event-driven functions, pay-per-use, auto-scaling
 - [[FaaS]] — Functions as a Service, the execution model behind serverless
+
+## Harness Engineering (AI Agents)
+
+- [[Harness Engineering]] — Everything outside model weights: instruction/tool/environment/state/feedback subsystems
+- [[Capability Gap]] — Benchmark pass rate vs. real-world task success
+- [[Harness-Induced Failure]] — Capable model fails because the surrounding system prevents reliable execution
+- [[Verification Gap]] — Distance between agent confidence and actual correctness
+- [[Diagnostic Loop]] — Execute, observe, attribute to a layer, fix, rerun
+- [[Definition of Done]] — Explicit, command-checkable completion criteria
+- [[Context Anxiety]] — Rushed, verification-skipping behavior under low remaining context
+- [[Agent State Management]] — Preserving progress and decisions across sessions
+- [[Controlled Variable Exclusion Test]] — Ablate one harness subsystem at a time to measure its marginal contribution
 
 ## Queries
 
