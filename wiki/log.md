@@ -1,3 +1,7 @@
+## [2026-07-07] ingest | Lecture 06. Make the Agent Initialize Before Every Work Session
+
+Ingested Learn Harness Engineering's sixth lecture arguing initialization deserves its own dedicated phase separate from implementation. Created 1 source summary, 2 new concept pages (Initialization Phase — with Unverified Accumulation folded in as its core failure mode — and Startup Readiness Checklist). Updated Harness Initialization Flow and Rebuild Cost with cross-links distinguishing per-session bookends from one-time project initialization, Capability Gap with the sixth case study (Anthropic: 31% higher feature completion with dedicated init phase), Anthropic entity with the new research citation, and Learn Harness Engineering with the lecture-06 summary.
+
 ## [2026-07-07] ingest | Lecture 05. Keeping Context Alive Across Sessions
 
 Ingested Learn Harness Engineering's fifth lecture on cross-session continuity loss. Created 1 source summary, 5 new concept pages (Rebuild Cost, Drift, Compaction vs. Reset, Decision Log, Harness Initialization Flow). Updated Agent State Management with the what/why distinction (PROGRESS.md vs. DECISIONS.md) and the new concepts, Context Anxiety with the "bigger windows can't fix this" point, Capability Gap with the fifth case study (78% rebuild-time reduction, 58%->100% feature completion, 43%->8% defect rate), and Learn Harness Engineering with the lecture-05 summary.

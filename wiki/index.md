@@ -132,6 +132,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Lecture 03. Making the Repository the Single Source of Truth]] — Learn Harness Engineering: repo as system of record, knowledge visibility gap, fresh session test, ACID-based agent state management, 30-microservice case study (2026)
 - [[Lecture 04. Split Instructions Across Files]] — Learn Harness Engineering: instruction bloat, lost-in-the-middle effect, entry file + topic docs split, SaaS 45%->72% case study (2026)
 - [[Lecture 05. Keeping Context Alive Across Sessions]] — Learn Harness Engineering: rebuild cost, drift, compaction vs reset, decision logs, harness initialization flow, 78% rebuild-time reduction case study (2026)
+- [[Lecture 06. Make the Agent Initialize Before Every Work Session]] — Learn Harness Engineering: dedicated initialization phase vs. implementation, unverified accumulation, startup readiness checklist, Anthropic 31% case study (2026)
 
 ## Entities
 
@@ -681,6 +682,8 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Compaction vs. Reset]] — Within-session summarization vs. fresh session from persisted artifacts
 - [[Decision Log]] — DECISIONS.md capturing why a choice was made, not just what was built
 - [[Harness Initialization Flow]] — Explicit clock-in/clock-out routines bookending an agent session
+- [[Initialization Phase]] — Dedicated one-time project setup phase separated from implementation work
+- [[Startup Readiness Checklist]] — Document verifying, not just claiming, that setup steps completed successfully
 
 ## Queries
 
