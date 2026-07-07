@@ -3,7 +3,7 @@ title: "Definition of Done"
 type: concept
 tags: [ai-agents, testing, project-management]
 created: 2026-07-07
-sources: ["https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-01-why-capable-agents-still-fail/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-02-what-a-harness-actually-is/"]
+sources: ["https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-01-why-capable-agents-still-fail/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-02-what-a-harness-actually-is/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-07-why-agents-overreach-and-under-finish/"]
 ---
 
 # Definition of Done
@@ -24,8 +24,11 @@ Verification commands:
 
 The lecture calls this subsystem typically the highest-ROI harness investment — cheap to write, and it directly closes the [[Verification Gap]].
 
+[[Lecture 07. Draw Clear Task Boundaries for Agents|Lecture 07]] pushes this down a level of granularity, from "the feature is done" to "this specific atomic task is done" — see [[Completion Evidence]]. Per-task completion evidence is what makes a [[WIP Limit]] enforceable rather than aspirational.
+
 ## Related
 
 - [[Harness Engineering]]
 - [[Verification Gap]]
 - [[Diagnostic Loop]]
+- [[Completion Evidence]]

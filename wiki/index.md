@@ -133,6 +133,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Lecture 04. Split Instructions Across Files]] — Learn Harness Engineering: instruction bloat, lost-in-the-middle effect, entry file + topic docs split, SaaS 45%->72% case study (2026)
 - [[Lecture 05. Keeping Context Alive Across Sessions]] — Learn Harness Engineering: rebuild cost, drift, compaction vs reset, decision logs, harness initialization flow, 78% rebuild-time reduction case study (2026)
 - [[Lecture 06. Make the Agent Initialize Before Every Work Session]] — Learn Harness Engineering: dedicated initialization phase vs. implementation, unverified accumulation, startup readiness checklist, Anthropic 31% case study (2026)
+- [[Lecture 07. Draw Clear Task Boundaries for Agents]] — Learn Harness Engineering: overreach/under-finish, WIP=1, completion evidence, scope surface, REST API 37.5%->87.5% case study (2026)
 
 ## Entities
 
@@ -684,6 +685,10 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Harness Initialization Flow]] — Explicit clock-in/clock-out routines bookending an agent session
 - [[Initialization Phase]] — Dedicated one-time project setup phase separated from implementation work
 - [[Startup Readiness Checklist]] — Document verifying, not just claiming, that setup steps completed successfully
+- [[Overreach and Under-finish]] — Activating too many tasks at once, cyclically producing low completion ratios
+- [[WIP Limit]] — Kanban-derived cap on simultaneous tasks; WIP=1 is the safe default for agents
+- [[Completion Evidence]] — Executable per-task verification, plus the Verified Completion Rate (VCR) metric
+- [[Scope Surface]] — Externalized DAG of task states so a fresh session sees what's done/blocked
 
 ## Queries
 

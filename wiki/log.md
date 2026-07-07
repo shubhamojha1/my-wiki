@@ -1,3 +1,7 @@
+## [2026-07-07] ingest | Lecture 07. Draw Clear Task Boundaries for Agents
+
+Ingested Learn Harness Engineering's seventh lecture on why agents overreach and under-finish, and how WIP limits fix it. Created 1 source summary, 4 new concept pages (Overreach and Under-finish, WIP Limit — with Completion Pressure folded in, Completion Evidence — with Verified Completion Rate folded in, Scope Surface). Updated Definition of Done with per-task completion evidence, Context Anxiety with the attention-division framing, Anthropic entity with the 37% "small next step" citation, Capability Gap with the seventh case study (REST API project, 37.5%->87.5% completion under WIP=1), and Learn Harness Engineering with the lecture-07 summary.
+
 ## [2026-07-07] ingest | Lecture 06. Make the Agent Initialize Before Every Work Session
 
 Ingested Learn Harness Engineering's sixth lecture arguing initialization deserves its own dedicated phase separate from implementation. Created 1 source summary, 2 new concept pages (Initialization Phase — with Unverified Accumulation folded in as its core failure mode — and Startup Readiness Checklist). Updated Harness Initialization Flow and Rebuild Cost with cross-links distinguishing per-session bookends from one-time project initialization, Capability Gap with the sixth case study (Anthropic: 31% higher feature completion with dedicated init phase), Anthropic entity with the new research citation, and Learn Harness Engineering with the lecture-06 summary.
