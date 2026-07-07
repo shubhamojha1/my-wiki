@@ -1,3 +1,7 @@
+## [2026-07-07] ingest | Lecture 04. Split Instructions Across Files
+
+Ingested Learn Harness Engineering's fourth lecture on why instruction files balloon and how to split them. Created 1 source summary, 4 new concept pages (Instruction Bloat, Lost in the Middle, Instruction Signal-to-Noise Ratio, Entry File). Updated Harness Engineering with the entry-file/topic-docs architecture and the Lost in the Middle mechanism, Capability Gap with the fourth case study (SaaS team, 45%->72% task success, 60%->95% security-constraint compliance), and Learn Harness Engineering with the lecture-04 summary.
+
 ## [2026-07-07] ingest | Lecture 03. Making the Repository the Single Source of Truth
 
 Ingested Learn Harness Engineering's third lecture, arguing the repo must be an authoritative System of Record rather than just code storage. Created 1 source summary, 3 new concept pages (Knowledge Visibility Gap, System of Record, Fresh Session Test, Agent State ACID Principles — 4 pages total). Updated Harness Engineering with the recommended repo structure (AGENTS.md/ARCHITECTURE.md/CONSTRAINTS.md/PROGRESS.md) and four documentation principles, Capability Gap with the 30-microservice 70%->much-lower case study, Agent State Management with the ACID-principles checklist, and ACID Transactions with a cross-link to the agent-state analogy.

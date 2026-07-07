@@ -3,7 +3,7 @@ title: "Capability Gap"
 type: concept
 tags: [ai-agents, evaluation, machine-learning]
 created: 2026-07-07
-sources: ["https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-01-why-capable-agents-still-fail/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-02-what-a-harness-actually-is/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-03-why-the-repository-must-become-the-system-of-record/"]
+sources: ["https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-01-why-capable-agents-still-fail/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-02-what-a-harness-actually-is/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-03-why-the-repository-must-become-the-system-of-record/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-04-why-one-giant-instruction-file-fails/"]
 ---
 
 # Capability Gap
@@ -16,6 +16,8 @@ Lecture 01 uses SWE-bench Verified pass rates as an example. A score in the 50-6
 
 [[Lecture 03. Making the Repository the Single Source of Truth|Lecture 03]] adds a third data point: a 30-microservice e-commerce platform reduced agent task failure from 70% to much lower purely by centralizing scattered architectural knowledge into standardized repo documentation (`AGENTS.md`/`ARCHITECTURE.md`/`CONSTRAINTS.md`/`PROGRESS.md`) — closing the [[Knowledge Visibility Gap]] rather than changing the model.
 
+[[Lecture 04. Split Instructions Across Files|Lecture 04]] adds a fourth: a SaaS team split a bloated 600-line instruction file into an 80-line [[Entry File]] plus topic documents. Task success rose from 45% to 72%, and — notably the first security-specific metric in this series — security-constraint compliance rose from 60% to 95%, purely from fixing [[Instruction Bloat]] and the [[Lost in the Middle]] effect.
+
 ## Related
 
 - [[SWE-bench]]
@@ -24,3 +26,4 @@ Lecture 01 uses SWE-bench Verified pass rates as an example. A score in the 50-6
 - [[Harness-Induced Failure]]
 - [[Controlled Variable Exclusion Test]]
 - [[Knowledge Visibility Gap]]
+- [[Instruction Bloat]]

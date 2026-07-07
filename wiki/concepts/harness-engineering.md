@@ -3,7 +3,7 @@ title: "Harness Engineering"
 type: concept
 tags: [ai-agents, software-engineering, automation]
 created: 2026-07-07
-sources: ["https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-01-why-capable-agents-still-fail/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-02-what-a-harness-actually-is/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-03-why-the-repository-must-become-the-system-of-record/"]
+sources: ["https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-01-why-capable-agents-still-fail/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-02-what-a-harness-actually-is/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-03-why-the-repository-must-become-the-system-of-record/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-04-why-one-giant-instruction-file-fails/"]
 ---
 
 # Harness Engineering
@@ -24,6 +24,12 @@ Harness engineering is the practice of making a model usable by building the sur
 - `PROGRESS.md` — status tracking, feeding [[Agent State Management]].
 
 Four principles keep this from rotting: knowledge lives adjacent to the code it describes; standardized entry files enable fast orientation; documentation stays minimal but complete; and updates stay synchronized with code changes, or the Knowledge Visibility Gap quietly reopens (Lecture 03 calls this rising "Knowledge Decay Rate"). Discovery Cost — the context an agent burns hunting for something that should have been immediately visible — is the everyday symptom of getting this structure wrong.
+
+## Instruction File Architecture (Lecture 04)
+
+`AGENTS.md` itself tends to balloon over time via "add a rule every time something fails" — see [[Instruction Bloat]]. That growth actively hurts: it eats context budget, and because LLMs attend to mid-document content worse than to the start or end ([[Lost in the Middle]], Liu et al. 2023), the constraints that get buried in the middle of a long file are the ones most likely to be ignored regardless of how important they are.
+
+The fix is architectural, not editorial — split into an [[Entry File]] (50-200 lines: overview, first-run commands, max 15 hard constraints, links to topic docs with applicability conditions) plus topic documents (50-150 lines each, in `docs/`) pulled in only when relevant. Every instruction should carry its source, applicability condition, and expiry condition so audits can track [[Instruction Signal-to-Noise Ratio]] and prune what's stale, rather than letting the file only ever grow.
 
 ## The Five Subsystems (Lecture 02)
 
@@ -61,6 +67,10 @@ Weak harnesses produce avoidable failures even when the model is strong. A bette
 - [[System of Record]]
 - [[Fresh Session Test]]
 - [[Agent State ACID Principles]]
+- [[Instruction Bloat]]
+- [[Lost in the Middle]]
+- [[Instruction Signal-to-Noise Ratio]]
+- [[Entry File]]
 - [[Codex]]
 - [[Cursor]]
 - [[AutoGPT]]
