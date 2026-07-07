@@ -1,3 +1,7 @@
+## [2026-07-07] ingest | Lecture 05. Keeping Context Alive Across Sessions
+
+Ingested Learn Harness Engineering's fifth lecture on cross-session continuity loss. Created 1 source summary, 5 new concept pages (Rebuild Cost, Drift, Compaction vs. Reset, Decision Log, Harness Initialization Flow). Updated Agent State Management with the what/why distinction (PROGRESS.md vs. DECISIONS.md) and the new concepts, Context Anxiety with the "bigger windows can't fix this" point, Capability Gap with the fifth case study (78% rebuild-time reduction, 58%->100% feature completion, 43%->8% defect rate), and Learn Harness Engineering with the lecture-05 summary.
+
 ## [2026-07-07] ingest | Lecture 04. Split Instructions Across Files
 
 Ingested Learn Harness Engineering's fourth lecture on why instruction files balloon and how to split them. Created 1 source summary, 4 new concept pages (Instruction Bloat, Lost in the Middle, Instruction Signal-to-Noise Ratio, Entry File). Updated Harness Engineering with the entry-file/topic-docs architecture and the Lost in the Middle mechanism, Capability Gap with the fourth case study (SaaS team, 45%->72% task success, 60%->95% security-constraint compliance), and Learn Harness Engineering with the lecture-04 summary.
