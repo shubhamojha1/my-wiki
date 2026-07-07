@@ -3,7 +3,7 @@ title: "Capability Gap"
 type: concept
 tags: [ai-agents, evaluation, machine-learning]
 created: 2026-07-07
-sources: ["https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-01-why-capable-agents-still-fail/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-02-what-a-harness-actually-is/"]
+sources: ["https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-01-why-capable-agents-still-fail/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-02-what-a-harness-actually-is/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-03-why-the-repository-must-become-the-system-of-record/"]
 ---
 
 # Capability Gap
@@ -14,6 +14,8 @@ Lecture 01 uses SWE-bench Verified pass rates as an example. A score in the 50-6
 
 [[Lecture 02. What a Harness Actually Is|Lecture 02]] adds a second, more granular data point: a ~20,000-line TypeScript + React project ran the *same model* through four stages of harness improvement — basic README (20% success) → `AGENTS.md` with conventions (60%) → explicit verification commands (80%) → progress-file templates (80-100%). The entire gap closed through harness changes alone, with zero change to the model. See [[Harness Engineering]] and [[Controlled Variable Exclusion Test]] for how to isolate which subsystem is responsible for a given gap.
 
+[[Lecture 03. Making the Repository the Single Source of Truth|Lecture 03]] adds a third data point: a 30-microservice e-commerce platform reduced agent task failure from 70% to much lower purely by centralizing scattered architectural knowledge into standardized repo documentation (`AGENTS.md`/`ARCHITECTURE.md`/`CONSTRAINTS.md`/`PROGRESS.md`) — closing the [[Knowledge Visibility Gap]] rather than changing the model.
+
 ## Related
 
 - [[SWE-bench]]
@@ -21,3 +23,4 @@ Lecture 01 uses SWE-bench Verified pass rates as an example. A score in the 50-6
 - [[Verification Gap]]
 - [[Harness-Induced Failure]]
 - [[Controlled Variable Exclusion Test]]
+- [[Knowledge Visibility Gap]]

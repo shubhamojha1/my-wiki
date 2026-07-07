@@ -129,6 +129,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Design a Distributed Rate Limiter]] — Hello Interview: API-gateway rate limiter with token bucket, Redis/Lua atomicity, sharding, fail-closed policy, latency, hot keys, and dynamic config (2026)
 - [[Lecture 01. Strong Models Don't Mean Reliable Execution]] — Learn Harness Engineering: model capability vs. execution reliability, five failure modes, Anthropic/OpenAI case studies (2026)
 - [[Lecture 02. What a Harness Actually Is]] — Learn Harness Engineering: five-subsystem harness model (instruction/tool/environment/state/feedback), tool survey, staged 20%->100% case study (2026)
+- [[Lecture 03. Making the Repository the Single Source of Truth]] — Learn Harness Engineering: repo as system of record, knowledge visibility gap, fresh session test, ACID-based agent state management, 30-microservice case study (2026)
 
 ## Entities
 
@@ -665,6 +666,10 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Context Anxiety]] — Rushed, verification-skipping behavior under low remaining context
 - [[Agent State Management]] — Preserving progress and decisions across sessions
 - [[Controlled Variable Exclusion Test]] — Ablate one harness subsystem at a time to measure its marginal contribution
+- [[Knowledge Visibility Gap]] — Project knowledge that lives only in people's heads, invisible to the agent
+- [[System of Record]] — The repo as authoritative source, not just code storage
+- [[Fresh Session Test]] — Diagnostic: can a brand-new agent session answer baseline questions from repo contents alone?
+- [[Agent State ACID Principles]] — Atomicity/consistency/isolation/durability applied to agent progress tracking
 
 ## Queries
 

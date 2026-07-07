@@ -94,3 +94,4 @@ Once a transaction is committed, the changes it made persist permanently — sur
 ## Related Pages
 
 - [[Relational Database]], [[CAP Theorem]], [[Distributed Transactions]], [[Eventual Consistency]]
+- [[Agent State ACID Principles]] — the same four properties applied as an analogy for AI agent state management rather than database transactions
