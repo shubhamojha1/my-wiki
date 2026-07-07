@@ -1,3 +1,7 @@
+## [2026-07-07] update | Lecture 01. Strong Models Don't Mean Reliable Execution
+
+Re-fetched the lecture URL via WebFetch and diffed against the existing source summary. Added benchmark pass-rate stat (~50-60%), the 20-minute-bare vs 6-hour-harnessed timing detail for the Anthropic case study, a direct quote, and the practical `AGENTS.md`-file recommendation from the "Practical Solution" section, which the original page had omitted.
+
 ## [2026-07-07] ingest | Design a Distributed Rate Limiter
 
 Ingested Hello Interview's distributed rate limiter system design breakdown. Created 1 source summary, 2 entity pages (Hello Interview, ZooKeeper), and 6 concept pages (Distributed Rate Limiter, Rate Limit Rule, Rate Limiter Failure Mode, Rate Limiter Hot Key, Dynamic Rate Limit Configuration, DDoS Protection). Updated Rate Limiting, Token Bucket, API Gateway, Redis, Redis Cluster, and Consistent Hashing with gateway placement, Redis/Lua atomicity, sharding, fail-closed behavior, latency, hot-key, and dynamic configuration details.
