@@ -3,7 +3,7 @@ title: "Capability Gap"
 type: concept
 tags: [ai-agents, evaluation, machine-learning]
 created: 2026-07-07
-sources: ["https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-01-why-capable-agents-still-fail/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-02-what-a-harness-actually-is/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-03-why-the-repository-must-become-the-system-of-record/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-04-why-one-giant-instruction-file-fails/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-05-why-long-running-tasks-lose-continuity/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-06-why-initialization-needs-its-own-phase/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-07-why-agents-overreach-and-under-finish/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-08-why-feature-lists-are-harness-primitives/"]
+sources: ["https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-01-why-capable-agents-still-fail/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-02-what-a-harness-actually-is/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-03-why-the-repository-must-become-the-system-of-record/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-04-why-one-giant-instruction-file-fails/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-05-why-long-running-tasks-lose-continuity/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-06-why-initialization-needs-its-own-phase/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-07-why-agents-overreach-and-under-finish/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-08-why-feature-lists-are-harness-primitives/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-09-why-agents-declare-victory-too-early/"]
 ---
 
 # Capability Gap
@@ -26,6 +26,8 @@ Lecture 01 uses SWE-bench Verified pass rates as an example. A score in the 50-6
 
 [[Lecture 08. Use Feature Lists to Constrain What the Agent Does|Lecture 08]] adds an eighth: unstructured task tracking produced 20-minute diagnostic periods per new session and duplicate implementations of already-built functionality; a structured [[Scope Surface|feature list]] cut resume time to 3 minutes with zero rework, and delivered 45% higher feature completion than free-form tracking.
 
+[[Lecture 09. Preventing Agents from Declaring Victory Too Early|Lecture 09]] adds a ninth: a password-reset feature passed all its unit tests and was declared complete, but the end-to-end flow was never run, the DB migration left the schema inconsistent, and email config was missing. Enforcing [[Three-Layer Termination Validation]] caught all three defects within the session, saving an estimated 5-10x the cost of a post-hoc fix.
+
 ## Related
 
 - [[SWE-bench]]
@@ -39,3 +41,4 @@ Lecture 01 uses SWE-bench Verified pass rates as an example. A score in the 50-6
 - [[Initialization Phase]]
 - [[Overreach and Under-finish]]
 - [[Scope Surface]]
+- [[Three-Layer Termination Validation]]

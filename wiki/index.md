@@ -135,6 +135,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Lecture 06. Make the Agent Initialize Before Every Work Session]] — Learn Harness Engineering: dedicated initialization phase vs. implementation, unverified accumulation, startup readiness checklist, Anthropic 31% case study (2026)
 - [[Lecture 07. Draw Clear Task Boundaries for Agents]] — Learn Harness Engineering: overreach/under-finish, WIP=1, completion evidence, scope surface, REST API 37.5%->87.5% case study (2026)
 - [[Lecture 08. Use Feature Lists to Constrain What the Agent Does]] — Learn Harness Engineering: feature lists as harness primitives, documents vs. primitives, feature state machine, 45% completion-rate case study (2026)
+- [[Lecture 09. Preventing Agents from Declaring Victory Too Early]] — Learn Harness Engineering: confidence calibration bias, three-layer termination validation, worker/checker separation, password-reset case study (2026)
 
 ## Entities
 
@@ -691,6 +692,12 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Completion Evidence]] — Executable per-task verification, plus the Verified Completion Rate (VCR) metric
 - [[Scope Surface]] — Externalized DAG of task states so a fresh session sees what's done/blocked
 - [[Harness Primitive]] — Machine-enforced artifact other harness components depend on, not just a human-readable document
+- [[Premature Completion Declaration]] — Agent asserts done based on local code confidence, not global system verification
+- [[Confidence Calibration Bias]] — Systematic overconfidence gap (Guo et al. 2017), sharper still for self-evaluation
+- [[Worker/Checker Separation]] — Independent critical evaluator agent instead of self-evaluation
+- [[Three-Layer Termination Validation]] — Syntax/static -> runtime behavior -> system-level confirmation, no layer skippable
+- [[Verification-Validation Dual Gate]] — Spec-correctness gate plus end-to-end-requirements gate, both must pass
+- [[Completion Priority Constraint]] — Functional correctness first, then performance, then style; no refactoring until verified
 
 ## Queries
 
