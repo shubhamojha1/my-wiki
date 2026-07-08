@@ -3,7 +3,7 @@ title: "Capability Gap"
 type: concept
 tags: [ai-agents, evaluation, machine-learning]
 created: 2026-07-07
-sources: ["https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-01-why-capable-agents-still-fail/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-02-what-a-harness-actually-is/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-03-why-the-repository-must-become-the-system-of-record/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-04-why-one-giant-instruction-file-fails/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-05-why-long-running-tasks-lose-continuity/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-06-why-initialization-needs-its-own-phase/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-07-why-agents-overreach-and-under-finish/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-08-why-feature-lists-are-harness-primitives/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-09-why-agents-declare-victory-too-early/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-10-why-end-to-end-testing-changes-results/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-11-why-observability-belongs-inside-the-harness/"]
+sources: ["https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-01-why-capable-agents-still-fail/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-02-what-a-harness-actually-is/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-03-why-the-repository-must-become-the-system-of-record/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-04-why-one-giant-instruction-file-fails/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-05-why-long-running-tasks-lose-continuity/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-06-why-initialization-needs-its-own-phase/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-07-why-agents-overreach-and-under-finish/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-08-why-feature-lists-are-harness-primitives/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-09-why-agents-declare-victory-too-early/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-10-why-end-to-end-testing-changes-results/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-11-why-observability-belongs-inside-the-harness/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-12-why-every-session-must-leave-a-clean-state/"]
 ---
 
 # Capability Gap
@@ -32,6 +32,8 @@ Lecture 01 uses SWE-bench Verified pass rates as an example. A score in the 50-6
 
 [[Lecture 11. Making the Agent's Runtime Observable|Lecture 11]] adds an eleventh: Anthropic's three-agent (planner/generator/evaluator) build of a browser-based DAW, a distinct experiment from Lecture 01/09's game-editor case study, spent 3 hours 50 minutes and $124.70 across three build/QA rounds, with evaluator reliability itself improving over the rounds once its rubric was refined against cases where it diverged from human judgment. A smaller supporting example (dark-mode implementation) showed a 3x efficiency gain from a sprint contract and rubric alone, observability as the single variable.
 
+[[Lecture 12. Leave a Clean Handoff at the End of Every Session|Lecture 12]] adds a twelfth, and the first *longitudinal* data point in this series (12 weeks rather than a single before/after): an Electron project without an enforced clean-state check degraded from 100% build/test pass and a 5-minute startup in week 1 to 68%/61%/60+ minutes by week 12, versus 97%/95%/9 minutes with the check enforced — a cleanup cost of roughly 5 extra minutes per session that saved dozens of hours over the full period.
+
 ## Related
 
 - [[SWE-bench]]
@@ -49,3 +51,4 @@ Lecture 01 uses SWE-bench Verified pass rates as an example. A score in the 50-6
 - [[Architectural Boundary Enforcement Rules]]
 - [[Layered Observability]]
 - [[Evaluator Rubric]]
+- [[Cleanup Loop]]

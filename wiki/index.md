@@ -138,6 +138,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Lecture 09. Preventing Agents from Declaring Victory Too Early]] — Learn Harness Engineering: confidence calibration bias, three-layer termination validation, worker/checker separation, password-reset case study (2026)
 - [[Lecture 10. Only a Full Pipeline Run Counts as Real Verification]] — Learn Harness Engineering: component boundary defects, architectural boundary enforcement, review feedback promotion, Electron 0/5->5/5 case study (2026)
 - [[Lecture 11. Making the Agent's Runtime Observable]] — Learn Harness Engineering: layered observability, task traces, sprint contracts, evaluator rubrics, Anthropic DAW case study (2026)
+- [[Lecture 12. Leave a Clean Handoff at the End of Every Session]] — Learn Harness Engineering: five-condition clean state, cleanup loops, quality documents, harness simplification, 12-week longitudinal case study (2026)
 
 ## Entities
 
@@ -707,6 +708,9 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Task Trace]] — Complete decision-path record per task, OpenTelemetry-style, analogous to distributed request tracing
 - [[Sprint Contract]] — Pre-coding agreement on scope, verification standards, and exclusions, negotiated before work starts
 - [[Evaluator Rubric]] — Quantifiable scoring dimensions with explicit thresholds, making evaluation reproducible
+- [[Quality Document]] — Living per-module A/B/C rating across verification, understandability, test stability, compliance
+- [[Cleanup Loop]] — Dual-mode maintenance (immediate + periodic), idempotent operations, reversing default entropy growth
+- [[Harness Simplification]] — Periodically removing harness constraints as model capability improves, not just adding more
 
 ## Queries
 
