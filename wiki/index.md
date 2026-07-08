@@ -136,6 +136,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Lecture 07. Draw Clear Task Boundaries for Agents]] — Learn Harness Engineering: overreach/under-finish, WIP=1, completion evidence, scope surface, REST API 37.5%->87.5% case study (2026)
 - [[Lecture 08. Use Feature Lists to Constrain What the Agent Does]] — Learn Harness Engineering: feature lists as harness primitives, documents vs. primitives, feature state machine, 45% completion-rate case study (2026)
 - [[Lecture 09. Preventing Agents from Declaring Victory Too Early]] — Learn Harness Engineering: confidence calibration bias, three-layer termination validation, worker/checker separation, password-reset case study (2026)
+- [[Lecture 10. Only a Full Pipeline Run Counts as Real Verification]] — Learn Harness Engineering: component boundary defects, architectural boundary enforcement, review feedback promotion, Electron 0/5->5/5 case study (2026)
 
 ## Entities
 
@@ -698,6 +699,9 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Three-Layer Termination Validation]] — Syntax/static -> runtime behavior -> system-level confirmation, no layer skippable
 - [[Verification-Validation Dual Gate]] — Spec-correctness gate plus end-to-end-requirements gate, both must pass
 - [[Completion Priority Constraint]] — Functional correctness first, then performance, then style; no refactoring until verified
+- [[Architectural Boundary Enforcement Rules]] — Architecture docs converted into executable checks (e.g. a build-failing grep pattern)
+- [[Review Feedback Promotion]] — Recurring code-review comments converted into permanent automated checks
+- [[Layered Domain Architecture]] — OpenAI's fixed-layer pattern (Types->Config->Repo->Service->Runtime->UI), forward dependencies only
 
 ## Queries
 

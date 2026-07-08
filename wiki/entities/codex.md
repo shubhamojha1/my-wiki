@@ -3,7 +3,7 @@ title: "Codex"
 type: entity
 tags: [ai-agents, openai, coding-assistant]
 created: 2026-07-07
-sources: ["https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-01-why-capable-agents-still-fail/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-02-what-a-harness-actually-is/"]
+sources: ["https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-01-why-capable-agents-still-fail/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-02-what-a-harness-actually-is/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-10-why-end-to-end-testing-changes-results/"]
 ---
 
 # Codex
@@ -14,11 +14,15 @@ Codex is OpenAI's coding agent used in the lecture series as the reference point
 
 [[Lecture 02. What a Harness Actually Is|Lecture 02]] adds architectural detail: Codex uses git worktrees for environment isolation and has local observability (logs, metrics, traces). It performs significantly better in repositories with structured documentation like `AGENTS.md` and clear verification commands — i.e. it rewards a strong [[Harness Engineering|Instruction and Feedback Subsystem]].
 
+[[Lecture 10. Only a Full Pipeline Run Counts as Real Verification|Lecture 10]] cites Codex's own practices again: error messages written for agents must include fix instructions (not just state that something failed), and OpenAI's [[Layered Domain Architecture]] pattern establishes strict layering before implementation starts specifically because agents copy existing repository patterns.
+
 ## Related
 
 - [[OpenAI]]
 - [[Harness Engineering]]
 - [[Agent State Management]]
 - [[Cursor]]
+- [[Layered Domain Architecture]]
 - [[Lecture 01. Strong Models Don't Mean Reliable Execution]]
 - [[Lecture 02. What a Harness Actually Is]]
+- [[Lecture 10. Only a Full Pipeline Run Counts as Real Verification]]
