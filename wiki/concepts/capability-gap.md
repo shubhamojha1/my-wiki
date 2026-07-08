@@ -3,7 +3,7 @@ title: "Capability Gap"
 type: concept
 tags: [ai-agents, evaluation, machine-learning]
 created: 2026-07-07
-sources: ["https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-01-why-capable-agents-still-fail/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-02-what-a-harness-actually-is/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-03-why-the-repository-must-become-the-system-of-record/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-04-why-one-giant-instruction-file-fails/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-05-why-long-running-tasks-lose-continuity/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-06-why-initialization-needs-its-own-phase/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-07-why-agents-overreach-and-under-finish/"]
+sources: ["https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-01-why-capable-agents-still-fail/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-02-what-a-harness-actually-is/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-03-why-the-repository-must-become-the-system-of-record/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-04-why-one-giant-instruction-file-fails/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-05-why-long-running-tasks-lose-continuity/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-06-why-initialization-needs-its-own-phase/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-07-why-agents-overreach-and-under-finish/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-08-why-feature-lists-are-harness-primitives/"]
 ---
 
 # Capability Gap
@@ -24,6 +24,8 @@ Lecture 01 uses SWE-bench Verified pass rates as an example. A score in the 50-6
 
 [[Lecture 07. Draw Clear Task Boundaries for Agents|Lecture 07]] adds a seventh, and the first to compare two *policies* on the same project rather than a before/after harness addition: a REST API project run unconstrained (5 simultaneous features) hit only 37.5% final completion despite ~800 lines written, versus 87.5% final completion with a [[WIP Limit|WIP=1]] policy and ~1200 lines written sequentially. See [[Overreach and Under-finish]].
 
+[[Lecture 08. Use Feature Lists to Constrain What the Agent Does|Lecture 08]] adds an eighth: unstructured task tracking produced 20-minute diagnostic periods per new session and duplicate implementations of already-built functionality; a structured [[Scope Surface|feature list]] cut resume time to 3 minutes with zero rework, and delivered 45% higher feature completion than free-form tracking.
+
 ## Related
 
 - [[SWE-bench]]
@@ -36,3 +38,4 @@ Lecture 01 uses SWE-bench Verified pass rates as an example. A score in the 50-6
 - [[Decision Log]]
 - [[Initialization Phase]]
 - [[Overreach and Under-finish]]
+- [[Scope Surface]]
