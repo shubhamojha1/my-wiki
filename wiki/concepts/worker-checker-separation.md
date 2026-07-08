@@ -3,7 +3,7 @@ title: "Worker/Checker Separation"
 type: concept
 tags: [ai-agents, verification, harness-engineering]
 created: 2026-07-08
-sources: ["https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-09-why-agents-declare-victory-too-early/"]
+sources: ["https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-09-why-agents-declare-victory-too-early/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-11-why-observability-belongs-inside-the-harness/"]
 ---
 
 # Worker/Checker Separation
@@ -19,9 +19,13 @@ This reuses the same experiment already documented in this wiki from [[Lecture 0
 
 The harnessed version cost roughly 22x more and took 18x longer — and was the only one that actually worked. See [[Harness-Induced Failure]] and [[Anthropic]] for where this case study is otherwise documented.
 
+Worker/checker separation on its own only establishes that the checker is *independent* — it doesn't establish that the checker's judgment is *reliable*. [[Lecture 11. Making the Agent's Runtime Observable|Lecture 11]] supplies the missing mechanism: an [[Evaluator Rubric]] with quantifiable dimensions and explicit thresholds, so evaluation becomes evidence-based scoring rather than just a second, differently-biased opinion. Lecture 11's separate Anthropic DAW experiment (a distinct case study from the one above — see [[Anthropic]]) shows this directly: early evaluator versions dismissed real issues until the rubric/prompts were refined against cases where evaluator judgment diverged from human judgment.
+
 ## Related
 
 - [[Confidence Calibration Bias]]
 - [[Harness-Induced Failure]]
 - [[Anthropic]]
 - [[Three-Layer Termination Validation]]
+- [[Evaluator Rubric]]
+- [[Layered Observability]]

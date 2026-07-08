@@ -3,7 +3,7 @@ title: "Capability Gap"
 type: concept
 tags: [ai-agents, evaluation, machine-learning]
 created: 2026-07-07
-sources: ["https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-01-why-capable-agents-still-fail/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-02-what-a-harness-actually-is/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-03-why-the-repository-must-become-the-system-of-record/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-04-why-one-giant-instruction-file-fails/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-05-why-long-running-tasks-lose-continuity/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-06-why-initialization-needs-its-own-phase/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-07-why-agents-overreach-and-under-finish/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-08-why-feature-lists-are-harness-primitives/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-09-why-agents-declare-victory-too-early/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-10-why-end-to-end-testing-changes-results/"]
+sources: ["https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-01-why-capable-agents-still-fail/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-02-what-a-harness-actually-is/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-03-why-the-repository-must-become-the-system-of-record/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-04-why-one-giant-instruction-file-fails/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-05-why-long-running-tasks-lose-continuity/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-06-why-initialization-needs-its-own-phase/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-07-why-agents-overreach-and-under-finish/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-08-why-feature-lists-are-harness-primitives/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-09-why-agents-declare-victory-too-early/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-10-why-end-to-end-testing-changes-results/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-11-why-observability-belongs-inside-the-harness/"]
 ---
 
 # Capability Gap
@@ -30,6 +30,8 @@ Lecture 01 uses SWE-bench Verified pass rates as an example. A score in the 50-6
 
 [[Lecture 10. Only a Full Pipeline Run Counts as Real Verification|Lecture 10]] adds a tenth, and the sharpest ratio yet: an Electron file-export feature with five component-boundary defects. Unit tests caught zero of five. End-to-end tests caught all five. Test time rose from 2 seconds to 15 — an acceptable cost for catching every defect that would otherwise have shipped.
 
+[[Lecture 11. Making the Agent's Runtime Observable|Lecture 11]] adds an eleventh: Anthropic's three-agent (planner/generator/evaluator) build of a browser-based DAW, a distinct experiment from Lecture 01/09's game-editor case study, spent 3 hours 50 minutes and $124.70 across three build/QA rounds, with evaluator reliability itself improving over the rounds once its rubric was refined against cases where it diverged from human judgment. A smaller supporting example (dark-mode implementation) showed a 3x efficiency gain from a sprint contract and rubric alone, observability as the single variable.
+
 ## Related
 
 - [[SWE-bench]]
@@ -45,3 +47,5 @@ Lecture 01 uses SWE-bench Verified pass rates as an example. A score in the 50-6
 - [[Scope Surface]]
 - [[Three-Layer Termination Validation]]
 - [[Architectural Boundary Enforcement Rules]]
+- [[Layered Observability]]
+- [[Evaluator Rubric]]

@@ -3,7 +3,7 @@ title: "Harness Engineering"
 type: concept
 tags: [ai-agents, software-engineering, automation]
 created: 2026-07-07
-sources: ["https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-01-why-capable-agents-still-fail/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-02-what-a-harness-actually-is/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-03-why-the-repository-must-become-the-system-of-record/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-04-why-one-giant-instruction-file-fails/"]
+sources: ["https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-01-why-capable-agents-still-fail/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-02-what-a-harness-actually-is/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-03-why-the-repository-must-become-the-system-of-record/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-04-why-one-giant-instruction-file-fails/", "https://walkinglabs.github.io/learn-harness-engineering/en/lectures/lecture-11-why-observability-belongs-inside-the-harness/"]
 ---
 
 # Harness Engineering
@@ -39,7 +39,7 @@ A complete harness needs all five; missing any one produces an incomplete harnes
 2. **Tool Subsystem** — least-privilege tool access. Too little access (e.g. no shell) blocks the agent from doing the work at all, not just from doing it well.
 3. **Environment Subsystem** — self-describing environment state: dependency locks (`pyproject.toml`/`package.json`), runtime pins (`.nvmrc`/`.python-version`), Docker/devcontainers for reproducibility.
 4. **State Subsystem** — a `PROGRESS.md` tracking completed work, in-progress items, blockers; updated before a session ends, reviewed when the next begins. See [[Agent State Management]] and [[Agent State ACID Principles]] for a structured way to reason about what "well-managed state" means.
-5. **Feedback Subsystem** — explicit verification commands (tests, type check, lint, a combined check target). Lecture 02 calls this the subsystem with typically the highest ROI. See [[Verification Gap]] and [[Definition of Done]].
+5. **Feedback Subsystem** — explicit verification commands (tests, type check, lint, a combined check target). Lecture 02 calls this the subsystem with typically the highest ROI. See [[Verification Gap]] and [[Definition of Done]]. [[Lecture 11. Making the Agent's Runtime Observable|Lecture 11]] deepens this subsystem into [[Layered Observability]] — a runtime layer ("what did the system do," via [[Task Trace]]) and a process layer ("why should this change be accepted," via [[Sprint Contract]] and [[Evaluator Rubric]]) — and explains why agents can't build this observability themselves: they don't know what to record, their logging drifts inconsistent across sessions, and process artifacts need harness-level structure.
 
 (Lecture 01's "five layers" — task specification, context provision, execution environment, verification feedback, state management — describe the same territory at a slightly different cut; Lecture 02's subsystem model is the more operational version and supersedes it for planning purposes.)
 
@@ -74,4 +74,8 @@ Weak harnesses produce avoidable failures even when the model is strong. A bette
 - [[Codex]]
 - [[Cursor]]
 - [[AutoGPT]]
+- [[Layered Observability]]
+- [[Task Trace]]
+- [[Sprint Contract]]
+- [[Evaluator Rubric]]
 - [[Learn Harness Engineering]]

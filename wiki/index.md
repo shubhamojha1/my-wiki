@@ -137,6 +137,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Lecture 08. Use Feature Lists to Constrain What the Agent Does]] — Learn Harness Engineering: feature lists as harness primitives, documents vs. primitives, feature state machine, 45% completion-rate case study (2026)
 - [[Lecture 09. Preventing Agents from Declaring Victory Too Early]] — Learn Harness Engineering: confidence calibration bias, three-layer termination validation, worker/checker separation, password-reset case study (2026)
 - [[Lecture 10. Only a Full Pipeline Run Counts as Real Verification]] — Learn Harness Engineering: component boundary defects, architectural boundary enforcement, review feedback promotion, Electron 0/5->5/5 case study (2026)
+- [[Lecture 11. Making the Agent's Runtime Observable]] — Learn Harness Engineering: layered observability, task traces, sprint contracts, evaluator rubrics, Anthropic DAW case study (2026)
 
 ## Entities
 
@@ -702,6 +703,10 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Architectural Boundary Enforcement Rules]] — Architecture docs converted into executable checks (e.g. a build-failing grep pattern)
 - [[Review Feedback Promotion]] — Recurring code-review comments converted into permanent automated checks
 - [[Layered Domain Architecture]] — OpenAI's fixed-layer pattern (Types->Config->Repo->Service->Runtime->UI), forward dependencies only
+- [[Layered Observability]] — Runtime layer (what happened) plus process layer (why it counts as accepted), designed together
+- [[Task Trace]] — Complete decision-path record per task, OpenTelemetry-style, analogous to distributed request tracing
+- [[Sprint Contract]] — Pre-coding agreement on scope, verification standards, and exclusions, negotiated before work starts
+- [[Evaluator Rubric]] — Quantifiable scoring dimensions with explicit thresholds, making evaluation reproducible
 
 ## Queries
 
