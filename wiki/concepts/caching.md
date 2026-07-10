@@ -58,12 +58,18 @@ Caching is important **earlier** in development than load balancing. Starting wi
 | Application | Memcached, Redis | Shared |
 | Database | Query cache | Per-DB |
 
+Two further location distinctions worth naming explicitly: [[In-Process Caching]] (local memory inside a single application process — fastest possible, but not shared across instances, best for small values like config/feature flags) is a different axis from **client-side caching** (data cached on the user's device or within a client library — [[Browser Caching]] documents the HTTP-protocol-level version of this; the backend has limited control over it either way).
+
 ## Challenges
 
 - **Consistency** — Cache may drift from source of truth
 - **Cold starts** — Cache misses after restart
-- **Hot spots** — Popular items may overwhelm single cache server
+- **Hot spots** — Popular items may overwhelm single cache server; see [[Cache Hot Key]] for mitigations (replication, local fallback cache, rate limiting)
 - **Invalidation** — Knowing when to evict stale data
+
+## Interview Approach
+
+When caching comes up in a system design interview, introduce it only after identifying a specific bottleneck with concrete metrics (e.g. "this query runs at 500ms and gets hit 10k times/sec"), then walk through in order: what to cache, which architecture ([[Cache-Aside]] vs. [[Write-Through Cache|write-through]] vs. [[Write-Behind Cache|write-behind]]), which eviction policy, and what downsides the choice introduces. Caching always trades some staleness/complexity for reduced latency and backend load — naming that tradeoff explicitly is part of the answer, not an afterthought.
 
 ## Four Cache Update Strategies
 
@@ -127,4 +133,4 @@ A dedicated caching layer with independent lifecycle allows app nodes to scale i
 
 ## Related Concepts
 
-[[Application Caching]], [[Database Caching]], [[In-Memory Cache]], [[CDN]], [[HTTP Caching]], [[Browser Caching]], [[Proxy Cache]], [[Cache-Control]], [[Vary Header]], [[Conditional Request]], [[ETag]], [[Cache Invalidation]], [[Read-Through Cache]], [[Write-Through Cache]], [[Write-Behind Cache]], [[Cache-Aside]], [[Refresh-Ahead Cache]], [[LRU]], [[Web Caching]], [[Session Management]], [[Amazon ElastiCache]], [[Amazon CloudFront]], [[Amazon Route 53]]
+[[Application Caching]], [[Database Caching]], [[In-Memory Cache]], [[In-Process Caching]], [[CDN]], [[HTTP Caching]], [[Browser Caching]], [[Proxy Cache]], [[Cache-Control]], [[Vary Header]], [[Conditional Request]], [[ETag]], [[Cache Invalidation]], [[Read-Through Cache]], [[Write-Through Cache]], [[Write-Behind Cache]], [[Cache-Aside]], [[Refresh-Ahead Cache]], [[LRU]], [[Cache Hot Key]], [[Web Caching]], [[Session Management]], [[Amazon ElastiCache]], [[Amazon CloudFront]], [[Amazon Route 53]]
