@@ -128,6 +128,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Dynatrace: What Is Distributed Tracing?]] — Trace IDs, spans, observability pillars, head-based vs tail-based sampling, MTTD/MTTR (2026)
 - [[Design a Distributed Rate Limiter]] — Hello Interview: API-gateway rate limiter with token bucket, Redis/Lua atomicity, sharding, fail-closed policy, latency, hot keys, and dynamic config (2026)
 - [[API Design for System Design Interviews]] — Hello Interview: protocol choice (REST/GraphQL/gRPC), pagination, versioning, authentication/authorization basics (2026)
+- [[Caching for System Design Interviews]] — Hello Interview: cache locations, architectures, eviction policies, hot keys, 5-step interview approach (2026)
 - [[Lecture 01. Strong Models Don't Mean Reliable Execution]] — Learn Harness Engineering: model capability vs. execution reliability, five failure modes, Anthropic/OpenAI case studies (2026)
 - [[Lecture 02. What a Harness Actually Is]] — Learn Harness Engineering: five-subsystem harness model (instruction/tool/environment/state/feedback), tool survey, staged 20%->100% case study (2026)
 - [[Lecture 03. Making the Repository the Single Source of Truth]] — Learn Harness Engineering: repo as system of record, knowledge visibility gap, fresh session test, ACID-based agent state management, 30-microservice case study (2026)
@@ -599,6 +600,8 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Version-Based Invalidation]] — Version counters for cache freshness without explicit purge
 - [[Cache Warming]] — Pre-populating cache before expected load
 - [[Cache Stampede]] — Thundering herd problem when multiple requests miss cache simultaneously
+- [[Cache Hot Key]] — Single cache key overwhelming one node; replication/local-fallback/rate-limit mitigations
+- [[In-Process Caching]] — Local memory inside an application process, unshared across instances
 - [[Edge Cache]] — Geographically distributed cache layer for low-latency content delivery
 - [[DNS Negative Caching]] — Caching DNS nonexistence (NXDOMAIN/NODATA), RFC 2308
 - [[ACID Transactions]] — Atomicity, Consistency, Isolation, Durability: database transaction guarantees
