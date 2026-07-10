@@ -32,8 +32,13 @@ Partitioning divides a dataset into smaller, independent sets across multiple no
 - Hash-based partitioning
 - Directory-based lookup
 
+## Partitioning vs. Sharding
+
+Scope is the distinguishing factor: partitioning divides a table into smaller pieces *within a single database instance*, either horizontally (splitting rows) or vertically (splitting columns — see [[Vertical Partitioning]]). [[Database Sharding]] extends the same idea *across multiple independent machines*. Sharding is a form of partitioning; not all partitioning involves sharding.
+
 ## Related
 
 - [[Database Sharding]] — Horizontal scaling via partitioned databases
+- [[Vertical Partitioning]] — Column-based partitioning within a single instance
 - [[Hash-Based Sharding]] — Hash-based data distribution
 - [[Range-Based Sharding]] — Range-based data distribution
