@@ -3,16 +3,17 @@ title: "Hello Interview"
 type: entity
 tags: [system-design, interviews, education]
 created: 2026-07-07
-sources: ["https://www.hellointerview.com/learn/system-design/problem-breakdowns/distributed-rate-limiter"]
+sources: ["https://www.hellointerview.com/learn/system-design/problem-breakdowns/distributed-rate-limiter", "https://www.hellointerview.com/learn/system-design/core-concepts/api-design"]
 ---
 
 # Hello Interview
 
-Hello Interview is an interview-preparation company and publisher of system design breakdowns. In [[Design a Distributed Rate Limiter]], it presents a FAANG-style system design answer for a [[Distributed Rate Limiter]], emphasizing requirements, algorithm selection, gateway placement, Redis-backed shared state, sharding, failure modes, latency, hot keys, and dynamic configuration.
+Hello Interview is an interview-preparation company and publisher of system design breakdowns and core-concepts guides. In [[Design a Distributed Rate Limiter]], it presents a FAANG-style system design answer for a [[Distributed Rate Limiter]], emphasizing requirements, algorithm selection, gateway placement, Redis-backed shared state, sharding, failure modes, latency, hot keys, and dynamic configuration. In [[API Design for System Design Interviews]], it covers the interview-scoped fundamentals of protocol choice, resource modeling, pagination, versioning, and authentication/authorization.
 
 ## In This Wiki
 
 - [[Design a Distributed Rate Limiter]] summarizes its distributed rate limiter breakdown.
+- [[API Design for System Design Interviews]] summarizes its API design core-concepts guide.
 
 ## Related Concepts
 
