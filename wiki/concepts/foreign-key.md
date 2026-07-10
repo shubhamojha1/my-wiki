@@ -38,8 +38,13 @@ CREATE TABLE Albums (
 - **RESTRICT**: Prevent delete/update of parent
 - **NO ACTION**: Check after other operations
 
+## Cost at Scale
+
+Every insert/update against a foreign-keyed column requires the database to validate the reference exists, which costs write throughput. At very large scale, some systems drop foreign key constraints entirely and enforce referential integrity at the application layer instead — trading a database-level guarantee for write performance. In an interview, naming this trade-off (rather than declaring FKs mandatory or omitting them silently) signals you understand the cost, not just the mechanism.
+
 ## Related
 
 - [[Primary Key]]
 - [[Relational Model]]
 - [[Relational Algebra]]
+- [[Data Modeling]]
