@@ -127,6 +127,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Google Cloud: What Is Disaster Recovery?]] — GC: DR planning, 3-2-1 rule, BaaS/DRaaS/snapshots/virtual DR, RTO/RPO, 5-step DR process
 - [[Dynatrace: What Is Distributed Tracing?]] — Trace IDs, spans, observability pillars, head-based vs tail-based sampling, MTTD/MTTR (2026)
 - [[Design a Distributed Rate Limiter]] — Hello Interview: API-gateway rate limiter with token bucket, Redis/Lua atomicity, sharding, fail-closed policy, latency, hot keys, and dynamic config (2026)
+- [[API Design for System Design Interviews]] — Hello Interview: protocol choice (REST/GraphQL/gRPC), pagination, versioning, authentication/authorization basics (2026)
 - [[Lecture 01. Strong Models Don't Mean Reliable Execution]] — Learn Harness Engineering: model capability vs. execution reliability, five failure modes, Anthropic/OpenAI case studies (2026)
 - [[Lecture 02. What a Harness Actually Is]] — Learn Harness Engineering: five-subsystem harness model (instruction/tool/environment/state/feedback), tool survey, staged 20%->100% case study (2026)
 - [[Lecture 03. Making the Repository the Single Source of Truth]] — Learn Harness Engineering: repo as system of record, knowledge visibility gap, fresh session test, ACID-based agent state management, 30-microservice case study (2026)
@@ -566,6 +567,12 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[URI Naming Conventions]] — Plural nouns, no verbs, no nesting, trailing slash handling
 - [[Query String Filtering]] — Filter resource collections via URL query parameters
 - [[Page Pagination]] — Numbered pages with page + page_size parameters
+- [[Cursor-Based Pagination]] — Opaque pointer-based pagination, stable under real-time writes
+- [[API Versioning]] — URL vs. header strategies for evolving an API contract
+- [[Authentication vs. Authorization]] — Verifying identity vs. verifying permission
+- [[API Key]] — Application/service credential for server-to-server and developer access
+- [[JWT]] — Self-contained signed token carrying identity claims
+- [[RBAC]] — Role-based permission assignment for authorization
 - [[Over-fetching]] — Returns more data than needed (REST issue)
 - [[Under-fetching]] — Multiple requests for related data (REST issue)
 - [[WebSockets]] — Full-duplex bidirectional communication over persistent TCP connection
