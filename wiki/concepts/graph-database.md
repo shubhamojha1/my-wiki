@@ -90,8 +90,13 @@ With 1M users, each JOIN scans the entire `follows` table. In a graph DB, the sa
 | Query for connected data | Natural | Complex multi-joins | Manual denorm |
 | Aggregations | Limited | Excellent | Moderate |
 
+## Interview Caution
+
+Graph databases are the most common over-selection mistake in system design interviews — they sound sophisticated but add operational complexity that's rarely justified by the scoped problem. Even Facebook models its social graph in MySQL, and LinkedIn/Twitter use SQL for their core relationship data, despite both looking like the canonical "social network → graph DB" case. If a relational model handles the world's largest social graph, it likely handles the interview's version too. See [[Data Modeling]] for the broader database-selection framework this fits into.
+
 ## Related Concepts
 
 - [[Relational Model]] — alternative; joins become expensive for multi-hop traversals
 - [[Document Database]] — better for hierarchical/self-contained data
 - [[Graph Neural Network]] — ML on graph-structured data
+- [[Data Modeling]] — interview framework for when (and when not) to reach for a specialized database type

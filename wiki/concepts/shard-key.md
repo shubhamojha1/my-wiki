@@ -45,6 +45,11 @@ Shard 2: 100 RPS
 
 Solution: choose a higher-cardinality key, or add a random suffix to spread load across virtual shards.
 
+A specific case worth naming: the **celebrity problem**, where a single popular entity (a viral post's author, a trending product) generates vastly more traffic than an ordinary key, overloading whichever shard it lands on regardless of how good the overall key choice is. Mitigations beyond the general fixes above:
+
+- **Isolate the hot key to its own dedicated shard** rather than letting it share capacity with ordinary keys.
+- **Dynamic shard splitting** — detect the hot shard at runtime and split it further, rather than relying on the original static shard count.
+
 ## Composite Shard Keys
 
 Combining columns can achieve better co-location:

@@ -127,6 +127,10 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Google Cloud: What Is Disaster Recovery?]] — GC: DR planning, 3-2-1 rule, BaaS/DRaaS/snapshots/virtual DR, RTO/RPO, 5-step DR process
 - [[Dynatrace: What Is Distributed Tracing?]] — Trace IDs, spans, observability pillars, head-based vs tail-based sampling, MTTD/MTTR (2026)
 - [[Design a Distributed Rate Limiter]] — Hello Interview: API-gateway rate limiter with token bucket, Redis/Lua atomicity, sharding, fail-closed policy, latency, hot keys, and dynamic config (2026)
+- [[API Design for System Design Interviews]] — Hello Interview: protocol choice (REST/GraphQL/gRPC), pagination, versioning, authentication/authorization basics (2026)
+- [[Caching for System Design Interviews]] — Hello Interview: cache locations, architectures, eviction policies, hot keys, 5-step interview approach (2026)
+- [[Sharding in System Design Interviews]] — Hello Interview: shard key selection, distribution strategies, celebrity problem, cross-shard transaction consistency (2026)
+- [[Data Modeling for System Design Interviews]] — Hello Interview: default-to-SQL framework, three-factor schema design driver, interview checklist (2026)
 - [[Lecture 01. Strong Models Don't Mean Reliable Execution]] — Learn Harness Engineering: model capability vs. execution reliability, five failure modes, Anthropic/OpenAI case studies (2026)
 - [[Lecture 02. What a Harness Actually Is]] — Learn Harness Engineering: five-subsystem harness model (instruction/tool/environment/state/feedback), tool survey, staged 20%->100% case study (2026)
 - [[Lecture 03. Making the Repository the Single Source of Truth]] — Learn Harness Engineering: repo as system of record, knowledge visibility gap, fresh session test, ACID-based agent state management, 30-microservice case study (2026)
@@ -271,6 +275,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Directory-Based Sharding]] — Lookup table mapping keys to shards
 - [[Cross-Shard Query]] — Query spanning multiple shards
 - [[Data Rebalancing]] — Redistributing data across shards
+- [[Saga Pattern]] — Cross-shard/cross-service transaction consistency via compensating local transactions, avoiding 2PC's blocking cost
 
 ## Index Concepts
 
@@ -398,6 +403,7 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Impact Distribution Analysis]] — Measuring algorithm impact in noisy production environments
 - [[Sloppy Quorum]] — Quorum variant that skips unavailable nodes
 - [[Hinted Handoff]] — Failure handling: temporarily store replica on another node
+- [[Data Modeling]] — Interview methodology: three-factor schema driver, default-to-SQL framework, checklist
 - [[Relational Model]] — Table-based data model with tuples, attributes, and constraints
 - [[Relational Algebra]] — Fundamental query operations: select, project, union, join
 - [[Primary Key]] — Unique identifier for each row in a table
@@ -566,6 +572,12 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[URI Naming Conventions]] — Plural nouns, no verbs, no nesting, trailing slash handling
 - [[Query String Filtering]] — Filter resource collections via URL query parameters
 - [[Page Pagination]] — Numbered pages with page + page_size parameters
+- [[Cursor-Based Pagination]] — Opaque pointer-based pagination, stable under real-time writes
+- [[API Versioning]] — URL vs. header strategies for evolving an API contract
+- [[Authentication vs. Authorization]] — Verifying identity vs. verifying permission
+- [[API Key]] — Application/service credential for server-to-server and developer access
+- [[JWT]] — Self-contained signed token carrying identity claims
+- [[RBAC]] — Role-based permission assignment for authorization
 - [[Over-fetching]] — Returns more data than needed (REST issue)
 - [[Under-fetching]] — Multiple requests for related data (REST issue)
 - [[WebSockets]] — Full-duplex bidirectional communication over persistent TCP connection
@@ -592,6 +604,8 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Version-Based Invalidation]] — Version counters for cache freshness without explicit purge
 - [[Cache Warming]] — Pre-populating cache before expected load
 - [[Cache Stampede]] — Thundering herd problem when multiple requests miss cache simultaneously
+- [[Cache Hot Key]] — Single cache key overwhelming one node; replication/local-fallback/rate-limit mitigations
+- [[In-Process Caching]] — Local memory inside an application process, unshared across instances
 - [[Edge Cache]] — Geographically distributed cache layer for low-latency content delivery
 - [[DNS Negative Caching]] — Caching DNS nonexistence (NXDOMAIN/NODATA), RFC 2308
 - [[ACID Transactions]] — Atomicity, Consistency, Isolation, Durability: database transaction guarantees

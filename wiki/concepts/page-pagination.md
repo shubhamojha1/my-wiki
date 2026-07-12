@@ -39,5 +39,11 @@ GET /books?published=true&page=2&page_size=10
 - Items may shift between pages if data changes during pagination
 
 ## Alternatives
-- **Cursor-based pagination**: Better for real-time data, no page shifting
+- [[Cursor-Based Pagination]] — better for real-time data, no page shifting
 - **Offset pagination**: `offset` + `limit` (similar but 0-indexed)
+
+## Related Concepts
+
+- [[Cursor-Based Pagination]] — the alternative for high-write/real-time datasets
+- [[Query String Filtering]] — often combined with pagination parameters
+- [[REST API]] — the usual context for this pattern

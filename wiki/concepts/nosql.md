@@ -66,6 +66,10 @@ This is the inverse trade-off from [[ACID Transactions]]: availability and parti
 - High-throughput read/write workloads
 - Eventual consistency is acceptable
 
+## Interview Default
+
+In a system design interview specifically, relational is the default and NoSQL is the exception — resist reaching for an exotic model to look sophisticated. A scoped interview problem rarely has genuinely evolving schemas (the main reason to pick document stores) or graph-native access patterns (see [[Graph Database]]'s interview caution). Justify a NoSQL choice against one of the "When to Choose" criteria above, explicitly, rather than defaulting to it. See [[Data Modeling]] for the full interview framework.
+
 ## Related Pages
 
-- [[SQL]], [[ACID Transactions]], [[CAP Theorem]], [[Document Database]], [[Vector Database]], [[Redis]], [[Memcached]]
+- [[SQL]], [[ACID Transactions]], [[CAP Theorem]], [[Document Database]], [[Vector Database]], [[Redis]], [[Memcached]], [[Data Modeling]]
