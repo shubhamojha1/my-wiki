@@ -726,6 +726,10 @@ A persistent knowledge base for LLM inference systems and distributed databases.
 - [[Cleanup Loop]] — Dual-mode maintenance (immediate + periodic), idempotent operations, reversing default entropy growth
 - [[Harness Simplification]] — Periodically removing harness constraints as model capability improves, not just adding more
 
+## Problems
+
+- [[Problems Index]] — master table of solved LeetCode/interview problems, pattern + optimal approach per entry
+
 ## Queries
 
 - [[How does YouTube HALP work?]] — HALP: hybrid ML + heuristic cache eviction for YouTube CDN

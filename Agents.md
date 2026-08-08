@@ -12,6 +12,7 @@ modify them.
 - `wiki/entities/` — pages for people, papers, systems, projects
 - `wiki/concepts/` — pages for ideas, patterns, mechanisms, frameworks
 - `wiki/queries/` — saved answers to questions worth keeping
+- `wiki/problems/` — one page per solved LeetCode/interview problem; `wiki/problems/index.md` is the master table (all solved problems, one row each)
 
 ## Page format
 
@@ -19,7 +20,7 @@ Every wiki page should include YAML frontmatter:
 
 ---
 title: "Page Title"
-type: entity | concept | source | query
+type: entity | concept | source | query | problem
 tags: []
 created: YYYY-MM-DD
 sources: []          # list of raw source filenames that informed this page
@@ -41,6 +42,15 @@ When asked to ingest a source from `raw/`:
    `## [YYYY-MM-DD] ingest | <source title>`
 
 A single ingest should touch 5–15 wiki pages. Don't be conservative.
+
+### Log a problem
+When I give a solved problem (LeetCode/interview):
+1. Create `wiki/problems/<slug>.md` with frontmatter (`type: problem`) plus:
+   `difficulty`, `pattern` (list of `[[Concept]]` links, e.g. `[[Sliding Window]]`)
+2. Body: one-line problem statement, optimal approach + why it's optimal, time/space complexity, the gotcha/insight that would trip a naive solution
+3. Add one row to `wiki/problems/index.md`: `| [[Problem Name]] | difficulty | pattern | optimal approach one-liner |`
+4. If the pattern doesn't have a concept page yet, create one in `wiki/concepts/`
+5. Append to `wiki/log.md`
 
 ### Query
 When I ask a question:
