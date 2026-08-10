@@ -43,6 +43,60 @@ When asked to ingest a source from `raw/`:
 
 A single ingest should touch 5–15 wiki pages. Don't be conservative.
 
+### Ingest a book (chapter-wise)
+For books too large to read in one pass (1000+ pages). Each chapter gets a
+full ingest, not a shallow bullet summary. No pre-split of the PDF needed —
+Read the raw file's `pages` param directly (max 20 pages/request, batch as
+needed).
+
+**Setup (once per book, before any chapter):**
+1. Read the table of contents / front matter to get the full chapter list
+   with page ranges.
+2. Create `wiki/entities/<book-slug>.md` — the book's entity page:
+   title, author, full chapter list with page ranges, and a status column
+   (`pending` / `done`) per chapter. This is the progress tracker across
+   sessions — a 1000-page book won't finish in one sitting.
+3. Add one line for this entity page to `wiki/index.md`.
+
+**Per chapter (repeat for each):**
+1. Read the chapter's full page range in ≤20-page batches. Track pages
+   read vs. the chapter's total range — don't move on until the count
+   matches. Don't skip figures, footnotes, or appendix material within
+   the range.
+2. Discuss key takeaways with me before writing anything.
+3. Create `wiki/sources/<book-slug>-ch<NN>-<chapter-slug>.md` with
+   frontmatter:
+   ```
+   title: "<Book Title> — Ch<NN>: <Chapter Name>"
+   type: source
+   tags: []
+   created: YYYY-MM-DD
+   sources: ["<raw filename>, pp. <start>-<end>"]
+   book: "[[<Book Entity Page>]]"
+   chapter: <NN>
+   ```
+   Body requirement: this page must stand in for the chapter — someone
+   reading only this page should come away with what the chapter argued,
+   not just its topic list. Mirror the chapter's own section/subsection
+   headings, and under each cover every key definition, argument, example,
+   formula, and named system/technique — not just a title bullet. Close
+   with a "Key Takeaways" list.
+4. Create or update entity pages for named things (systems, people,
+   papers) introduced in the chapter.
+5. Create or update concept pages for key ideas introduced in the chapter.
+6. Update the book entity page: mark this chapter `done`, link the new
+   source page. Do NOT add a separate `wiki/index.md` row per chapter —
+   only add rows for new entity/concept pages (the book's single index
+   row already covers all its chapters via the entity page).
+7. Append to `wiki/log.md`:
+   `## [YYYY-MM-DD] ingest | <Book Title> Ch<NN>: <Chapter Name>`
+8. Commit: `git add -A && git commit -m "[YYYY-MM-DD] ingest: <Book Title> Ch<NN> <Chapter Name>"`
+
+A single chapter ingest should touch 3–8 wiki pages (source page + entity/
+concept pages). When the last chapter is done, update the book entity
+page's status to `complete` and append a final log entry summarizing the
+whole book.
+
 ### Log a problem
 When I give a solved problem (LeetCode/interview):
 1. Create `wiki/problems/<slug>.md` with frontmatter (`type: problem`) plus:
